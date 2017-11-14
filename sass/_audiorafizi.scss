@@ -1,0 +1,89 @@
+.audiorafizi {
+    background-color: white;
+    .audiorafiziMain {
+        margin: 0px 50px;
+        border: 2px solid $thirdcolor;
+    }
+    .contentHead {
+        background-color: $thirdcolor;
+    }
+    .additionalContent {
+        padding: 50px 50px 10px 20px;
+        .additionalContentIcon {
+            display: inline-block;
+            i {
+                font-size: 22pt;
+                padding-right: 5px;
+            }
+        }
+        .additionalContentForum {
+            float: right;
+            display:inline-block;
+            a {
+                text-decoration: none;
+                color: black;
+                font-size: 12pt;
+            }
+        }
+        .additionalContentForumIcon {
+            float: right;
+            display:inline-block;
+            i {
+                font-size: 22pt;
+                padding-left: 10px;
+            }
+        }
+        .additionalContentHead {
+            display: inline-block;
+            p {
+                font-size: 16pt;
+            }
+        }
+        .additionalContentBody {
+            padding: 20px 0px;
+        }
+        .additionalContentAudio {
+            padding: 30px 0px;
+        }
+        .additionalContentType {
+            padding: 15px 0px;
+            ul {
+                list-style: none;
+                li {
+                    display: inline-block;
+                    a {
+                        color: black;
+                        padding: 0px 5px;
+                        background-color: $thirdcolor;
+                        text-decoration: none;
+                        font-style: italic
+                    }
+                }
+            }
+        }
+        .additionalContentAndSo {
+            float: right;
+            a {
+                color: $primarycolor;
+                text-decoration: none;
+                font-style: italic
+            }
+        }
+    }
+    .rubrikaContentCategories {
+        margin: 50px;
+    }
+    .viewedContent {
+        ul {
+            li {
+                margin: 10px 0px;
+                width: 100%;
+                a {
+                    font-size: 20pt;
+                    color: black;
+                    text-decoration: underline;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,95 @@
+.meqaleler {
+    background-color: white;
+    .meqalelerMain {
+        margin: 0px 50px;
+        border: 2px solid $thirdcolor;
+    }
+    .contentHead {
+        background-color: $thirdcolor;
+    }
+    .additionalContent {
+        padding:50px 50px 10px 20px;
+        .additionalContentIcon{
+        display:inline-block;
+        i {
+            font-size: 22pt;
+            padding-right: 5px;
+        }
+        }
+        .additionalContentHead {
+            display:inline-block;
+            p {
+                font-size: 16pt;
+            }
+        }
+        .additionalContentForum {
+            float: right;
+            display:inline-block;
+            a {
+                text-decoration: none;
+                color: black;
+                font-size: 12pt;
+            }
+        }
+        .additionalContentForumIcon {
+            float: right;
+            display:inline-block;
+            i {
+                font-size: 22pt;
+                padding-left: 10px;
+            }
+        }
+        .additionalContentBody {
+            p {
+                padding: 20px;
+                font-size: 16pt;
+            }
+        }
+        .additionalContentType {
+            ul {
+                list-style: none;
+                li {
+                    display: inline-block;
+                    a {
+                        color: black;
+                        text-decoration: none;
+                        font-style: italic;
+                    }
+                }
+            }
+        }
+        .additionalContentAndSo {
+            float: right;
+            a {
+                color: black;
+                text-decoration: none;
+            }
+        }
+    }
+    .rubrikaContentCategories {
+        margin: 50px;
+    }
+    .viewedContent {
+        ul {
+            padding: 50px 0px;
+            list-style: none;
+            li {
+                margin-bottom: 20px;
+                .viewedContentIcon {
+                    display: inline-block;
+                    i {
+                        font-size: 20pt;
+                    }
+                }
+                .viewedContentAbout {
+                    display: inline-block;
+                    a {
+                        font-size: 20pt;
+                        color: black;
+                        text-decoration: underline;
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,79 @@
+.kitablar {
+    background-color: white;
+    .kitablarMain {
+        margin: 0px 50px;
+        border: 2px solid $thirdcolor;
+    }
+    .contentHead {
+        background-color: $thirdcolor;
+        
+    }
+    .rubrikaContentCategories {
+        margin: 50px;
+        .rubrikaContentBooks {
+            .rubrikaContentBooksIcon {
+                display: inline-block;
+                i {
+                    font-size: 20pt;
+                    padding-right: 5px;
+                }
+            }
+            .rubrikaContentBooksHead {
+                display: inline-block;
+                p {
+                    font-size: 20pt;
+                }
+            }
+            .rubrikaContentBooksPdf {
+                float: right;
+                display: inline-block;
+                i {
+                    font-size: 20pt;
+                }
+            }
+        }
+        .rubrikaContentBooksCategory {
+            padding-top: 20px;
+            .rubrikaContentBooksCategoryName {
+                display: inline-block;
+                a {
+                    font-size: 20pt;
+                    color: $primarycolor;
+                    font-style: italic;
+                    padding: 1px 5px;
+                    background-color: $thirdcolor;
+                    text-decoration: none;
+                }
+            }
+            .rubrikaContentBooksAndSo {
+                display: inline-block;
+                float: right;
+                a {
+                    text-decoration: none;
+                    font-size: 16pt;
+                    color: $primarycolor;
+                    font-style: italic;
+                }
+            }
+        }
+        
+
+    }
+    .viewedContent {
+        padding-left: 20px;
+        ul {
+            padding: 50px 0px;
+            li {
+                margin-bottom: 20px;
+                .viewedContentAbout {
+                  border-bottom:2px solid black; 
+                    a {
+                        font-size: 20pt;
+                        color: black;
+                        text-decoration: none;
+                    }
+                }
+            }
+        }
+    }
+}

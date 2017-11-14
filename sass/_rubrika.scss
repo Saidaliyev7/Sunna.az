@@ -1,0 +1,132 @@
+.rubrikaContent {
+    background-color: white;
+    .rubrikaContentMain {
+        margin: 0px 50px;
+        border: 2px solid $thirdcolor;
+    }
+    .contentHead {
+        background-color: $thirdcolor;
+    }
+    .rubrika {
+        padding: 20px 0px;
+        .rubrikaContent {
+            display: inline-block;
+            width: 50%;
+            p {
+                font-size: 16pt;
+                display: inline-block;
+                margin-left: 30px;
+                width: 100%;
+                padding: 16px 0px 15px 25px;
+                text-transform: uppercase;
+                background-color: $thirdcolor;
+                position: relative;
+                color: black;
+                &::after {
+                    top: 0px;
+                    right: -29px;
+                    content: "";
+                    position: absolute;
+                    border-style: solid;
+                    border-width: 62px 29px 0 0px;
+                    border-color: $thirdcolor transparent transparent transparent;
+                }
+                &::before {
+                    top: 0px;
+                    left: -29px;
+                    content: "";
+                    position: absolute;
+                    border-style: solid;
+                    border-width: 0px 0px 62.5px 29px;
+                    border-color: transparent transparent $thirdcolor transparent;
+                }
+            }
+        }
+        .rubrikaCategory {
+            margin-left: 50px;
+            display: inline-block;
+            ul {
+                list-style: none;
+                li {
+                    display: inline-block;
+                    a {
+                        text-decoration: none;
+                        color: black;
+                    }
+                }
+            }
+        }
+    }
+    .rubrikaContentCategories {
+        ul {
+            list-style: none;
+            li {
+                width: 30%;
+                padding: 30px 0px;
+                display: inline-block;
+                .rubrikaCategoriesIcon {
+                    text-align: center;
+                    i {
+                        font-size: 50pt;
+                        color: #4da6ff;
+                    }
+                }
+                .rubrikaCategoriesCount {
+                    text-align: center;
+                    a {
+                        text-decoration: underline;
+                        color: black;
+                    }
+                }
+                .rubrikaCategoriesName {
+                    text-align: center;
+                    border: 1px solid #4da6ff;
+                    position: relative;
+                    border-radius: 3px;
+                    &::after {
+                        position: absolute;
+                        content: "";
+                        width: 100%;
+                        height: 3px;
+                        background-color: #4da6ff;
+                        top: -1px;
+                        left: 0px;
+                    }
+                    a {
+                        font-style: italic;
+                        text-decoration: none;
+                        color: black;
+                    }
+                }
+            }
+        }
+        .rubrikaForum {
+            position: relative;
+            color: white;
+            padding: 15px 0px 15px 30px;
+            font-size: 16pt;
+            background-color: $primarycolor;
+            text-transform: uppercase;
+            &::after {
+                top: 0px;
+                left: -29px;
+                content: "";
+                position: absolute;
+                border-style: solid;
+                border-width: 0px 0px 61px 29px;
+                border-color: transparent transparent $primarycolor transparent;
+            }
+        }
+        .rubrikaEntrace {
+            text-align: center;
+            padding-top: 50px;
+            a {
+                font-size: 20pt;
+                padding: 10px 20px;
+                background-color: #aae1fa;
+                text-decoration: none;
+                color: black;
+            }
+        }
+    }
+}

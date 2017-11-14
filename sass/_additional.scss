@@ -1,0 +1,199 @@
+.additional {
+    padding: 20px 0px;
+    position: relative;
+    margin-bottom: 75px;
+    .additionalHead {
+        text-align: center;
+        position: relative;
+        p {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: $primarycolor;
+            color: white;
+            font-size: 16pt;
+            position: relative;
+            z-index: 10;
+            &::before {
+                top: 0px;
+                right: -29px;
+                content: "";
+                position: absolute;
+                border-style: solid;
+                border-width: 51px 29px 0 0px;
+                border-color: $primarycolor transparent transparent transparent;
+            }
+            &::after {
+                top: 0px;
+                left: -29px;
+                content: "";
+                position: absolute;
+                border-style: solid;
+                border-width: 0px 0px 51px 29px;
+                border-color: transparent transparent $primarycolor transparent;
+            }
+            
+        }
+        &::before {
+            width: 38%;
+            height: 10%;
+            top: 46%;
+            content: "";
+            position: absolute;
+            left: 0%;
+            background-color: $primarycolor;
+        }
+        &::after {
+            width: 34%;
+            height: 10%;
+            top: 46%;
+            content: "";
+            position: absolute;
+            right: 4%;
+            background-color: $primarycolor;
+        }
+    }
+    .message {
+        position: relative;
+        color: white;
+        padding: 15px 0px 15px 30px;
+        font-size: 16pt;
+        background-color: $primarycolor;
+        text-transform: uppercase;
+        &::after {
+            top: 0px;
+            left: -29px;
+            content: "";
+            position: absolute;
+            border-style: solid;
+            border-width: 0px 0px 61px 29px;
+            border-color: transparent transparent $primarycolor transparent;
+        }
+    }
+    .additionalContent {
+        padding:50px 50px 10px 20px;
+        .additionalContentIcon{
+        display:inline-block;
+        i {
+            font-size: 22pt;
+            padding-right: 5px;
+        }
+        }
+        .additionalContentHead {
+            display:inline-block;
+            p {
+                font-size: 16pt;
+            }
+        }
+        .additionalContentForum {
+            float: right;
+            display:inline-block;
+            a {
+                text-decoration: none;
+                color: black;
+                font-size: 12pt;
+            }
+        }
+        .additionalContentForumIcon {
+            float: right;
+            display:inline-block;
+            i {
+                font-size: 22pt;
+                padding-left: 10px;
+            }
+        }
+        .additionalContentBody {
+            p {
+                padding: 20px;
+                font-size: 16pt;
+            }
+        }
+        .additionalContentType {
+            ul {
+                list-style: none;
+                li {
+                    display: inline-block;
+                    a {
+                        color: black;
+                        text-decoration: none;
+                        font-style: italic;
+                    }
+                }
+            }
+        }
+        .additionalContentAndSo {
+            float: right;
+            a {
+                color: black;
+                text-decoration: none;
+            }
+        }
+    }
+    .sendMessage {
+        text-align: center;
+        padding:75px 0px;
+       .sendMessageButton {
+           display: inline-block;
+         a {
+            font-size:20pt;
+            padding: 10px 20px;
+            background-color: $thirdcolor;
+            text-decoration: none;
+            color: black;
+         }
+         
+       }
+       .sendMessageIcon {
+        display: inline-block;
+         i {
+            padding: 10px 20px;
+             font-size: 30pt
+         }
+     }
+    }
+    .viewed {
+        
+        position: relative;
+        color: white;
+        padding: 15px 0px 15px 30px;
+        font-size: 16pt;
+        background-color: $primarycolor;
+        text-transform: uppercase;
+        &::after {
+            top: 0px;
+            left: -29px;
+            content: "";
+            position: absolute;
+            border-style: solid;
+            border-width: 0px 0px 61px 29px;
+            border-color: transparent transparent $primarycolor transparent;
+        }
+    }
+    .viewedContent {
+        .video {
+            padding-top: 10px;
+        }
+        ul {
+            padding: 50px 0px;
+            list-style: none;
+            li {
+                margin-bottom: 20px;
+                .viewedContentIcon {
+                    display: inline-block;
+                    i {
+                        font-size: 20pt;
+                    }
+                }
+                .viewedContentAbout { 
+                    display: inline-block;
+                    a {
+                        font-size: 20pt;
+                        color: black;
+                        text-decoration: underline;
+                    }
+                }
+            }
+            
+        }
+        
+    }
+}

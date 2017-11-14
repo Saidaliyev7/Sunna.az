@@ -1,0 +1,67 @@
+.video {
+    background-color: white;
+    .videoMain {
+        margin: 0px 50px;
+        border: 2px solid $thirdcolor;
+    }
+    .contentHead {
+        background-color: $thirdcolor;
+    }
+    .additionalContent {
+        padding: 50px 50px 10px 20px;
+        .additionalContentIcon {
+            display: inline-block;
+            i {
+                font-size: 22pt;
+                padding-right: 5px;
+            }
+        }
+        .additionalContentHead {
+            display: inline-block;
+            p {
+                font-size: 16pt;
+            }
+        }
+        .additionalContentBody {
+
+               padding: 20px 0px;
+
+        }
+        .additionalContentType {
+            a {
+                color: black;
+                padding: 0px 5px;
+                background-color: $thirdcolor;
+                text-decoration: none;
+                font-style: italic
+            }
+        }
+        .additionalContentAndSo {
+            float: right;
+            a {
+                color: $primarycolor;
+                text-decoration: none;
+                font-style: italic
+            }
+        }
+    }
+    
+    .rubrikaContentCategories {
+        margin: 50px;
+    }
+    .viewedContent {
+        ul {
+            list-style: none;
+            li {
+                margin: 10px 0px;
+                width: 100%;
+                .viewedContentImage {
+                    img {
+                        width: 100%;
+
+                    }
+                } 
+            }
+        }
+    }
+}

@@ -1,0 +1,41 @@
+.ovliyaliq {
+    background-color: white;
+    .ovliyaliqMain {
+        margin: 0px 50px;
+        border: 2px solid $thirdcolor;
+    }
+    .contentHead {
+        p {
+            margin-left: 50px;
+            font-size: 20pt;
+            background-color: white;
+            color: black;
+            &::before {
+                border: none;
+            }
+        }
+    }
+    .rubrikaContentCategories {
+margin: 15px;
+.rubrikaContentCategoriesImage {
+    img {
+        width: 100%
+    }
+}
+    }
+    .viewedContent {
+        ul {
+            list-style: none;
+            li {
+                margin: 10px 0px;
+                width: 100%;
+                .viewedContentImage {
+                    img {
+                        width: 100%;
+
+                    }
+                } 
+            }
+        }
+    }
+}

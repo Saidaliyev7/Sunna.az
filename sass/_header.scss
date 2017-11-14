@@ -1,0 +1,38 @@
+.header {
+background-color: $primarycolor;
+.headerLogo {
+    display: inline-block;
+    padding: 10px 0px;
+    p {
+        font-weight: 800;
+       font-size: 60pt;
+       color: $secondarycolor;
+       text-transform:uppercase;
+       margin: 0px;
+    }
+}
+.headerLogotxt {
+    display: inline-block;
+    padding: 10px 0px;
+    background-color: $secondarycolor;
+    p {
+        padding: 0px 10px;
+        font-weight: 800;
+        font-size: 60pt;
+        color:  $primarycolor;
+        text-transform:uppercase;
+        margin: 0px;
+     }
+}
+.headerText {
+    padding: 23px 0px;
+    .textContent {
+     color: $secondarycolor;
+     font-size: 16pt; 
+     margin: 0px;
+     font-style:italic;
+     font-weight: bold; 
+     
+    }
+}
+}

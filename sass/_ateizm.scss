@@ -1,0 +1,35 @@
+.ateizm {
+    background-color: white;
+    .ateizmMain {
+        margin: 0px 50px;
+        border: 2px solid $thirdcolor;
+    }
+    .contentHead {
+        p {
+            border: none;
+            background-color: white;
+            color: black;
+            &::before {
+                content: "";
+                border: none;
+            }
+        }
+    }
+    .rubrikaContentCategories {
+        margin: 50px;
+    }
+    .viewedContent {
+        ul {
+            list-style: none;
+            li {
+                margin: 10px 0px;
+                width: 100%;
+                .viewedContentImage {
+                    img {
+                        width: 100%;
+                    }
+                }
+            }
+        }
+    }
+}

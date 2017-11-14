@@ -1,0 +1,42 @@
+.tovhidnadi {
+    background-color: white;
+    .tovhidnadiMain {
+        margin: 0px 50px;
+        border: 2px solid $thirdcolor;
+    }
+    .contentHead {
+        p {
+            margin-left: 50px;
+            font-size: 20pt;
+            background-color: white;
+            color: black;
+            &::before {
+                border: none;
+            }
+        }
+    }
+    .rubrikaContentCategories {
+        p {
+            margin: 50px;
+            font-size: 16pt;
+        }
+    }
+    .viewedContent{
+        ul {
+            margin-top: 30px;
+              li {
+                  margin-bottom: 10px;
+                  padding: 10px 0px;
+                .viewedContentAbout {
+                    border-bottom: 2px solid black;
+                    a {
+                        font-size: 20px;
+                        text-decoration: none;
+                        color: black;
+                    }
+                }
+                 
+              }
+        }
+    }
+}
