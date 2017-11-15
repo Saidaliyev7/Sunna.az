@@ -12,7 +12,7 @@
             color: white;
             &::before {
                 top: 0px;
-                right: -29px;
+                right: -28px;
                 content: "";
                 position: absolute;
                 border-style: solid;
@@ -31,7 +31,7 @@
             text-transform: uppercase;
             &::before {
                 top: 0px;
-                left: -29px;
+                left: -28px;
                 content: "";
                 position: absolute;
                 border-style: solid;
@@ -70,6 +70,7 @@
     }
     .contentCategories {
         ul {
+            width: 100%;
             margin-right: 35px;
             padding-top: 20px;
             float: right;
@@ -92,6 +93,7 @@
                     .contentCategoriesName {
                         padding: 20px 50px;
                         display: inline-block;
+                        width: 70%;
                         a {
                             text-decoration: none;
                             color: black
@@ -99,7 +101,6 @@
                     }
                     .contentCategoriesNumber {
                         display: inline-block;
-                        margin-right: 50px;
                     }
                     .contentCategoriesIcon {
                         i {

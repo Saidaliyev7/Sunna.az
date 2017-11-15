@@ -5,6 +5,7 @@
         border: 2px solid $thirdcolor;
     }
     .contentHead {
+       
         p {
             margin-left: 50px;
             font-size: 20pt;
@@ -16,9 +17,29 @@
         }
     }
     .rubrikaContentCategories {
-        p {
-            margin: 50px;
-            font-size: 16pt;
+        .paragraph {
+            p {
+                margin: 50px;
+                font-size: 16pt;
+            }
+        }
+        
+        .socialLinks {
+            ul {
+                list-style: none ;
+                float: right;
+                li {
+                    padding: 0px 20px;
+                    display: inline-block;
+                    a {
+                        text-decoration: none;
+                        i {
+                            font-size: 16pt;
+                        }
+                    }
+                    
+                }
+            }
         }
     }
     .viewedContent{
