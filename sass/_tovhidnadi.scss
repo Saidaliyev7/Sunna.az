@@ -5,7 +5,6 @@
         border: 2px solid $thirdcolor;
     }
     .contentHead {
-       
         p {
             margin-left: 50px;
             font-size: 20pt;
@@ -23,10 +22,9 @@
                 font-size: 16pt;
             }
         }
-        
         .socialLinks {
             ul {
-                list-style: none ;
+                list-style: none;
                 float: right;
                 li {
                     padding: 0px 20px;
@@ -37,17 +35,16 @@
                             font-size: 16pt;
                         }
                     }
-                    
                 }
             }
         }
     }
-    .viewedContent{
+    .viewedContent {
         ul {
             margin-top: 30px;
-              li {
-                  margin-bottom: 10px;
-                  padding: 10px 0px;
+            li {
+                margin-bottom: 10px;
+                padding: 10px 0px;
                 .viewedContentAbout {
                     border-bottom: 2px solid black;
                     a {
@@ -56,8 +53,21 @@
                         color: black;
                     }
                 }
-                 
-              }
+            }
+        }
+    }
+}
+
+@media screen and (max-width:786px) {
+    .tovhidnadiMain {
+        margin: 0px !important;
+        .rubrikaContentCategories {
+            .paragraph {
+                p {
+                    margin: 16px;
+                    font-size: 12pt;
+                }
+            }
         }
     }
 }

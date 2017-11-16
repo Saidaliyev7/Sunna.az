@@ -75,3 +75,28 @@
         }
     }
 }
+
+
+
+@media screen and (max-width:786px) {
+    .photoMain {
+        margin: 0px !important;
+        .rubrikaContentCategories {
+            margin: 0px !important;
+            .additionalContentBody  {
+                ul {
+                    li {
+                        margin-bottom: 10px;
+                        display: block;
+                        width: 100% !important;
+                    }
+                }
+                 
+            }
+        }
+       
+
+    }
+
+   
+}

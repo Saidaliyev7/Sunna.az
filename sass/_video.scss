@@ -23,9 +23,7 @@
             }
         }
         .additionalContentBody {
-
-               padding: 20px 0px;
-
+            padding: 20px 0px;
         }
         .additionalContentType {
             a {
@@ -45,7 +43,6 @@
             }
         }
     }
-    
     .rubrikaContentCategories {
         margin: 50px;
     }
@@ -58,9 +55,22 @@
                 .viewedContentImage {
                     img {
                         width: 100%;
-
                     }
-                } 
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width:786px) {
+    .videoMain {
+        margin: 0px !important;
+        .rubrikaContentCategories {
+            margin: 0px !important;
+            .additionalContentBody {
+                .videoifrm {
+                    width: 100% !important;
+                }
             }
         }
     }

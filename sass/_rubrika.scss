@@ -130,3 +130,48 @@
         }
     }
 }
+
+@media screen and (max-width: 768px) {
+    .rubrikaContent {
+        .rubrikaForum {
+            &::after {
+                border: none !important;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1255px) {
+    .rubrikaContent {
+        p {
+            &::before {
+                border: none !important; 
+            }
+            &::after 
+            {
+                border: none !important;
+            }
+        }
+    }
+}
+
+@media screen and (max-width:786px) {
+    .rubrikaContentMain {
+        margin: 0px !important;
+        .rubrika {
+            .rubrikaContent {
+                width: 75% !important;
+              }
+        }
+    }
+   
+}
+@media screen and (max-width: 1187px) and (min-width: 768px) {
+    .rubrikaContentCategories {
+        ul {
+            li {
+                width: 49% !important;
+            }
+        }
+    }
+}

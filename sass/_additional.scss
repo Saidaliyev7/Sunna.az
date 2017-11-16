@@ -31,7 +31,6 @@
                 border-width: 0px 0px 51px 29px;
                 border-color: transparent transparent $primarycolor transparent;
             }
-            
         }
         &::before {
             width: 38%;
@@ -72,22 +71,22 @@
     .additionalContent {
         margin: 50px 50px 50px 20px;
         border-bottom: 2px solid $thirdcolor;
-        .additionalContentIcon{
-        display:inline-block;
-        i {
-            font-size: 22pt;
-            padding-right: 5px;
-        }
+        .additionalContentIcon {
+            display: inline-block;
+            i {
+                font-size: 22pt;
+                padding-right: 5px;
+            }
         }
         .additionalContentHead {
-            display:inline-block;
+            display: inline-block;
             p {
                 font-size: 16pt;
             }
         }
         .additionalContentForum {
             float: right;
-            display:inline-block;
+            display: inline-block;
             a {
                 text-decoration: none;
                 color: black;
@@ -97,7 +96,7 @@
         }
         .additionalContentForumIcon {
             float: right;
-            display:inline-block;
+            display: inline-block;
             i {
                 font-size: 22pt;
                 padding-left: 10px;
@@ -107,6 +106,9 @@
             padding: 50px 20px;
             p {
                 font-size: 16pt;
+            }
+            .video {
+                width: 400px;
             }
         }
         .additionalContentType {
@@ -133,28 +135,26 @@
     }
     .sendMessage {
         text-align: center;
-        padding:75px 0px;
-       .sendMessageButton {
-           display: inline-block;
-         a {
-            font-size:20pt;
-            padding: 10px 20px;
-            background-color: $thirdcolor;
-            text-decoration: none;
-            color: black;
-         }
-         
-       }
-       .sendMessageIcon {
-        display: inline-block;
-         i {
-            padding: 10px 20px;
-             font-size: 30pt
-         }
-     }
+        padding: 75px 0px;
+        .sendMessageButton {
+            display: inline-block;
+            a {
+                font-size: 20pt;
+                padding: 10px 20px;
+                background-color: $thirdcolor;
+                text-decoration: none;
+                color: black;
+            }
+        }
+        .sendMessageIcon {
+            display: inline-block;
+            i {
+                padding: 10px 20px;
+                font-size: 30pt
+            }
+        }
     }
     .viewed {
-        
         position: relative;
         color: white;
         padding: 15px 0px 15px 30px;
@@ -186,7 +186,7 @@
                         font-size: 20pt;
                     }
                 }
-                .viewedContentAbout { 
+                .viewedContentAbout {
                     display: inline-block;
                     a {
                         font-size: 20pt;
@@ -195,8 +195,39 @@
                     }
                 }
             }
-            
         }
-        
+    }
+}
+
+@media screen and (max-width: 702px) {
+    .additionalContentBody {
+        .video {
+            width: 100% !important;
+        }
+    }
+}
+
+@media screen and (max-width: 1004px) {
+    #responsiveViewedFirst {
+        &::after {
+            border-width: 0px 0px 92px 29px;
+        }
+    }
+}
+@media screen and (max-width: 983px) {
+    #responsiveViewedSecond {
+        &::after {
+            border-width: 0px 0px 92px 29px;
+        }
+    }
+}
+@media screen and (max-width: 767px) {
+    .viewed {
+        &::after {
+            border: none !important;
+        }
+    }
+    .message {
+        border: none !important;
     }
 }

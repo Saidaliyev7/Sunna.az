@@ -93,3 +93,20 @@
         }
     }
 }
+@media screen and (max-width:786px) {
+    .meqalelerMain {
+        margin: 0px !important;
+        .rubrikaContentCategories {
+            margin: 15px;
+            .additionalContentBody {
+                p {
+                    font-size: 13pt !important;
+                }
+                .videoifrm {
+                    width: 100% !important;
+                }
+            }
+            
+        }
+    }
+}

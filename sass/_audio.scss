@@ -18,7 +18,7 @@
         }
         .additionalContentForum {
             float: right;
-            display:inline-block;
+            display: inline-block;
             a {
                 text-decoration: none;
                 color: black;
@@ -27,7 +27,7 @@
         }
         .additionalContentForumIcon {
             float: right;
-            display:inline-block;
+            display: inline-block;
             i {
                 font-size: 22pt;
                 padding-left: 10px;
@@ -82,6 +82,20 @@
                     font-size: 20pt;
                     color: black;
                     text-decoration: underline;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width:786px) {
+    .audioMain {
+        margin: 0px !important;
+        .rubrikaContentCategories {
+            margin: 0px !important;
+            .additionalContentAudio {
+                audio {
+                    width: 100% !important;
                 }
             }
         }

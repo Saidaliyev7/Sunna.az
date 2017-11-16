@@ -87,3 +87,17 @@
         }
     }
 }
+
+@media screen and (max-width:786px) {
+    .audiorafiziMain {
+        margin: 0px !important;
+        .rubrikaContentCategories {
+            margin: 0px !important;
+            .additionalContentAudio {
+                audio {
+                    width: 100% !important;
+                }
+            }
+        }
+    }
+}

@@ -45,3 +45,16 @@
         }
     }
 }
+@media screen and (max-width:786px) {
+    .murcieMain {
+        margin: 0px !important;
+        .rubrikaContentCategories {
+            margin: 25px;
+                p {
+                    margin: 16px;
+                    font-size: 12pt;
+                }
+            
+        }
+    }
+}

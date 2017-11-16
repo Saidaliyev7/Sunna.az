@@ -33,3 +33,16 @@
         }
     }
 }
+@media screen and (max-width:786px) {
+    .ateizmMain {
+        margin: 0px !important;
+        .rubrikaContentCategories {
+            margin: 0px !important;
+
+                .videoifrm {
+                    width: 100% !important;
+                }
+            
+        }
+    }
+}

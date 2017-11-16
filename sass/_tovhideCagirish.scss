@@ -171,3 +171,33 @@
     }
     
 }
+@media screen and (max-width:786px) {
+    .tovhideCagirishMain {
+        margin: 0px !important;
+        
+    }
+}
+
+@media screen and (max-width:1271px) {
+    .tovhideCagirishMain {
+        .rubrikaContentCategories {
+            ul {
+                li {
+                    width: 49% !important;
+                }
+            }
+        }
+        }
+    
+}
+@media screen and (max-width:349px) {
+    .tovhideCagirishMain {
+        .rubrikaContentCategories {
+            ul {
+                li {
+                    width: 75% !important;
+                }
+            }
+        }
+        }
+}

@@ -91,9 +91,10 @@
                         background-color: $primarycolor;
                     }
                     .contentCategoriesName {
-                        padding: 20px 50px;
+                        padding: 20px 0px;
+                        text-align: center;
                         display: inline-block;
-                        width: 70%;
+                        width: 55%;
                         a {
                             text-decoration: none;
                             color: black
@@ -105,7 +106,7 @@
                     .contentCategoriesIcon {
                         i {
                             position: absolute;
-                            right: -11%;
+                            right: -7%;
                             top: -2%;
                             width: 65px;
                             height: 65px;
@@ -119,6 +120,25 @@
                         }
                     }
                 }
+            }
+        }
+    }
+}
+@media screen and (max-width: 992px) {
+    .contentCategoriesHead {
+        p {
+            &::before {
+                border: none !important;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 557px) {
+    .contentHead {
+        p {
+            &::before {
+                border: none !important;
             }
         }
     }

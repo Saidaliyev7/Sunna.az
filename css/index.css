@@ -41,15 +41,15 @@ body {
 .menu {
   padding: 10px 0px 15px; }
   .menu .menuSlogan {
-    padding: 15.6px 30px;
+    padding: 19.6px 30px;
     background-color: #d9edf7; }
     .menu .menuSlogan p {
-      font-size: 15pt; }
+      font-size: 11pt; }
   .menu .menuContent {
     background-color: #aae1fa; }
     .menu .menuContent .menuitems {
       display: inline-block;
-      padding: 14.6px 0px;
+      padding: 18.2px 0px;
       position: relative; }
       .menu .menuContent .menuitems::after {
         content: "";
@@ -66,27 +66,36 @@ body {
           display: inline-block;
           padding: 0px 18px; }
           .menu .menuContent .menuitems ul li a {
-            font-size: 16pt;
+            font-size: 11pt;
             color: black;
             text-decoration: none; }
     .menu .menuContent .menuInput {
+      padding: 2px 0px;
       margin-left: 30px;
       position: relative;
+      display: inline-block;
       display: inline-block; }
       .menu .menuContent .menuInput::after {
         content: "";
         position: absolute;
         left: -24px;
-        top: 0px;
+        top: 2px;
         border-style: solid;
-        border-width: 0px 0 34.6px 25px;
+        border-width: 0px 0 35px 25px;
         border-color: transparent transparent white transparent; }
+      .menu .menuContent .menuInput i {
+        position: absolute;
+        top: 18%;
+        right: 0%; }
       .menu .menuContent .menuInput input {
         width: 200px;
         height: 35px;
-        border: none; }
+        border: none;
+        padding-right: 40px; }
         .menu .menuContent .menuInput input::placeholder {
           text-align: right;
+          color: black;
+          font-weight: bold;
           padding-left: 20px; }
         .menu .menuContent .menuInput input:focus {
           outline: none; }
@@ -167,9 +176,10 @@ body {
           top: 0px;
           background-color: #2d6c93; }
         .content .contentCategories ul li .contentCategoriesAll .contentCategoriesName {
-          padding: 20px 50px;
+          padding: 20px 0px;
+          text-align: center;
           display: inline-block;
-          width: 70%; }
+          width: 55%; }
           .content .contentCategories ul li .contentCategoriesAll .contentCategoriesName a {
             text-decoration: none;
             color: black; }
@@ -177,7 +187,7 @@ body {
           display: inline-block; }
         .content .contentCategories ul li .contentCategoriesAll .contentCategoriesIcon i {
           position: absolute;
-          right: -11%;
+          right: -7%;
           top: -2%;
           width: 65px;
           height: 65px;
@@ -189,6 +199,12 @@ body {
           color: #4da6ff;
           font-size: 25px; }
 
+@media screen and (max-width: 992px) {
+  .contentCategoriesHead p::before {
+    border: none !important; } }
+@media screen and (max-width: 557px) {
+  .contentHead p::before {
+    border: none !important; } }
 .additional {
   padding: 20px 0px;
   position: relative;
@@ -281,6 +297,8 @@ body {
       padding: 50px 20px; }
       .additional .additionalContent .additionalContentBody p {
         font-size: 16pt; }
+      .additional .additionalContent .additionalContentBody .video {
+        width: 400px; }
     .additional .additionalContent .additionalContentType ul {
       list-style: none; }
       .additional .additionalContent .additionalContentType ul li {
@@ -344,6 +362,21 @@ body {
           color: black;
           text-decoration: underline; }
 
+@media screen and (max-width: 702px) {
+  .additionalContentBody .video {
+    width: 100% !important; } }
+@media screen and (max-width: 1004px) {
+  #responsiveViewedFirst::after {
+    border-width: 0px 0px 92px 29px; } }
+@media screen and (max-width: 983px) {
+  #responsiveViewedSecond::after {
+    border-width: 0px 0px 92px 29px; } }
+@media screen and (max-width: 767px) {
+  .viewed::after {
+    border: none !important; }
+
+  .message {
+    border: none !important; } }
 .rubrikaContent {
   background-color: white; }
   .rubrikaContent .rubrikaContentMain {
@@ -450,6 +483,22 @@ body {
       text-decoration: none;
       color: black; }
 
+@media screen and (max-width: 768px) {
+  .rubrikaContent .rubrikaForum::after {
+    border: none !important; } }
+@media screen and (max-width: 1255px) {
+  .rubrikaContent p::before {
+    border: none !important; }
+  .rubrikaContent p::after {
+    border: none !important; } }
+@media screen and (max-width: 786px) {
+  .rubrikaContentMain {
+    margin: 0px !important; }
+    .rubrikaContentMain .rubrika .rubrikaContent {
+      width: 75% !important; } }
+@media screen and (max-width: 1187px) and (min-width: 768px) {
+  .rubrikaContentCategories ul li {
+    width: 49% !important; } }
 .tovhideCagirish {
   background-color: white; }
   .tovhideCagirish .tovhideCagirishMain {
@@ -574,6 +623,15 @@ body {
 .contentCategoriesHead p {
   z-index: 100; }
 
+@media screen and (max-width: 786px) {
+  .tovhideCagirishMain {
+    margin: 0px !important; } }
+@media screen and (max-width: 1271px) {
+  .tovhideCagirishMain .rubrikaContentCategories ul li {
+    width: 49% !important; } }
+@media screen and (max-width: 349px) {
+  .tovhideCagirishMain .rubrikaContentCategories ul li {
+    width: 75% !important; } }
 .tovhidnadi {
   background-color: white; }
   .tovhidnadi .tovhidnadiMain {
@@ -611,6 +669,12 @@ body {
           text-decoration: none;
           color: black; }
 
+@media screen and (max-width: 786px) {
+  .tovhidnadiMain {
+    margin: 0px !important; }
+    .tovhidnadiMain .rubrikaContentCategories .paragraph p {
+      margin: 16px;
+      font-size: 12pt; } }
 .meqaleler {
   background-color: white; }
   .meqaleler .meqalelerMain {
@@ -676,6 +740,15 @@ body {
           color: black;
           text-decoration: underline; }
 
+@media screen and (max-width: 786px) {
+  .meqalelerMain {
+    margin: 0px !important; }
+    .meqalelerMain .rubrikaContentCategories {
+      margin: 15px; }
+      .meqalelerMain .rubrikaContentCategories .additionalContentBody p {
+        font-size: 13pt !important; }
+      .meqalelerMain .rubrikaContentCategories .additionalContentBody .videoifrm {
+        width: 100% !important; } }
 .kitablar {
   background-color: white; }
   .kitablar .kitablarMain {
@@ -731,6 +804,9 @@ body {
             color: black;
             text-decoration: none; }
 
+@media screen and (max-width: 786px) {
+  .kitablarMain {
+    margin: 0px !important; } }
 .ideologiya {
   background-color: white; }
   .ideologiya .ideologiyaMain {
@@ -762,6 +838,9 @@ body {
             color: black;
             text-decoration: none; }
 
+@media screen and (max-width: 786px) {
+  .ideologiyaMain {
+    margin: 0px !important; } }
 .murcie {
   background-color: white; }
   .murcie .murcieMain {
@@ -794,6 +873,14 @@ body {
             color: black;
             text-decoration: none; }
 
+@media screen and (max-width: 786px) {
+  .murcieMain {
+    margin: 0px !important; }
+    .murcieMain .rubrikaContentCategories {
+      margin: 25px; }
+      .murcieMain .rubrikaContentCategories p {
+        margin: 16px;
+        font-size: 12pt; } }
 .photo {
   background-color: white; }
   .photo .photoMain {
@@ -842,6 +929,15 @@ body {
       .photo .viewedContent ul li .viewedContentImage img {
         width: 100%; }
 
+@media screen and (max-width: 786px) {
+  .photoMain {
+    margin: 0px !important; }
+    .photoMain .rubrikaContentCategories {
+      margin: 0px !important; }
+      .photoMain .rubrikaContentCategories .additionalContentBody ul li {
+        margin-bottom: 10px;
+        display: block;
+        width: 100% !important; } }
 .ovliyaliq {
   background-color: white; }
   .ovliyaliq .ovliyaliqMain {
@@ -866,6 +962,9 @@ body {
       .ovliyaliq .viewedContent ul li .viewedContentImage img {
         width: 100%; }
 
+@media screen and (max-width: 786px) {
+  .ovliyaliqMain {
+    margin: 0px !important; } }
 .video {
   background-color: white; }
   .video .videoMain {
@@ -908,6 +1007,13 @@ body {
       .video .viewedContent ul li .viewedContentImage img {
         width: 100%; }
 
+@media screen and (max-width: 786px) {
+  .videoMain {
+    margin: 0px !important; }
+    .videoMain .rubrikaContentCategories {
+      margin: 0px !important; }
+      .videoMain .rubrikaContentCategories .additionalContentBody .videoifrm {
+        width: 100% !important; } }
 .ateizm {
   background-color: white; }
   .ateizm .ateizmMain {
@@ -930,6 +1036,13 @@ body {
       .ateizm .viewedContent ul li .viewedContentImage img {
         width: 100%; }
 
+@media screen and (max-width: 786px) {
+  .ateizmMain {
+    margin: 0px !important; }
+    .ateizmMain .rubrikaContentCategories {
+      margin: 0px !important; }
+      .ateizmMain .rubrikaContentCategories .videoifrm {
+        width: 100% !important; } }
 .audio {
   background-color: white; }
   .audio .audioMain {
@@ -993,6 +1106,13 @@ body {
       color: black;
       text-decoration: underline; }
 
+@media screen and (max-width: 786px) {
+  .audioMain {
+    margin: 0px !important; }
+    .audioMain .rubrikaContentCategories {
+      margin: 0px !important; }
+      .audioMain .rubrikaContentCategories .additionalContentAudio audio {
+        width: 100% !important; } }
 .audiorafizi {
   background-color: white; }
   .audiorafizi .audiorafiziMain {
@@ -1056,6 +1176,13 @@ body {
       color: black;
       text-decoration: underline; }
 
+@media screen and (max-width: 786px) {
+  .audiorafiziMain {
+    margin: 0px !important; }
+    .audiorafiziMain .rubrikaContentCategories {
+      margin: 0px !important; }
+      .audiorafiziMain .rubrikaContentCategories .additionalContentAudio audio {
+        width: 100% !important; } }
 .sualcavab {
   background-color: white; }
   .sualcavab .sualcavabMain {
@@ -1143,6 +1270,14 @@ body {
             color: black;
             text-decoration: none; }
 
+@media screen and (max-width: 786px) {
+  .sualcavabMain {
+    margin: 0px !important; }
+    .sualcavabMain .rubrikaContentCategories {
+      margin: 25px; }
+      .sualcavabMain .rubrikaContentCategories p {
+        margin: 16px;
+        font-size: 12pt; } }
 .page18 {
   background-color: white; }
   .page18 .page18Main {
@@ -1248,5 +1383,9 @@ body {
       background-color: #aae1fa;
       text-decoration: none;
       color: black; }
+
+@media screen and (max-width: 786px) {
+  .page18Main {
+    margin: 0px !important; } }
 
 /*# sourceMappingURL=index.css.map */
