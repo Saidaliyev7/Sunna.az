@@ -1,0 +1,107 @@
+.conversationContent {
+    margin: 20px;
+    border-bottom: 2px solid $thirdcolor;
+    .conversationContentIcon {
+        text-align: center;
+        font-size: 80pt;
+        i {
+            color: $primarycolor;
+        }
+    }
+    .conversationContentIconName {
+        text-align: center;
+        margin-top: 10px;
+    }
+    .rubrikaContent {
+        display: inline-block;
+        width: 100%;
+        p {
+            font-size: 11pt;
+            display: inline-block;
+            width: 100%;
+            padding: 16px 0px 15px 25px;
+            text-transform: uppercase;
+            background-color: $thirdcolor;
+            position: relative;
+            color: black;
+            &::after {
+                top: 0px;
+                right: -29px;
+                content: "";
+                position: absolute;
+                border-style: solid;
+                border-width: 52px 29px 0 0px;
+                border-color: $thirdcolor transparent transparent transparent;
+            }
+            &::before {
+                top: 0px;
+                left: -29px;
+                content: "";
+                position: absolute;
+                border-style: solid;
+                border-width: 0px 0px 52.5px 29px;
+                border-color: transparent transparent $thirdcolor transparent;
+            }
+        }
+    }
+    .rubrikaContext {
+        line-height: 100px;
+        font-size: 16pt;
+    }
+    .conversationContentIcons {
+        margin: 30px 0px;
+        ul {
+            list-style: none;
+            li {
+                padding: 0px 5px;
+                display: inline-block;
+                i {
+                    font-size: 13pt;
+                    color: #4da6ff;
+                }
+            }
+        }
+    }
+    .rubrikaCategoriesName {
+        margin: 50px 0px;
+        text-align: center;
+        border: 1px solid #4da6ff;
+        position: relative;
+        border-radius: 3px;
+        &::after {
+            position: absolute;
+            content: "";
+            width: 100%;
+            height: 3px;
+            background-color: #4da6ff;
+            top: -1px;
+            left: 0px;
+        }
+        a {
+            font-style: italic;
+            text-decoration: none;
+            color: black;
+        }
+    }
+    .shared {
+        p {
+            width: 90% !important;
+            &::after {
+                border: none;
+                content: "";
+            }
+            &::before {
+                content: "";
+                border: none;
+            }
+        }
+    }
+    .sharedcontext {
+        font-size: 13pt;
+        line-height: 22px;
+        margin-top: 20px;
+    }
+    .sharedIcon {
+        text-align: right;
+    }
+}

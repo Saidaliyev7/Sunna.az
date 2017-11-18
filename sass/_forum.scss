@@ -1,6 +1,6 @@
-.page18 {
+.forum {
     background-color: white;
-    .page18Main {
+    .forumMain {
         margin: 10px 50px;
         border: 2px solid $thirdcolor;
     }
@@ -153,9 +153,11 @@
 }
 
 @media screen and (max-width:786px) {
-    .page18Main {
+    .forumMain{
         margin: 0px !important;
-    
+        .rubrikaContent {
+            width: 80% !important;
+        }
     }
    
 }

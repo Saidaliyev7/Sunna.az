@@ -107,15 +107,18 @@
 }
 
 @media screen and (max-width:786px) {
-    .audoi2Main {
+    .audio2Main {
         margin: 0px !important;
         .rubrikaContentCategories {
             margin: 0px !important;
             .additionalContentAudio {
                 audio {
                     width: 100% !important;
-                }
+                }    
             }
+        }
+        .additionalContent {
+            padding: 50px 0px 10px 20px;
         }
     }
 }

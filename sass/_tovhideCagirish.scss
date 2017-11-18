@@ -192,6 +192,7 @@
 @media screen and (max-width:786px) {
     .tovhideCagirishMain {
         margin: 0px !important;
+        
     }
 }
 
@@ -199,6 +200,9 @@
     .tovhideCagirishMain {
         .rubrikaContentCategories {
             ul {
+                 
+            padding-left: 0px !important;
+            
                 li {
                     width: 49% !important;
                 

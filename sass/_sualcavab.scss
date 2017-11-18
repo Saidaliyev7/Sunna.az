@@ -127,3 +127,20 @@
         }
     }
 }
+@media screen and (max-width:991px) {
+    .sualcavab {
+       .rubrikaForum {
+           
+               &::after {
+                   border: none !important;
+               }
+           
+       }
+       .message {
+        &::after {
+            border: none !important;
+        }
+       }
+       
+    }
+}

@@ -1,4 +1,4 @@
-.page16 {
+.forum2 {
     .rubrikaContent {
         padding: 0px 2px;
     }
@@ -9,9 +9,9 @@
         border-right: none;
         .rubrikaParagraphHead {
             padding: 20px 10px;
-         p {
-             font-size: 20pt;
-         }
+            p {
+                font-size: 20pt;
+            }
         }
         .rubrikaParagraphBody {
             font-size: 16pt;
@@ -28,15 +28,13 @@
                 padding: 4px;
                 background-color: $thirdcolor;
             }
-            
         }
-        
     }
     .viewedContent {
         margin-bottom: 20px;
         ul {
             li {
-               border-bottom: 2px solid black;
+                border-bottom: 2px solid black;
                 margin: 10px 0px;
                 width: 100%;
                 a {
@@ -45,6 +43,14 @@
                     text-decoration: none;
                 }
             }
+        }
+    }
+}
+
+@media screen and (max-width:786px) {
+    .forum2 {
+        .rubrikaContent {
+            width: 80% !important;
         }
     }
 }

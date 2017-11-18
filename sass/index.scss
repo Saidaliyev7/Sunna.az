@@ -14,6 +14,7 @@ body {
 }
 
 .showAll {
+    margin: 10px;
     a {
         font-style: italic;
         position: relative;
@@ -161,6 +162,43 @@ body {
      color: $primarycolor;
     }
 }
+.sendQuestion {
+    list-style: none;
+    padding-left: 50px;
+    li {
+        margin-top: 15px;
+        display: inline-block;
+        a {
+            font-size: 16pt;
+            padding: 10px 30px;
+            text-decoration: none;
+           
+        }
+        select {
+            padding:  10px 20px;
+        }
+        .answerQuestion {
+            background-color: $thirdcolor;
+            color:white;
+            transition: 0.4s ease;
+            &:hover {
+                transition: 0.4s ease;
+                background-color: $primarycolor;
+            }
+        }
+        .sendQuestion {
+            background-color: $primarycolor;
+            color:white;
+            transition: 0.4s ease;
+            &:hover {
+                transition: 0.4s ease;
+                background-color: $thirdcolor;
+            }
+        }
+    }
+}
+
+
 @import 'header';
 @import 'menu';
 @import 'content';
@@ -179,5 +217,6 @@ body {
 @import 'audio';
 @import 'audio2';
 @import 'sualcavab';
-@import 'page18';
-@import 'page16';
+@import 'forum';
+@import 'forum2';
+@import 'conversation';

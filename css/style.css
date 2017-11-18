@@ -48,7 +48,7 @@ p {
     padding: 15px 0px;
     transition-delay: 0.4s;
 }
-.menuInputresponsive {
-    display: block !important;
+#menuInputresponsive {
+    display: inline-block !important;
     transition-delay: 0.4s;
 }
