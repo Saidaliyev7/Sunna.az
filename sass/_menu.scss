@@ -5,38 +5,37 @@
         background-color: $secondarycolor;
         p {
             font-size: 11pt;
-           
         }
     }
     .menuContent {
         background-color: $thirdcolor;
+        padding: 11.2px 0px;
+        &::after {
+            content: "";
+            position: absolute;
+            left: -34px;
+            top: 0px;
+            border-style: solid;
+            border-width: 0px 0 61px 35px;
+            border-color: transparent transparent $thirdcolor transparent;
+        }
         .menuitems {
             display: inline-block;
-            padding: 18.2px 0px;
             position: relative;
-            &::after {
-                content: "";
-                position: absolute;
-                left: -34px;
-                top: 0px;
-                border-style: solid;
-                border-width: 0px 0 61px 35px;
-                border-color: transparent transparent $thirdcolor transparent;
+            ul {
+                padding: 0px;
+                list-style: none;
+                margin: 0px;
+                li {
+                    display: inline-block;
+                    padding: 0px 18px;
+                    a {
+                        font-size: 11pt;
+                        color: black;
+                        text-decoration: none;
+                    }
+                }
             }
-         ul {
-             list-style: none; 
-             margin: 0px;
-             li {
-                 display: inline-block;
-                 padding: 0px 18px;
-                 a {
-                    font-size: 11pt;
-                    
-                     color: black;
-                     text-decoration: none;
-                 }
-             }
-         }
         }
         .menuInput {
             padding: 2px 0px;
@@ -52,7 +51,6 @@
                 border-width: 0px 0 35px 25px;
                 border-color: transparent transparent white transparent;
             }
-            display: inline-block;
             i {
                 position: absolute;
                 top: 18%;
@@ -62,19 +60,50 @@
                 width: 200px;
                 height: 35px;
                 border: none;
-                padding-right: 40px;
-                
-                
+                padding-right: 22px;
                 &::placeholder {
-                  text-align: right;
-                  color: black;
-                  font-weight: bold;
-                  padding-left: 20px;
+                    text-align: right;
+                    color: black;
+                    font-weight: bold;
+                    padding-left: 20px;
                 }
                 &:focus {
                     outline: none;
                 }
             }
+        }
+    }
+}
+
+@media screen and (max-width:1120px) {
+    .menuSlogan {
+        padding: 31.8px 10px !important;
+    }
+    .menuContent {
+        &::after {
+            border-width: 0px 0 85.5px 35px !important;
+        }
+    }
+}
+
+@media screen and (max-width:991px) {
+    .menuSlogan {
+        text-align: center;
+    }
+    .menuContent {
+        .menuitems {
+            display: block !important;
+            text-align: right;
+            .fa-align-justify {
+                display: block;
+                margin: 11px;
+            }
+            ul {
+                display: none;
+            }
+        }
+        .menuInput {
+            display: none !important;
         }
     }
 }

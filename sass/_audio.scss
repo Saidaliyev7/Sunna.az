@@ -76,12 +76,13 @@
     .viewedContent {
         ul {
             li {
+                border-bottom: 2px solid black;
                 margin: 10px 0px;
                 width: 100%;
                 a {
                     font-size: 20pt;
                     color: black;
-                    text-decoration: underline;
+                    text-decoration: none;
                 }
             }
         }

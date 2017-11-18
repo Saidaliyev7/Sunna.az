@@ -1,21 +1,166 @@
 $primarycolor:#2d6c93;
 $secondarycolor:#d9edf7;
 $thirdcolor:#aae1fa;
-
-
 @font-face {
-font-family: 'Calibri';
-src: url('../font/Calibri.eot');
-src: url('../font/Calibri.eot?#iefix') format('embedded-opentype'),
-    url('../font/Calibri.woff') format('woff'),
-    url('../font/Calibri.ttf') format('truetype');
-font-weight: normal;
-font-style: normal;
+    font-family: 'Calibri';
+    src: url('../font/Calibri.eot');
+    src: url('../font/Calibri.eot?#iefix') format('embedded-opentype'), url('../font/Calibri.woff') format('woff'), url('../font/Calibri.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
 }
+
 body {
     font-family: 'Calibri';
 }
 
+.showAll {
+    a {
+        font-style: italic;
+        position: relative;
+        padding: 4px 4px 4px 10px;
+        margin: 0px 20px;
+        color: black;
+        text-decoration: none;
+        background-color: $thirdcolor;
+        &::before {
+            top: 0px;
+            right: -19px;
+            content: "";
+            position: absolute;
+            border-style: solid;
+            border-width: 27px 19px 0 0px;
+            border-color: #aae1fa transparent transparent transparent;
+        }
+        &::after {
+            top: 0px;
+            left: -16px;
+            font-family: FontAwesome;
+            content: "\f067";
+            width: 23px;
+            height: 27px;
+            position: absolute;
+            line-height: 31px;
+            font-size: 15px;
+            background-color: white;
+            border: 1px solid white;
+            border-radius: 50%;
+        }
+    }
+}
+
+.social {
+    margin-top: 50px;
+    .socialAbout {
+        display: inline-block;
+        ul {
+            list-style: none;
+            text-align: right;
+            li {
+                padding: 0px 10px;
+                display: inline-block;
+                a {
+                    color: white;
+                    text-decoration: none;
+                    img {
+                        width: 50px;
+                    }
+                    i {
+                        width: 50px;
+                        height: 50px;
+                        line-height: 50px;
+                        text-align: center;
+                        border-radius: 50%;
+                        border: 1px solid;
+                        text-align: center;
+                    }
+                }
+            }
+        }
+    }
+    .socialLinks {
+        display: inline-block;
+        margin-left: 100px;
+        ul {
+            list-style: none;
+            text-align: right;
+            li {
+                padding: 0px 10px;
+                display: inline-block;
+                a {
+                    color: white;
+                    text-decoration: none;
+                    i {
+                        width: 50px;
+                        height: 50px;
+                        line-height: 50px;
+                        text-align: center;
+                        border-radius: 50%;
+                        border: 1px solid;
+                    }
+                }
+            }
+        }
+    }
+}
+.fa-exclamation {
+    background-color: #9acfe1;
+    border-color: #9acfe1;
+}
+
+.questionlink {
+    background-color: #e64a34;
+    border-color: #e64a34; 
+}
+
+.fa-google-plus {
+    background-color: #a82f1c;
+    border-color: #a82f1c;
+}
+
+.fa-facebook {
+    background-color: #464e7d;
+    border-color: #464e7d;
+}
+
+.fa-twitter {
+    background-color: #3a789d;
+    border-color: #3a789d;
+}
+
+.fa-instagram {
+    background-color: #7022b6;
+    border-color: #7022b6;
+}
+
+.fa-whatsapp {
+    background-color: #4f8807;
+    border-color: #4f8807;
+}
+
+.fa-telegram {
+    background-color: #77a6d4;
+    border-color: #77a6d4;
+}
+.breadcrumb {
+     padding-left: 65px; 
+    margin-bottom: 0px;
+    list-style: none;
+    background-color:white;
+    border: none;
+ 
+}
+.breadcrumb-item + .breadcrumb-item{
+    &::before {
+        content: ">"  !important;
+    }
+
+}
+.breadcrumb-item {
+    a {
+        text-transform: uppercase;
+     color: $primarycolor;
+    }
+}
 @import 'header';
 @import 'menu';
 @import 'content';
@@ -23,15 +168,16 @@ body {
 @import 'rubrika';
 @import 'tovhideCagirish';
 @import 'tovhidnadi';
-@import 'meqaleler';
-@import 'kitablar';
+@import 'articles';
+@import 'books';
 @import 'ideologiya';
 @import 'murcie';
 @import 'photo';
-@import 'ovliyaliq';
+@import 'photo2';
 @import 'video';
-@import 'ateizm';
+@import 'video2';
 @import 'audio';
-@import 'audiorafizi';
+@import 'audio2';
 @import 'sualcavab';
 @import 'page18';
+@import 'page16';

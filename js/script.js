@@ -6,4 +6,14 @@ $(document).ready(function () {
         }, 800);
         return false;
     });
+$(".fa-align-justify").click(function() {
+
+$(".menuitems ul").toggleClass("menuresponsiv");
+
+$(".menuitems ul li").toggleClass("menuResponsivLi");
+$(".menuInput").toggleClass("menuInputresponsive")
+
+})
+
+
 });

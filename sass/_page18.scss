@@ -9,6 +9,7 @@
     }
     .rubrika {
         padding: 20px 0px;
+        border-bottom: 2px solid $thirdcolor;
         .rubrikaContent {
             display: inline-block;
             width: 50%;
@@ -49,10 +50,31 @@
             float: right;
             a {
                 line-height: 50px;
-                text-decoration: none;
-                color: black;
                 font-style: italic;
-                font-size: 16pt;
+                position: relative;
+                padding: 4px 4px 4px 10px;
+                margin: 0px 20px;
+                color: black;
+                text-decoration: none;
+                background-color: $thirdcolor;
+                &::after {
+                    top: 0px;
+                    right: -19px;
+                    content: "";
+                    position: absolute;
+                    border-style: solid;
+                    border-width: 27px 19px 0 0px;
+                    border-color: $thirdcolor transparent transparent transparent;
+                }
+                &::before {
+                    top: 0px;
+                    left: -16px;
+                    content: "";
+                    position: absolute;
+                    border-style: solid;
+                    border-width: 0px 0px 27.5px 17px;
+                    border-color: transparent transparent $thirdcolor transparent;
+                }
             }
         }
     }

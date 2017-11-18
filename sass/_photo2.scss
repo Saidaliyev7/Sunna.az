@@ -1,22 +1,45 @@
-.ateizm {
+.photo2 {
     background-color: white;
-    .ateizmMain {
+    .photo2Main {
         margin: 0px 50px;
         border: 2px solid $thirdcolor;
     }
     .contentHead {
         p {
-            border: none;
+            margin-left: 50px;
+            font-size: 20pt;
             background-color: white;
             color: black;
             &::before {
-                content: "";
                 border: none;
             }
         }
     }
     .rubrikaContentCategories {
-        margin: 50px;
+margin: 15px;
+.rubrikaContentCategoriesImage {
+    img {
+        width: 100%
+    }
+}
+.socialLinks {
+    margin-top: 50px;
+    ul {
+        
+        list-style: none;
+        text-align: right;
+        li {
+            padding: 0px 20px;
+            display: inline-block;
+            a {
+                text-decoration: none;
+                i {
+                    font-size: 16pt;
+                }
+            }
+        }
+    }
+}
     }
     .viewedContent {
         ul {
@@ -27,22 +50,15 @@
                 .viewedContentImage {
                     img {
                         width: 100%;
+
                     }
-                }
+                } 
             }
         }
     }
 }
 @media screen and (max-width:786px) {
-    .ateizmMain {
+    .photo2Main{
         margin: 0px !important;
-        .rubrikaContentCategories {
-            margin: 0px !important;
-
-                .videoifrm {
-                    width: 100% !important;
-                }
-            
-        }
-    }
+    }  
 }

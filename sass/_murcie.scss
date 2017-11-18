@@ -1,7 +1,7 @@
 .murcie {
     background-color: white;
     .murcieMain {
-        margin: 0px 50px;
+        margin: 0px 25px;
         border: 2px solid $thirdcolor;
     }
     .contentHead {
@@ -19,13 +19,30 @@
   
     }
     .rubrikaContentCategories {
-        margin: 50px;
+        margin: 25px;
         p {
             margin: 20px;
             font-size: 16pt;
         }
         
-
+        .socialLinks {
+            margin-top: 50px;
+            ul {
+                
+                list-style: none;
+                text-align: right;
+                li {
+                    padding: 0px 20px;
+                    display: inline-block;
+                    a {
+                        text-decoration: none;
+                        i {
+                            font-size: 16pt;
+                        }
+                    }
+                }
+            }
+        }
     }
     .viewedContent {
         padding-left: 20px;

@@ -7,6 +7,125 @@
 body {
   font-family: 'Calibri'; }
 
+.showAll a {
+  font-style: italic;
+  position: relative;
+  padding: 4px 4px 4px 10px;
+  margin: 0px 20px;
+  color: black;
+  text-decoration: none;
+  background-color: #aae1fa; }
+  .showAll a::before {
+    top: 0px;
+    right: -19px;
+    content: "";
+    position: absolute;
+    border-style: solid;
+    border-width: 27px 19px 0 0px;
+    border-color: #aae1fa transparent transparent transparent; }
+  .showAll a::after {
+    top: 0px;
+    left: -16px;
+    font-family: FontAwesome;
+    content: "\f067";
+    width: 23px;
+    height: 27px;
+    position: absolute;
+    line-height: 31px;
+    font-size: 15px;
+    background-color: white;
+    border: 1px solid white;
+    border-radius: 50%; }
+
+.social {
+  margin-top: 50px; }
+  .social .socialAbout {
+    display: inline-block; }
+    .social .socialAbout ul {
+      list-style: none;
+      text-align: right; }
+      .social .socialAbout ul li {
+        padding: 0px 10px;
+        display: inline-block; }
+        .social .socialAbout ul li a {
+          color: white;
+          text-decoration: none; }
+          .social .socialAbout ul li a img {
+            width: 50px; }
+          .social .socialAbout ul li a i {
+            width: 50px;
+            height: 50px;
+            line-height: 50px;
+            text-align: center;
+            border-radius: 50%;
+            border: 1px solid;
+            text-align: center; }
+  .social .socialLinks {
+    display: inline-block;
+    margin-left: 100px; }
+    .social .socialLinks ul {
+      list-style: none;
+      text-align: right; }
+      .social .socialLinks ul li {
+        padding: 0px 10px;
+        display: inline-block; }
+        .social .socialLinks ul li a {
+          color: white;
+          text-decoration: none; }
+          .social .socialLinks ul li a i {
+            width: 50px;
+            height: 50px;
+            line-height: 50px;
+            text-align: center;
+            border-radius: 50%;
+            border: 1px solid; }
+
+.fa-exclamation {
+  background-color: #9acfe1;
+  border-color: #9acfe1; }
+
+.questionlink {
+  background-color: #e64a34;
+  border-color: #e64a34; }
+
+.fa-google-plus {
+  background-color: #a82f1c;
+  border-color: #a82f1c; }
+
+.fa-facebook {
+  background-color: #464e7d;
+  border-color: #464e7d; }
+
+.fa-twitter {
+  background-color: #3a789d;
+  border-color: #3a789d; }
+
+.fa-instagram {
+  background-color: #7022b6;
+  border-color: #7022b6; }
+
+.fa-whatsapp {
+  background-color: #4f8807;
+  border-color: #4f8807; }
+
+.fa-telegram {
+  background-color: #77a6d4;
+  border-color: #77a6d4; }
+
+.breadcrumb {
+  padding-left: 65px;
+  margin-bottom: 0px;
+  list-style: none;
+  background-color: white;
+  border: none; }
+
+.breadcrumb-item + .breadcrumb-item::before {
+  content: ">"  !important; }
+
+.breadcrumb-item a {
+  text-transform: uppercase;
+  color: #2d6c93; }
+
 .header {
   background-color: #2d6c93; }
   .header .headerLogo {
@@ -38,6 +157,19 @@ body {
       font-style: italic;
       font-weight: bold; }
 
+@media screen and (max-width: 767px) {
+  .header {
+    text-align: center; }
+    .header div.headerLogo {
+      text-align: center; }
+      .header div.headerLogo p {
+        font-size: 30pt !important; }
+    .header div.headerLogotxt p {
+      font-size: 30pt !important; }
+    .header div.headerText {
+      text-align: center; }
+      .header div.headerText div.textContent {
+        font-size: 11pt !important; } }
 .menu {
   padding: 10px 0px 15px; }
   .menu .menuSlogan {
@@ -46,20 +178,21 @@ body {
     .menu .menuSlogan p {
       font-size: 11pt; }
   .menu .menuContent {
-    background-color: #aae1fa; }
+    background-color: #aae1fa;
+    padding: 11.2px 0px; }
+    .menu .menuContent::after {
+      content: "";
+      position: absolute;
+      left: -34px;
+      top: 0px;
+      border-style: solid;
+      border-width: 0px 0 61px 35px;
+      border-color: transparent transparent #aae1fa transparent; }
     .menu .menuContent .menuitems {
       display: inline-block;
-      padding: 18.2px 0px;
       position: relative; }
-      .menu .menuContent .menuitems::after {
-        content: "";
-        position: absolute;
-        left: -34px;
-        top: 0px;
-        border-style: solid;
-        border-width: 0px 0 61px 35px;
-        border-color: transparent transparent #aae1fa transparent; }
       .menu .menuContent .menuitems ul {
+        padding: 0px;
         list-style: none;
         margin: 0px; }
         .menu .menuContent .menuitems ul li {
@@ -73,7 +206,6 @@ body {
       padding: 2px 0px;
       margin-left: 30px;
       position: relative;
-      display: inline-block;
       display: inline-block; }
       .menu .menuContent .menuInput::after {
         content: "";
@@ -91,7 +223,7 @@ body {
         width: 200px;
         height: 35px;
         border: none;
-        padding-right: 40px; }
+        padding-right: 22px; }
         .menu .menuContent .menuInput input::placeholder {
           text-align: right;
           color: black;
@@ -100,6 +232,26 @@ body {
         .menu .menuContent .menuInput input:focus {
           outline: none; }
 
+@media screen and (max-width: 1120px) {
+  .menuSlogan {
+    padding: 31.8px 10px !important; }
+
+  .menuContent::after {
+    border-width: 0px 0 85.5px 35px !important; } }
+@media screen and (max-width: 991px) {
+  .menuSlogan {
+    text-align: center; }
+
+  .menuContent .menuitems {
+    display: block !important;
+    text-align: right; }
+    .menuContent .menuitems .fa-align-justify {
+      display: block;
+      margin: 11px; }
+    .menuContent .menuitems ul {
+      display: none; }
+  .menuContent .menuInput {
+    display: none !important; } }
 .content {
   background-color: #d9edf7;
   padding: 20px 0px; }
@@ -132,7 +284,7 @@ body {
       content: "";
       position: absolute;
       border-style: solid;
-      border-width: 0px 0px 61px 29px;
+      border-width: 0px 0px 61.5px 29px;
       border-color: transparent transparent #2d6c93 transparent; }
   .content .contentMain {
     padding: 30px 0px 0px 20px; }
@@ -344,23 +496,25 @@ body {
       border-style: solid;
       border-width: 0px 0px 61px 29px;
       border-color: transparent transparent #2d6c93 transparent; }
-  .additional .viewedContent .video {
-    padding-top: 10px; }
-  .additional .viewedContent ul {
-    padding: 50px 0px;
-    list-style: none; }
-    .additional .viewedContent ul li {
-      margin-bottom: 20px; }
-      .additional .viewedContent ul li .viewedContentIcon {
-        display: inline-block; }
-        .additional .viewedContent ul li .viewedContentIcon i {
-          font-size: 20pt; }
-      .additional .viewedContent ul li .viewedContentAbout {
-        display: inline-block; }
-        .additional .viewedContent ul li .viewedContentAbout a {
-          font-size: 20pt;
-          color: black;
-          text-decoration: underline; }
+  .additional .viewedContent {
+    margin-bottom: 30px; }
+    .additional .viewedContent .video {
+      padding: 10px 0px; }
+    .additional .viewedContent ul {
+      padding: 50px 0px;
+      list-style: none; }
+      .additional .viewedContent ul li {
+        margin-bottom: 20px; }
+        .additional .viewedContent ul li .viewedContentIcon {
+          display: inline-block; }
+          .additional .viewedContent ul li .viewedContentIcon i {
+            font-size: 20pt; }
+        .additional .viewedContent ul li .viewedContentAbout {
+          display: inline-block; }
+          .additional .viewedContent ul li .viewedContentAbout a {
+            font-size: 20pt;
+            color: black;
+            text-decoration: underline; }
 
 @media screen and (max-width: 702px) {
   .additionalContentBody .video {
@@ -372,11 +526,20 @@ body {
   #responsiveViewedSecond::after {
     border-width: 0px 0px 92px 29px; } }
 @media screen and (max-width: 767px) {
+  .contentMain {
+    padding: 30px 0px !important; }
+
   .viewed::after {
     border: none !important; }
 
   .message {
-    border: none !important; } }
+    border: none !important; }
+
+  .additionalContent {
+    margin: 30px 0px !important; } }
+@media screen and (max-width: 440px) {
+  .additionalContentBody audio {
+    width: 100%; } }
 .rubrikaContent {
   background-color: white; }
   .rubrikaContent .rubrikaContentMain {
@@ -471,7 +634,7 @@ body {
       content: "";
       position: absolute;
       border-style: solid;
-      border-width: 0px 0px 61px 29px;
+      border-width: 0px 0px 61.5px 29px;
       border-color: transparent transparent #2d6c93 transparent; }
   .rubrikaContent .rubrikaContentCategories .rubrikaEntrace {
     text-align: center;
@@ -499,6 +662,11 @@ body {
 @media screen and (max-width: 1187px) and (min-width: 768px) {
   .rubrikaContentCategories ul li {
     width: 49% !important; } }
+.menuicondown .menuContent .menuInput i {
+  position: absolute;
+  right: 0%;
+  top: 30%; }
+
 .tovhideCagirish {
   background-color: white; }
   .tovhideCagirish .tovhideCagirishMain {
@@ -583,20 +751,29 @@ body {
       padding-top: 50px;
       list-style: none; }
       .tovhideCagirish .rubrikaContentCategories ul li {
+        margin-top: 10px;
         display: inline-block;
         width: 15%; }
         .tovhideCagirish .rubrikaContentCategories ul li .rubrikaCategoriesIcon {
           text-align: center; }
           .tovhideCagirish .rubrikaContentCategories ul li .rubrikaCategoriesIcon i {
-            border: 2px solid #4da6ff;
+            border: 2px solid;
             border-radius: 50%;
             text-align: center;
             width: 120px;
             height: 120px;
             line-height: 120px;
-            background-color: #4da6ff;
             font-size: 50pt;
-            color: white; }
+            color: #cad2db;
+            background-color: white;
+            border-color: #cad2db;
+            transition: 0.4s ease;
+            cursor: pointer; }
+            .tovhideCagirish .rubrikaContentCategories ul li .rubrikaCategoriesIcon i:hover {
+              transition: 0.4s ease;
+              border-color: #4da7ff;
+              background-color: #4da7ff;
+              color: white; }
         .tovhideCagirish .rubrikaContentCategories ul li .rubrikaCategoriesCount {
           text-align: center; }
           .tovhideCagirish .rubrikaContentCategories ul li .rubrikaCategoriesCount a {
@@ -649,7 +826,7 @@ body {
     font-size: 16pt; }
   .tovhidnadi .rubrikaContentCategories .socialLinks ul {
     list-style: none;
-    float: right; }
+    text-align: right; }
     .tovhidnadi .rubrikaContentCategories .socialLinks ul li {
       padding: 0px 20px;
       display: inline-block; }
@@ -675,147 +852,164 @@ body {
     .tovhidnadiMain .rubrikaContentCategories .paragraph p {
       margin: 16px;
       font-size: 12pt; } }
-.meqaleler {
+.articles {
   background-color: white; }
-  .meqaleler .meqalelerMain {
+  .articles .articlesMain {
     margin: 0px 50px;
     border: 2px solid #aae1fa; }
-  .meqaleler .contentHead {
+  .articles .contentHead {
     background-color: #aae1fa; }
-  .meqaleler .additionalContent {
+  .articles .additionalContent {
     padding: 50px 50px 10px 20px; }
-    .meqaleler .additionalContent .additionalContentIcon {
+    .articles .additionalContent .additionalContentIcon {
       display: inline-block; }
-      .meqaleler .additionalContent .additionalContentIcon i {
+      .articles .additionalContent .additionalContentIcon i {
         font-size: 22pt;
         padding-right: 5px; }
-    .meqaleler .additionalContent .additionalContentHead {
+    .articles .additionalContent .additionalContentHead {
       display: inline-block; }
-      .meqaleler .additionalContent .additionalContentHead p {
+      .articles .additionalContent .additionalContentHead p {
         font-size: 16pt; }
-    .meqaleler .additionalContent .additionalContentForum {
+    .articles .additionalContent .additionalContentForum {
       float: right;
       display: inline-block; }
-      .meqaleler .additionalContent .additionalContentForum a {
+      .articles .additionalContent .additionalContentForum a {
         text-decoration: none;
         color: black;
         font-size: 12pt; }
-    .meqaleler .additionalContent .additionalContentForumIcon {
+    .articles .additionalContent .additionalContentForumIcon {
       float: right;
       display: inline-block; }
-      .meqaleler .additionalContent .additionalContentForumIcon i {
+      .articles .additionalContent .additionalContentForumIcon i {
         font-size: 22pt;
         padding-left: 10px; }
-    .meqaleler .additionalContent .additionalContentBody p {
+    .articles .additionalContent .additionalContentBody p {
       padding: 20px;
       font-size: 16pt; }
-    .meqaleler .additionalContent .additionalContentType ul {
+    .articles .additionalContent .additionalContentType ul {
       list-style: none; }
-      .meqaleler .additionalContent .additionalContentType ul li {
+      .articles .additionalContent .additionalContentType ul li {
         display: inline-block; }
-        .meqaleler .additionalContent .additionalContentType ul li a {
+        .articles .additionalContent .additionalContentType ul li a {
           color: black;
           text-decoration: none;
           font-style: italic; }
-    .meqaleler .additionalContent .additionalContentAndSo {
+    .articles .additionalContent .additionalContentAndSo {
       float: right; }
-      .meqaleler .additionalContent .additionalContentAndSo a {
+      .articles .additionalContent .additionalContentAndSo a {
         color: black;
         text-decoration: none; }
-  .meqaleler .rubrikaContentCategories {
+  .articles .rubrikaContentCategories {
     margin: 50px; }
-  .meqaleler .viewedContent ul {
+  .articles .viewedContent ul {
     padding: 50px 0px;
     list-style: none; }
-    .meqaleler .viewedContent ul li {
+    .articles .viewedContent ul li {
       margin-bottom: 20px; }
-      .meqaleler .viewedContent ul li .viewedContentIcon {
+      .articles .viewedContent ul li .viewedContentIcon {
         display: inline-block; }
-        .meqaleler .viewedContent ul li .viewedContentIcon i {
+        .articles .viewedContent ul li .viewedContentIcon i {
           font-size: 20pt; }
-      .meqaleler .viewedContent ul li .viewedContentAbout {
+      .articles .viewedContent ul li .viewedContentAbout {
         display: inline-block; }
-        .meqaleler .viewedContent ul li .viewedContentAbout a {
+        .articles .viewedContent ul li .viewedContentAbout a {
           font-size: 20pt;
           color: black;
           text-decoration: underline; }
 
 @media screen and (max-width: 786px) {
-  .meqalelerMain {
+  .articlesMain {
     margin: 0px !important; }
-    .meqalelerMain .rubrikaContentCategories {
+    .articlesMain .rubrikaContentCategories {
       margin: 15px; }
-      .meqalelerMain .rubrikaContentCategories .additionalContentBody p {
+      .articlesMain .rubrikaContentCategories .additionalContentBody p {
         font-size: 13pt !important; }
-      .meqalelerMain .rubrikaContentCategories .additionalContentBody .videoifrm {
+      .articlesMain .rubrikaContentCategories .additionalContentBody .videoifrm {
         width: 100% !important; } }
-.kitablar {
+.books {
   background-color: white; }
-  .kitablar .kitablarMain {
+  .books .booksMain {
     margin: 0px 50px;
     border: 2px solid #aae1fa; }
-  .kitablar .contentHead {
+  .books .contentHead {
     background-color: #aae1fa; }
-  .kitablar .rubrikaContentCategories {
+  .books .rubrikaContentCategories {
     margin: 50px; }
-    .kitablar .rubrikaContentCategories .rubrikaContentBooks .rubrikaContentBooksIcon {
+    .books .rubrikaContentCategories .rubrikaContentBooks .rubrikaContentBooksIcon {
       display: inline-block; }
-      .kitablar .rubrikaContentCategories .rubrikaContentBooks .rubrikaContentBooksIcon i {
+      .books .rubrikaContentCategories .rubrikaContentBooks .rubrikaContentBooksIcon i {
         font-size: 20pt;
         padding-right: 5px; }
-    .kitablar .rubrikaContentCategories .rubrikaContentBooks .rubrikaContentBooksHead {
+    .books .rubrikaContentCategories .rubrikaContentBooks .rubrikaContentBooksHead {
       display: inline-block; }
-      .kitablar .rubrikaContentCategories .rubrikaContentBooks .rubrikaContentBooksHead p {
+      .books .rubrikaContentCategories .rubrikaContentBooks .rubrikaContentBooksHead p {
         font-size: 20pt; }
-    .kitablar .rubrikaContentCategories .rubrikaContentBooks .rubrikaContentBooksPdf {
+    .books .rubrikaContentCategories .rubrikaContentBooks .rubrikaContentBooksPdf {
       float: right;
       display: inline-block; }
-      .kitablar .rubrikaContentCategories .rubrikaContentBooks .rubrikaContentBooksPdf i {
+      .books .rubrikaContentCategories .rubrikaContentBooks .rubrikaContentBooksPdf i {
         font-size: 20pt; }
-    .kitablar .rubrikaContentCategories .rubrikaContentBooksCategory {
+    .books .rubrikaContentCategories .rubrikaContentBooksCategory {
       padding-top: 20px; }
-      .kitablar .rubrikaContentCategories .rubrikaContentBooksCategory .rubrikaContentBooksCategoryName {
+      .books .rubrikaContentCategories .rubrikaContentBooksCategory .rubrikaContentBooksCategoryName {
         display: inline-block; }
-        .kitablar .rubrikaContentCategories .rubrikaContentBooksCategory .rubrikaContentBooksCategoryName a {
+        .books .rubrikaContentCategories .rubrikaContentBooksCategory .rubrikaContentBooksCategoryName a {
           font-size: 20pt;
           color: #2d6c93;
           font-style: italic;
           padding: 1px 5px;
           background-color: #aae1fa;
-          text-decoration: none; }
-      .kitablar .rubrikaContentCategories .rubrikaContentBooksCategory .rubrikaContentBooksAndSo {
+          text-decoration: none;
+          position: relative; }
+          .books .rubrikaContentCategories .rubrikaContentBooksCategory .rubrikaContentBooksCategoryName a::after {
+            top: 0px;
+            right: -19px;
+            content: "";
+            position: absolute;
+            border-style: solid;
+            border-width: 35px 19px 0 0px;
+            border-color: #aae1fa transparent transparent transparent; }
+          .books .rubrikaContentCategories .rubrikaContentBooksCategory .rubrikaContentBooksCategoryName a::before {
+            top: 0px;
+            left: -16px;
+            content: "";
+            position: absolute;
+            border-style: solid;
+            border-width: 0px 0px 34.8px 17px;
+            border-color: transparent transparent #aae1fa transparent; }
+      .books .rubrikaContentCategories .rubrikaContentBooksCategory .rubrikaContentBooksAndSo {
         display: inline-block;
         float: right; }
-        .kitablar .rubrikaContentCategories .rubrikaContentBooksCategory .rubrikaContentBooksAndSo a {
+        .books .rubrikaContentCategories .rubrikaContentBooksCategory .rubrikaContentBooksAndSo a {
           text-decoration: none;
           font-size: 16pt;
           color: #2d6c93;
           font-style: italic; }
-  .kitablar .viewedContent {
+  .books .viewedContent {
     padding-left: 20px; }
-    .kitablar .viewedContent ul {
+    .books .viewedContent ul {
       padding: 50px 0px; }
-      .kitablar .viewedContent ul li {
+      .books .viewedContent ul li {
         margin-bottom: 20px; }
-        .kitablar .viewedContent ul li .viewedContentAbout {
+        .books .viewedContent ul li .viewedContentAbout {
           border-bottom: 2px solid black; }
-          .kitablar .viewedContent ul li .viewedContentAbout a {
+          .books .viewedContent ul li .viewedContentAbout a {
             font-size: 20pt;
             color: black;
             text-decoration: none; }
 
 @media screen and (max-width: 786px) {
-  .kitablarMain {
+  .booksMain {
     margin: 0px !important; } }
 .ideologiya {
   background-color: white; }
   .ideologiya .ideologiyaMain {
-    margin: 0px 50px;
+    margin: 0px 25px;
     border: 2px solid #aae1fa; }
   .ideologiya .contentHead {
     background-color: #aae1fa; }
   .ideologiya .rubrikaContentCategories {
-    margin: 50px; }
+    margin: 25px; }
     .ideologiya .rubrikaContentCategories .rubrikaContentBooks .rubrikaContentBooksHead {
       display: inline-block; }
       .ideologiya .rubrikaContentCategories .rubrikaContentBooks .rubrikaContentBooksHead p {
@@ -825,6 +1019,18 @@ body {
       .ideologiya .rubrikaContentCategories .rubrikaContentBooks .rubrikaContentBooksPdf i {
         padding-left: 10px;
         font-size: 20pt; }
+    .ideologiya .rubrikaContentCategories .socialLinks {
+      margin-top: 50px; }
+      .ideologiya .rubrikaContentCategories .socialLinks ul {
+        list-style: none;
+        text-align: right; }
+        .ideologiya .rubrikaContentCategories .socialLinks ul li {
+          padding: 0px 20px;
+          display: inline-block; }
+          .ideologiya .rubrikaContentCategories .socialLinks ul li a {
+            text-decoration: none; }
+            .ideologiya .rubrikaContentCategories .socialLinks ul li a i {
+              font-size: 16pt; }
   .ideologiya .viewedContent {
     padding-left: 20px; }
     .ideologiya .viewedContent ul {
@@ -844,7 +1050,7 @@ body {
 .murcie {
   background-color: white; }
   .murcie .murcieMain {
-    margin: 0px 50px;
+    margin: 0px 25px;
     border: 2px solid #aae1fa; }
   .murcie .contentHead {
     margin-left: 50px;
@@ -856,10 +1062,22 @@ body {
       .murcie .contentHead p::before {
         border: none; }
   .murcie .rubrikaContentCategories {
-    margin: 50px; }
+    margin: 25px; }
     .murcie .rubrikaContentCategories p {
       margin: 20px;
       font-size: 16pt; }
+    .murcie .rubrikaContentCategories .socialLinks {
+      margin-top: 50px; }
+      .murcie .rubrikaContentCategories .socialLinks ul {
+        list-style: none;
+        text-align: right; }
+        .murcie .rubrikaContentCategories .socialLinks ul li {
+          padding: 0px 20px;
+          display: inline-block; }
+          .murcie .rubrikaContentCategories .socialLinks ul li a {
+            text-decoration: none; }
+            .murcie .rubrikaContentCategories .socialLinks ul li a i {
+              font-size: 16pt; }
   .murcie .viewedContent {
     padding-left: 20px; }
     .murcie .viewedContent ul {
@@ -938,32 +1156,44 @@ body {
         margin-bottom: 10px;
         display: block;
         width: 100% !important; } }
-.ovliyaliq {
+.photo2 {
   background-color: white; }
-  .ovliyaliq .ovliyaliqMain {
+  .photo2 .photo2Main {
     margin: 0px 50px;
     border: 2px solid #aae1fa; }
-  .ovliyaliq .contentHead p {
+  .photo2 .contentHead p {
     margin-left: 50px;
     font-size: 20pt;
     background-color: white;
     color: black; }
-    .ovliyaliq .contentHead p::before {
+    .photo2 .contentHead p::before {
       border: none; }
-  .ovliyaliq .rubrikaContentCategories {
+  .photo2 .rubrikaContentCategories {
     margin: 15px; }
-    .ovliyaliq .rubrikaContentCategories .rubrikaContentCategoriesImage img {
+    .photo2 .rubrikaContentCategories .rubrikaContentCategoriesImage img {
       width: 100%; }
-  .ovliyaliq .viewedContent ul {
+    .photo2 .rubrikaContentCategories .socialLinks {
+      margin-top: 50px; }
+      .photo2 .rubrikaContentCategories .socialLinks ul {
+        list-style: none;
+        text-align: right; }
+        .photo2 .rubrikaContentCategories .socialLinks ul li {
+          padding: 0px 20px;
+          display: inline-block; }
+          .photo2 .rubrikaContentCategories .socialLinks ul li a {
+            text-decoration: none; }
+            .photo2 .rubrikaContentCategories .socialLinks ul li a i {
+              font-size: 16pt; }
+  .photo2 .viewedContent ul {
     list-style: none; }
-    .ovliyaliq .viewedContent ul li {
+    .photo2 .viewedContent ul li {
       margin: 10px 0px;
       width: 100%; }
-      .ovliyaliq .viewedContent ul li .viewedContentImage img {
+      .photo2 .viewedContent ul li .viewedContentImage img {
         width: 100%; }
 
 @media screen and (max-width: 786px) {
-  .ovliyaliqMain {
+  .photo2Main {
     margin: 0px !important; } }
 .video {
   background-color: white; }
@@ -1014,34 +1244,34 @@ body {
       margin: 0px !important; }
       .videoMain .rubrikaContentCategories .additionalContentBody .videoifrm {
         width: 100% !important; } }
-.ateizm {
+.video2 {
   background-color: white; }
-  .ateizm .ateizmMain {
+  .video2 .video2Main {
     margin: 0px 50px;
     border: 2px solid #aae1fa; }
-  .ateizm .contentHead p {
+  .video2 .contentHead p {
     border: none;
     background-color: white;
     color: black; }
-    .ateizm .contentHead p::before {
+    .video2 .contentHead p::before {
       content: "";
       border: none; }
-  .ateizm .rubrikaContentCategories {
+  .video2 .rubrikaContentCategories {
     margin: 50px; }
-  .ateizm .viewedContent ul {
+  .video2 .viewedContent ul {
     list-style: none; }
-    .ateizm .viewedContent ul li {
+    .video2 .viewedContent ul li {
       margin: 10px 0px;
       width: 100%; }
-      .ateizm .viewedContent ul li .viewedContentImage img {
+      .video2 .viewedContent ul li .viewedContentImage img {
         width: 100%; }
 
 @media screen and (max-width: 786px) {
-  .ateizmMain {
+  .video2Main {
     margin: 0px !important; }
-    .ateizmMain .rubrikaContentCategories {
+    .video2Main .rubrikaContentCategories {
       margin: 0px !important; }
-      .ateizmMain .rubrikaContentCategories .videoifrm {
+      .video2Main .rubrikaContentCategories .videoifrm {
         width: 100% !important; } }
 .audio {
   background-color: white; }
@@ -1099,12 +1329,13 @@ body {
   .audio .rubrikaContentCategories {
     margin: 50px; }
   .audio .viewedContent ul li {
+    border-bottom: 2px solid black;
     margin: 10px 0px;
     width: 100%; }
     .audio .viewedContent ul li a {
       font-size: 20pt;
       color: black;
-      text-decoration: underline; }
+      text-decoration: none; }
 
 @media screen and (max-width: 786px) {
   .audioMain {
@@ -1113,76 +1344,90 @@ body {
       margin: 0px !important; }
       .audioMain .rubrikaContentCategories .additionalContentAudio audio {
         width: 100% !important; } }
-.audiorafizi {
+.audio2 {
   background-color: white; }
-  .audiorafizi .audiorafiziMain {
-    margin: 0px 50px;
+  .audio2 .audio2Main {
+    margin: 0px 10px;
     border: 2px solid #aae1fa; }
-  .audiorafizi .contentHead {
+  .audio2 .contentHead {
     background-color: #aae1fa; }
-  .audiorafizi .additionalContent {
+  .audio2 .additionalContent {
     padding: 50px 50px 10px 20px; }
-    .audiorafizi .additionalContent .additionalContentIcon {
+    .audio2 .additionalContent .additionalContentIcon {
       display: inline-block; }
-      .audiorafizi .additionalContent .additionalContentIcon i {
+      .audio2 .additionalContent .additionalContentIcon i {
         font-size: 22pt;
         padding-right: 5px; }
-    .audiorafizi .additionalContent .additionalContentForum {
+    .audio2 .additionalContent .additionalContentForum {
       float: right;
       display: inline-block; }
-      .audiorafizi .additionalContent .additionalContentForum a {
+      .audio2 .additionalContent .additionalContentForum a {
         text-decoration: none;
         color: black;
         font-size: 12pt; }
-    .audiorafizi .additionalContent .additionalContentForumIcon {
+    .audio2 .additionalContent .additionalContentForumIcon {
       float: right;
       display: inline-block; }
-      .audiorafizi .additionalContent .additionalContentForumIcon i {
+      .audio2 .additionalContent .additionalContentForumIcon i {
         font-size: 22pt;
         padding-left: 10px; }
-    .audiorafizi .additionalContent .additionalContentHead {
+    .audio2 .additionalContent .additionalContentHead {
       display: inline-block; }
-      .audiorafizi .additionalContent .additionalContentHead p {
+      .audio2 .additionalContent .additionalContentHead p {
         font-size: 16pt; }
-    .audiorafizi .additionalContent .additionalContentBody {
+    .audio2 .additionalContent .additionalContentBody {
       padding: 20px 0px; }
-    .audiorafizi .additionalContent .additionalContentAudio {
+    .audio2 .additionalContent .additionalContentAudio {
       padding: 30px 0px; }
-    .audiorafizi .additionalContent .additionalContentType {
+    .audio2 .additionalContent .additionalContentType {
       padding: 15px 0px; }
-      .audiorafizi .additionalContent .additionalContentType ul {
+      .audio2 .additionalContent .additionalContentType ul {
         list-style: none; }
-        .audiorafizi .additionalContent .additionalContentType ul li {
+        .audio2 .additionalContent .additionalContentType ul li {
           display: inline-block; }
-          .audiorafizi .additionalContent .additionalContentType ul li a {
+          .audio2 .additionalContent .additionalContentType ul li a {
             color: black;
             padding: 0px 5px;
             background-color: #aae1fa;
             text-decoration: none;
             font-style: italic; }
-    .audiorafizi .additionalContent .additionalContentAndSo {
+    .audio2 .additionalContent .additionalContentAndSo {
       float: right; }
-      .audiorafizi .additionalContent .additionalContentAndSo a {
+      .audio2 .additionalContent .additionalContentAndSo a {
         color: #2d6c93;
         text-decoration: none;
         font-style: italic; }
-  .audiorafizi .rubrikaContentCategories {
-    margin: 50px; }
-  .audiorafizi .viewedContent ul li {
+  .audio2 .rubrikaContentCategories {
+    margin: 25px; }
+    .audio2 .rubrikaContentCategories .socialLinks ul {
+      list-style: none;
+      text-align: right; }
+      .audio2 .rubrikaContentCategories .socialLinks ul li {
+        padding: 0px 20px;
+        display: inline-block; }
+        .audio2 .rubrikaContentCategories .socialLinks ul li a {
+          text-decoration: none; }
+          .audio2 .rubrikaContentCategories .socialLinks ul li a i {
+            font-size: 16pt; }
+  .audio2 .viewedContent ul li {
     margin: 10px 0px;
-    width: 100%; }
-    .audiorafizi .viewedContent ul li a {
+    width: 100%;
+    border-bottom: 2px solid black; }
+    .audio2 .viewedContent ul li a {
       font-size: 20pt;
       color: black;
-      text-decoration: underline; }
+      text-decoration: none; }
 
 @media screen and (max-width: 786px) {
-  .audiorafiziMain {
+  .audoi2Main {
     margin: 0px !important; }
-    .audiorafiziMain .rubrikaContentCategories {
+    .audoi2Main .rubrikaContentCategories {
       margin: 0px !important; }
-      .audiorafiziMain .rubrikaContentCategories .additionalContentAudio audio {
+      .audoi2Main .rubrikaContentCategories .additionalContentAudio audio {
         width: 100% !important; } }
+@media screen and (max-width: 440px) {
+  .additionalContentAudio audio {
+    width: 100%; } }
 .sualcavab {
   background-color: white; }
   .sualcavab .sualcavabMain {
@@ -1215,7 +1460,7 @@ body {
       content: "";
       position: absolute;
       border-style: solid;
-      border-width: 0px 0px 61px 29px;
+      border-width: 0px 0px 61.5px 29px;
       border-color: transparent transparent #2d6c93 transparent; }
   .sualcavab .rubrikaEntrace {
     text-align: center;
@@ -1286,7 +1531,8 @@ body {
   .page18 .contentHead {
     background-color: #aae1fa; }
   .page18 .rubrika {
-    padding: 20px 0px; }
+    padding: 20px 0px;
+    border-bottom: 2px solid #aae1fa; }
     .page18 .rubrika .rubrikaContent {
       display: inline-block;
       width: 50%; }
@@ -1322,10 +1568,29 @@ body {
       float: right; }
       .page18 .rubrika .rubrikaCategory a {
         line-height: 50px;
-        text-decoration: none;
-        color: black;
         font-style: italic;
-        font-size: 16pt; }
+        position: relative;
+        padding: 4px 4px 4px 10px;
+        margin: 0px 20px;
+        color: black;
+        text-decoration: none;
+        background-color: #aae1fa; }
+        .page18 .rubrika .rubrikaCategory a::after {
+          top: 0px;
+          right: -19px;
+          content: "";
+          position: absolute;
+          border-style: solid;
+          border-width: 27px 19px 0 0px;
+          border-color: #aae1fa transparent transparent transparent; }
+        .page18 .rubrika .rubrikaCategory a::before {
+          top: 0px;
+          left: -16px;
+          content: "";
+          position: absolute;
+          border-style: solid;
+          border-width: 0px 0px 27.5px 17px;
+          border-color: transparent transparent #aae1fa transparent; }
   .page18 .rubrikaContentCategories ul {
     list-style: none; }
     .page18 .rubrikaContentCategories ul li {
@@ -1387,5 +1652,39 @@ body {
 @media screen and (max-width: 786px) {
   .page18Main {
     margin: 0px !important; } }
+.page16 .rubrikaContent {
+  padding: 0px 2px; }
+.page16 .rubrikaParagraph {
+  margin: 10px 5px;
+  border: 2px solid #aae1fa;
+  border-left: none;
+  border-right: none; }
+  .page16 .rubrikaParagraph .rubrikaParagraphHead {
+    padding: 20px 10px; }
+    .page16 .rubrikaParagraph .rubrikaParagraphHead p {
+      font-size: 20pt; }
+  .page16 .rubrikaParagraph .rubrikaParagraphBody {
+    font-size: 16pt;
+    padding: 20px 10px;
+    font-style: italic; }
+  .page16 .rubrikaParagraph .rubrikaCategory {
+    float: none;
+    text-align: right;
+    display: block; }
+    .page16 .rubrikaParagraph .rubrikaCategory a {
+      font-style: italic;
+      position: relative;
+      padding: 4px;
+      background-color: #aae1fa; }
+.page16 .viewedContent {
+  margin-bottom: 20px; }
+  .page16 .viewedContent ul li {
+    border-bottom: 2px solid black;
+    margin: 10px 0px;
+    width: 100%; }
+    .page16 .viewedContent ul li a {
+      font-size: 18pt;
+      color: black;
+      text-decoration: none; }
 
 /*# sourceMappingURL=index.css.map */

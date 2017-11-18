@@ -36,3 +36,30 @@ background-color: $primarycolor;
     }
 }
 }
+
+@media screen and (max-width: 767px) {
+    .header {
+        text-align: center;
+        div.headerLogo {
+            text-align: center;
+            p {
+                font-size: 30pt !important;
+    
+            }
+            
+        }
+        div.headerLogotxt {
+            p {
+                font-size: 30pt !important;
+            }
+        } 
+        div.headerText {
+            text-align: center;
+            div.textContent {
+                font-size: 11pt !important;
+            }
+           
+        }
+    }
+   
+}

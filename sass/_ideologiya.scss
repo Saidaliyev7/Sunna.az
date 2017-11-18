@@ -1,7 +1,7 @@
 .ideologiya {
     background-color: white;
     .ideologiyaMain {
-        margin: 0px 50px;
+        margin: 0px 25px;
         border: 2px solid $thirdcolor;
     }
     .contentHead {
@@ -9,7 +9,7 @@
         
     }
     .rubrikaContentCategories {
-        margin: 50px;
+        margin: 25px;
         .rubrikaContentBooks {
             .rubrikaContentBooksHead {
                 display: inline-block;
@@ -22,6 +22,24 @@
                 i {
                     padding-left: 10px;
                     font-size: 20pt;
+                }
+            }
+        }
+        .socialLinks {
+            margin-top: 50px;
+            ul {
+                
+                list-style: none;
+                text-align: right;
+                li {
+                    padding: 0px 20px;
+                    display: inline-block;
+                    a {
+                        text-decoration: none;
+                        i {
+                            font-size: 16pt;
+                        }
+                    }
                 }
             }
         }

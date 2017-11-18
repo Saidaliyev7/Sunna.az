@@ -1,0 +1,50 @@
+.page16 {
+    .rubrikaContent {
+        padding: 0px 2px;
+    }
+    .rubrikaParagraph {
+        margin: 10px 5px;
+        border: 2px solid $thirdcolor;
+        border-left: none;
+        border-right: none;
+        .rubrikaParagraphHead {
+            padding: 20px 10px;
+         p {
+             font-size: 20pt;
+         }
+        }
+        .rubrikaParagraphBody {
+            font-size: 16pt;
+            padding: 20px 10px;
+            font-style: italic;
+        }
+        .rubrikaCategory {
+            float: none;
+            text-align: right;
+            display: block;
+            a {
+                font-style: italic;
+                position: relative;
+                padding: 4px;
+                background-color: $thirdcolor;
+            }
+            
+        }
+        
+    }
+    .viewedContent {
+        margin-bottom: 20px;
+        ul {
+            li {
+               border-bottom: 2px solid black;
+                margin: 10px 0px;
+                width: 100%;
+                a {
+                    font-size: 18pt;
+                    color: black;
+                    text-decoration: none;
+                }
+            }
+        }
+    }
+}

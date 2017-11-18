@@ -1,27 +1,23 @@
-.ovliyaliq {
+.video2 {
     background-color: white;
-    .ovliyaliqMain {
+    .video2Main {
         margin: 0px 50px;
         border: 2px solid $thirdcolor;
     }
     .contentHead {
         p {
-            margin-left: 50px;
-            font-size: 20pt;
+            border: none;
             background-color: white;
             color: black;
             &::before {
+                content: "";
                 border: none;
             }
         }
     }
     .rubrikaContentCategories {
-margin: 15px;
-.rubrikaContentCategoriesImage {
-    img {
-        width: 100%
-    }
-}
+        margin: 50px;
+       
     }
     .viewedContent {
         ul {
@@ -32,15 +28,22 @@ margin: 15px;
                 .viewedContentImage {
                     img {
                         width: 100%;
-
                     }
-                } 
+                }
             }
         }
     }
 }
 @media screen and (max-width:786px) {
-    .ovliyaliqMain{
+    .video2Main {
         margin: 0px !important;
-    }  
+        .rubrikaContentCategories {
+            margin: 0px !important;
+
+                .videoifrm {
+                    width: 100% !important;
+                }
+            
+        }
+    }
 }

@@ -1,7 +1,7 @@
-.audiorafizi {
+.audio2 {
     background-color: white;
-    .audiorafiziMain {
-        margin: 0px 50px;
+    .audio2Main {
+        margin: 0px 10px;
         border: 2px solid $thirdcolor;
     }
     .contentHead {
@@ -71,17 +71,35 @@
         }
     }
     .rubrikaContentCategories {
-        margin: 50px;
+        margin:25px;
+        .socialLinks {
+            ul {
+                
+                list-style: none;
+                text-align: right;
+                li {
+                    padding: 0px 20px;
+                    display: inline-block;
+                    a {
+                        text-decoration: none;
+                        i {
+                            font-size: 16pt;
+                        }
+                    }
+                }
+            }
+        }
     }
     .viewedContent {
         ul {
             li {
                 margin: 10px 0px;
                 width: 100%;
+                border-bottom: 2px solid black;
                 a {
                     font-size: 20pt;
                     color: black;
-                    text-decoration: underline;
+                    text-decoration: none;
                 }
             }
         }
@@ -89,7 +107,7 @@
 }
 
 @media screen and (max-width:786px) {
-    .audiorafiziMain {
+    .audoi2Main {
         margin: 0px !important;
         .rubrikaContentCategories {
             margin: 0px !important;
@@ -98,6 +116,13 @@
                     width: 100% !important;
                 }
             }
+        }
+    }
+}
+@media screen and (max-width: 440px) {
+    .additionalContentAudio {
+        audio {
+            width: 100%;
         }
     }
 }
