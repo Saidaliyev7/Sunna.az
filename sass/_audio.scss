@@ -8,7 +8,7 @@
         background-color: $thirdcolor;
     }
     .additionalContent {
-        padding: 50px 50px 10px 20px;
+        padding: 0px 50px 10px 20px;
         .additionalContentIcon {
             display: inline-block;
             i {
@@ -50,13 +50,33 @@
             ul {
                 list-style: none;
                 li {
+                    margin-right: 20px;
                     display: inline-block;
                     a {
                         color: black;
                         padding: 0px 5px;
                         background-color: $thirdcolor;
                         text-decoration: none;
-                        font-style: italic
+                        font-style: italic;
+                        position: relative;
+                        &::after {
+                            top: 0px;
+                            left: -16px;
+                            content: "";
+                            position: absolute;
+                            border-style: solid;
+                            border-width: 0px 0px 19px 17px;
+                            border-color: transparent transparent #aae1fa transparent;
+                        }
+                        &::before {
+                            top: 0px;
+                            right: -19px;
+                            content: "";
+                            position: absolute;
+                            border-style: solid;
+                            border-width: 19.8px 19px 0 0px;
+                            border-color: #aae1fa transparent transparent transparent;
+                        }
                     }
                 }
             }

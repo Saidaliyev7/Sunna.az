@@ -91,16 +91,17 @@
                 text-decoration: none;
                 color: black;
                 font-size: 12pt;
-                line-height: 50px;
+                line-height: 40px;
             }
         }
         .additionalContentForumIcon {
             float: right;
             display: inline-block;
-            i {
-                font-size: 22pt;
-                padding-left: 10px;
-            }
+            margin-left: 10px;
+            width: 40px;
+            height: 40px;
+            background-image: url(../img/iconforum.png);
+            background-size: cover;
         }
         .additionalContentBody {
             padding: 50px 20px;
@@ -120,6 +121,34 @@
                         color: black;
                         text-decoration: none;
                         font-style: italic;
+                    }
+                }
+                li:first-child {
+                    margin-right: 20px;
+                    a {
+                        position: relative;
+                        background-color: $secondarycolor;
+                        &::before {
+                            top: 0px;
+                            right: -19px;
+                            content: "";
+                            position: absolute;
+                            border-style: solid;
+                            border-width: 19.8px 19px 0 0px;
+                            border-color: $secondarycolor transparent transparent transparent;
+                        }
+                      
+
+                        &::after {
+                            top: 0px;
+                            left: -16px;
+                            content: "";
+                            position: absolute;
+                            border-style: solid;
+                            border-width: 0px 0px 19px 17px;
+                            border-color: transparent transparent $secondarycolor transparent;
+                        }
+                        
                     }
                 }
             }
@@ -162,12 +191,12 @@
         background-color: $primarycolor;
         text-transform: uppercase;
         &::after {
-            top: 0px;
-            left: -28px;
+            top: -1px;
+            left: -29px;
             content: "";
             position: absolute;
             border-style: solid;
-            border-width: 0px 0px 61px 29px;
+            border-width: 0px 0px 62.5px 29px;
             border-color: transparent transparent $primarycolor transparent;
         }
     }
@@ -185,6 +214,7 @@
                 .viewedContentIcon {
                     display: inline-block;
                     i {
+                        margin-right: 20px;
                         font-size: 20pt;
                     }
                 }

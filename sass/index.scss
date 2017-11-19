@@ -64,6 +64,12 @@ body {
                     text-decoration: none;
                     img {
                         width: 50px;
+                        transition: 0.4s ease;
+                        opacity: 0.8;
+                        &:hover {
+                            transition: 0.4s ease;
+                            opacity: 1;
+                        }
                     }
                     i {
                         width: 50px;
@@ -73,6 +79,12 @@ body {
                         border-radius: 50%;
                         border: 1px solid;
                         text-align: center;
+                        transition: 0.4s ease;
+                        opacity: 0.8;
+                        &:hover {
+                            transition: 0.4s ease;
+                            opacity: 1;
+                        }
                     }
                 }
             }
@@ -91,18 +103,25 @@ body {
                     color: white;
                     text-decoration: none;
                     i {
+                        opacity: 0.8;
+                        transition: 0.4s ease;
                         width: 50px;
                         height: 50px;
                         line-height: 50px;
                         text-align: center;
                         border-radius: 50%;
                         border: 1px solid;
+                        &:hover {
+                            transition: 0.4s ease;
+                            opacity: 1;
+                        }
                     }
                 }
             }
         }
     }
 }
+
 .fa-exclamation {
     background-color: #9acfe1;
     border-color: #9acfe1;
@@ -110,7 +129,7 @@ body {
 
 .questionlink {
     background-color: #e64a34;
-    border-color: #e64a34; 
+    border-color: #e64a34;
 }
 
 .fa-google-plus {
@@ -142,26 +161,28 @@ body {
     background-color: #77a6d4;
     border-color: #77a6d4;
 }
+
 .breadcrumb {
-     padding-left: 65px; 
+    padding-left: 65px;
     margin-bottom: 0px;
     list-style: none;
-    background-color:white;
+    background-color: white;
     border: none;
- 
 }
-.breadcrumb-item + .breadcrumb-item{
-    &::before {
-        content: ">"  !important;
-    }
 
+.breadcrumb-item+.breadcrumb-item {
+    &::before {
+        content: ">" !important;
+    }
 }
+
 .breadcrumb-item {
     a {
         text-transform: uppercase;
-     color: $primarycolor;
+        color: $primarycolor;
     }
 }
+
 .sendQuestion {
     list-style: none;
     padding-left: 50px;
@@ -169,26 +190,33 @@ body {
         margin-top: 15px;
         display: inline-block;
         a {
+            display: inline-block;
             font-size: 16pt;
-            padding: 10px 30px;
+            height: 50px;
             text-decoration: none;
-           
+            width: 200px;
+            text-align: center;
+            line-height: 50px;
         }
         select {
-            padding:  10px 20px;
+            height: 52px;
+            width: 200px;
+            option {
+                text-align: center;
+            }
         }
         .answerQuestion {
             background-color: $thirdcolor;
-            color:white;
+            color: white;
             transition: 0.4s ease;
             &:hover {
                 transition: 0.4s ease;
                 background-color: $primarycolor;
             }
         }
-        .sendQuestion {
+        .sendQuestions {
             background-color: $primarycolor;
-            color:white;
+            color: white;
             transition: 0.4s ease;
             &:hover {
                 transition: 0.4s ease;
@@ -197,7 +225,6 @@ body {
         }
     }
 }
-
 
 @import 'header';
 @import 'menu';

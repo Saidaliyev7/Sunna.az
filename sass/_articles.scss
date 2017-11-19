@@ -24,20 +24,22 @@
         }
         .additionalContentForum {
             float: right;
-            display:inline-block;
+            display: inline-block;
             a {
                 text-decoration: none;
                 color: black;
                 font-size: 12pt;
+                line-height: 40px;
             }
         }
         .additionalContentForumIcon {
             float: right;
-            display:inline-block;
-            i {
-                font-size: 22pt;
-                padding-left: 10px;
-            }
+            display: inline-block;
+            margin-left: 10px;
+            width: 40px;
+            height: 40px;
+            background-image: url(../img/iconforum.png);
+            background-size: cover;
         }
         .additionalContentBody {
             p {
@@ -79,6 +81,7 @@
                     display: inline-block;
                     i {
                         font-size: 20pt;
+                        margin-right: 20px;
                     }
                 }
                 .viewedContentAbout {
