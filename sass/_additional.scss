@@ -15,20 +15,20 @@
             z-index: 10;
             &::before {
                 top: 0px;
-                right: -28px;
+                right: -27px;
                 content: "";
                 position: absolute;
                 border-style: solid;
-                border-width: 51px 29px 0 0px;
+                border-width: 51.5px 28px 0 0px;
                 border-color: $primarycolor transparent transparent transparent;
             }
             &::after {
                 top: 0px;
-                left: -28px;
+                left: -27px;
                 content: "";
                 position: absolute;
                 border-style: solid;
-                border-width: 0px 0px 51px 29px;
+                border-width: 0px 0px 51.5px 28px;
                 border-color: transparent transparent $primarycolor transparent;
             }
         }
@@ -60,11 +60,11 @@
         text-transform: uppercase;
         &::after {
             top: 0px;
-            left: -28px;
+            left: -27px;
             content: "";
             position: absolute;
             border-style: solid;
-            border-width: 0px 0px 61px 29px;
+            border-width: 0px 0px 61.5px 28px;
             border-color: transparent transparent $primarycolor transparent;
         }
     }
@@ -113,6 +113,7 @@
             }
         }
         .additionalContentType {
+          
             ul {
                 list-style: none;
                 li {
@@ -145,7 +146,7 @@
                             content: "";
                             position: absolute;
                             border-style: solid;
-                            border-width: 0px 0px 19px 17px;
+                            border-width: 0px 0px 19.5px 17px;
                             border-color: transparent transparent $secondarycolor transparent;
                         }
                         
@@ -191,7 +192,7 @@
         background-color: $primarycolor;
         text-transform: uppercase;
         &::after {
-            top: -1px;
+            top: 0px;
             left: -29px;
             content: "";
             position: absolute;
@@ -199,7 +200,24 @@
             border-width: 0px 0px 62.5px 29px;
             border-color: transparent transparent $primarycolor transparent;
         }
+        
     }
+    #responsiveViewedSecond {
+        &::after {
+            top: 0px;
+            left: -28px;
+            border-width: 0px 0px 61.5px 29px;
+
+        } 
+    }
+    #responsiveViewedFirst {
+        &::after {
+            left: -28px;
+            border-width: 0px 0px 61.1px 29px;
+
+        } 
+    }
+
     .viewedContent {
         margin-bottom: 30px;
         .video {
@@ -242,14 +260,16 @@
 @media screen and (max-width: 1004px) {
     #responsiveViewedFirst {
         &::after {
-            border-width: 0px 0px 92px 29px;
+            left: -28px !important;
+            border-width: 0px 0px 92px 29px !important;
         }
     }
 }
 @media screen and (max-width: 983px) {
     #responsiveViewedSecond {
         &::after {
-            border-width: 0px 0px 92px 29px;
+            left: -28px !important;
+            border-width: 0px 0px 92px 29px !important;
         }
     }
 }

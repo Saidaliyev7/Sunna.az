@@ -130,7 +130,18 @@
         }
     }
 }
-
+.rubrikaAdditional {
+    .message {
+        &::after {
+            border-width: 0px 0px 61px 28px;
+        }
+    }
+    .viewed {
+        &::after {
+            border-width: 0px 0px 61px 29px;
+        }
+    }
+}
 @media screen and (max-width: 768px) {
     .rubrikaContent {
         .rubrikaForum {

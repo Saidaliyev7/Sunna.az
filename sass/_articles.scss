@@ -9,6 +9,7 @@
     }
     .additionalContent {
         padding:50px 50px 10px 20px;
+        border-bottom: 2px solid $thirdcolor;
         .additionalContentIcon{
         display:inline-block;
         i {
@@ -48,6 +49,7 @@
             }
         }
         .additionalContentType {
+            margin-top: 15px;
             ul {
                 list-style: none;
                 li {
@@ -56,6 +58,34 @@
                         color: black;
                         text-decoration: none;
                         font-style: italic;
+                    }
+                }
+                li:first-child {
+                    margin-right: 20px;
+                    a {
+                        position: relative;
+                        background-color: $secondarycolor;
+                        &::before {
+                            top: 0px;
+                            right: -19px;
+                            content: "";
+                            position: absolute;
+                            border-style: solid;
+                            border-width: 19.8px 19px 0 0px;
+                            border-color: $secondarycolor transparent transparent transparent;
+                        }
+                      
+
+                        &::after {
+                            top: 0px;
+                            left: -16px;
+                            content: "";
+                            position: absolute;
+                            border-style: solid;
+                            border-width: 0px 0px 19.5px 17px;
+                            border-color: transparent transparent $secondarycolor transparent;
+                        }
+                        
                     }
                 }
             }
