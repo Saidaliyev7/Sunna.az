@@ -4,6 +4,8 @@ background-color: $primarycolor;
     display: inline-block;
     padding: 10px 0px;
     p {
+        font-family: 'Impact', regular;
+        padding: 0px 10px;
         font-weight: 800;
        font-size: 60pt;
        color: $secondarycolor;
@@ -13,9 +15,10 @@ background-color: $primarycolor;
 }
 .headerLogotxt {
     display: inline-block;
-    padding: 10px 0px;
+    padding: 15px 0px;
     background-color: $secondarycolor;
     p {
+        font-family: 'Impact', regular;
         padding: 0px 10px;
         font-weight: 800;
         font-size: 60pt;
@@ -63,3 +66,15 @@ background-color: $primarycolor;
     }
    
 }
+
+
+@media screen and (max-width: 1200px) {
+    .header {
+
+        div.headerLogotxt {
+            padding: 26px 0px !important;
+        } 
+    }
+   
+}
+

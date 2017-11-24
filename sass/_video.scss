@@ -1,14 +1,20 @@
 .video {
+    padding: 0px;
+    margin-bottom: 20px;
     background-color: white;
     .videoMain {
         margin: 0px 50px;
+        
+    }
+    .contentBody {
         border: 2px solid $thirdcolor;
+        border-top-style: none;
     }
     .contentHead {
         background-color: $thirdcolor;
     }
     .additionalContent {
-        padding: 50px 50px 10px 20px;
+        padding: 15px 50px 10px 20px;
         border-bottom: 2px solid $thirdcolor;
         .additionalContentIcon {
             display: inline-block;
@@ -65,6 +71,8 @@
     }
     .rubrikaContentCategories {
         margin: 50px;
+        margin-top: 0px;
+        padding-top: 20px;
     }
     .viewedContent {
         ul {

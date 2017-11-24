@@ -1,36 +1,40 @@
 .menu {
     padding: 10px 0px 15px;
     .menuSlogan {
-        padding: 19.6px 30px;
+        padding: 30.6px 15px;
         background-color: $secondarycolor;
         p {
-            font-size: 11pt;
+            font-size: 13pt;
         }
     }
     .menuContent {
+        padding: 24px 0px;
+        
         background-color: $thirdcolor;
-        padding: 11.2px 0px;
         &::after {
             content: "";
             position: absolute;
-            left: -34px;
+            left: -22px;
             top: 0px;
-            border-style: solid;
-            border-width: 0px 0 61px 35px;
-            border-color: transparent transparent $thirdcolor transparent;
+            width: 20%;
+            z-index: 1;
+            height: 100%;
+            background-color: $thirdcolor;
+            transform: skew(-22deg);
         }
         .menuitems {
             display: inline-block;
             position: relative;
+            z-index: 50;
             ul {
                 padding: 0px;
                 list-style: none;
                 margin: 0px;
                 li {
                     display: inline-block;
-                    padding: 0px 18px;
+                    padding: 0px 10px;
                     a {
-                        font-size: 11pt;
+                        font-size: 13pt;
                         color: black;
                         text-decoration: none;
                     }
@@ -45,10 +49,10 @@
             &::after {
                 content: "";
                 position: absolute;
-                left: -24px;
+                left: -16px;
                 top: 2px;
                 border-style: solid;
-                border-width: 0px 0 35px 25px;
+                border-width: 0px 0 35px 16px;
                 border-color: transparent transparent white transparent;
             }
             i {
@@ -57,7 +61,7 @@
                 right: 0%;
             }
             input {
-                width: 200px;
+                width: 180px;
                 height: 35px;
                 border: none;
                 padding-right: 22px;

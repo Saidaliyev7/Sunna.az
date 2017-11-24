@@ -35,18 +35,10 @@
         font-size: 16pt;
         background-color: $primarycolor;
         text-transform: uppercase;
-        &::after {
-            top: 0px;
-            left: -29px;
-            content: "";
-            position: absolute;
-            border-style: solid;
-            border-width: 0px 0px 61.5px 29px;
-            border-color: transparent transparent $primarycolor transparent;
-        }
+   
     }
     .rubrikaEntrace {
-        text-align: center;
+          margin-left: 50px;
         padding: 50px 0px;
         a {
             font-size: 20pt;
@@ -63,19 +55,12 @@
         font-size: 16pt;
         background-color: $primarycolor;
         text-transform: uppercase;
-        &::after {
-            top: 0px;
-            left: -29px;
-            content: "";
-            position: absolute;
-            border-style: solid;
-            border-width: 0px 0px 61px 29px;
-            border-color: transparent transparent $primarycolor transparent;
-        }
+  
     }
-    .sendMessage {
-        text-align: center;
-        padding:75px 0px;
+    .sendMessage { 
+        margin-left: 50px;
+
+        padding:50px 0px;
        .sendMessageButton {
            display: inline-block;
          a {
@@ -98,7 +83,7 @@
     .viewedContent {
         padding-left: 20px;
         ul {
-            padding: 50px 0px;
+            padding: 50px 0px 0px 0px;
             li {
                 margin-bottom: 20px;
                 .viewedContentAbout {

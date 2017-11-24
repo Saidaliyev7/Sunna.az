@@ -2,6 +2,10 @@
     .rubrikaContent {
         padding: 0px 2px;
     }
+    .contentBody {
+        border: 2px solid $thirdcolor;
+        border-top-style: none;
+    }
     .rubrikaParagraph {
         margin: 10px 5px;
         border: 2px solid $thirdcolor;

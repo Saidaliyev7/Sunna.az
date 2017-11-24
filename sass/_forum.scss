@@ -1,8 +1,11 @@
 .forum {
     background-color: white;
     .forumMain {
-        margin: 10px 50px;
+        margin: 0px 50px;
+    }
+    .contentBody {
         border: 2px solid $thirdcolor;
+        border-top-style: none;
     }
     .contentHead {
         background-color: $thirdcolor;
@@ -13,43 +16,48 @@
         .rubrikaContent {
             display: inline-block;
             width: 50%;
+            position: relative;
             p {
                 font-size: 16pt;
                 display: inline-block;
                 margin-left: 30px;
                 width: 100%;
-                padding: 16px 0px 15px 25px;
+                padding: 15px 0px 15px 25px;
                 text-transform: uppercase;
                 background-color: $thirdcolor;
-                position: relative;
                 color: black;
-                &::after {
-                    top: 0px;
-                    right: -29px;
-                    content: "";
-                    position: absolute;
-                    border-style: solid;
-                    border-width: 62px 29px 0 0px;
-                    border-color: $thirdcolor transparent transparent transparent;
-                }
-                &::before {
-                    top: 0px;
-                    left: -29px;
-                    content: "";
-                    position: absolute;
-                    border-style: solid;
-                    border-width: 0px 0px 62.5px 29px;
-                    border-color: transparent transparent $thirdcolor transparent;
-                }
+                position: relative;
+                z-index: 4545;
+            }
+            &::after {
+                top: 0px;
+                right: -42px;
+                content: "";
+                width: 100%;
+                height: 100%;
+                position: absolute;
+                transform: skew(-15deg);
+                background-color: $thirdcolor;
+            }
+            &::before {
+                top: 0px;
+                left: 14px;
+                content: "";
+                width: 100%;
+                height: 100%;
+                position: absolute;
+                transform: skew(-15deg);
+                background-color: $thirdcolor;
             }
         }
         .rubrikaCategory {
             margin: 0px 50px;
-            
             display: inline-block;
             float: right;
+            position: relative;
             a {
                 line-height: 50px;
+                z-index: 4545;
                 font-style: italic;
                 position: relative;
                 padding: 4px 4px 4px 10px;
@@ -61,21 +69,26 @@
                     top: 0px;
                     right: -19px;
                     content: "";
+                    width: 100%;
+                    height: 100%;
                     position: absolute;
-                    border-style: solid;
-                    border-width: 27px 19px 0 0px;
-                    border-color: $thirdcolor transparent transparent transparent;
+                    transform: skew(-22deg);
+                    background-color: $thirdcolor;
+                    z-index: -1;
                 }
                 &::before {
                     top: 0px;
+                    z-index: -1;
                     left: -16px;
-                    content: "";
+                    content: "";;
+                    width: 100%;
+                    height: 100%;
                     position: absolute;
-                    border-style: solid;
-                    border-width: 0px 0px 27.5px 17px;
-                    border-color: transparent transparent $thirdcolor transparent;
+                    transform: skew(-22deg);
+                    background-color: $thirdcolor;
                 }
             }
+            
         }
     }
     .rubrikaContentCategories {
@@ -153,11 +166,10 @@
 }
 
 @media screen and (max-width:786px) {
-    .forumMain{
+    .forumMain {
         margin: 0px !important;
         .rubrikaContent {
             width: 80% !important;
         }
     }
-   
 }

@@ -2,13 +2,12 @@
     background-color: white;
     .photoMain {
         margin: 0px 50px;
-        border: 2px solid $thirdcolor;
     }
     .contentHead {
         background-color: $thirdcolor;
     }
     .additionalContent {
-        padding: 50px 50px 10px 20px;
+        padding: 10px 50px 10px 20px;
         border-bottom: 2px solid $thirdcolor;
         .additionalContentIcon {
             display: inline-block;
@@ -78,6 +77,8 @@
     
     .rubrikaContentCategories {
         margin: 50px;
+        margin-top: 0px;
+        padding-top: 20px;
     }
     .viewedContent {
         ul {

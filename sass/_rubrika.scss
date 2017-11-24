@@ -2,7 +2,6 @@
     background-color: white;
     .rubrikaContentMain {
         margin: 0px 50px;
-        border: 2px solid $thirdcolor;
     }
     .contentHead {
         background-color: $thirdcolor;
@@ -107,18 +106,10 @@
             font-size: 16pt;
             background-color: $primarycolor;
             text-transform: uppercase;
-            &::after {
-                top: 0px;
-                left: -29px;
-                content: "";
-                position: absolute;
-                border-style: solid;
-                border-width: 0px 0px 61.5px 29px;
-                border-color: transparent transparent $primarycolor transparent;
-            }
+
         }
         .rubrikaEntrace {
-            text-align: center;
+            margin-left: 50px;
             padding-top: 50px;
             a {
                 font-size: 20pt;
@@ -130,18 +121,8 @@
         }
     }
 }
-.rubrikaAdditional {
-    .message {
-        &::after {
-            border-width: 0px 0px 61px 28px;
-        }
-    }
-    .viewed {
-        &::after {
-            border-width: 0px 0px 61px 29px;
-        }
-    }
-}
+
+
 @media screen and (max-width: 768px) {
     .rubrikaContent {
         .rubrikaForum {
@@ -156,10 +137,9 @@
     .rubrikaContent {
         p {
             &::before {
-                border: none !important; 
+                border: none !important;
             }
-            &::after 
-            {
+            &::after {
                 border: none !important;
             }
         }
@@ -172,11 +152,11 @@
         .rubrika {
             .rubrikaContent {
                 width: 75% !important;
-              }
+            }
         }
     }
-   
 }
+
 @media screen and (max-width: 1187px) and (min-width: 768px) {
     .rubrikaContentCategories {
         ul {

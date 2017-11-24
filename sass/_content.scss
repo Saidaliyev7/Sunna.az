@@ -1,24 +1,15 @@
 .content {
     background-color: $secondarycolor;
-    padding: 20px 0px;
+    
     .contentHead {
         p {
             font-size: 16pt;
             display: inline-block;
             padding: 15px 64px 15px 15px;
-            text-transform: uppercase;
+            
             background-color: $primarycolor;
             position: relative;
             color: white;
-            &::before {
-                top: 0px;
-                right: -28px;
-                content: "";
-                position: absolute;
-                border-style: solid;
-                border-width: 61px 29px 0 0px;
-                border-color: $primarycolor transparent transparent transparent;
-            }
         }
     }
     .contentCategoriesHead {
@@ -29,15 +20,6 @@
             font-size: 16pt;
             background-color: $primarycolor;
             text-transform: uppercase;
-            &::before {
-                top: -1px;
-                left: -29px;
-                content: "";
-                position: absolute;
-                border-style: solid;
-                border-width: 0px 0px 62.5px 29px;
-                border-color: transparent transparent $primarycolor transparent;
-            }
         }
     }
     .contentMain {
@@ -143,6 +125,12 @@
             }
         }
     }
+    .contentCategoriesIcon {
+        i {
+            right: -3% !important;
+            
+        }
+    }
 }
 
 @media screen and (max-width: 557px) {
@@ -150,7 +138,9 @@
         p {
             &::before {
                 border: none !important;
+                width: 0% !important;
             }
         }
     }
+   
 }

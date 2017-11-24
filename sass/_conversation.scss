@@ -15,6 +15,7 @@
     .rubrikaContent {
         display: inline-block;
         width: 100%;
+        position: relative;
         p {
             font-size: 11pt;
             display: inline-block;
@@ -22,26 +23,9 @@
             padding: 16px 0px 15px 25px;
             text-transform: uppercase;
             background-color: $thirdcolor;
-            position: relative;
+           
             color: black;
-            &::after {
-                top: 0px;
-                right: -29px;
-                content: "";
-                position: absolute;
-                border-style: solid;
-                border-width: 52px 29px 0 0px;
-                border-color: $thirdcolor transparent transparent transparent;
-            }
-            &::before {
-                top: 0px;
-                left: -29px;
-                content: "";
-                position: absolute;
-                border-style: solid;
-                border-width: 0px 0px 52.5px 29px;
-                border-color: transparent transparent $thirdcolor transparent;
-            }
+            
         }
     }
     .rubrikaContext {
@@ -51,6 +35,8 @@
     .conversationContentIcons {
         margin: 30px 0px;
         ul {
+           
+            padding: 0px;
             list-style: none;
             li {
                 padding: 0px 5px;

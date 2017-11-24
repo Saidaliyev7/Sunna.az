@@ -2,14 +2,20 @@
     background-color: white;
     .booksMain {
         margin: 0px 50px;
-        border: 2px solid $thirdcolor;
+       
     }
     .contentHead {
         background-color: $thirdcolor;
         
     }
+    .contentBody {
+        border: 2px solid $thirdcolor;
+        border-top-style: none;
+    }
     .rubrikaContentCategories {
         margin: 50px;
+        margin-top: 0px;
+        padding-top: 20px;
         .rubrikaContentBooks {
             .rubrikaContentBooksIcon {
                 display: inline-block;
@@ -38,28 +44,33 @@
                 display: inline-block;
                 a {
                     font-size: 20pt;
-                    color: $primarycolor;
+                    color: black;
                     font-style: italic;
                     padding: 1px 5px;
                     background-color: $thirdcolor;
                     text-decoration: none;
                     position: relative;
+                    font-size: 12pt;
                     &::after {
                         top: 0px;
                         right: -19px;
                         content: "";
                         position: absolute;
+                        width: 15%;
+                        height: 100%;
                         border-style: solid;
-                        border-width: 35px 19px 0 0px;
+                        border-width: 21px 19px 0 0px;
                         border-color: $thirdcolor transparent transparent transparent;
                     }
                     &::before {
                         top: 0px;
-                        left: -16px;
+                        left: -17px;
                         content: "";
                         position: absolute;
+                        width: 15%;
+                        height: 100%;
                         border-style: solid;
-                        border-width: 0px 0px 34.8px 17px;
+                        border-width: 0px 0px 20.8px 17px;
                         border-color: transparent transparent $thirdcolor transparent;
                     }
                 }
@@ -68,8 +79,8 @@
                 display: inline-block;
                 float: right;
                 a {
+                    font-size: 12pt;
                     text-decoration: none;
-                    font-size: 16pt;
                     color: $primarycolor;
                     font-style: italic;
                 }
@@ -81,7 +92,7 @@
     .viewedContent {
         padding-left: 20px;
         ul {
-            padding: 50px 0px;
+            padding: 50px 0px 0px 20px;
             li {
                 margin-bottom: 20px;
                 .viewedContentAbout {

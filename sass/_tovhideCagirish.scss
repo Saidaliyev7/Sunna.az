@@ -9,15 +9,21 @@
         }
     }
 }
-
+.contentBody {
+    border: 2px solid $thirdcolor;
+    border-top-style: none;
+}
 .tovhideCagirish {
+    padding: 0px;
+    margin-bottom: 20px;
     background-color: white;
     .tovhideCagirishMain {
         margin: 0px 50px;
-        border: 2px solid $thirdcolor;
+      
     }
     .additionalContent {
-        padding: 50px 50px 10px 20px;
+        margin: 50px 50px 40px 20px;
+        border-bottom: 2px solid $thirdcolor;
         .additionalContentIcon {
             display: inline-block;
             i {
@@ -35,8 +41,9 @@
             float: right;
             display: inline-block;
             a {
+                font-style: italic;
+                color: $primarycolor;
                 text-decoration: none;
-                color: black;
                 font-size: 12pt;
                 line-height: 40px;
             }
@@ -57,7 +64,9 @@
             }
         }
         .additionalContentType {
+            display: inline-block;
             ul {
+                margin: 0px;
                 list-style: none;
                 li {
                     display: inline-block;
@@ -81,8 +90,6 @@
                             border-width: 19.8px 19px 0 0px;
                             border-color: $secondarycolor transparent transparent transparent;
                         }
-                      
-
                         &::after {
                             top: 0px;
                             left: -16px;
@@ -92,7 +99,6 @@
                             border-width: 0px 0px 19.5px 17px;
                             border-color: transparent transparent $secondarycolor transparent;
                         }
-                        
                     }
                 }
             }
@@ -103,6 +109,7 @@
                 color: black;
                 text-decoration: none;
                 font-style: italic;
+                color: $primarycolor;
             }
         }
     }
@@ -118,17 +125,19 @@
         text-transform: uppercase;
         &::after {
             top: 0px;
-            left: -29px;
+            right: -28px;
             content: "";
             position: absolute;
             border-style: solid;
-            border-width: 0px 0px 61px 29px;
-            border-color: transparent transparent $primarycolor transparent;
+            height: 100%;
+            width: 12%;
+            border-width: 61px 29px 0 0px;
+            border-color: $primarycolor transparent transparent transparent;
         }
     }
     .viewedContent {
         ul {
-            padding: 50px 0px;
+            padding: 50px 0px 0px 20px;
             list-style: none;
             li {
                 margin-bottom: 20px;
@@ -166,10 +175,10 @@
                         border: 2px solid;
                         border-radius: 50%;
                         text-align: center;
-                        width: 120px;
-                        height: 120px;
-                        line-height: 120px;
-                        font-size: 50pt;
+                        width: 80px;
+                        height: 80px;
+                        line-height: 80px;
+                        font-size: 30pt;
                         color: #cad2db;
                         background-color: white;
                         border-color: #cad2db;
@@ -216,6 +225,7 @@
 }
 
 .contentCategoriesHead {
+
     p {
         z-index: 100;
     }
@@ -224,7 +234,6 @@
 @media screen and (max-width:786px) {
     .tovhideCagirishMain {
         margin: 0px !important;
-        
     }
 }
 
@@ -232,12 +241,9 @@
     .tovhideCagirishMain {
         .rubrikaContentCategories {
             ul {
-                 
-            padding-left: 0px !important;
-            
+                padding-left: 0px !important;
                 li {
                     width: 49% !important;
-                
                 }
             }
         }

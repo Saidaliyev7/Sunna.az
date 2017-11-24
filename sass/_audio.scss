@@ -1,15 +1,23 @@
 .audio {
     background-color: white;
+    padding: 0px;
+    margin-bottom: 20px;
     .audioMain {
         margin: 0px 50px;
-        border: 2px solid $thirdcolor;
+      
     }
     .contentHead {
         background-color: $thirdcolor;
     }
+    .contentBody {
+        border: 2px solid $thirdcolor;
+        border-top-style: none;
+        
+    }
     .additionalContent {
-        padding: 0px 50px 10px 20px;
+        padding: 10px 50px 10px 20px;
         border-bottom: 2px solid $thirdcolor;
+        
         .additionalContentIcon {
             display: inline-block;
             i {
@@ -47,28 +55,24 @@
             padding: 30px 0px;
         }
         .additionalContentType {
-            padding: 15px 0px;
+            margin-top: 15px;
+            display: inline-block;
             ul {
+                margin: 0px;
                 list-style: none;
                 li {
-                    margin-right: 20px;
                     display: inline-block;
                     a {
                         color: black;
-                        padding: 0px 5px;
-                        background-color: $thirdcolor;
                         text-decoration: none;
                         font-style: italic;
+                    }
+                }
+                li:first-child {
+                    margin-right: 20px;
+                    a {
                         position: relative;
-                        &::after {
-                            top: 0px;
-                            left: -16px;
-                            content: "";
-                            position: absolute;
-                            border-style: solid;
-                            border-width: 0px 0px 19px 17px;
-                            border-color: transparent transparent #aae1fa transparent;
-                        }
+                        background-color: $secondarycolor;
                         &::before {
                             top: 0px;
                             right: -19px;
@@ -76,13 +80,26 @@
                             position: absolute;
                             border-style: solid;
                             border-width: 19.8px 19px 0 0px;
-                            border-color: #aae1fa transparent transparent transparent;
+                            border-color: $secondarycolor transparent transparent transparent;
                         }
+                      
+
+                        &::after {
+                            top: 0px;
+                            left: -16px;
+                            content: "";
+                            position: absolute;
+                            border-style: solid;
+                            border-width: 0px 0px 19.5px 17px;
+                            border-color: transparent transparent $secondarycolor transparent;
+                        }
+                        
                     }
                 }
             }
         }
         .additionalContentAndSo {
+            margin-top: 15px;
             float: right;
             a {
                 color: $primarycolor;
@@ -93,6 +110,8 @@
     }
     .rubrikaContentCategories {
         margin: 50px;
+        margin-top: 0px;
+        padding-top:20px;
     }
     .viewedContent {
         ul {
