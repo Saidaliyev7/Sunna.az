@@ -1,6 +1,9 @@
 .mainHead {
   background-color: #aae1fa; }
 
+html {
+  overflow-x: hidden; }
+
 body {
   font-family: 'Calibri'; }
 
@@ -211,7 +214,7 @@ body {
     z-index: 0;
     content: "";
     position: absolute;
-    height: 101%;
+    height: 100%;
     width: 100%;
     background-color: #2d6c93; }
   .bgTriangleSecond p {
@@ -238,7 +241,7 @@ body {
   background-color: #aae1fa;
   content: ""; }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 768px) {
   .bgTriangle::after {
     background-color: white;
     width: 0px;
@@ -598,30 +601,36 @@ body {
         .additional .additionalContent .additionalContentType ul li {
           display: inline-block; }
           .additional .additionalContent .additionalContentType ul li a {
+            position: relative;
+            z-index: 6454;
             color: black;
             text-decoration: none;
             font-style: italic; }
         .additional .additionalContent .additionalContentType ul li:first-child {
-          margin-right: 20px; }
+          margin-right: 20px;
+          position: relative; }
           .additional .additionalContent .additionalContentType ul li:first-child a {
+            z-index: 6454;
             position: relative;
             background-color: #d9edf7; }
-            .additional .additionalContent .additionalContentType ul li:first-child a::before {
-              top: 0px;
-              right: -19px;
-              content: "";
-              position: absolute;
-              border-style: solid;
-              border-width: 19.8px 19px 0 0px;
-              border-color: #d9edf7 transparent transparent transparent; }
-            .additional .additionalContent .additionalContentType ul li:first-child a::after {
-              top: 0px;
-              left: -16px;
-              content: "";
-              position: absolute;
-              border-style: solid;
-              border-width: 0px 0px 19.5px 17px;
-              border-color: transparent transparent #d9edf7 transparent; }
+          .additional .additionalContent .additionalContentType ul li:first-child::before {
+            top: 0px;
+            left: -10px;
+            content: "";
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            transform: skew(-22deg);
+            background-color: #d9edf7; }
+          .additional .additionalContent .additionalContentType ul li:first-child::after {
+            top: 0px;
+            right: -10px;
+            content: "";
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            transform: skew(-22deg);
+            background-color: #d9edf7; }
     .additional .additionalContent .additionalContentAndSo {
       float: right; }
       .additional .additionalContent .additionalContentAndSo a {
@@ -681,7 +690,7 @@ body {
   #responsiveViewedSecond::after {
     left: -28px !important;
     border-width: 0px 0px 92px 29px !important; } }
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 768px) {
   .contentMain {
     padding: 30px 0px !important; }
 
@@ -868,26 +877,30 @@ body {
             text-decoration: none;
             font-style: italic; }
         .tovhideCagirish .additionalContent .additionalContentType ul li:first-child {
-          margin-right: 20px; }
+          margin-right: 20px;
+          position: relative; }
           .tovhideCagirish .additionalContent .additionalContentType ul li:first-child a {
+            z-index: 6454;
             position: relative;
             background-color: #d9edf7; }
-            .tovhideCagirish .additionalContent .additionalContentType ul li:first-child a::before {
-              top: 0px;
-              right: -19px;
-              content: "";
-              position: absolute;
-              border-style: solid;
-              border-width: 19.8px 19px 0 0px;
-              border-color: #d9edf7 transparent transparent transparent; }
-            .tovhideCagirish .additionalContent .additionalContentType ul li:first-child a::after {
-              top: 0px;
-              left: -16px;
-              content: "";
-              position: absolute;
-              border-style: solid;
-              border-width: 0px 0px 19.5px 17px;
-              border-color: transparent transparent #d9edf7 transparent; }
+          .tovhideCagirish .additionalContent .additionalContentType ul li:first-child::before {
+            top: 0px;
+            left: -10px;
+            content: "";
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            transform: skew(-22deg);
+            background-color: #d9edf7; }
+          .tovhideCagirish .additionalContent .additionalContentType ul li:first-child::after {
+            top: 0px;
+            right: -10px;
+            content: "";
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            transform: skew(-22deg);
+            background-color: #d9edf7; }
     .tovhideCagirish .additionalContent .additionalContentAndSo {
       float: right; }
       .tovhideCagirish .additionalContent .additionalContentAndSo a {
@@ -1095,26 +1108,30 @@ body {
             text-decoration: none;
             font-style: italic; }
         .articles .additionalContent .additionalContentType ul li:first-child {
-          margin-right: 20px; }
+          margin-right: 20px;
+          position: relative; }
           .articles .additionalContent .additionalContentType ul li:first-child a {
+            z-index: 6454;
             position: relative;
             background-color: #d9edf7; }
-            .articles .additionalContent .additionalContentType ul li:first-child a::before {
-              top: 0px;
-              right: -19px;
-              content: "";
-              position: absolute;
-              border-style: solid;
-              border-width: 19.8px 19px 0 0px;
-              border-color: #d9edf7 transparent transparent transparent; }
-            .articles .additionalContent .additionalContentType ul li:first-child a::after {
-              top: 0px;
-              left: -16px;
-              content: "";
-              position: absolute;
-              border-style: solid;
-              border-width: 0px 0px 19.5px 17px;
-              border-color: transparent transparent #d9edf7 transparent; }
+          .articles .additionalContent .additionalContentType ul li:first-child::before {
+            top: 0px;
+            left: -10px;
+            content: "";
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            transform: skew(-22deg);
+            background-color: #d9edf7; }
+          .articles .additionalContent .additionalContentType ul li:first-child::after {
+            top: 0px;
+            right: -10px;
+            content: "";
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            transform: skew(-22deg);
+            background-color: #d9edf7; }
     .articles .additionalContent .additionalContentAndSo {
       margin-top: 15px;
       float: right; }
@@ -1602,26 +1619,30 @@ body {
             text-decoration: none;
             font-style: italic; }
         .audio .additionalContent .additionalContentType ul li:first-child {
-          margin-right: 20px; }
+          margin-right: 20px;
+          position: relative; }
           .audio .additionalContent .additionalContentType ul li:first-child a {
+            z-index: 6454;
             position: relative;
             background-color: #d9edf7; }
-            .audio .additionalContent .additionalContentType ul li:first-child a::before {
-              top: 0px;
-              right: -19px;
-              content: "";
-              position: absolute;
-              border-style: solid;
-              border-width: 19.8px 19px 0 0px;
-              border-color: #d9edf7 transparent transparent transparent; }
-            .audio .additionalContent .additionalContentType ul li:first-child a::after {
-              top: 0px;
-              left: -16px;
-              content: "";
-              position: absolute;
-              border-style: solid;
-              border-width: 0px 0px 19.5px 17px;
-              border-color: transparent transparent #d9edf7 transparent; }
+          .audio .additionalContent .additionalContentType ul li:first-child::before {
+            top: 0px;
+            left: -10px;
+            content: "";
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            transform: skew(-22deg);
+            background-color: #d9edf7; }
+          .audio .additionalContent .additionalContentType ul li:first-child::after {
+            top: 0px;
+            right: -10px;
+            content: "";
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            transform: skew(-22deg);
+            background-color: #d9edf7; }
     .audio .additionalContent .additionalContentAndSo {
       margin-top: 15px;
       float: right; }

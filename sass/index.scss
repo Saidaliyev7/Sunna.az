@@ -4,6 +4,9 @@ $thirdcolor:#aae1fa;
 .mainHead {
     background-color: $thirdcolor;
 }
+html {
+    overflow-x: hidden;
+}
 body {
     font-family: 'Calibri';
 }
@@ -266,7 +269,7 @@ body {
         z-index: 0;
         content: "";
         position: absolute;
-        height: 101%;
+        height: 100%;
         width: 100%;
         background-color: $primarycolor;
     }
@@ -308,7 +311,7 @@ background-color: $thirdcolor;
 
     }
 }
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 768px) {
     .bgTriangle {
         &::after {
             background-color: white;
