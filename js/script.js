@@ -1,5 +1,6 @@
 $(document).ready(function () {
 
+
     $('.scrollToTop').click(function () {
         $('html, body').animate({
             scrollTop: 0
@@ -7,10 +8,9 @@ $(document).ready(function () {
         return false;
     });
     var count=0;
+console.log($(window).width()<800);
 $(".fa-align-justify").click(function() {
-
 $(".menuitems ul").toggleClass("menuresponsiv");
-
 $(".menuitems ul li").toggleClass("menuResponsivLi");
 if(count==0) {
     $(".menuInput").attr("id", "menuInputresponsive");
@@ -23,6 +23,4 @@ if(count==1) {
     count=1;
 }
 })
-
-
 });

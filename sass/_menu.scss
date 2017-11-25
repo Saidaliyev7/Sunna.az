@@ -1,6 +1,10 @@
 .menu {
     padding: 10px 0px 15px;
+    .menuAll {
+        height: 15%;
+    }
     .menuSlogan {
+        height: 100%;
         padding: 30.6px 15px;
         background-color: $secondarycolor;
         p {
@@ -8,6 +12,7 @@
         }
     }
     .menuContent {
+        height: 100%;
         padding: 24px 0px;
         
         background-color: $thirdcolor;
@@ -45,6 +50,7 @@
             padding: 2px 0px;
             margin-left: 30px;
             position: relative;
+            z-index: 2;
             display: inline-block;
             &::after {
                 content: "";
@@ -56,11 +62,13 @@
                 border-color: transparent transparent white transparent;
             }
             i {
+                z-index: 5;
                 position: absolute;
                 top: 18%;
                 right: 0%;
             }
             input {
+                z-index: 6;
                 width: 180px;
                 height: 35px;
                 border: none;
@@ -79,22 +87,17 @@
     }
 }
 
-@media screen and (max-width:1120px) {
-    .menuSlogan {
-        padding: 31.8px 10px !important;
-    }
-    .menuContent {
-        &::after {
-            border-width: 0px 0 85.5px 35px !important;
-        }
-    }
-}
 
 @media screen and (max-width:991px) {
+    .menuAll {
+        height: auto !important;
+    }
     .menuSlogan {
+        height: auto !important;
         text-align: center;
     }
     .menuContent {
+        height: auto !important;
         text-align: center;
         .menuitems {
             margin: 10px 0px;

@@ -25,24 +25,7 @@
             font-size: 16pt;
         }
         
-        .socialLinks {
-           
-            ul {
-                
-                list-style: none;
-                text-align: right;
-                li {
-                    padding: 0px 20px;
-                    display: inline-block;
-                    a {
-                        text-decoration: none;
-                        i {
-                            font-size: 16pt;
-                        }
-                    }
-                }
-            }
-        }
+        
     }
     .viewedContent {
         padding-left: 20px;
@@ -53,7 +36,7 @@
                 .viewedContentAbout {
                   border-bottom:2px solid black; 
                     a {
-                        font-size: 20pt;
+                        font-size: 16pt;
                         color: black;
                         text-decoration: none;
                     }

@@ -3,6 +3,15 @@
         ul {
             
             list-style-type: disc;
+            li {
+                border-bottom: 2px solid black;
+                .viewedContentAbout {
+                    a {
+                        font-size: 16pt;
+                        text-decoration: none;
+                    }
+                }
+            }
         }
     }
 }

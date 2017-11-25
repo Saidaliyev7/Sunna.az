@@ -155,7 +155,7 @@
         .sendMessageButton {
             display: inline-block;
             a {
-                font-size: 20pt;
+                font-size: 16pt;
                 padding: 10px 20px;
                 background-color: $thirdcolor;
                 text-decoration: none;
@@ -166,7 +166,7 @@
             display: inline-block;
             i {
                 padding: 10px 20px;
-                font-size: 30pt
+                font-size: 26pt
             }
         }
     }
@@ -188,21 +188,21 @@
 
         }
         ul {
-            padding: 50px 0px 0px 20px;
+            padding: 50px 0px 0px 0px;
             list-style: none;
             li {
                 margin-bottom: 20px;
                 .viewedContentIcon {
                     display: inline-block;
                     i {
-                        margin-right: 20px;
-                        font-size: 20pt;
+                        margin-right: 10px;
+                        font-size: 16pt;
                     }
                 }
                 .viewedContentAbout {
                     display: inline-block;
                     a {
-                        font-size: 20pt;
+                        font-size: 16pt;
                         color: black;
                         text-decoration: underline;
                     }
