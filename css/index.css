@@ -341,7 +341,8 @@ body {
     padding: 30.6px 15px;
     background-color: #d9edf7; }
     .menu .menuSlogan p {
-      font-size: 13pt; }
+      font-size: 13pt;
+      padding-top: 19px; }
   .menu .menuContent {
     height: 100%;
     padding: 24px 0px;
@@ -363,7 +364,8 @@ body {
       .menu .menuContent .menuitems ul {
         padding: 0px;
         list-style: none;
-        margin: 0px; }
+        margin: 0px;
+        padding-top: 23px; }
         .menu .menuContent .menuitems ul li {
           display: inline-block;
           padding: 0px 10px; }
@@ -722,8 +724,10 @@ body {
     padding: 20px 0px; }
     .rubrikaContent .rubrika .rubrikaContent {
       display: inline-block;
-      width: 50%; }
+      width: 50%;
+      position: relative; }
       .rubrikaContent .rubrika .rubrikaContent p {
+        z-index: 50;
         font-size: 16pt;
         display: inline-block;
         margin-left: 30px;
@@ -733,22 +737,24 @@ body {
         background-color: #aae1fa;
         position: relative;
         color: black; }
-        .rubrikaContent .rubrika .rubrikaContent p::after {
-          top: 0px;
-          right: -29px;
-          content: "";
-          position: absolute;
-          border-style: solid;
-          border-width: 62px 29px 0 0px;
-          border-color: #aae1fa transparent transparent transparent; }
-        .rubrikaContent .rubrika .rubrikaContent p::before {
-          top: 0px;
-          left: -29px;
-          content: "";
-          position: absolute;
-          border-style: solid;
-          border-width: 0px 0px 62.5px 29px;
-          border-color: transparent transparent #aae1fa transparent; }
+      .rubrikaContent .rubrika .rubrikaContent::after {
+        top: 0px;
+        left: 14px;
+        content: "";
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        transform: skew(-15deg);
+        background-color: #aae1fa; }
+      .rubrikaContent .rubrika .rubrikaContent::before {
+        top: 0px;
+        right: -42px;
+        content: "";
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        transform: skew(-15deg);
+        background-color: #aae1fa; }
     .rubrikaContent .rubrika .rubrikaCategory {
       margin-left: 50px;
       display: inline-block; }
