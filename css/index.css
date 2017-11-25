@@ -670,7 +670,7 @@ body {
   .additional .viewedContent .video {
     padding: 10px 0px; }
   .additional .viewedContent ul {
-    padding: 50px 0px 0px 0px;
+    padding: 50px 0px 0px 20px;
     list-style: none; }
     .additional .viewedContent ul li {
       margin-bottom: 20px; }
@@ -708,7 +708,7 @@ body {
     border: none !important; }
 
   .additionalContent {
-    margin: 30px 0px !important; } }
+    margin: 0px 0px !important; } }
 @media screen and (max-width: 440px) {
   .additionalContentBody audio {
     width: 100%; } }
@@ -935,7 +935,7 @@ body {
       border-width: 61px 29px 0 0px;
       border-color: #2d6c93 transparent transparent transparent; }
   .tovhideCagirish .viewedContent ul {
-    padding: 50px 0px 0px 0px;
+    padding: 50px 0px 0px 20px;
     list-style: none; }
     .tovhideCagirish .viewedContent ul li {
       margin-bottom: 20px; }
@@ -1140,7 +1140,7 @@ body {
     margin: 50px;
     margin-top: 0px; }
   .articles .viewedContent ul {
-    padding: 50px 0px 0px 0px;
+    padding: 50px 0px 0px 20px;
     list-style: none; }
     .articles .viewedContent ul li {
       margin-bottom: 20px; }
@@ -1159,12 +1159,10 @@ body {
 @media screen and (max-width: 786px) {
   .articlesMain {
     margin: 0px !important; }
-    .articlesMain .rubrikaContentCategories {
-      margin: 15px; }
-      .articlesMain .rubrikaContentCategories .additionalContentBody p {
-        font-size: 13pt !important; }
-      .articlesMain .rubrikaContentCategories .additionalContentBody .videoifrm {
-        width: 100% !important; } }
+    .articlesMain .rubrikaContentCategories .additionalContentBody p {
+      font-size: 13pt !important; }
+    .articlesMain .rubrikaContentCategories .additionalContentBody .videoifrm {
+      width: 100% !important; } }
 .books {
   background-color: white; }
   .books .booksMain {
@@ -1271,7 +1269,7 @@ body {
   .ideologiya .viewedContent {
     padding-left: 20px; }
     .ideologiya .viewedContent ul {
-      padding: 50px 0px 0px 0px; }
+      padding: 50px 0px 0px 20px; }
       .ideologiya .viewedContent ul li {
         margin-bottom: 20px; }
         .ideologiya .viewedContent ul li .viewedContentAbout {
@@ -1384,6 +1382,7 @@ body {
     margin-top: 0px;
     padding-top: 20px; }
   .photo .viewedContent ul {
+    padding-left: 20px;
     list-style: none; }
     .photo .viewedContent ul li {
       margin: 10px 0px;
@@ -1417,6 +1416,7 @@ body {
     .photo2 .rubrikaContentCategories .rubrikaContentCategoriesImage img {
       width: 100%; }
   .photo2 .viewedContent ul {
+    padding-left: 20px;
     list-style: none; }
     .photo2 .viewedContent ul li {
       margin: 10px 0px;
@@ -1486,6 +1486,7 @@ body {
     margin-top: 0px;
     padding-top: 20px; }
   .video .viewedContent ul {
+    padding-left: 20px;
     list-style: none; }
     .video .viewedContent ul li {
       margin: 10px 0px;
@@ -1518,6 +1519,7 @@ body {
     margin: 25px;
     margin-top: 15px; }
   .video2 .viewedContent ul {
+    padding-left: 20px;
     list-style: none; }
     .video2 .viewedContent ul li {
       margin: 10px 0px;
@@ -1620,14 +1622,16 @@ body {
     margin: 50px;
     margin-top: 0px;
     padding-top: 20px; }
-  .audio .viewedContent ul li {
-    border-bottom: 2px solid black;
-    margin: 10px 0px;
-    width: 100%; }
-    .audio .viewedContent ul li a {
-      font-size: 16pt;
-      color: black;
-      text-decoration: none; }
+  .audio .viewedContent ul {
+    padding-left: 20px; }
+    .audio .viewedContent ul li {
+      border-bottom: 2px solid black;
+      margin: 10px 0px;
+      width: 100%; }
+      .audio .viewedContent ul li a {
+        font-size: 16pt;
+        color: black;
+        text-decoration: none; }
 
 @media screen and (max-width: 786px) {
   .audioMain {
@@ -1703,14 +1707,16 @@ body {
           text-decoration: none; }
           .audio2 .rubrikaContentCategories .socialLinks ul li a i {
             font-size: 16pt; }
-  .audio2 .viewedContent ul li {
-    margin: 10px 0px;
-    width: 100%;
-    border-bottom: 2px solid black; }
-    .audio2 .viewedContent ul li a {
-      font-size: 16pt;
-      color: black;
-      text-decoration: none; }
+  .audio2 .viewedContent ul {
+    padding-left: 20px; }
+    .audio2 .viewedContent ul li {
+      margin: 10px 0px;
+      width: 100%;
+      border-bottom: 2px solid black; }
+      .audio2 .viewedContent ul li a {
+        font-size: 16pt;
+        color: black;
+        text-decoration: none; }
 
 @media screen and (max-width: 786px) {
   .audio2Main {
@@ -1785,7 +1791,7 @@ body {
   .sualcavab .viewedContent {
     padding-left: 20px; }
     .sualcavab .viewedContent ul {
-      padding: 50px 0px 0px 0px; }
+      padding: 50px 0px 0px 20px; }
       .sualcavab .viewedContent ul li {
         margin-bottom: 20px; }
         .sualcavab .viewedContent ul li .viewedContentAbout {
@@ -1953,6 +1959,8 @@ body {
       width: 80% !important; } }
 .forum2 .rubrikaContent {
   padding: 0px 2px; }
+.forum2 .forum2Main {
+  margin-bottom: 10px; }
 .forum2 .contentBody {
   border: 2px solid #aae1fa;
   border-top-style: none; }
@@ -1980,19 +1988,22 @@ body {
       background-color: #aae1fa; }
 .forum2 .viewedContent {
   margin-bottom: 20px; }
-  .forum2 .viewedContent ul li {
-    border-bottom: 2px solid black;
-    margin: 10px 0px;
-    width: 100%; }
-    .forum2 .viewedContent ul li a {
-      font-size: 16pt;
-      color: black;
-      text-decoration: none; }
+  .forum2 .viewedContent ul {
+    padding-left: 20px; }
+    .forum2 .viewedContent ul li {
+      border-bottom: 2px solid black;
+      margin: 10px 0px;
+      width: 100%; }
+      .forum2 .viewedContent ul li a {
+        font-size: 16pt;
+        color: black;
+        text-decoration: none; }
 
 @media screen and (max-width: 786px) {
   .forum2 .rubrikaContent {
     width: 80% !important; } }
 .forum3 .viewedContent ul {
+  padding-left: 20px;
   list-style-type: disc; }
   .forum3 .viewedContent ul li {
     border-bottom: 2px solid black; }
@@ -2029,6 +2040,7 @@ body {
   .conversationContent .conversationContentIcons {
     margin: 30px 0px; }
     .conversationContent .conversationContentIcons ul {
+      padding-left: 10px;
       padding: 0px;
       list-style: none; }
       .conversationContent .conversationContentIcons ul li {
