@@ -335,17 +335,17 @@ body {
 .menu {
   padding: 10px 0px 15px; }
   .menu .menuAll {
-    height: 15%; }
+    height: 108px; }
   .menu .menuSlogan {
     height: 100%;
-    padding: 30.6px 15px;
+    padding: 23.6px 15px;
     background-color: #d9edf7; }
     .menu .menuSlogan p {
       font-size: 13pt;
       padding-top: 19px; }
   .menu .menuContent {
     height: 100%;
-    padding: 24px 0px;
+    padding: 16px 0px;
     background-color: #aae1fa; }
     .menu .menuContent::after {
       content: "";

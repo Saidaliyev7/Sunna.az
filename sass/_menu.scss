@@ -1,11 +1,11 @@
 .menu {
     padding: 10px 0px 15px;
     .menuAll {
-        height: 15%;
+        height: 108px;
     }
     .menuSlogan {
         height: 100%;
-        padding: 30.6px 15px;
+        padding: 23.6px 15px;
         background-color: $secondarycolor;
         p {
             font-size: 13pt;
@@ -14,7 +14,7 @@
     }
     .menuContent {
         height: 100%;
-        padding: 24px 0px;
+        padding: 16px 0px;
         
         background-color: $thirdcolor;
         &::after {
