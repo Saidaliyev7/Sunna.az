@@ -1817,6 +1817,7 @@ body {
 .forum {
   background-color: white; }
   .forum .forumMain {
+    margin-bottom: 10px !important;
     margin: 0px 50px; }
   .forum .contentBody {
     border: 2px solid #aae1fa;
