@@ -11,18 +11,19 @@
         .rubrikaContent {
             display: inline-block;
             width: 50%;
-            position: relative;
-            p {
                 z-index: 50;
                 font-size: 16pt;
                 display: inline-block;
-                margin-left: 30px;
+              
+            position: relative;
+            p {  margin-left: 30px;
                 width: 100%;
                 padding: 16px 0px 15px 25px;
                 text-transform: uppercase;
                 background-color: $thirdcolor;
                 position: relative;
                 color: black;
+                z-index: 50;
                
             }
             &::after {

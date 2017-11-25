@@ -725,18 +725,19 @@ body {
     .rubrikaContent .rubrika .rubrikaContent {
       display: inline-block;
       width: 50%;
+      z-index: 50;
+      font-size: 16pt;
+      display: inline-block;
       position: relative; }
       .rubrikaContent .rubrika .rubrikaContent p {
-        z-index: 50;
-        font-size: 16pt;
-        display: inline-block;
         margin-left: 30px;
         width: 100%;
         padding: 16px 0px 15px 25px;
         text-transform: uppercase;
         background-color: #aae1fa;
         position: relative;
-        color: black; }
+        color: black;
+        z-index: 50; }
       .rubrikaContent .rubrika .rubrikaContent::after {
         top: 0px;
         left: 14px;
@@ -1871,6 +1872,18 @@ body {
       display: inline-block;
       float: right;
       position: relative; }
+      .forum .rubrika .rubrikaCategory .conversationContentIcons {
+        display: inline-block; }
+        .forum .rubrika .rubrikaCategory .conversationContentIcons ul {
+          padding-left: 10px;
+          padding: 0px;
+          list-style: none; }
+          .forum .rubrika .rubrikaCategory .conversationContentIcons ul li {
+            padding: 0px 5px;
+            display: inline-block; }
+            .forum .rubrika .rubrikaCategory .conversationContentIcons ul li i {
+              font-size: 13pt;
+              color: #4da6ff; }
       .forum .rubrika .rubrikaCategory a {
         line-height: 50px;
         z-index: 4545;

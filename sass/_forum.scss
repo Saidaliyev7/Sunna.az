@@ -52,6 +52,23 @@
             }
         }
         .rubrikaCategory {
+            .conversationContentIcons {
+               display: inline-block;
+                ul {
+                    padding-left: 10px ;
+                   
+                    padding: 0px;
+                    list-style: none;
+                    li {
+                        padding: 0px 5px;
+                        display: inline-block;
+                        i {
+                            font-size: 13pt;
+                            color: #4da6ff;
+                        }
+                    }
+                }
+            }
             margin: 0px 50px;
             display: inline-block;
             float: right;
