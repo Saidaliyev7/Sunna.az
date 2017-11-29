@@ -50,7 +50,7 @@ body {
 }
 
 .social {
-    margin-top: 50px;
+    margin: 50px 40px 0px 40px;
     .socialAbout {
         
         display: inline-block;
@@ -62,10 +62,42 @@ body {
                 padding: 0px 5px;
                 display: inline-block;
                 a {
-                    color: white;
+                    text-align: center;
+                    color: $primarycolor;
+                    font-style: italic;
                     text-decoration: none;
-                    img {
-                        width: 50px;
+                     .socialForumIcon{
+                        margin: 0px auto;
+                        width: 40px;
+                        height: 40px;
+                        background-image: url(../img/discussion.jpg);
+                        background-size: cover;
+                        transition: 0.4s ease;
+                        opacity: 0.8;
+                        &:hover {
+                            transition: 0.4s ease;
+                            opacity: 1;
+                        }
+                    }
+                    .SocialQuestionIcon{
+                        margin: 0px auto;
+                        width: 40px;
+                        height: 40px;
+                        background-image: url(../img/13-512.png);
+                        background-size: cover;
+                        transition: 0.4s ease;
+                        opacity: 0.8;
+                        &:hover {
+                            transition: 0.4s ease;
+                            opacity: 1;
+                        }
+                    }
+                    .socialInformationIcon{
+                        margin: 0px auto;
+                        width: 40px;
+                        height: 40px;
+                        background-image: url(../img/information-icon.png);
+                        background-size: cover;
                         transition: 0.4s ease;
                         opacity: 0.8;
                         &:hover {
@@ -105,15 +137,79 @@ body {
                 a {
                     color: white;
                     text-decoration: none;
-                    i {
-                        opacity: 0.8;
+                    .googlePlusIcon {
+                        margin: 0px auto;
+                        width: 40px;
+                        height: 40px;
+                        background-image: url(../img/social/google-plus.svg);
+                        background-size: cover;
                         transition: 0.4s ease;
-                        width: 50px;
-                        height: 50px;
-                        line-height: 50px;
-                        text-align: center;
-                        border-radius: 50%;
-                        border: 1px solid;
+                        opacity: 0.8;
+                        &:hover {
+                            transition: 0.4s ease;
+                            opacity: 1;
+                        }
+                    }
+                    .facebookIcon {
+                        margin: 0px auto;
+                        width: 40px;
+                        height: 40px;
+                        background-image: url(../img/social/facebook.svg);
+                        background-size: cover;
+                        transition: 0.4s ease;
+                        opacity: 0.8;
+                        &:hover {
+                            transition: 0.4s ease;
+                            opacity: 1;
+                        }
+                    }
+                    .instagramIcon{
+                        margin: 0px auto;
+                        width: 40px;
+                        height: 40px;
+                        background-image: url(../img/social/instagram.svg);
+                        background-size: cover;
+                        transition: 0.4s ease;
+                        opacity: 0.8;
+                        &:hover {
+                            transition: 0.4s ease;
+                            opacity: 1;
+                        }
+                    }
+                    .twitterIcon{
+                        margin: 0px auto;
+                        width: 40px;
+                        height: 40px;
+                        background-image: url(../img/social/twitter.svg);
+                        background-size: cover;
+                        transition: 0.4s ease;
+                        opacity: 0.8;
+                        &:hover {
+                            transition: 0.4s ease;
+                            opacity: 1;
+                        }
+                    }
+                    .whatsappIcon{
+                        margin: 0px auto;
+                        width: 40px;
+                        height: 40px;
+                        background-image: url(../img/social/whatsapp.svg);
+                        background-size: cover;
+                        transition: 0.4s ease;
+                        opacity: 0.8;
+                        &:hover {
+                            transition: 0.4s ease;
+                            opacity: 1;
+                        }
+                    }
+                    .telegramIcon{
+                        margin: 0px auto;
+                        width: 40px;
+                        height: 40px;
+                        background-image: url(../img/social/telegram.svg);
+                        background-size: cover;
+                        transition: 0.4s ease;
+                        opacity: 0.8;
                         &:hover {
                             transition: 0.4s ease;
                             opacity: 1;
@@ -123,46 +219,6 @@ body {
             }
         }
     }
-}
-
-.fa-exclamation {
-    background-color: #9acfe1;
-    border-color: #9acfe1;
-}
-
-.questionlink {
-    background-color: #e64a34;
-    border-color: #e64a34;
-}
-
-.fa-google-plus {
-    background-color: #a82f1c;
-    border-color: #a82f1c;
-}
-
-.fa-facebook {
-    background-color: #464e7d;
-    border-color: #464e7d;
-}
-
-.fa-twitter {
-    background-color: #3a789d;
-    border-color: #3a789d;
-}
-
-.fa-instagram {
-    background-color: #7022b6;
-    border-color: #7022b6;
-}
-
-.fa-whatsapp {
-    background-color: #4f8807;
-    border-color: #4f8807;
-}
-
-.fa-telegram {
-    background-color: #77a6d4;
-    border-color: #77a6d4;
 }
 
 .breadcrumb {
@@ -190,21 +246,24 @@ body {
     list-style: none;
     padding-left: 50px;
     li {
+        margin-top: 2px;
         display: inline-block;
         a {
+            text-transform: uppercase;
             display: inline-block;
             font-size: 16pt;
             height: 52px;
             text-decoration: none;
-            width: 150px;
+            width: 180px;
             text-align: center;
             line-height: 50px;
         }
         select {
             height: 52.3px;
-            width: 150px;
+            width: 175px;
             option {
                 text-align: center;
+                text-transform: uppercase;
             }
         }
         .answerQuestion {
@@ -373,6 +432,14 @@ background-color: $thirdcolor;
     .bgTriangleSecond {
         &::before {
             left:-46px; 
+        }
+    }
+
+}
+@media screen and (max-width:1119px) {
+    .bgTriangleLeft {
+        &::before {
+            left:-20px; 
         }
     }
 

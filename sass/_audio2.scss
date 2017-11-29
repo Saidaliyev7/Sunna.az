@@ -3,7 +3,7 @@
     padding: 0px; 
     margin-bottom: 20px;
     .audio2Main {
-        margin: 0px 20px;
+        margin: 0px 50px;
         border: 2px solid $thirdcolor;
     }
     .contentHead {
@@ -74,7 +74,7 @@
         }
     }
     .rubrikaContentCategories {
-        margin:25px;
+        margin: 25px 50px 0px 50px;
         .socialLinks {
             ul {
                 
@@ -94,12 +94,13 @@
         }
     }
     .viewedContent {
+        margin-bottom: 20px;
         ul {
             padding-left: 20px ;
             li {
+                border-bottom: 2px solid black;
                 margin: 10px 0px;
                 width: 100%;
-                border-bottom: 2px solid black;
                 a {
                     font-size: 16pt;
                     color: black;
@@ -123,6 +124,12 @@
         }
         .additionalContent {
             padding: 50px 0px 10px 20px;
+        }
+        .additionalContentBody {
+            padding: 0px !important;
+        }
+        .additionalContentType {
+            margin: 0px !important;
         }
     }
 }

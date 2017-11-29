@@ -52,3 +52,30 @@ p {
     display: inline-block !important;
     transition-delay: 0.4s;
 }
+
+
+.showAllMargin a{
+margin: 0px 35px;
+}
+
+.additionalBody {
+    padding: 0px 75px;
+}
+.imageContentBody {
+    padding: 0px 100px 0px 10px;
+}
+.bredcrumPadding {
+    padding-left: 50px;
+}
+
+@media screen and (max-width:991px) {
+    .imageContentBody {
+        padding: 0px;
+    }
+    .additionalBody {
+        padding: 20px 0px;
+    }
+    .additionalContent {
+        margin: 15px 0px !important;
+    }
+}

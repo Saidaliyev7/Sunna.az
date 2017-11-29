@@ -1,4 +1,8 @@
 .header {
+    .headerLogoText {
+        text-align: right;
+        margin-right: 15px;
+    }
 background-color: $primarycolor;
 .headerLogo {
     display: inline-block;
@@ -6,7 +10,7 @@ background-color: $primarycolor;
     p {
         font-family: 'Impact', regular;
         padding: 0px 10px;
-        font-weight: 800;
+        
        font-size: 60pt;
        color: $secondarycolor;
        text-transform:uppercase;
@@ -20,7 +24,7 @@ background-color: $primarycolor;
     p {
         font-family: 'Impact', regular;
         padding: 0px 10px;
-        font-weight: 800;
+        
         font-size: 60pt;
         color:  $primarycolor;
         text-transform:uppercase;
@@ -43,6 +47,9 @@ background-color: $primarycolor;
 @media screen and (max-width: 767px) {
     .header {
         text-align: center;
+        .headerLogoText {
+            text-align: center !important;
+        }
         div.headerLogo {
             text-align: center;
             p {
@@ -52,8 +59,10 @@ background-color: $primarycolor;
             
         }
         div.headerLogotxt {
+        
             p {
                 font-size: 30pt !important;
+               
             }
         } 
         div.headerText {

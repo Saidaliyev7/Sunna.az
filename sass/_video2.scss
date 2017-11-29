@@ -8,9 +8,12 @@
     }
     .contentHead {
         p {
+            margin-top: 1px;
+            padding-left: 50px;
             border: none;
             background-color: white;
             color: black;
+            font-weight: bold;
             &::before {
                 content: "";
                 border: none;
@@ -18,13 +21,14 @@
         }
     }
     .rubrikaContentCategories {
-        margin: 25px;
+        margin: 50px;
         margin-top: 15px;
        
     }
     .viewedContent {
+        padding: 0px 20px;
         ul {
-            padding-left: 20px ;
+            padding-left: 0px ;
             list-style: none;
             li {
                 margin: 10px 0px;

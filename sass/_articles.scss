@@ -12,7 +12,7 @@
     }
     .additionalContent {
         padding: 50px 50px 0px 20px;
-        border-bottom: 2px solid $thirdcolor;
+        border-bottom: 2px solid $secondarycolor;
         .additionalContentIcon {
             display: inline-block;
             i {
@@ -43,12 +43,13 @@
             margin-left: 10px;
             width: 40px;
             height: 40px;
-            background-image: url(../img/iconforum.png);
+            background-image: url(../img/discussion.jpg);
             background-size: cover;
         }
         .additionalContentBody {
             p {
-                padding: 20px;
+                padding: 20px 0px 20px 32px;
+                
                 font-size: 16pt;
             }
         }
@@ -118,10 +119,10 @@
     }
     .viewedContent {
         ul {
-            padding: 50px 0px 0px 20px;
+            padding: 0px 0px 0px 20px;
             list-style: none;
             li {
-                margin-bottom: 20px;
+                margin:10px 0px;
                 .viewedContentIcon {
                     display: inline-block;
                     i {
@@ -141,7 +142,14 @@
         }
     }
 }
-
+@media screen and (max-width:991px) {
+    .articles {
+        .contentBody{
+           border-top-style: solid;
+        }
+    }
+    
+}
 @media screen and (max-width:786px) {
     .articlesMain {
         margin: 0px !important;
@@ -155,6 +163,12 @@
                     width: 100% !important;
                 }
             }
+        }
+        .additionalContentBody {
+            padding: 0px !important;
+        }
+        .additionalContentType {
+            margin: 0px !important;
         }
     }
 }

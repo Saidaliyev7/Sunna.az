@@ -1,20 +1,19 @@
 .menu {
+    height: 77px;
     padding: 10px 0px 15px;
-    .menuAll {
-        height: 108px;
-    }
     .menuSlogan {
         height: 100%;
-        padding: 23.6px 15px;
+       
         background-color: $secondarycolor;
         p {
-            font-size: 13pt;
-            padding-top: 19px;
+            padding: 10px;
+            font-size: 15pt;
+            
         }
     }
     .menuContent {
         height: 100%;
-        padding: 16px 0px;
+        padding: 6px;
         
         background-color: $thirdcolor;
         &::after {
@@ -37,12 +36,12 @@
                 padding: 0px;
                 list-style: none;
                 margin: 0px;
-                padding-top:23px;
+                
                 li {
                     display: inline-block;
                     padding: 0px 10px;
                     a {
-                        font-size: 13pt;
+                        font-size: 15pt;
                         color: black;
                         text-decoration: none;
                     }
@@ -68,19 +67,20 @@
                 z-index: 5;
                 position: absolute;
                 top: 18%;
-                right: 0%;
+                right: 3%;
             }
             input {
                 z-index: 6;
-                width: 180px;
+                width: 250px;
                 height: 35px;
                 border: none;
-                padding-right: 22px;
+                padding-right: 30px;
                 &::placeholder {
                     text-align: right;
                     color: black;
                     font-weight: bold;
                     padding-left: 20px;
+                    text-transform: uppercase;
                 }
                 &:focus {
                     outline: none;
@@ -89,9 +89,15 @@
         }
     }
 }
-
-
+@media screen and (max-width:1278px) {
+.menu {
+height: 110px;
+}
+}
 @media screen and (max-width:991px) {
+    .menu {
+        height: auto !important;
+    }
     .menuAll {
         height: auto !important;
     }

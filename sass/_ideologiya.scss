@@ -3,7 +3,7 @@
     background-color: white;
     .ideologiyaMain {
 
-        margin: 0px 25px;
+        margin: 0px 50px;
         border: 2px solid $thirdcolor;
     }
     .contentHead {
@@ -11,7 +11,7 @@
         
     }
     .rubrikaContentCategories {
-        margin: 25px;
+        margin: 25px 50px;
         .rubrikaContentBooks {
             .rubrikaContentBooksHead {
                 display: inline-block;
@@ -32,19 +32,17 @@
 
     }
     .viewedContent {
-        padding-left: 20px;
+        margin-bottom: 20px;
         ul {
-
-            padding: 50px 0px 0px 20px;
+            padding-left: 20px ;
             li {
-                margin-bottom: 20px;
-                .viewedContentAbout {
-                  border-bottom:2px solid black; 
-                    a {
-                        font-size: 16pt;
-                        color: black;
-                        text-decoration: none;
-                    }
+                border-bottom: 2px solid black;
+                margin: 10px 0px;
+                width: 100%;
+                a {
+                    font-size: 16pt;
+                    color: black;
+                    text-decoration: none;
                 }
             }
         }
@@ -54,6 +52,11 @@
 @media screen and (max-width:786px) {
     .ideologiyaMain {
         margin: 0px !important;
-        
+        .additionalContentBody {
+            padding: 0px !important;
+        }
+        .additionalContentType {
+            margin: 0px !important;
+        }
     }
 }

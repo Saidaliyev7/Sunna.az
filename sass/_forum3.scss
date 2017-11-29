@@ -1,9 +1,24 @@
 .forum3 {
+    .additionalContent {
+        border-bottom: 2px solid $secondarycolor;
+        .additionalContentBody {
+            margin: 10px 0px;
+            p {
+                font-size: 13pt;
+            }
+        }
+        .additionalContentAndSo {
+            font-style: italic;
+            color: $primarycolor;
+        }
+    }
     .viewedContent {
-        ul {
+        ul { 
+            padding-top: 0px;
             padding-left: 20px;
             list-style-type: disc;
             li {
+                margin: 10px 0px;
                 border-bottom: 2px solid black;
                 .viewedContentAbout {
                     a {

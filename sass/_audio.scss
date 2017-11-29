@@ -15,8 +15,8 @@
         
     }
     .additionalContent {
-        padding: 10px 50px 10px 20px;
-        border-bottom: 2px solid $thirdcolor;
+        padding: 10px 50px 0px 20px;
+        border-bottom: 2px solid $secondarycolor;
         
         .additionalContentIcon {
             display: inline-block;
@@ -52,7 +52,7 @@
             padding: 20px 0px;
         }
         .additionalContentAudio {
-            padding: 30px 0px;
+            padding: 30px 35px;
         }
         .additionalContentType {
             margin-top: 15px;
@@ -120,6 +120,7 @@
         padding-top:20px;
     }
     .viewedContent {
+        margin-bottom: 20px;
         ul {
             padding-left: 20px ;
             li {
@@ -146,6 +147,12 @@
                     width: 100% !important;
                 }
             }
+        }
+        .additionalContentBody {
+            padding: 0px !important;
+        }
+        .additionalContentType {
+            margin: 0px !important;
         }
     }
 }

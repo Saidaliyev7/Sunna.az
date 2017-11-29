@@ -5,8 +5,14 @@
         text-align: center;
         font-size: 80pt;
         i {
-            color: $primarycolor;
+            color: $thirdcolor;
         }
+    }
+    .adminIcon {
+        i {
+            color: $primarycolor !important; 
+        }
+        
     }
     .conversationContentIconName {
         text-align: center;
@@ -28,8 +34,89 @@
             
         }
     }
+    .rubrikaContentCategories {
+        ul {
+            padding-left: 5px !important;
+            list-style: none;
+            li {
+                width: 30%;
+                padding: 30px 0px;
+                display: inline-block;
+                .rubrikaCategoriesIcon {
+                   text-align: center;
+                   
+                    i {
+                        border: 1.5px solid $thirdcolor;
+                        border-radius: 50%;
+                        text-align: center;
+                        width: 100px;
+                        height: 100px;
+                        font-size: 50px;
+                        line-height: 100px;
+                        color: #4da6ff;
+                    }
+                }
+                .rubrikaCategoriesCount {
+                    text-align: center;
+                    a {
+                        text-decoration: underline;
+                        color: black;
+                    }
+                }
+                .rubrikaCategoriesName {
+                    text-align: center;
+                    border: 1px solid $thirdcolor;
+                    position: relative;
+                    border-radius: 3px;
+                    margin-top: 5px;
+                    &::after {
+                        position: absolute;
+                        content: "";
+                        width: 95%;
+                        height: 3px;
+                        background-color: $thirdcolor;
+                        top: -4px;
+                        left: 2px;
+                    }
+                    a {
+                        font-style: italic;
+                        text-decoration: none;
+                        color: black;
+                    }
+                }
+            }
+        }
+        .rubrikaForum {
+            position: relative;
+            color: white;
+            padding: 15px 0px 15px 30px;
+            font-size: 16pt;
+            background-color: $primarycolor;
+            text-transform: uppercase;
+            &::after {
+                top: 0px;
+                left: -29px;
+                content: "";
+                position: absolute;
+                border-style: solid;
+                border-width: 0px 0px 61px 29px;
+                border-color: transparent transparent $primarycolor transparent;
+            }
+        }
+        .rubrikaEntrace {
+            text-align: center;
+            padding-top: 50px;
+            a {
+                font-size: 20pt;
+                padding: 10px 20px;
+                background-color: #aae1fa;
+                text-decoration: none;
+                color: black;
+            }
+        }
+    }
     .rubrikaContext {
-        line-height: 100px;
+        margin-top: 50px;
         font-size: 16pt;
     }
     .conversationContentIcons {
@@ -91,4 +178,12 @@
     .sharedIcon {
         text-align: right;
     }
+}
+@media screen and (max-width:786px) {
+    .conversationContent {
+        .rubrikaContext {
+            line-height: 30px !important;
+        }
+    }
+    
 }

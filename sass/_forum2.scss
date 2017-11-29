@@ -1,4 +1,7 @@
 .forum2 {
+    .rubrika {
+        border:none;
+    }
     .rubrikaContent {
         padding: 0px 2px;
     }
@@ -10,19 +13,19 @@
         border-top-style: none;
     }
     .rubrikaParagraph {
-        margin: 10px 5px;
+        margin: 10px 20px;
         border: 2px solid $thirdcolor;
         border-left: none;
         border-right: none;
         .rubrikaParagraphHead {
-            padding: 20px 10px;
+            padding: 10px 10px;
             p {
                 font-size: 20pt;
             }
         }
         .rubrikaParagraphBody {
             font-size: 16pt;
-            padding: 20px 10px;
+            padding: 10px 30px;
             font-style: italic;
         }
         .rubrikaCategory {
@@ -59,6 +62,12 @@
     .forum2 {
         .rubrikaContent {
             width: 80% !important;
+        }
+        .additionalContentBody {
+            padding: 0px !important;
+        }
+        .additionalContentType {
+            margin: 0px !important;
         }
     }
 }
