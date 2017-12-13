@@ -93,9 +93,23 @@
         margin: 0px 100px;
         padding: 2px;
         padding-top: 0px;
-        background-color: $thirdcolor;
+        //background-color: $thirdcolor;
         li {
+            padding-left: 0px;
+            margin: 0px;
+            padding: 4px;
+            background-color: $thirdcolor;
             width: 32.90%;
+           a{
+                &:hover {
+                    background-color:$primarycolor !important;
+                    color: white !important;
+                }
+            }
+        }
+        li:last-child {
+           background-color: $primarycolor;
+           
         }
     }
     

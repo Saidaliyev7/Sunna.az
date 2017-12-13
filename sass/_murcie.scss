@@ -12,6 +12,7 @@
          p {
              background-color: white;
              color: black;
+             font-size: 20pt;
              font-weight: bold;
              &::before {
               border: none;
@@ -22,9 +23,11 @@
     }
     .rubrikaContentCategories {
         margin: 25px 30px;
+        margin-top: 0px;
         p {
             margin: 20px;
             font-size: 16pt;
+            margin-top: 0px;
         }
         
         

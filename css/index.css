@@ -7,6 +7,10 @@ html {
 body {
   font-family: 'Calibri'; }
 
+.mgTop {
+  margin-top: 138px !important;
+  text-align: right; }
+
 .showAll {
   margin: 20px 0px;
   margin-bottom: 30px; }
@@ -41,6 +45,11 @@ body {
       background-color: white;
       border: 1px solid white;
       border-radius: 50%; }
+
+.showAllMarginFix {
+  margin: 20px 35px 30px 35px; }
+  .showAllMarginFix a {
+    margin: 0px 20px !important; }
 
 .social {
   margin: 50px 40px 0px 40px; }
@@ -862,7 +871,7 @@ body {
         width: 100%;
         height: 100%;
         position: absolute;
-        transform: skew(-15deg);
+        transform: skew(-22deg);
         background-color: #aae1fa; }
       .rubrikaContent .rubrika .rubrikaContent::before {
         top: 0px;
@@ -871,7 +880,7 @@ body {
         width: 100%;
         height: 100%;
         position: absolute;
-        transform: skew(-15deg);
+        transform: skew(-22deg);
         background-color: #aae1fa; }
     .rubrikaContent .rubrika .rubrikaCategory {
       float: right;
@@ -1485,14 +1494,17 @@ body {
     .murcie .contentHead p {
       background-color: white;
       color: black;
+      font-size: 20pt;
       font-weight: bold; }
       .murcie .contentHead p::before {
         border: none; }
   .murcie .rubrikaContentCategories {
-    margin: 25px 30px; }
+    margin: 25px 30px;
+    margin-top: 0px; }
     .murcie .rubrikaContentCategories p {
       margin: 20px;
-      font-size: 16pt; }
+      font-size: 16pt;
+      margin-top: 0px; }
   .murcie .viewedContent {
     margin-bottom: 20px; }
     .murcie .viewedContent ul {
@@ -1996,11 +2008,13 @@ body {
     .sualcavab .contentHead p {
       background-color: white;
       color: black;
-      font-weight: bold; }
+      font-weight: bold;
+      font-size: 20pt; }
       .sualcavab .contentHead p::before {
         border: none; }
   .sualcavab .rubrikaContentCategories {
-    margin: 50px; }
+    margin: 50px;
+    margin-top: 0px; }
     .sualcavab .rubrikaContentCategories p {
       font-size: 16pt; }
   .sualcavab .rubrikaForum {
@@ -2080,6 +2094,8 @@ body {
     border: none !important; } }
 .forum {
   background-color: white; }
+  .forum .sendQuestion li {
+    width: 23.37%; }
   .forum .forumMain {
     margin-bottom: 10px !important;
     margin: 0px 50px; }
@@ -2268,6 +2284,8 @@ body {
     margin: 0px 10px !important; }
     .forumMain .rubrikaCategory a {
       margin: 0px 10px !important; } }
+.forum2 .sendQuestion li {
+  width: 18.5%; }
 .forum2 .rubrika {
   border: none; }
 .forum2 .rubrikaContent {
@@ -2346,13 +2364,13 @@ body {
   .conversationContent .conversationContentIcon {
     text-align: center;
     font-size: 80pt; }
-    .conversationContent .conversationContentIcon i {
-      color: #aae1fa; }
-  .conversationContent .adminIcon i {
-    color: #2d6c93 !important; }
+    .conversationContent .conversationContentIcon i img {
+      width: 100%; }
   .conversationContent .conversationContentIconName {
     text-align: center;
-    margin-top: 10px; }
+    margin-bottom: 10px; }
+    .conversationContent .conversationContentIconName p {
+      font-size: 16pt; }
   .conversationContent .rubrikaContent {
     display: inline-block;
     width: 100%;
@@ -2434,7 +2452,7 @@ body {
     margin-top: 50px;
     font-size: 16pt; }
   .conversationContent .conversationContentIcons {
-    margin: 30px 0px; }
+    margin-top: 20px; }
     .conversationContent .conversationContentIcons ul {
       padding-left: 10px;
       padding: 0px;
@@ -2446,19 +2464,19 @@ body {
           font-size: 13pt;
           color: #4da6ff; }
   .conversationContent .rubrikaCategoriesName {
-    margin: 50px 0px;
+    margin: 72px 0px;
     text-align: center;
-    border: 1px solid #4da6ff;
+    border: 1px solid #aae1fa;
     position: relative;
     border-radius: 3px; }
     .conversationContent .rubrikaCategoriesName::after {
       position: absolute;
       content: "";
-      width: 100%;
+      width: 95%;
       height: 3px;
-      background-color: #4da6ff;
-      top: -1px;
-      left: 0px; }
+      background-color: #aae1fa;
+      top: -4px;
+      left: 5px; }
     .conversationContent .rubrikaCategoriesName a {
       font-style: italic;
       text-decoration: none;
@@ -2555,10 +2573,18 @@ body {
 .search .sendQuestion {
   margin: 0px 100px;
   padding: 2px;
-  padding-top: 0px;
-  background-color: #aae1fa; }
+  padding-top: 0px; }
   .search .sendQuestion li {
+    padding-left: 0px;
+    margin: 0px;
+    padding: 4px;
+    background-color: #aae1fa;
     width: 32.90%; }
+    .search .sendQuestion li a:hover {
+      background-color: #2d6c93 !important;
+      color: white !important; }
+  .search .sendQuestion li:last-child {
+    background-color: #2d6c93; }
 
 @media screen and (max-width: 1000px) {
   .search .sendQuestion {

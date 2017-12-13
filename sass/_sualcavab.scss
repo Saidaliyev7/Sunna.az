@@ -12,6 +12,7 @@
              background-color: white;
              color: black;
              font-weight: bold;
+             font-size: 20pt;
              &::before {
               border: none;
              }
@@ -21,6 +22,7 @@
     }
     .rubrikaContentCategories {
         margin: 50px;
+        margin-top: 0px;
         p {
            
             font-size: 16pt;

@@ -10,7 +10,11 @@ html {
 body {
     font-family: 'Calibri';
 }
-
+.mgTop {
+    margin-top: 138px !important;
+    text-align: right;
+    
+}
 .showAll {
     margin: 20px 0px;
     margin-bottom: 30px;
@@ -49,7 +53,12 @@ body {
         }
     }
 }
-
+.showAllMarginFix {
+    margin: 20px 35px 30px 35px;
+    a {
+        margin: 0px 20px !important;
+    }
+}
 .social {
     margin: 50px 40px 0px 40px;
     .socialAbout {
