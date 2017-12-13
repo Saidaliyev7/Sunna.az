@@ -2510,6 +2510,8 @@ body {
     font-size: 16pt;
     display: inline-block;
     color: black; }
+.search .rubrikaParagraph {
+  border-top: none; }
 .search .rubrikaContentCategories {
   margin-bottom: 10px; }
 .search .rubrikaContentCategories {
