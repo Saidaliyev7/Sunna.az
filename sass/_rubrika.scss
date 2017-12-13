@@ -1,4 +1,14 @@
 .rubrikaContent {
+    .sendMessageIcon {
+        display: inline-block;
+        i {
+           
+            img {
+                margin: 10px;
+                width: 70px;
+            }
+        }
+    }
     margin-bottom: 2px;
     background-color: white;
     .rubrikaContentMain {
@@ -55,6 +65,9 @@
            margin-left: 10px;
             display: inline-block;
             ul {
+                margin-bottom: 0px;
+                margin-top: 29px;
+            
                 list-style: none;
                 li {
                     display: inline-block;
@@ -69,6 +82,7 @@ font-style: italic;
     }
     .rubrikaContentCategories {
         ul {
+            margin-top: 15px;
             padding-left: 5px;
             list-style: none;
             li {
@@ -120,27 +134,21 @@ font-style: italic;
             }
         }
         .rubrikaForum {
+            margin-top: 32px;
+            
             position: relative;
             color: white;
             padding: 15px 0px 15px 30px;
             font-size: 16pt;
             background-color: $primarycolor;
             text-transform: uppercase;
-            &::after {
-                top: 0px;
-                left: -29px;
-                content: "";
-                position: absolute;
-                border-style: solid;
-                border-width: 0px 0px 61px 29px;
-                border-color: transparent transparent $primarycolor transparent;
-            }
+
         }
         .rubrikaEntrace {
             margin-left: 50px;
-            padding-top: 50px;
+            padding-top: 30px;
             a {
-                font-size: 16pt;
+                font-size: 13pt;
                 padding: 10px 20px;
                 background-color: #aae1fa;
                 text-decoration: none;

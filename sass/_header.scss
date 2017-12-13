@@ -6,12 +6,11 @@
 background-color: $primarycolor;
 .headerLogo {
     display: inline-block;
-    padding: 10px 0px;
     p {
         font-family: 'Impact', regular;
         padding: 0px 10px;
         
-       font-size: 60pt;
+       font-size: 70pt;
        color: $secondarycolor;
        text-transform:uppercase;
        margin: 0px;
@@ -25,14 +24,14 @@ background-color: $primarycolor;
         font-family: 'Impact', regular;
         padding: 0px 10px;
         
-        font-size: 60pt;
+        font-size: 70pt;
         color:  $primarycolor;
         text-transform:uppercase;
         margin: 0px;
      }
 }
 .headerText {
-    padding: 23px 0px;
+    padding-top: 40px;
     .textContent {
      color: $secondarycolor;
      font-size: 16pt; 
@@ -82,7 +81,53 @@ background-color: $primarycolor;
 
         div.headerLogotxt {
             padding: 26px 0px !important;
+            p {
+                font-size: 57pt !important;
+            }
         } 
+        .headerLogo  {
+          p {
+              font-size: 55pt !important;
+          }
+        }
+    }
+   
+}
+@media screen and (min-width:1278px) {
+    .menuAll {
+        height: 51px !important;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .header {
+        text-align: center;
+        .headerLogoText {
+            text-align: center !important;
+        }
+        div.headerLogo {
+            text-align: center;
+            p {
+                font-size: 30pt !important;
+    
+            }
+            
+        }
+        div.headerLogotxt {
+            padding: 13px 0px !important;
+            p {
+                font-size: 30pt !important;
+               
+            }
+        } 
+        div.headerText {
+            text-align: center;
+            padding: 10px 0px;
+            div.textContent {
+                font-size: 11pt !important;
+            }
+           
+        }
     }
    
 }

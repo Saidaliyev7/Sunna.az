@@ -6,6 +6,7 @@
     }
     .contentHead {
         margin: 2px;
+        margin-bottom: -50px;
         p {
             margin-left: 32px;
             font-size: 20pt;
@@ -29,6 +30,7 @@
     .viewedContent {
         margin-bottom: 20px;
         ul {
+            padding-top: 15px;
             padding-left: 20px ;
             li {
                 border-bottom: 2px solid black;
@@ -47,6 +49,12 @@
 @media screen and (max-width:786px) {
     .tovhidnadiMain {
         margin: 0px !important;
+        .contentHead {
+            margin-bottom: 0px !important;
+            p {
+                margin-left: 0px !important;
+            }
+        }
         .rubrikaContentCategories {
             .paragraph {
                 p {

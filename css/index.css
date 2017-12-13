@@ -8,7 +8,8 @@ body {
   font-family: 'Calibri'; }
 
 .showAll {
-  margin: 20px 0px; }
+  margin: 20px 0px;
+  margin-bottom: 30px; }
   .showAll a {
     font-style: italic;
     position: relative;
@@ -200,6 +201,7 @@ body {
   list-style: none;
   padding-left: 50px; }
   .sendQuestion li {
+    width: 18.5%;
     margin-top: 2px;
     display: inline-block; }
     .sendQuestion li a {
@@ -208,20 +210,21 @@ body {
       font-size: 16pt;
       height: 52px;
       text-decoration: none;
-      width: 180px;
+      width: 100%;
       text-align: center;
       line-height: 50px; }
     .sendQuestion li select {
       height: 52.3px;
-      width: 175px; }
+      width: 100%; }
       .sendQuestion li select option {
         text-align: center;
         text-transform: uppercase; }
     .sendQuestion li .answerQuestion {
       background-color: #aae1fa;
-      color: white;
+      color: black;
       transition: 0.4s ease; }
       .sendQuestion li .answerQuestion:hover {
+        color: white;
         transition: 0.4s ease;
         background-color: #2d6c93; }
     .sendQuestion li .sendQuestions {
@@ -230,6 +233,7 @@ body {
       transition: 0.4s ease; }
       .sendQuestion li .sendQuestions:hover {
         transition: 0.4s ease;
+        color: black;
         background-color: #aae1fa; }
 
 .bgTriangle {
@@ -300,6 +304,9 @@ body {
     width: 0px;
     height: 0px; }
 
+  .sendQuestion li {
+    width: 45% !important; }
+
   .bgTriangleSecond::before {
     background-color: white;
     width: 0px;
@@ -326,6 +333,9 @@ body {
     background-color: white;
     width: 0px;
     height: 0px; } }
+@media screen and (max-width: 1280px) {
+  .sendQuestion li {
+    width: 30% !important; } }
 @media screen and (max-width: 1200px) {
   .bgTriangle::after {
     height: 100%; }
@@ -338,18 +348,20 @@ body {
 @media screen and (max-width: 1119px) {
   .bgTriangleLeft::before {
     left: -20px; } }
+@media screen and (max-width: 500px) {
+  .sendQuestion li {
+    width: 95% !important; } }
 .header {
   background-color: #2d6c93; }
   .header .headerLogoText {
     text-align: right;
     margin-right: 15px; }
   .header .headerLogo {
-    display: inline-block;
-    padding: 10px 0px; }
+    display: inline-block; }
     .header .headerLogo p {
       font-family: 'Impact', regular;
       padding: 0px 10px;
-      font-size: 60pt;
+      font-size: 70pt;
       color: #d9edf7;
       text-transform: uppercase;
       margin: 0px; }
@@ -360,12 +372,12 @@ body {
     .header .headerLogotxt p {
       font-family: 'Impact', regular;
       padding: 0px 10px;
-      font-size: 60pt;
+      font-size: 70pt;
       color: #2d6c93;
       text-transform: uppercase;
       margin: 0px; }
   .header .headerText {
-    padding: 23px 0px; }
+    padding-top: 40px; }
     .header .headerText .textContent {
       color: #d9edf7;
       font-size: 16pt;
@@ -390,7 +402,32 @@ body {
         font-size: 11pt !important; } }
 @media screen and (max-width: 1200px) {
   .header div.headerLogotxt {
-    padding: 26px 0px !important; } }
+    padding: 26px 0px !important; }
+    .header div.headerLogotxt p {
+      font-size: 57pt !important; }
+  .header .headerLogo p {
+    font-size: 55pt !important; } }
+@media screen and (min-width: 1278px) {
+  .menuAll {
+    height: 51px !important; } }
+@media screen and (max-width: 767px) {
+  .header {
+    text-align: center; }
+    .header .headerLogoText {
+      text-align: center !important; }
+    .header div.headerLogo {
+      text-align: center; }
+      .header div.headerLogo p {
+        font-size: 30pt !important; }
+    .header div.headerLogotxt {
+      padding: 13px 0px !important; }
+      .header div.headerLogotxt p {
+        font-size: 30pt !important; }
+    .header div.headerText {
+      text-align: center;
+      padding: 10px 0px; }
+      .header div.headerText div.textContent {
+        font-size: 11pt !important; } }
 .menu {
   height: 77px;
   padding: 10px 0px 15px; }
@@ -735,9 +772,9 @@ body {
     background-color: #2d6c93;
     text-transform: uppercase; }
   .additional .viewedContent .video {
-    padding: 10px 0px; }
+    padding-top: 25px; }
   .additional .viewedContent ul {
-    padding: 20px 0px 0px 20px;
+    padding: 25px 0px 0px 20px;
     list-style: none; }
     .additional .viewedContent ul li {
       margin-bottom: 10px; }
@@ -791,6 +828,11 @@ body {
 .rubrikaContent {
   margin-bottom: 2px;
   background-color: white; }
+  .rubrikaContent .sendMessageIcon {
+    display: inline-block; }
+    .rubrikaContent .sendMessageIcon i img {
+      margin: 10px;
+      width: 70px; }
   .rubrikaContent .rubrikaContentMain {
     margin: 0px 50px; }
   .rubrikaContent .contentHead {
@@ -836,6 +878,8 @@ body {
       margin-left: 10px;
       display: inline-block; }
       .rubrikaContent .rubrika .rubrikaCategory ul {
+        margin-bottom: 0px;
+        margin-top: 29px;
         list-style: none; }
         .rubrikaContent .rubrika .rubrikaCategory ul li {
           display: inline-block; }
@@ -844,6 +888,7 @@ body {
             text-decoration: none;
             color: #2d6c93; }
   .rubrikaContent .rubrikaContentCategories ul {
+    margin-top: 15px;
     padding-left: 5px;
     list-style: none; }
     .rubrikaContent .rubrikaContentCategories ul li {
@@ -885,25 +930,18 @@ body {
           text-decoration: none;
           color: black; }
   .rubrikaContent .rubrikaContentCategories .rubrikaForum {
+    margin-top: 32px;
     position: relative;
     color: white;
     padding: 15px 0px 15px 30px;
     font-size: 16pt;
     background-color: #2d6c93;
     text-transform: uppercase; }
-    .rubrikaContent .rubrikaContentCategories .rubrikaForum::after {
-      top: 0px;
-      left: -29px;
-      content: "";
-      position: absolute;
-      border-style: solid;
-      border-width: 0px 0px 61px 29px;
-      border-color: transparent transparent #2d6c93 transparent; }
   .rubrikaContent .rubrikaContentCategories .rubrikaEntrace {
     margin-left: 50px;
-    padding-top: 50px; }
+    padding-top: 30px; }
     .rubrikaContent .rubrikaContentCategories .rubrikaEntrace a {
-      font-size: 16pt;
+      font-size: 13pt;
       padding: 10px 20px;
       background-color: #aae1fa;
       text-decoration: none;
@@ -1041,7 +1079,7 @@ body {
       border-width: 61px 29px 0 0px;
       border-color: #2d6c93 transparent transparent transparent; }
   .tovhideCagirish .viewedContent ul {
-    padding: 0px 0px 0px 20px;
+    padding: 15px 0px 0px 20px;
     list-style: none; }
     .tovhideCagirish .viewedContent ul li {
       margin: 10px 0px; }
@@ -1140,7 +1178,8 @@ body {
     margin: 0px 50px;
     border: 2px solid #aae1fa; }
   .tovhidnadi .contentHead {
-    margin: 2px; }
+    margin: 2px;
+    margin-bottom: -50px; }
     .tovhidnadi .contentHead p {
       margin-left: 32px;
       font-size: 20pt;
@@ -1155,6 +1194,7 @@ body {
   .tovhidnadi .viewedContent {
     margin-bottom: 20px; }
     .tovhidnadi .viewedContent ul {
+      padding-top: 15px;
       padding-left: 20px; }
       .tovhidnadi .viewedContent ul li {
         border-bottom: 2px solid black;
@@ -1168,6 +1208,10 @@ body {
 @media screen and (max-width: 786px) {
   .tovhidnadiMain {
     margin: 0px !important; }
+    .tovhidnadiMain .contentHead {
+      margin-bottom: 0px !important; }
+      .tovhidnadiMain .contentHead p {
+        margin-left: 0px !important; }
     .tovhidnadiMain .rubrikaContentCategories .paragraph p {
       margin: 16px;
       font-size: 12pt; } }
@@ -1177,6 +1221,8 @@ body {
     margin: 0px 50px; }
   .articles .contentHead {
     background-color: #aae1fa; }
+    .articles .contentHead p {
+      width: 250px; }
   .articles .contentBody {
     border: 2px solid #aae1fa;
     border-top-style: none; }
@@ -1260,7 +1306,7 @@ body {
     margin: 50px;
     margin-top: 0px; }
   .articles .viewedContent ul {
-    padding: 0px 0px 0px 20px;
+    padding: 25px 0px 0px 20px;
     list-style: none; }
     .articles .viewedContent ul li {
       margin: 10px 0px; }
@@ -1296,6 +1342,8 @@ body {
     margin: 0px 50px; }
   .books .contentHead {
     background-color: #aae1fa; }
+    .books .contentHead p {
+      width: 250px; }
   .books .contentBody {
     border: 2px solid #aae1fa;
     border-top-style: none; }
@@ -1366,6 +1414,7 @@ body {
   .books .viewedContent {
     margin-bottom: 20px; }
     .books .viewedContent ul {
+      padding-top: 15px;
       padding-left: 20px; }
       .books .viewedContent ul li {
         border-bottom: 2px solid black;
@@ -1405,6 +1454,7 @@ body {
   .ideologiya .viewedContent {
     margin-bottom: 20px; }
     .ideologiya .viewedContent ul {
+      padding-top: 15px;
       padding-left: 20px; }
       .ideologiya .viewedContent ul li {
         border-bottom: 2px solid black;
@@ -1446,6 +1496,7 @@ body {
   .murcie .viewedContent {
     margin-bottom: 20px; }
     .murcie .viewedContent ul {
+      padding-top: 15px;
       padding-left: 20px; }
       .murcie .viewedContent ul li {
         border-bottom: 2px solid black;
@@ -1474,6 +1525,8 @@ body {
     margin: 0px 50px; }
   .photo .contentHead {
     background-color: #aae1fa; }
+    .photo .contentHead p {
+      width: 250px; }
   .photo .additionalContent {
     padding: 10px 50px 0px 20px;
     border-bottom: 2px solid #d9edf7; }
@@ -1531,17 +1584,16 @@ body {
     margin-top: 0px;
     padding-top: 20px; }
   .photo .viewedContent {
-    padding: 0px 20px; }
+    padding: 0px 20px;
+    padding-top: 20px; }
     .photo .viewedContent ul {
       padding-left: 0px;
       list-style: none; }
       .photo .viewedContent ul li {
         margin: 10px 0px;
         width: 100%; }
-        .photo .viewedContent ul li .viewedContentImage {
-          margin-right: 15px; }
-          .photo .viewedContent ul li .viewedContentImage img {
-            width: 100%; }
+        .photo .viewedContent ul li .viewedContentImage img {
+          width: 100%; }
 
 @media screen and (max-width: 786px) {
   .photoMain {
@@ -1577,12 +1629,13 @@ body {
       width: 100%; }
   .photo2 .viewedContent ul {
     padding-left: 20px;
+    padding-top: 20px;
     list-style: none; }
     .photo2 .viewedContent ul li {
       margin: 10px 0px;
       width: 100%; }
       .photo2 .viewedContent ul li .viewedContentImage {
-        margin-right: 15px; }
+        margin-right: 20px; }
         .photo2 .viewedContent ul li .viewedContentImage img {
           width: 100%; }
 
@@ -1606,6 +1659,8 @@ body {
     border-top-style: none; }
   .video .contentHead {
     background-color: #aae1fa; }
+    .video .contentHead p {
+      width: 250px; }
   .video .additionalContent {
     padding: 15px 50px 0px 20px;
     border-bottom: 2px solid #d9edf7; }
@@ -1656,7 +1711,8 @@ body {
     margin-top: 0px;
     padding-top: 20px; }
   .video .viewedContent {
-    padding: 0px 20px; }
+    padding: 0px 20px;
+    padding-top: 20px; }
     .video .viewedContent ul {
       padding: 0px;
       list-style: none; }
@@ -1698,7 +1754,8 @@ body {
     margin: 50px;
     margin-top: 15px; }
   .video2 .viewedContent {
-    padding: 0px 20px; }
+    padding: 0px 20px;
+    padding-top: 20px; }
     .video2 .viewedContent ul {
       padding-left: 0px;
       list-style: none; }
@@ -1723,6 +1780,8 @@ body {
     margin: 0px 50px; }
   .audio .contentHead {
     background-color: #aae1fa; }
+    .audio .contentHead p {
+      width: 250px; }
   .audio .contentBody {
     border: 2px solid #aae1fa;
     border-top-style: none; }
@@ -1806,6 +1865,7 @@ body {
   .audio .viewedContent {
     margin-bottom: 20px; }
     .audio .viewedContent ul {
+      padding-top: 15px;
       padding-left: 20px; }
       .audio .viewedContent ul li {
         border-bottom: 2px solid black;
@@ -1897,6 +1957,7 @@ body {
   .audio2 .viewedContent {
     margin-bottom: 20px; }
     .audio2 .viewedContent ul {
+      padding-top: 15px;
       padding-left: 20px; }
       .audio2 .viewedContent ul li {
         border-bottom: 2px solid black;
@@ -2027,6 +2088,8 @@ body {
     border-top-style: none; }
   .forum .contentHead {
     background-color: #aae1fa; }
+    .forum .contentHead p {
+      width: 250px; }
   .forum .rubrika {
     margin: 20px;
     border-bottom: 2px solid #aae1fa; }
@@ -2239,6 +2302,7 @@ body {
 .forum2 .viewedContent {
   margin-bottom: 20px; }
   .forum2 .viewedContent ul {
+    padding-top: 15px;
     padding-left: 20px; }
     .forum2 .viewedContent ul li {
       border-bottom: 2px solid black;
@@ -2266,7 +2330,7 @@ body {
     font-style: italic;
     color: #2d6c93; }
 .forum3 .viewedContent ul {
-  padding-top: 0px;
+  padding-top: 15px;
   padding-left: 20px;
   list-style-type: disc; }
   .forum3 .viewedContent ul li {
@@ -2417,5 +2481,93 @@ body {
 @media screen and (max-width: 786px) {
   .conversationContent .rubrikaContext {
     line-height: 30px !important; } }
+.search .viewedContent li {
+  border-bottom: 0px !important; }
+.search .contentBody {
+  padding: 50px 0px; }
+.search .searchContent {
+  display: inline-block;
+  margin-left: 50px; }
+  .search .searchContent p {
+    font-size: 16pt;
+    display: inline-block;
+    color: black; }
+.search .rubrikaContentCategories {
+  margin-bottom: 10px; }
+.search .rubrikaContentCategories {
+  border-bottom: 2px solid #aae1fa; }
+  .search .rubrikaContentCategories ul {
+    margin-bottom: 0px;
+    padding-top: 50px;
+    list-style: none; }
+    .search .rubrikaContentCategories ul li {
+      padding: 0px;
+      text-align: center;
+      margin-top: 10px;
+      display: inline-block;
+      width: 15%; }
+      .search .rubrikaContentCategories ul li .rubrikaCategoriesIcon {
+        text-align: center; }
+        .search .rubrikaContentCategories ul li .rubrikaCategoriesIcon i {
+          border: 2px solid;
+          border-radius: 50%;
+          text-align: center;
+          width: 80px;
+          height: 80px;
+          line-height: 80px;
+          font-size: 30pt;
+          color: #cad2db;
+          background-color: white;
+          border-color: #cad2db;
+          transition: 0.4s ease;
+          cursor: pointer; }
+          .search .rubrikaContentCategories ul li .rubrikaCategoriesIcon i:hover {
+            transition: 0.4s ease;
+            border-color: #4da7ff;
+            background-color: #4da7ff;
+            color: white; }
+      .search .rubrikaContentCategories ul li .rubrikaCategoriesCount {
+        text-align: center; }
+        .search .rubrikaContentCategories ul li .rubrikaCategoriesCount a {
+          text-decoration: underline;
+          color: black; }
+      .search .rubrikaContentCategories ul li .rubrikaCategoriesName {
+        margin-top: 5px;
+        text-align: center;
+        border: 1px solid #aae1fa;
+        position: relative;
+        border-bottom: 0px;
+        display: inline-block;
+        border-radius: 3px;
+        width: 100px; }
+        .search .rubrikaContentCategories ul li .rubrikaCategoriesName::after {
+          position: absolute;
+          content: "";
+          width: 95%;
+          height: 3px;
+          background-color: #aae1fa;
+          top: -4px;
+          left: 3px; }
+        .search .rubrikaContentCategories ul li .rubrikaCategoriesName a {
+          font-style: italic;
+          text-decoration: none;
+          color: black; }
+.search .sendQuestion {
+  margin: 0px 100px;
+  padding: 2px;
+  padding-top: 0px;
+  background-color: #aae1fa; }
+  .search .sendQuestion li {
+    width: 32.90%; }
+
+@media screen and (max-width: 1000px) {
+  .search .sendQuestion {
+    margin: 0px 10px !important; } }
+@media screen and (max-width: 1280px) {
+  .search .sendQuestion li {
+    width: 32.8% !important; } }
+@media screen and (max-width: 1280px) {
+  .search .rubrikaCategoriesName {
+    border-bottom: 1px solid #aae1fa !important; } }
 
 /*# sourceMappingURL=index.css.map */

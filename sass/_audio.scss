@@ -8,6 +8,9 @@
     }
     .contentHead {
         background-color: $thirdcolor;
+        p {
+            width: 250px;
+        }
     }
     .contentBody {
         border: 2px solid $thirdcolor;
@@ -122,6 +125,7 @@
     .viewedContent {
         margin-bottom: 20px;
         ul {
+            padding-top: 15px;
             padding-left: 20px ;
             li {
                 border-bottom: 2px solid black;

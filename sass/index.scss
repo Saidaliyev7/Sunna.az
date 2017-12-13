@@ -13,6 +13,7 @@ body {
 
 .showAll {
     margin: 20px 0px;
+    margin-bottom: 30px;
     a {
         font-style: italic;
         position: relative;
@@ -246,6 +247,7 @@ body {
     list-style: none;
     padding-left: 50px;
     li {
+        width: 18.5%;
         margin-top: 2px;
         display: inline-block;
         a {
@@ -254,13 +256,13 @@ body {
             font-size: 16pt;
             height: 52px;
             text-decoration: none;
-            width: 180px;
+            width: 100%;
             text-align: center;
             line-height: 50px;
         }
         select {
             height: 52.3px;
-            width: 175px;
+            width: 100%;
             option {
                 text-align: center;
                 text-transform: uppercase;
@@ -268,9 +270,10 @@ body {
         }
         .answerQuestion {
             background-color: $thirdcolor;
-            color: white;
+            color: black;
             transition: 0.4s ease;
             &:hover {
+                color: white;
                 transition: 0.4s ease;
                 background-color: $primarycolor;
             }
@@ -281,10 +284,12 @@ body {
             transition: 0.4s ease;
             &:hover {
                 transition: 0.4s ease;
+                color: black;
                 background-color: $thirdcolor;
             }
         }
     }
+  
 }
 .bgTriangle5 {
 
@@ -378,6 +383,14 @@ background-color: $thirdcolor;
             height: 0px;
         }
     }
+    .sendQuestion {
+        
+            li {
+                width: 45% !important;
+            }
+        
+        
+    }
     .bgTriangleSecond {
         &::before {
             background-color: white;
@@ -416,6 +429,14 @@ background-color: $thirdcolor;
         } 
     }
 }
+@media screen and (max-width:1280px) {
+    .sendQuestion {
+        li {
+            width: 30% !important;
+        }
+    }
+
+}
 @media screen and (max-width:1200px) {
     .bgTriangle {
         &::after {
@@ -444,7 +465,15 @@ background-color: $thirdcolor;
     }
 
 }
+@media screen and (max-width:500px) {
+    .sendQuestion {
+            li {
+                width: 95% !important;
+            }
+        }
+        
 
+}
 
 
 @import 'header';
@@ -469,3 +498,4 @@ background-color: $thirdcolor;
 @import 'forum2';
 @import 'forum3';
 @import 'conversation';
+@import 'search';
