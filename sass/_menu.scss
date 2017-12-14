@@ -11,7 +11,13 @@
             
         }
     }
-    
+    .menuAll {
+        .menuInput {
+            img {
+                height: 18px !important;
+            }
+        }
+    } 
     .menuContent {
         height: 100%;
         padding: 6px;
@@ -64,11 +70,13 @@
                 border-width: 0px 0 35px 16px;
                 border-color: transparent transparent white transparent;
             }
+           
             i {
                 z-index: 5;
                 position: absolute;
                 top: 18%;
                 right: 3%;
+                height: 24px;
             }
             img {
                 height: 19px;
