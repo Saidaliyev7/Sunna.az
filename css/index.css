@@ -1657,7 +1657,8 @@ body {
       margin-left: 50px;
       font-size: 16pt;
       background-color: white;
-      color: black; }
+      color: black;
+      padding: 15px 64px 15px 0px; }
       .photo2 .contentHead p::before {
         border: none; }
   .photo2 .rubrikaContentCategories {
