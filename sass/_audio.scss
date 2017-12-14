@@ -9,7 +9,7 @@
     .contentHead {
         background-color: $thirdcolor;
         p {
-            width: 250px;
+            width: 190px;
         }
     }
     .contentBody {
@@ -23,10 +23,12 @@
         
         .additionalContentIcon {
             display: inline-block;
-            i {
-                font-size: 22pt;
-                padding-right: 5px;
+            padding-right: 5px;
+            img {
+                height: 27px;
+                width: 27px;
             }
+           
         }
         .additionalContentForum {
             float: right;

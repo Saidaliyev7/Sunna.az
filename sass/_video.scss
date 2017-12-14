@@ -13,7 +13,7 @@
     .contentHead {
         background-color: $thirdcolor;
         p {
-            width: 250px;
+            width: 190px;
         }
     }
     .additionalContent {
@@ -21,9 +21,10 @@
         border-bottom: 2px solid $secondarycolor;
         .additionalContentIcon {
             display: inline-block;
-            i {
-                font-size: 22pt;
-                padding-right: 5px;
+            padding-right: 5px;
+            img {
+                height: 27px;
+                width: 27px;
             }
         }
         .additionalContentHead {

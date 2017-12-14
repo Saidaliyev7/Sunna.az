@@ -7,7 +7,7 @@
     .contentHead {
         background-color: $thirdcolor;
         p {
-            width: 250px;
+            width: 190px;
         }
     }
     .contentBody {
@@ -15,7 +15,7 @@
         border-top-style: none;
     }
     .rubrikaContentCategories {
-        margin: 25px;
+        margin: 50px;
         margin-bottom: 25px;
         margin-top: 0px;
         padding: 25px;
@@ -25,15 +25,16 @@
         .rubrikaContentBooks {
             .rubrikaContentBooksIcon {
                 display: inline-block;
-                i {
-                    font-size: 20pt;
-                    padding-right: 5px;
+                padding-right: 5px;
+                img {
+                    height: 27px;
+                    width: 27px;
                 }
             }
             .rubrikaContentBooksHead {
                 display: inline-block;
                 p {
-                    font-size: 20pt;
+                    font-size: 16pt;
                 }
             }
             .rubrikaContentBooksPdf {

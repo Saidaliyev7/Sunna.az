@@ -1,7 +1,15 @@
 .forum2 {
+    .rubrikaContent {
+      margin-bottom: 2px !important;
+    }
     .sendQuestion {
         li {
             width: 18.5%;
+        }
+    }
+    .contentHead {
+        p {
+            padding: 15px;
         }
     }
     .rubrika {
@@ -19,6 +27,7 @@
     }
     .rubrikaParagraph {
         margin: 10px 20px;
+        margin-top: 0px;
         border: 2px solid $thirdcolor;
         border-left: none;
         border-right: none;

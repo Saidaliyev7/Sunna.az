@@ -16,6 +16,11 @@
             color: black;
         }
     }
+    .contentHead {
+        p {
+            width: 190px;
+        }
+    }
     .rubrikaParagraph {
         border-top: none;
     }
@@ -23,75 +28,78 @@
         margin-bottom: 10px;
     }
     .rubrikaContentCategories {
-        //margin: 0px 20px;
-        border-bottom: 2px solid $thirdcolor;
-        ul {
+        margin: 0px 50px;
+         border-bottom: 2px solid $thirdcolor;
+         ul {
+             padding: 0px;
+             text-align: center;
             margin-bottom: 0px;
-            padding-top: 50px;
-            list-style: none;
-            li {
-                padding: 0px;
-                text-align: center;
-                margin-top: 10px;
-                display: inline-block;
-                width: 15%;
-                .rubrikaCategoriesIcon {
-                    text-align: center;
-                    i {
-                        border: 2px solid;
-                        border-radius: 50%;
-                        text-align: center;
-                        width: 80px;
-                        height: 80px;
-                        line-height: 80px;
-                        font-size: 30pt;
-                        color: #cad2db;
-                        background-color: white;
-                        border-color: #cad2db;
-                        transition: 0.4s ease;
-                        cursor: pointer;
-                        &:hover {
-                            transition: 0.4s ease;
-                            border-color: #4da7ff;
-                            background-color: #4da7ff;
-                            color: white;
-                        }
-                    }
-                }
-                .rubrikaCategoriesCount {
-                    text-align: center;
-                    a {
-                        text-decoration: underline;
-                        color: black;
-                    }
-                }
-                .rubrikaCategoriesName {
-                    margin-top: 5px;
-                    text-align: center;
-                    border: 1px solid $thirdcolor;
-                    position: relative;
-                    border-bottom: 0px;
-                    display: inline-block;
-                    border-radius: 3px;
-                    width: 100px;
-                    &::after {
-                        position: absolute;
-                        content: "";
-                        width: 95%;
-                        height: 3px;
-                        background-color: $thirdcolor;
-                        top: -4px;
-                        left: 3px;
-                    }
-                    a {
-                        font-style: italic;
-                        text-decoration: none;
-                        color: black;
-                    }
-                }
-            }
-        }
-    }
+             padding-top: 50px;
+             list-style: none;
+             li {
+                 padding-bottom: 0px;
+                 padding-top: 0px;
+                 text-align: center;
+                 margin-top: 10px;
+                 display: inline-block;
+                 width: 15%;
+                 .rubrikaCategoriesIcon {
+                     text-align: center;
+                     i {
+                         border: 2px solid;
+                         border-radius: 50%;
+                         text-align: center;
+                         width: 80px;
+                         height: 80px;
+                         line-height: 80px;
+                         font-size: 30pt;
+                         color: #cad2db;
+                         background-color: white;
+                         border-color: #cad2db;
+                         transition: 0.4s ease;
+                         cursor: pointer;
+                         &:hover {
+                             transition: 0.4s ease;
+                             border-color: #4da7ff;
+                             background-color: #4da7ff;
+                             color: white;
+                         }
+                     }
+                 }
+                 .rubrikaCategoriesCount {
+                     text-align: center;
+                     a {
+                         text-decoration: underline;
+                         color: black;
+                     }
+                 }
+                 .rubrikaCategoriesName {
+                     margin-top: 5px;
+                     text-align: center;
+                     border: 1px solid $thirdcolor;
+                     position: relative;
+                     border-bottom: 0px;
+                     display: inline-block;
+                     border-radius: 3px;
+                     width: 100px;
+                     &::after {
+                         position: absolute;
+                         content: "";
+                         width: 95%;
+                         height: 3px;
+                         background-color: $thirdcolor;
+                         top: -4px;
+                         left: 3px;
+                     }
+                     a {
+                         font-style: italic;
+                         text-decoration: none;
+                         color: black;
+                     }
+                 }
+             }
+         }
+     }
     .sendQuestion {
         margin: 0px 100px;
         padding: 2px;

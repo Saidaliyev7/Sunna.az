@@ -5,7 +5,7 @@
            
             img {
                 margin: 10px;
-                width: 70px;
+                width: 55px;
             }
         }
     }
@@ -16,6 +16,10 @@
     }
     .contentHead {
         background-color: $thirdcolor;
+        p {
+            width: 190px;
+            padding: 15px;
+        }
     }
     .rubrika {
         border-bottom: 2px solid $thirdcolor;
@@ -146,7 +150,7 @@ font-style: italic;
         }
         .rubrikaEntrace {
             margin-left: 50px;
-            padding-top: 30px;
+            padding-top: 40px;
             a {
                 font-size: 13pt;
                 padding: 10px 20px;
@@ -171,6 +175,12 @@ font-style: italic;
 
 @media screen and (max-width: 1255px) {
     .rubrikaContent {
+        &::after {
+            transform: skew(-15deg) !important;
+        }
+        &::before {
+            transform: skew(-15deg) !important;
+        }
         p {
             &::before {
                 border: none !important;
@@ -183,6 +193,7 @@ font-style: italic;
 }
 
 @media screen and (max-width:786px) {
+
     .rubrikaContentMain {
         margin: 0px !important;
         .rubrika {
