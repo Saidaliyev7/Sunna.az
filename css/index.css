@@ -694,6 +694,8 @@ body {
       .additional .additionalContent .additionalContentIcon img {
         height: 27px;
         width: 27px; }
+      .additional .additionalContent .additionalContentIcon i {
+        font-size: 22px; }
     .additional .additionalContent .additionalContentHead {
       display: inline-block; }
       .additional .additionalContent .additionalContentHead p {
