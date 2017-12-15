@@ -447,7 +447,7 @@ body {
       padding: 10px;
       font-size: 15pt; }
   .menu .menuAll .menuInput img {
-    height: 18px !important; }
+    height: 0px !important; }
   .menu .menuContent {
     height: 100%;
     padding: 6px;
@@ -494,12 +494,15 @@ body {
       .menu .menuContent .menuInput i {
         z-index: 5;
         position: absolute;
-        top: 18%;
+        top: 30%;
         right: 3%;
-        height: 24px; }
-      .menu .menuContent .menuInput img {
         height: 19px;
-        width: 18px; }
+        background-image: url(../img/searchicon.png);
+        background-size: cover;
+        width: 19px; }
+      .menu .menuContent .menuInput img {
+        height: 0px;
+        width: 0px; }
       .menu .menuContent .menuInput input {
         z-index: 6;
         width: 250px;
@@ -920,14 +923,14 @@ body {
       .rubrikaContent .rubrikaContentCategories ul li .rubrikaCategoriesIcon {
         text-align: center; }
         .rubrikaContent .rubrikaContentCategories ul li .rubrikaCategoriesIcon i {
-          border: 1.5px solid #aae1fa;
+          border: 1.5px solid #2d6c93;
           border-radius: 50%;
           text-align: center;
           width: 100px;
           height: 100px;
           font-size: 50px;
           line-height: 100px;
-          color: #4da6ff; }
+          color: #2d6c93; }
       .rubrikaContent .rubrikaContentCategories ul li .rubrikaCategoriesCount {
         text-align: center; }
         .rubrikaContent .rubrikaContentCategories ul li .rubrikaCategoriesCount a {
@@ -2234,14 +2237,14 @@ body {
       .forum .rubrikaContentCategories ul li .rubrikaCategoriesIcon {
         text-align: center; }
         .forum .rubrikaContentCategories ul li .rubrikaCategoriesIcon i {
-          border: 1.5px solid #aae1fa;
+          border: 1.5px solid #2d6c93;
           border-radius: 50%;
           text-align: center;
           width: 100px;
           height: 100px;
           font-size: 50px;
           line-height: 100px;
-          color: #4da6ff; }
+          color: #2d6c93; }
       .forum .rubrikaContentCategories ul li .rubrikaCategoriesCount {
         text-align: center; }
         .forum .rubrikaContentCategories ul li .rubrikaCategoriesCount a {
@@ -2317,7 +2320,7 @@ body {
 .forum2 .rubrikaContent {
   margin-bottom: 2px !important; }
 .forum2 .sendQuestion li {
-  width: 18.5%; }
+  width: 18.61%; }
 .forum2 .contentHead p {
   padding: 15px; }
 .forum2 .rubrika {

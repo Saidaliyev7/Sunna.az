@@ -136,14 +136,14 @@ p {
                    text-align: center;
                    
                     i {
-                        border: 1.5px solid $thirdcolor;
+                        border: 1.5px solid $primarycolor;
                         border-radius: 50%;
                         text-align: center;
                         width: 100px;
                         height: 100px;
                         font-size: 50px;
                         line-height: 100px;
-                        color: #4da6ff;
+                        color: $primarycolor;
                     }
                 }
                 .rubrikaCategoriesCount {

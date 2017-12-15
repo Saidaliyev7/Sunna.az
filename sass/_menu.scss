@@ -14,7 +14,7 @@
     .menuAll {
         .menuInput {
             img {
-                height: 18px !important;
+                height: 0px !important;
             }
         }
     } 
@@ -74,13 +74,16 @@
             i {
                 z-index: 5;
                 position: absolute;
-                top: 18%;
+                top: 30%;
                 right: 3%;
-                height: 24px;
+                height: 19px;
+                background-image: url(../img/searchicon.png);
+                background-size: cover;
+                width: 19px;
             }
             img {
-                height: 19px;
-                width: 18px;
+                height: 0px;
+                width: 0px;
             }
             input {
                 z-index: 6;
