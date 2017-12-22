@@ -27,9 +27,13 @@
         border-bottom: 2px solid $secondarycolor;
         .additionalContentIcon {
             display: inline-block;
+            padding-right: 5px;
+            img {
+                height: 27px;
+                width: 27px;
+            }
             i {
-                font-size: 22pt;
-                padding-right: 5px;
+                font-size: 22px;
             }
         }
         .additionalContentHead {
@@ -158,9 +162,13 @@
                 margin:10px 0px;
                 .viewedContentIcon {
                     display: inline-block;
+                    padding-right: 5px;
+                    img {
+                        height: 27px;
+                        width: 27px;
+                    }
                     i {
-                        font-size: 16pt;
-                        margin-right: 20px;
+                        font-size: 22px;
                     }
                 }
                 .viewedContentAbout {

@@ -1,8 +1,13 @@
 .forum3 {
+    .rubrikaContentCategories {
+        padding-top: 20px;
+    }
     .additionalContent {
+        padding: 15px 50px 0px 20px;
         border-bottom: 2px solid $secondarycolor;
+
         .additionalContentBody {
-            margin: 10px 0px;
+            padding: 25px 32px;
             p {
                 font-size: 13pt;
             }
@@ -10,6 +15,17 @@
         .additionalContentAndSo {
             font-style: italic;
             color: $primarycolor;
+        }
+    }
+    .additionalContentIcon {
+        display: inline-block;
+        padding-right: 5px;
+        img {
+            height: 27px;
+            width: 27px;
+        }
+        i {
+            font-size: 22px;
         }
     }
     .viewedContent {

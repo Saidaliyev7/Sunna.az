@@ -801,10 +801,13 @@ body {
     .additional .viewedContent ul li {
       margin-bottom: 10px; }
       .additional .viewedContent ul li .viewedContentIcon {
-        display: inline-block; }
+        display: inline-block;
+        padding-right: 5px; }
+        .additional .viewedContent ul li .viewedContentIcon img {
+          height: 27px;
+          width: 27px; }
         .additional .viewedContent ul li .viewedContentIcon i {
-          margin-right: 10px;
-          font-size: 16pt; }
+          font-size: 22px; }
       .additional .viewedContent ul li .viewedContentAbout {
         display: inline-block; }
         .additional .viewedContent ul li .viewedContentAbout a {
@@ -1018,10 +1021,13 @@ body {
     padding: 0px 20px;
     border-bottom: 2px solid #d9edf7; }
     .tovhideCagirish .additionalContent .additionalContentIcon {
-      display: inline-block; }
+      display: inline-block;
+      padding-right: 5px; }
+      .tovhideCagirish .additionalContent .additionalContentIcon img {
+        height: 27px;
+        width: 27px; }
       .tovhideCagirish .additionalContent .additionalContentIcon i {
-        font-size: 22pt;
-        padding-right: 5px; }
+        font-size: 22px; }
     .tovhideCagirish .additionalContent .additionalContentHead {
       display: inline-block; }
       .tovhideCagirish .additionalContent .additionalContentHead p {
@@ -1117,10 +1123,13 @@ body {
     .tovhideCagirish .viewedContent ul li {
       margin: 10px 0px; }
       .tovhideCagirish .viewedContent ul li .viewedContentIcon {
-        display: inline-block; }
+        display: inline-block;
+        padding-right: 5px; }
+        .tovhideCagirish .viewedContent ul li .viewedContentIcon img {
+          height: 27px;
+          width: 27px; }
         .tovhideCagirish .viewedContent ul li .viewedContentIcon i {
-          font-size: 16pt;
-          margin-right: 20px; }
+          font-size: 22px; }
       .tovhideCagirish .viewedContent ul li .viewedContentAbout {
         display: inline-block; }
         .tovhideCagirish .viewedContent ul li .viewedContentAbout a {
@@ -1261,14 +1270,19 @@ body {
   .articles .contentBody {
     border: 2px solid #aae1fa;
     border-top-style: none; }
+  .articles .rubrikaContentCategories {
+    padding-top: 20px; }
   .articles .additionalContent {
-    padding: 50px 50px 0px 20px;
+    padding: 15px 50px 0px 20px;
     border-bottom: 2px solid #d9edf7; }
     .articles .additionalContent .additionalContentIcon {
-      display: inline-block; }
+      display: inline-block;
+      padding-right: 5px; }
+      .articles .additionalContent .additionalContentIcon img {
+        height: 27px;
+        width: 27px; }
       .articles .additionalContent .additionalContentIcon i {
-        font-size: 22pt;
-        padding-right: 5px; }
+        font-size: 22px; }
     .articles .additionalContent .additionalContentHead {
       display: inline-block; }
       .articles .additionalContent .additionalContentHead p {
@@ -1346,10 +1360,13 @@ body {
     .articles .viewedContent ul li {
       margin: 10px 0px; }
       .articles .viewedContent ul li .viewedContentIcon {
-        display: inline-block; }
+        display: inline-block;
+        padding-right: 5px; }
+        .articles .viewedContent ul li .viewedContentIcon img {
+          height: 27px;
+          width: 27px; }
         .articles .viewedContent ul li .viewedContentIcon i {
-          font-size: 16pt;
-          margin-right: 20px; }
+          font-size: 22px; }
       .articles .viewedContent ul li .viewedContentAbout {
         display: inline-block; }
         .articles .viewedContent ul li .viewedContentAbout a {
@@ -1386,9 +1403,8 @@ body {
     margin: 50px;
     margin-bottom: 25px;
     margin-top: 0px;
-    padding: 25px;
-    padding-top: 20px;
-    padding-bottom: 0px;
+    padding: 35px 50px 0px 20px;
+    border-bottom: 2px solid #d9edf7;
     border-bottom: 2px solid #d9edf7; }
     .books .rubrikaContentCategories .rubrikaContentBooks .rubrikaContentBooksIcon {
       display: inline-block;
@@ -1481,7 +1497,8 @@ body {
     .ideologiya .rubrikaContentCategories .rubrikaContentBooks .rubrikaContentBooksHead {
       display: inline-block; }
       .ideologiya .rubrikaContentCategories .rubrikaContentBooks .rubrikaContentBooksHead p {
-        font-size: 20pt; }
+        font-size: 16pt;
+        font-weight: bold; }
     .ideologiya .rubrikaContentCategories .rubrikaContentBooks .rubrikaContentBooksPdf {
       display: inline-block; }
       .ideologiya .rubrikaContentCategories .rubrikaContentBooks .rubrikaContentBooksPdf i {
@@ -1567,7 +1584,7 @@ body {
     .photo .contentHead p {
       width: 190px; }
   .photo .additionalContent {
-    padding: 10px 50px 0px 20px;
+    padding: 35px 50px 0px 20px;
     border-bottom: 2px solid #d9edf7; }
     .photo .additionalContent .additionalContentIcon {
       display: inline-block;
@@ -1621,8 +1638,7 @@ body {
         font-style: italic; }
   .photo .rubrikaContentCategories {
     margin: 50px;
-    margin-top: 0px;
-    padding-top: 20px; }
+    margin-top: 0px; }
   .photo .viewedContent {
     padding: 0px 20px;
     padding-top: 20px; }
@@ -1704,7 +1720,7 @@ body {
     .video .contentHead p {
       width: 190px; }
   .video .additionalContent {
-    padding: 15px 50px 0px 20px;
+    padding: 35px 50px 0px 20px;
     border-bottom: 2px solid #d9edf7; }
     .video .additionalContent .additionalContentIcon {
       display: inline-block;
@@ -1751,8 +1767,7 @@ body {
         font-style: italic; }
   .video .rubrikaContentCategories {
     margin: 50px;
-    margin-top: 0px;
-    padding-top: 20px; }
+    margin-top: 0px; }
   .video .viewedContent {
     padding: 0px 20px;
     padding-top: 20px; }
@@ -1829,7 +1844,7 @@ body {
     border: 2px solid #aae1fa;
     border-top-style: none; }
   .audio .additionalContent {
-    padding: 10px 50px 0px 20px;
+    padding: 35px 50px 0px 20px;
     border-bottom: 2px solid #d9edf7; }
     .audio .additionalContent .additionalContentIcon {
       display: inline-block;
@@ -1904,8 +1919,7 @@ body {
         font-style: italic; }
   .audio .rubrikaContentCategories {
     margin: 50px;
-    margin-top: 0px;
-    padding-top: 20px; }
+    margin-top: 0px; }
   .audio .viewedContent {
     margin-bottom: 20px; }
     .audio .viewedContent ul {
@@ -1941,7 +1955,7 @@ body {
   .audio2 .contentHead {
     background-color: #aae1fa; }
   .audio2 .additionalContent {
-    padding: 25px 0px 10px 0px; }
+    padding: 0px 0px 10px 0px; }
     .audio2 .additionalContent .additionalContentIcon {
       display: inline-block; }
       .audio2 .additionalContent .additionalContentIcon i {
@@ -1963,7 +1977,8 @@ body {
     .audio2 .additionalContent .additionalContentHead {
       display: inline-block; }
       .audio2 .additionalContent .additionalContentHead p {
-        font-size: 16pt; }
+        font-size: 16pt;
+        font-weight: bold; }
     .audio2 .additionalContent .additionalContentBody {
       padding: 20px 0px; }
     .audio2 .additionalContent .additionalContentAudio {
@@ -2139,9 +2154,11 @@ body {
     .forum .contentHead p {
       padding: 15px;
       width: 190px; }
+  .forum .rubrikaParagraph {
+    border-bottom: 2px solid #aae1fa;
+    margin: 10px 20px; }
   .forum .rubrika {
-    margin: 20px;
-    border-bottom: 2px solid #aae1fa; }
+    margin: 20px; }
     .forum .rubrika .rubrikaContent {
       margin-bottom: 15px;
       width: 50%;
@@ -2324,9 +2341,12 @@ body {
 .forum2 .contentHead p {
   padding: 15px; }
 .forum2 .rubrika {
-  border: none; }
+  border: none;
+  margin: 20px; }
 .forum2 .rubrikaContent {
   padding: 0px 2px; }
+  .forum2 .rubrikaContent p {
+    font-size: 16pt !important; }
 .forum2 .forum2Main {
   margin-bottom: 10px; }
 .forum2 .contentBody {
@@ -2341,9 +2361,9 @@ body {
   .forum2 .rubrikaParagraph .rubrikaParagraphHead {
     padding: 10px 10px; }
     .forum2 .rubrikaParagraph .rubrikaParagraphHead p {
-      font-size: 20pt; }
+      font-size: 16pt; }
   .forum2 .rubrikaParagraph .rubrikaParagraphBody {
-    font-size: 16pt;
+    font-size: 13pt;
     padding: 10px 30px;
     font-style: italic; }
   .forum2 .rubrikaParagraph .rubrikaCategory {
@@ -2376,15 +2396,26 @@ body {
     padding: 0px !important; }
   .forum2 .additionalContentType {
     margin: 0px !important; } }
+.forum3 .rubrikaContentCategories {
+  padding-top: 20px; }
 .forum3 .additionalContent {
+  padding: 15px 50px 0px 20px;
   border-bottom: 2px solid #d9edf7; }
   .forum3 .additionalContent .additionalContentBody {
-    margin: 10px 0px; }
+    padding: 25px 32px; }
     .forum3 .additionalContent .additionalContentBody p {
       font-size: 13pt; }
   .forum3 .additionalContent .additionalContentAndSo {
     font-style: italic;
     color: #2d6c93; }
+.forum3 .additionalContentIcon {
+  display: inline-block;
+  padding-right: 5px; }
+  .forum3 .additionalContentIcon img {
+    height: 27px;
+    width: 27px; }
+  .forum3 .additionalContentIcon i {
+    font-size: 22px; }
 .forum3 .viewedContent ul {
   padding-top: 15px;
   padding-left: 20px;
@@ -2395,6 +2426,14 @@ body {
     .forum3 .viewedContent ul li .viewedContentAbout a {
       font-size: 16pt;
       text-decoration: none; }
+
+.searchContent {
+  display: inline-block;
+  margin-left: 50px; }
+  .searchContent p {
+    font-size: 16pt;
+    display: inline-block;
+    color: black; }
 
 .conversationContent {
   margin: 20px;
@@ -2550,6 +2589,19 @@ body {
     color: black; }
 .search .contentHead p {
   width: 190px; }
+.search .viewedContent {
+  margin-bottom: 0px;
+  display: inline-block;
+  padding-right: 5px; }
+  .search .viewedContent img {
+    height: 27px;
+    width: 27px; }
+  .search .viewedContent i {
+    font-size: 22px; }
+  .search .viewedContent ul {
+    margin-bottom: 0px; }
+    .search .viewedContent ul li:last-child {
+      margin-bottom: 0px; }
 .search .rubrikaParagraph {
   border-top: none; }
 .search .rubrikaContentCategories {

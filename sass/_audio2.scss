@@ -11,7 +11,7 @@
     }
 
     .additionalContent {
-        padding: 25px 0px 10px 0px;
+        padding: 0px 0px 10px 0px;
         .additionalContentIcon {
             display: inline-block;
             i {
@@ -26,6 +26,7 @@
                 text-decoration: none;
                 color: black;
                 font-size: 12pt;
+                
             }
         }
         .additionalContentForumIcon {
@@ -40,6 +41,7 @@
             display: inline-block;
             p {
                 font-size: 16pt;
+                font-weight: bold;
             }
         }
         .additionalContentBody {

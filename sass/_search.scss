@@ -21,6 +21,24 @@
             width: 190px;
         }
     }
+    .viewedContent {
+        margin-bottom: 0px;
+        display: inline-block;
+        padding-right: 5px;
+        img {
+            height: 27px;
+            width: 27px;
+        }
+        i {
+            font-size: 22px;
+        }
+        ul {
+            margin-bottom: 0px;
+            li:last-child {
+                margin-bottom: 0px;
+            }
+        }
+    }
     .rubrikaParagraph {
         border-top: none;
     }

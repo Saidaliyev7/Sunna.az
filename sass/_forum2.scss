@@ -14,9 +14,13 @@
     }
     .rubrika {
         border:none;
+        margin: 20px;
     }
     .rubrikaContent {
         padding: 0px 2px;
+        p {
+            font-size: 16pt !important;
+        }
     }
     .forum2Main {
         margin-bottom: 10px;
@@ -34,11 +38,11 @@
         .rubrikaParagraphHead {
             padding: 10px 10px;
             p {
-                font-size: 20pt;
+                font-size: 16pt;
             }
         }
         .rubrikaParagraphBody {
-            font-size: 16pt;
+            font-size: 13pt;
             padding: 10px 30px;
             font-style: italic;
         }

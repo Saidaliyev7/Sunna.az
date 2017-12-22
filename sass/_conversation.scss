@@ -1,3 +1,13 @@
+.searchContent {
+    display: inline-block;
+    margin-left: 50px;
+    p {
+        font-size: 16pt;
+        display: inline-block;
+        color: black;
+    }
+}
+
 .conversationContent {
     margin: 20px;
     border-bottom: 2px solid $thirdcolor;

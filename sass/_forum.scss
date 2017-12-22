@@ -20,9 +20,13 @@
             width: 190px;
         }
     }
+    .rubrikaParagraph {
+        border-bottom: 2px solid $thirdcolor;
+        margin: 10px 20px;
+    }
     .rubrika {
         margin: 20px;
-        border-bottom: 2px solid $thirdcolor;
+        
         .rubrikaContent {
             margin-bottom:15px; 
             width: 50%;
