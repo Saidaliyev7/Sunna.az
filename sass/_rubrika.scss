@@ -172,6 +172,17 @@ font-style: italic;
         }
     }
 }
+@media screen and (max-width: 400px) {
+    .rubrikaContent {
+        .rubrikaContentCategories {
+            ul {
+                li {
+                    width: 45% !important;
+                } 
+            }
+        }
+    }
+}
 
 @media screen and (max-width: 1255px) {
     .rubrikaContent {
@@ -196,15 +207,17 @@ font-style: italic;
 
     .rubrikaContentMain {
         margin: 0px !important;
+        margin-bottom: 10px !important;
+        .additionalContentBody {
+            padding: 25px 0px !important;
+        }
         .rubrika {
             .rubrikaContent {
                 width: 75% !important;
             }
         }
     }
-    .additionalContentBody {
-        padding: 0px !important;
-    }
+    
     .additionalContentType {
         margin: 0px !important;
     }

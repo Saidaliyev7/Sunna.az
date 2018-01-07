@@ -243,6 +243,7 @@
 @media screen and (max-width: 768px) {
     .rubrikaContentCategories {
         margin: 0px !important;
+        //margin-top: 10px !important;
     }
     .contentMain {
         padding: 30px 0px !important;
@@ -259,7 +260,7 @@
         margin: 0px 0px !important;
     }
     .additionalContentBody {
-        padding: 0px !important;
+        padding: 25px 0px !important;
     }
     .additionalContentType {
         margin: 0px !important;
@@ -272,5 +273,33 @@
             width: 100%;
         }
     }
+    
+}
+
+@media screen and (max-width: 768px) {
+    .additionalCenter{
+        margin-top: 10px;
+        text-align: center;
+        .additionalContentIcon{
+            display: block !important;
+            margin: 5px 0px !important;
+        }
+        .additionalContentHead {
+            display: block !important;
+            margin: 5px 0px !important;
+        }
+        .additionalContentForumIcon {
+            display: block !important;
+            float: none !important;
+            margin: 0px auto !important;
+            padding: 5px 0px !important;
+        }
+        .additionalContentForum {
+            display: block !important;
+            float: none !important; 
+            margin-top: 5px  !important;
+        }
+    }
+    
     
 }

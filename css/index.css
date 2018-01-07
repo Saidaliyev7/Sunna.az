@@ -192,6 +192,22 @@ body {
               transition: 0.4s ease;
               opacity: 1; }
 
+@media screen and (max-width: 769px) {
+  .social {
+    margin: 50px 0px 0px 0px !important;
+    text-align: center !important; }
+    .social .socialAbout {
+      display: block !important; }
+      .social .socialAbout ul {
+        text-align: center !important; }
+    .social .socialLinks {
+      display: block !important;
+      float: none !important; }
+      .social .socialLinks ul {
+        padding: 0px;
+        text-align: center !important; }
+        .social .socialLinks ul li {
+          width: 30%; } }
 .breadcrumb {
   padding-top: 0px;
   padding-left: 65px;
@@ -308,11 +324,6 @@ body {
   content: ""; }
 
 @media screen and (max-width: 768px) {
-  .bgTriangle::after {
-    background-color: white;
-    width: 0px;
-    height: 0px; }
-
   .sendQuestion li {
     width: 45% !important; }
 
@@ -341,7 +352,17 @@ body {
   .bgTriangleFifth::after {
     background-color: white;
     width: 0px;
-    height: 0px; } }
+    height: 0px; }
+
+  .bgTriangleSix::before {
+    left: -15px !important;
+    width: 100% !important;
+    height: 100% !important;
+    background-color: #2d6c93 !important; }
+  .bgTriangleSix::after {
+    width: 100% !important;
+    height: 100% !important;
+    background-color: #2d6c93 !important; } }
 @media screen and (max-width: 1280px) {
   .sendQuestion li {
     width: 30% !important; } }
@@ -360,6 +381,10 @@ body {
 @media screen and (max-width: 500px) {
   .sendQuestion li {
     width: 95% !important; } }
+@media screen and (max-width: 786px) {
+  .sendQuestion {
+    padding-left: 0px !important;
+    text-align: center; } }
 .header {
   background-color: #2d6c93; }
   .header .headerLogoText {
@@ -437,6 +462,18 @@ body {
       padding: 10px 0px; }
       .header div.headerText div.textContent {
         font-size: 11pt !important; } }
+@media screen and (max-width: 991px) {
+  .header {
+    text-align: center; }
+    .header .headerLogoText {
+      text-align: center !important; }
+    .header div.headerLogo {
+      text-align: center; }
+    .header div.headerLogotxt {
+      padding: 13px 0px !important; }
+    .header div.headerText {
+      text-align: center;
+      padding: 10px 0px; } }
 .menu {
   height: 77px;
   padding: 10px 0px 15px; }
@@ -641,11 +678,16 @@ body {
     border: none !important; }
 
   .contentCategoriesIcon i {
-    right: -3% !important; } }
+    right: -25px !important; } }
 @media screen and (max-width: 557px) {
   .contentHead p::before {
     border: none !important;
     width: 0% !important; } }
+@media screen and (max-width: 768px) {
+  .contentImageName p {
+    font-size: 20pt !important; }
+    .contentImageName p::before {
+      top: 34% !important; } }
 .additional {
   padding: 20px 0px;
   position: relative;
@@ -843,13 +885,32 @@ body {
     margin: 0px 0px !important; }
 
   .additionalContentBody {
-    padding: 0px !important; }
+    padding: 25px 0px !important; }
 
   .additionalContentType {
     margin: 0px !important; } }
 @media screen and (max-width: 440px) {
   .additionalContentBody audio {
     width: 100%; } }
+@media screen and (max-width: 768px) {
+  .additionalCenter {
+    margin-top: 10px;
+    text-align: center; }
+    .additionalCenter .additionalContentIcon {
+      display: block !important;
+      margin: 5px 0px !important; }
+    .additionalCenter .additionalContentHead {
+      display: block !important;
+      margin: 5px 0px !important; }
+    .additionalCenter .additionalContentForumIcon {
+      display: block !important;
+      float: none !important;
+      margin: 0px auto !important;
+      padding: 5px 0px !important; }
+    .additionalCenter .additionalContentForum {
+      display: block !important;
+      float: none !important;
+      margin-top: 5px  !important; } }
 .rubrikaContent {
   margin-bottom: 2px;
   background-color: white; }
@@ -978,6 +1039,9 @@ body {
 @media screen and (max-width: 768px) {
   .rubrikaContent .rubrikaForum::after {
     border: none !important; } }
+@media screen and (max-width: 400px) {
+  .rubrikaContent .rubrikaContentCategories ul li {
+    width: 45% !important; } }
 @media screen and (max-width: 1255px) {
   .rubrikaContent::after {
     transform: skew(-15deg) !important; }
@@ -989,12 +1053,12 @@ body {
     border: none !important; } }
 @media screen and (max-width: 786px) {
   .rubrikaContentMain {
-    margin: 0px !important; }
+    margin: 0px !important;
+    margin-bottom: 10px !important; }
+    .rubrikaContentMain .additionalContentBody {
+      padding: 25px 0px !important; }
     .rubrikaContentMain .rubrika .rubrikaContent {
       width: 75% !important; }
-
-  .additionalContentBody {
-    padding: 0px !important; }
 
   .additionalContentType {
     margin: 0px !important; } }
@@ -1015,7 +1079,8 @@ body {
   margin-bottom: 20px;
   background-color: white; }
   .tovhideCagirish .tovhideCagirishMain {
-    margin: 0px 50px; }
+    margin: 0px 50px;
+    margin-bottom: 10px !important; }
   .tovhideCagirish .additionalContent {
     margin: 50px 50px 40px 40px;
     padding: 0px 20px;
@@ -1203,9 +1268,8 @@ body {
 @media screen and (max-width: 786px) {
   .tovhideCagirishMain {
     margin: 0px !important; }
-
-  .additionalContentBody {
-    padding: 0px !important; }
+    .tovhideCagirishMain .additionalContentBody {
+      padding: 0px !important; }
 
   .additionalContentType {
     margin: 0px !important; } }
@@ -1220,7 +1284,8 @@ body {
   background-color: white; }
   .tovhidnadi .tovhidnadiMain {
     margin: 0px 50px;
-    border: 2px solid #aae1fa; }
+    border: 2px solid #aae1fa;
+    margin-bottom: 10px !important; }
   .tovhidnadi .contentHead {
     margin: 2px;
     margin-bottom: -50px; }
@@ -1262,7 +1327,8 @@ body {
 .articles {
   background-color: white; }
   .articles .articlesMain {
-    margin: 0px 50px; }
+    margin: 0px 50px;
+    margin-bottom: 10px !important; }
   .articles .contentHead {
     background-color: #aae1fa; }
     .articles .contentHead p {
@@ -1374,9 +1440,6 @@ body {
           color: black;
           text-decoration: underline; }
 
-@media screen and (max-width: 991px) {
-  .articles .contentBody {
-    border-top-style: solid; } }
 @media screen and (max-width: 786px) {
   .articlesMain {
     margin: 0px !important; }
@@ -1391,7 +1454,8 @@ body {
 .books {
   background-color: white; }
   .books .booksMain {
-    margin: 0px 50px; }
+    margin: 0px 50px;
+    margin-bottom: 10px !important; }
   .books .contentHead {
     background-color: #aae1fa; }
     .books .contentHead p {
@@ -1489,7 +1553,8 @@ body {
   background-color: white; }
   .ideologiya .ideologiyaMain {
     margin: 0px 50px;
-    border: 2px solid #aae1fa; }
+    border: 2px solid #aae1fa;
+    margin-bottom: 10px !important; }
   .ideologiya .contentHead {
     background-color: #aae1fa; }
   .ideologiya .rubrikaContentCategories {
@@ -1529,7 +1594,8 @@ body {
   background-color: white; }
   .murcie .murcieMain {
     margin: 0px 50px;
-    border: 2px solid #aae1fa; }
+    border: 2px solid #aae1fa;
+    margin-bottom: 10px !important; }
   .murcie .contentHead {
     margin-left: 34px;
     margin-top: 2px;
@@ -1578,7 +1644,8 @@ body {
 .photo {
   background-color: white; }
   .photo .photoMain {
-    margin: 0px 50px; }
+    margin: 0px 50px;
+    margin-bottom: 10px !important; }
   .photo .contentHead {
     background-color: #aae1fa; }
     .photo .contentHead p {
@@ -1668,7 +1735,8 @@ body {
   background-color: white; }
   .photo2 .photo2Main {
     margin: 0px 50px;
-    border: 2px solid #aae1fa; }
+    border: 2px solid #aae1fa;
+    margin-bottom: 10px !important; }
   .photo2 .contentHead {
     margin-top: 2px; }
     .photo2 .contentHead p {
@@ -1700,9 +1768,8 @@ body {
 @media screen and (max-width: 786px) {
   .photo2Main {
     margin: 0px !important; }
-
-  .additionalContentBody {
-    padding: 0px !important; }
+    .photo2Main .additionalContentBody {
+      padding: 0px !important; }
 
   .additionalContentType {
     margin: 0px !important; } }
@@ -1782,7 +1849,8 @@ body {
 
 @media screen and (max-width: 786px) {
   .videoMain {
-    margin: 0px !important; }
+    margin: 0px !important;
+    margin-bottom: 10px !important; }
     .videoMain .rubrikaContentCategories {
       margin: 0px !important; }
       .videoMain .rubrikaContentCategories .additionalContentBody {
@@ -1791,6 +1859,9 @@ body {
           width: 100% !important; }
       .videoMain .rubrikaContentCategories .additionalContentType {
         margin: 0px !important; } }
+@media screen and (max-width: 991px) {
+  .videoMain .rubrikaContentCategories {
+    margin-top: -20px !important; } }
 .video2 {
   padding: 0px;
   margin-bottom: 20px;
@@ -1825,7 +1896,8 @@ body {
 
 @media screen and (max-width: 786px) {
   .video2Main {
-    margin: 0px !important; }
+    margin: 0px !important;
+    margin-bottom: 10px !important; }
     .video2Main .rubrikaContentCategories {
       margin: 0px !important; }
       .video2Main .rubrikaContentCategories .videoifrm {
@@ -1835,7 +1907,8 @@ body {
   padding: 0px;
   margin-bottom: 20px; }
   .audio .audioMain {
-    margin: 0px 50px; }
+    margin: 0px 50px;
+    margin-bottom: 10px !important; }
   .audio .contentHead {
     background-color: #aae1fa; }
     .audio .contentHead p {
@@ -1903,7 +1976,7 @@ body {
             background-color: #d9edf7; }
           .audio .additionalContent .additionalContentType ul li:first-child::after {
             top: 0px;
-            right: -10px;
+            right: -25px;
             content: "";
             width: 100%;
             height: 100%;
@@ -1945,13 +2018,17 @@ body {
       padding: 0px !important; }
     .audioMain .additionalContentType {
       margin: 0px !important; } }
+@media screen and (max-width: 991px) {
+  .audioMain .contentBody {
+    margin-top: -20px !important; } }
 .audio2 {
   background-color: white;
   padding: 0px;
   margin-bottom: 20px; }
   .audio2 .audio2Main {
     margin: 0px 50px;
-    border: 2px solid #aae1fa; }
+    border: 2px solid #aae1fa;
+    margin-bottom: 10px !important; }
   .audio2 .contentHead {
     background-color: #aae1fa; }
   .audio2 .additionalContent {
@@ -1982,7 +2059,7 @@ body {
     .audio2 .additionalContent .additionalContentBody {
       padding: 20px 0px; }
     .audio2 .additionalContent .additionalContentAudio {
-      padding: 30px 0px; }
+      padding: 30px 10px; }
     .audio2 .additionalContent .additionalContentType {
       padding: 15px 0px; }
       .audio2 .additionalContent .additionalContentType ul {
@@ -2047,7 +2124,8 @@ body {
   background-color: white; }
   .sualcavab .sualcavabMain {
     margin: 0px 50px;
-    border: 2px solid #aae1fa; }
+    border: 2px solid #aae1fa;
+    margin-bottom: 10px !important; }
   .sualcavab .contentHead {
     margin: 5px 5px 0px 32px;
     background-color: #aae1fa;
@@ -2311,29 +2389,38 @@ body {
       color: black; }
 
 @media screen and (max-width: 786px) {
+  .forum .rubrika .rubrikaContent {
+    width: 80% !important; }
+    .forum .rubrika .rubrikaContent p {
+      padding-left: 5px; }
+  .forum .rubrika .rubrikaCategory {
+    margin: 0px 5px !important; }
+
   .forumMain {
     margin: 0px !important; }
+    .forumMain .rubrikaCategory a {
+      margin-right: 20px !important; }
+    .forumMain .rubrika {
+      margin: 20px 0px !important; }
+    .forumMain .rubrikaParagraph {
+      margin: 10px 5px !important; }
     .forumMain .rubrikaContent {
-      width: 80% !important; }
+      margin-left: 20px; }
+      .forumMain .rubrikaContent p {
+        margin-left: 5px !important; }
+      .forumMain .rubrikaContent::after {
+        left: -5px !important; }
+      .forumMain .rubrikaContent::before {
+        left: 20px !important; }
+    .forumMain .rubrikaText {
+      margin-left: 15px !important; }
     .forumMain .additionalContentBody {
       padding: 0px !important; }
     .forumMain .additionalContentType {
       margin: 0px !important; } }
-@media screen and (max-width: 540px) {
-  .forumMain .rubrikaContent p {
-    margin-left: 0px !important; }
-  .forumMain .rubrikaContent::after {
-    width: 0px !important;
-    height: 0px !important;
-    background-color: white; }
-  .forumMain .rubrikaContent::before {
-    width: 0px !important;
-    height: 0px !important;
-    background-color: white; }
-  .forumMain .rubrikaCategory {
-    margin: 0px 10px !important; }
-    .forumMain .rubrikaCategory a {
-      margin: 0px 10px !important; } }
+@media screen and (max-width: 400px) {
+  .forum .rubrikaContentCategories ul li {
+    width: 45% !important; } }
 .forum2 .rubrikaContent {
   margin-bottom: 2px !important; }
 .forum2 .sendQuestion li {
@@ -2574,8 +2661,11 @@ body {
     text-align: right; }
 
 @media screen and (max-width: 786px) {
-  .conversationContent .rubrikaContext {
-    line-height: 30px !important; } }
+  .rubrikaContentCategories {
+    text-align: center !important; }
+
+  .conversationContentIcons {
+    margin-top: 0px !important; } }
 .search .viewedContent li {
   border-bottom: 0px !important; }
 .search .contentBody {
@@ -2690,6 +2780,9 @@ body {
 @media screen and (max-width: 1280px) {
   .search .sendQuestion li {
     width: 32.8% !important; } }
+@media screen and (max-width: 759px) {
+  .search .sendQuestion li {
+    width: 100% !important; } }
 @media screen and (max-width: 1280px) {
   .search .rubrikaCategoriesName {
     border-bottom: 1px solid #aae1fa !important; } }

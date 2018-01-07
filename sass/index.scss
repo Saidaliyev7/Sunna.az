@@ -230,7 +230,30 @@ body {
         }
     }
 }
-
+@media screen and (max-width: 769px) {
+.social {
+    margin: 50px 0px 0px 0px !important;
+    text-align: center !important;
+    .socialAbout {
+        display: block !important;
+        ul {
+            text-align: center !important;
+        }
+    
+    }
+    .socialLinks {
+     display: block !important;
+     float: none !important;
+     ul {
+         padding: 0px;
+         text-align: center !important;
+         li {
+         width: 30%;
+         }
+     }
+    }
+}
+}
 .breadcrumb {
     padding-top: 0px;
     padding-left: 65px;
@@ -386,11 +409,11 @@ background-color: $thirdcolor;
 }
 @media screen and (max-width: 768px) {
     .bgTriangle {
-        &::after {
-            background-color: white;
-            width: 0px;
-            height: 0px;
-        }
+        // &::after {
+        //     background-color: white;
+        //     width: 0px;
+        //     height: 0px;
+        // }
     }
     .sendQuestion {
         
@@ -436,6 +459,19 @@ background-color: $thirdcolor;
             width: 0px;
             height: 0px;
         } 
+    }
+    .bgTriangleSix {
+        &::before {
+            left: -15px !important;
+            width: 100% !important;
+            height: 100% !important;
+            background-color: $primarycolor !important;
+        }
+        &::after {
+            width: 100% !important;
+            height: 100% !important;
+            background-color: $primarycolor !important; 
+        }
     }
 }
 @media screen and (max-width:1280px) {
@@ -483,6 +519,15 @@ background-color: $thirdcolor;
         
 
 }
+@media screen and (max-width:786px) {
+    .sendQuestion {
+           padding-left: 0px !important;
+           text-align: center;
+        }
+        
+
+}
+
 
 
 @import 'header';

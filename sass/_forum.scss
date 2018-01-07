@@ -212,11 +212,53 @@ p {
 }
 
 @media screen and (max-width:786px) {
+    .forum {
+        .rubrika {
+            .rubrikaContent {
+           
+                width: 80% !important;
+                p {
+                    padding-left: 5px;
+                }
+               
+    }
+    .rubrikaCategory{
+        margin: 0px 5px !important;
+    }
+        }
+       
+    }
     
     .forumMain {
         margin: 0px !important;
+        .rubrikaCategory {
+            a {
+                margin-right: 20px !important;
+            }
+        }
+        .rubrika {
+            margin: 20px 0px !important;
+        }
+        .rubrikaParagraph {
+            margin: 10px 5px !important;
+        }
         .rubrikaContent {
-            width: 80% !important;
+            margin-left: 20px;
+         
+            p {
+                margin-left: 5px !important;
+            }
+           
+      
+        &::after {
+            left: -5px !important;
+        }
+        &::before {
+            left: 20px !important;
+        }
+    }
+        .rubrikaText {
+            margin-left: 15px !important;
         }
         .additionalContentBody {
             padding: 0px !important;
@@ -227,32 +269,17 @@ p {
     }
 }
 
-@media screen and (max-width:540px) {
-    .forumMain {
-        
-        .rubrikaContent {
-         
-                p {
-                    margin-left: 0px !important;
+@media screen and (max-width:400px) {
+    .forum {
+        .rubrikaContentCategories{
+            ul {
+                li{
+                    width: 45% !important;
                 }
-               
-          
-            &::after {
-                width: 0px !important;
-                height: 0px !important;
-                background-color: white;
-            }
-            &::before {
-                width: 0px !important;
-                height: 0px !important;
-                background-color: white;
-            }
-        }
-        .rubrikaCategory {
-            margin: 0px 10px !important;
-            a {
-                margin: 0px 10px !important;
             }
         }
     }
+
 }
+
+

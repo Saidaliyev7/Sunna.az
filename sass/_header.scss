@@ -132,3 +132,28 @@ background-color: $primarycolor;
    
 }
 
+@media screen and (max-width: 991px) {
+    .header {
+        text-align: center;
+        .headerLogoText {
+            text-align: center !important;
+        }
+        div.headerLogo {
+            text-align: center;
+
+            
+        }
+        div.headerLogotxt {
+            padding: 13px 0px !important;
+        } 
+        div.headerText {
+            text-align: center;
+            padding: 10px 0px;
+
+           
+        }
+    }
+   
+}
+
+

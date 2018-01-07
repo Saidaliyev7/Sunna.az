@@ -2,6 +2,7 @@
     background-color: white;
     .articlesMain {
         margin: 0px 50px;
+        margin-bottom: 10px !important;
     }
     .contentHead {
         background-color: $thirdcolor;
@@ -156,14 +157,7 @@
         }
     }
 }
-@media screen and (max-width:991px) {
-    .articles {
-        .contentBody{
-           border-top-style: solid;
-        }
-    }
-    
-}
+
 @media screen and (max-width:786px) {
     .articlesMain {
         margin: 0px !important;

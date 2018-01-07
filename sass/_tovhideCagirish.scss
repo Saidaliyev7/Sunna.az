@@ -19,6 +19,7 @@
     background-color: white;
     .tovhideCagirishMain {
         margin: 0px 50px;
+        margin-bottom: 10px !important;
       
     }
     .additionalContent {
@@ -265,10 +266,11 @@
 @media screen and (max-width:786px) {
     .tovhideCagirishMain {
         margin: 0px !important;
+        .additionalContentBody {
+            padding: 0px !important;
+        }
     }
-    .additionalContentBody {
-        padding: 0px !important;
-    }
+    
     .additionalContentType {
         margin: 0px !important;
     }

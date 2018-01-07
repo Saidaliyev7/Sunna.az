@@ -1,7 +1,6 @@
 .content {
     margin-bottom: 15px;
     background-color: $secondarycolor;
-    
     .contentHead {
         p {
             font-size: 16pt;
@@ -21,7 +20,6 @@
             background-color: $primarycolor;
             text-transform: uppercase;
         }
-       
     }
     .contentMain {
         padding: 30px 0px 0px 20px;
@@ -54,7 +52,6 @@
                 }
             }
         }
-  
     }
     .contentCategories {
         ul {
@@ -118,6 +115,7 @@
         }
     }
 }
+
 @media screen and (max-width: 992px) {
     .contentCategoriesHead {
         p {
@@ -128,8 +126,7 @@
     }
     .contentCategoriesIcon {
         i {
-            right: -3% !important;
-            
+            right: -25px !important;
         }
     }
 }
@@ -143,5 +140,15 @@
             }
         }
     }
-   
+}
+
+@media screen and (max-width: 768px) {
+    .contentImageName {
+        p {
+            font-size: 20pt !important;
+            &::before {
+                top: 34% !important;
+            }
+        }
+    }
 }

@@ -159,6 +159,13 @@
         }
     }
 }
+@media screen and (max-width: 759px) {
+    .search {
+        .sendQuestion li {
+            width: 100% !important;
+        }
+    }
+}
 
 @media screen and (max-width: 1280px) {
     .search {

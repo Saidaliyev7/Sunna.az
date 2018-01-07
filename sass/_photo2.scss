@@ -3,6 +3,7 @@
     .photo2Main {
         margin: 0px 50px;
         border: 2px solid $thirdcolor;
+        margin-bottom: 10px !important;
     }
     .contentHead {
         margin-top: 2px;
@@ -50,10 +51,11 @@
 @media screen and (max-width:786px) {
     .photo2Main {
         margin: 0px !important;
+        .additionalContentBody {
+            padding: 0px !important;
+        }
     }
-    .additionalContentBody {
-        padding: 0px !important;
-    }
+    
     .additionalContentType {
         margin: 0px !important;
     }
