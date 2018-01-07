@@ -102,6 +102,9 @@
     .videoMain {
         margin: 0px !important;
         margin-bottom: 10px !important;
+        .additionalContent {
+            padding: 35px 20px 0px 20px !important;
+        }
         .rubrikaContentCategories {
             margin: 0px !important;
             
@@ -113,6 +116,10 @@
                 }
                 .additionalContentType {
                     margin: 0px !important;
+                    float: left !important;
+                    a {
+                        margin-left: 20px !important;
+                    }
                 }
             
         }

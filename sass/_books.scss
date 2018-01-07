@@ -51,6 +51,7 @@
                 margin-left: 40px;                
                 display: inline-block;
                 position: relative;
+                float: left;
                 a {
                     font-size: 20pt;
                     color: black;
@@ -120,12 +121,29 @@
 
 @media screen and (max-width:786px) {
     .booksMain {
+        .rubrikaContentCategories {
+            padding: 35px 20px 0px 20px !important;
+            margin-bottom: 5px !important;
+        }
         margin: 0px !important;
         .additionalContentBody {
             padding: 0px !important;
         }
         .additionalContentType {
             margin: 0px !important;
+        }
+        .rubrikaContentBooks {
+            text-align: center !important;
+            .rubrikaContentBooksIcon {
+                display: block !important;
+            }
+            .rubrikaContentBooksHead{
+                display: block !important;
+            }
+            .rubrikaContentBooksPdf {
+                float: none !important;
+                display: block !important;
+            }
         }
     }
 }

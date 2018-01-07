@@ -892,7 +892,7 @@ body {
 @media screen and (max-width: 440px) {
   .additionalContentBody audio {
     width: 100%; } }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 786px) {
   .additionalCenter {
     margin-top: 10px;
     text-align: center; }
@@ -911,6 +911,18 @@ body {
       display: block !important;
       float: none !important;
       margin-top: 5px  !important; } }
+@media screen and (max-width: 470px) {
+  .additionalTypeCenter {
+    text-align: center; }
+    .additionalTypeCenter .additionalContentType {
+      display: block !important;
+      float: none !important; }
+      .additionalTypeCenter .additionalContentType ul {
+        padding: 0px !important; }
+    .additionalTypeCenter .additionalContentAndSo {
+      display: block !important;
+      float: none !important;
+      margin-top: 10px !important; } }
 .rubrikaContent {
   margin-bottom: 2px;
   background-color: white; }
@@ -1447,10 +1459,15 @@ body {
       font-size: 13pt !important; }
     .articlesMain .rubrikaContentCategories .additionalContentBody .videoifrm {
       width: 100% !important; }
+    .articlesMain .additionalContent {
+      padding: 0px 20px !important;
+      margin-bottom: 10px !important; }
     .articlesMain .additionalContentBody {
       padding: 0px !important; }
     .articlesMain .additionalContentType {
-      margin: 0px !important; } }
+      margin: 0px !important;
+      float: left;
+      margin-top: 15px !important; } }
 .books {
   background-color: white; }
   .books .booksMain {
@@ -1490,7 +1507,8 @@ body {
       .books .rubrikaContentCategories .rubrikaContentBooksCategory .rubrikaContentBooksCategoryName {
         margin-left: 40px;
         display: inline-block;
-        position: relative; }
+        position: relative;
+        float: left; }
         .books .rubrikaContentCategories .rubrikaContentBooksCategory .rubrikaContentBooksCategoryName a {
           font-size: 20pt;
           color: black;
@@ -1544,10 +1562,22 @@ body {
 @media screen and (max-width: 786px) {
   .booksMain {
     margin: 0px !important; }
+    .booksMain .rubrikaContentCategories {
+      padding: 35px 20px 0px 20px !important;
+      margin-bottom: 5px !important; }
     .booksMain .additionalContentBody {
       padding: 0px !important; }
     .booksMain .additionalContentType {
-      margin: 0px !important; } }
+      margin: 0px !important; }
+    .booksMain .rubrikaContentBooks {
+      text-align: center !important; }
+      .booksMain .rubrikaContentBooks .rubrikaContentBooksIcon {
+        display: block !important; }
+      .booksMain .rubrikaContentBooks .rubrikaContentBooksHead {
+        display: block !important; }
+      .booksMain .rubrikaContentBooks .rubrikaContentBooksPdf {
+        float: none !important;
+        display: block !important; } }
 .ideologiya {
   padding: 0px;
   background-color: white; }
@@ -1589,7 +1619,9 @@ body {
     .ideologiyaMain .additionalContentBody {
       padding: 0px !important; }
     .ideologiyaMain .additionalContentType {
-      margin: 0px !important; } }
+      margin: 0px !important; }
+    .ideologiyaMain .rubrikaContentBooks {
+      padding: 10px !important; } }
 .murcie {
   background-color: white; }
   .murcie .murcieMain {
@@ -1723,14 +1755,21 @@ body {
     margin: 0px !important; }
     .photoMain .rubrikaContentCategories {
       margin: 0px !important; }
-      .photoMain .rubrikaContentCategories .additionalContentBody ul li {
-        margin-bottom: 10px;
-        display: block;
-        width: 100% !important; }
+      .photoMain .rubrikaContentCategories .additionalContent {
+        padding: 35px 20px 0px 20px !important; }
+      .photoMain .rubrikaContentCategories .additionalContentBody ul {
+        padding: 0px !important; }
+        .photoMain .rubrikaContentCategories .additionalContentBody ul li {
+          margin-bottom: 10px;
+          display: block;
+          width: 100% !important; }
       .photoMain .rubrikaContentCategories .additionalContentBody {
         padding: 0px !important; }
       .photoMain .rubrikaContentCategories .additionalContentType {
-        margin: 0px !important; } }
+        margin: 0px !important;
+        float: left !important; }
+        .photoMain .rubrikaContentCategories .additionalContentType a {
+          margin-left: 20px !important; } }
 .photo2 {
   background-color: white; }
   .photo2 .photo2Main {
@@ -1851,6 +1890,8 @@ body {
   .videoMain {
     margin: 0px !important;
     margin-bottom: 10px !important; }
+    .videoMain .additionalContent {
+      padding: 35px 20px 0px 20px !important; }
     .videoMain .rubrikaContentCategories {
       margin: 0px !important; }
       .videoMain .rubrikaContentCategories .additionalContentBody {
@@ -1858,7 +1899,10 @@ body {
         .videoMain .rubrikaContentCategories .additionalContentBody .videoifrm {
           width: 100% !important; }
       .videoMain .rubrikaContentCategories .additionalContentType {
-        margin: 0px !important; } }
+        margin: 0px !important;
+        float: left !important; }
+        .videoMain .rubrikaContentCategories .additionalContentType a {
+          margin-left: 20px !important; } }
 @media screen and (max-width: 991px) {
   .videoMain .rubrikaContentCategories {
     margin-top: -20px !important; } }
@@ -2010,6 +2054,8 @@ body {
 @media screen and (max-width: 786px) {
   .audioMain {
     margin: 0px !important; }
+    .audioMain .additionalContent {
+      margin-bottom: 10px !important; }
     .audioMain .rubrikaContentCategories {
       margin: 0px !important; }
       .audioMain .rubrikaContentCategories .additionalContentAudio audio {
@@ -2017,7 +2063,11 @@ body {
     .audioMain .additionalContentBody {
       padding: 0px !important; }
     .audioMain .additionalContentType {
-      margin: 0px !important; } }
+      margin: 0px !important;
+      float: left;
+      margin-top: 15px !important; }
+      .audioMain .additionalContentType ul {
+        padding-left: 20px !important; } }
 @media screen and (max-width: 991px) {
   .audioMain .contentBody {
     margin-top: -20px !important; } }

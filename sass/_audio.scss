@@ -147,6 +147,9 @@
 @media screen and (max-width:786px) {
     .audioMain {
         margin: 0px !important;
+        .additionalContent{
+            margin-bottom: 10px !important;
+        }
         .rubrikaContentCategories {
             margin: 0px !important;
             .additionalContentAudio {
@@ -160,6 +163,11 @@
         }
         .additionalContentType {
             margin: 0px !important;
+            float: left;
+    margin-top: 15px !important;
+     ul {
+         padding-left:20px !important; 
+     }
         }
     }
 }

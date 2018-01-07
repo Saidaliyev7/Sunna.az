@@ -172,11 +172,19 @@
                 }
             }
         }
+        .additionalContent{
+            padding: 0px 20px !important;
+            margin-bottom: 10px !important;
+        }
         .additionalContentBody {
             padding: 0px !important;
         }
         .additionalContentType {
             margin: 0px !important;
+            float: left;
+    margin-top: 15px !important;
         }
     }
 }
+
+   
