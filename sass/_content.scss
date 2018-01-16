@@ -1,4 +1,5 @@
 .content {
+    overflow-x: hidden;
     margin-bottom: 15px;
     background-color: $secondarycolor;
     .contentHead {
@@ -34,21 +35,19 @@
             .contentImageName {
                 text-align: center;
                 padding: 15px 0px;
+                span{
+                 
+                    display: inline-block;
+                    width: 15px;
+                    height: 15px;
+                    background-color: $primarycolor;
+                    border: 1px solid $primarycolor;
+                }
                 p {
                     display: inline-block;
                     font-weight: 600;
                     font-size: 12pt;
-                    position: relative;
-                    &::before {
-                        content: "";
-                        position: absolute;
-                        left: -20px;
-                        top: 20%;
-                        width: 15px;
-                        height: 15px;
-                        background-color: $primarycolor;
-                        border: 1px solid $primarycolor;
-                    }
+                   
                 }
             }
         }
@@ -149,6 +148,16 @@
             &::before {
                 top: 34% !important;
             }
+        }
+    }
+}
+
+@media screen and (max-width: 1320px) {
+    .contentImageName {
+       
+        span {
+            margin: 0px auto !important;
+        display: block !important;
         }
     }
 }

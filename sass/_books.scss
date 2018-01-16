@@ -123,7 +123,7 @@
     .booksMain {
         .rubrikaContentCategories {
             padding: 35px 20px 0px 20px !important;
-            margin-bottom: 5px !important;
+            margin-bottom: 10px !important;
         }
         margin: 0px !important;
         .additionalContentBody {
@@ -144,6 +144,14 @@
                 float: none !important;
                 display: block !important;
             }
+        }
+    }
+}
+
+@media screen and (max-width:1024px) {
+    .books {
+        .viewedContent {
+            text-align: left !important;
         }
     }
 }

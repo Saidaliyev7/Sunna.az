@@ -282,4 +282,24 @@ p {
 
 }
 
+@media screen and (max-width: 850px) and (min-width: 768px) {
+    .forum {
+   
+        .rubrikaCategoriesIcon {
+            i {
+                
+                width: 92px !important;
+               
+            }
+        }
+        
+    }
+}
 
+@media screen and (max-width:1024px) and (min-width:766px) {
+    .forum {
+        .viewedContent{
+            text-align: left !important;
+        }
+    }
+}

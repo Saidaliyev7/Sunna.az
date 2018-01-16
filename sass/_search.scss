@@ -155,7 +155,7 @@
 @media screen and (max-width: 1280px) {
     .search {
         .sendQuestion li {
-            width: 32.8% !important;
+            width: 42.8% !important;
         }
     }
 }
@@ -171,6 +171,17 @@
     .search {
         .rubrikaCategoriesName {
             border-bottom: 1px solid $thirdcolor !important;
+        }
+    }
+}
+
+@media screen and (max-width:1024px) and (min-width:766px) {
+    .search {
+        .viewedContent {
+            text-align:  center !important;
+        }
+        .viewedContentIcon{
+           display: block !important;
         }
     }
 }

@@ -24,18 +24,19 @@ body {
         padding: 4px 4px 4px 10px;
         margin: 0px 20px;
         color: black;
+        z-index: 52;
         text-decoration: none;
         background-color: $thirdcolor;
         &::before {
             top: 0px;
-            right: -20px;
+            right: -12px;
             content: "";
             position: absolute;
-            width: 19%;
-            height: 100%;
-            border-style: solid;
-            border-width: 27px 19px 0 0px;
-            border-color: $thirdcolor transparent transparent transparent;
+            height: 99%;
+            width: 100%;
+            z-index: -1;
+            transform: skew(-22deg);
+            background-color:  $thirdcolor;
         }
         &::after {
             top: 0px;
@@ -230,7 +231,7 @@ body {
         }
     }
 }
-@media screen and (max-width: 769px) {
+@media screen and (max-width: 1024px) {
 .social {
     margin: 50px 0px 0px 0px !important;
     text-align: center !important;
@@ -407,6 +408,19 @@ background-color: $thirdcolor;
 
     }
 }
+@media screen and (max-width: 400px) {
+
+    .bgTriangleResponsive {
+        &::after {
+                background-color: white;
+                width: 0px;
+                height: 0px;
+            }
+    }
+
+}
+
+
 @media screen and (max-width: 768px) {
     .bgTriangle {
         // &::after {
@@ -415,6 +429,7 @@ background-color: $thirdcolor;
         //     height: 0px;
         // }
     }
+    
     .sendQuestion {
         
             li {
@@ -519,10 +534,19 @@ background-color: $thirdcolor;
         
 
 }
-@media screen and (max-width:786px) {
+@media screen and (max-width:1024px) {
     .sendQuestion {
            padding-left: 0px !important;
            text-align: center;
+        }
+        
+
+}
+@media screen and (max-width:1050px) {
+    .sendQuestion {
+            li {
+                width: 27% !important;
+            }
         }
         
 

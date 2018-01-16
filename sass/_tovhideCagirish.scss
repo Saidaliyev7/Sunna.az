@@ -25,6 +25,7 @@
     .additionalContent {
         margin: 50px 50px 40px 40px;
         padding: 0px 20px;
+        margin-bottom: 10px !important;
         border-bottom: 2px solid $secondarycolor;
         .additionalContentIcon {
             display: inline-block;
@@ -276,7 +277,22 @@
     }
 }
 
-@media screen and (max-width:1187px) {
+@media screen and (max-width:1187px) and (min-width:766px) {
+    .tovhideCagirishMain {
+        .rubrikaContentCategories {
+            ul {
+                padding-left: 0px !important;
+                li {
+                    width: 30% !important;
+                    .rubrikaCategoriesName {
+                        border-bottom: 1px solid $thirdcolor;
+                    }
+                }
+            }
+        }
+    }
+}
+@media screen and (max-width:766px){
     .tovhideCagirishMain {
         .rubrikaContentCategories {
             ul {
@@ -291,3 +307,12 @@
         }
     }
 }
+
+@media screen and (max-width:1024px) and (min-width:766px) {
+    .tovhideCagirish {
+        .viewedContentIcon {
+            display: block !important;
+        }
+    }
+}
+

@@ -70,3 +70,11 @@
         }
     }
 }
+
+@media screen and (max-width:1024px) and (min-width:766px) {
+    .murcie {
+        .viewedContent{
+            text-align: left !important;
+        }
+    }
+}

@@ -232,3 +232,32 @@ font-style: italic;
         }
     }
 }
+@media screen and (max-width: 850px) and (min-width: 768px) {
+    .rubrikaContent {
+        .contentCategoriesHead {
+            p {
+                padding: 15px 0px 15px 7px;
+            }
+        }
+        .rubrikaContentCategories {
+            ul {
+                li {
+                    width: 49% !important;
+                }
+            }
+        }
+        .rubrikaCategoriesIcon {
+            i {
+                
+                width: 92px !important;
+               
+            }
+        }
+        
+    }
+}
+@media screen and (max-width: 850px) and (min-width: 768px) {
+    .rubrikaEntrace  {
+        margin-left: 10px !important;
+    }
+}

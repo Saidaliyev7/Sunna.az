@@ -66,3 +66,40 @@
         }
     }
 }
+@media screen and (max-width:1024px) {
+    .tovhidnadi {
+        .social {
+            
+            .socialAbout {
+                display: block !important;
+                ul {
+                    text-align: center !important;
+                    li {
+                        width: auto !important;
+                    }
+                }
+            
+            }
+            .socialLinks {
+             display: block !important;
+             float: none !important;
+             ul {
+                 padding: 0px;
+                 text-align: center !important;
+                 li {
+                 width: 30% !important;
+                 }
+             }
+            }
+        }
+    }
+   
+}
+
+@media screen and (max-width:1024px) and (min-width:766px) {
+    .tovhidnadi {
+        .viewedContent{
+            text-align: left !important;
+        }
+    }
+}

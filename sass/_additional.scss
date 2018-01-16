@@ -1,4 +1,6 @@
 .additional {
+    overflow-x: hidden;
+    overflow-y: hidden;
     padding: 20px 0px;
     position: relative;
     margin-bottom: 75px;
@@ -275,6 +277,19 @@
     }
     
 }
+@media screen and (max-width: 1024px) {
+    .viewedContent {
+        text-align: center !important;
+    }
+    
+}
+@media screen and (max-width: 767px) {
+    .viewedContent {
+        text-align: left !important;
+    }
+    
+}
+
 
 @media screen and (max-width: 786px) {
     .additionalCenter{
@@ -300,9 +315,15 @@
             margin-top: 5px  !important;
         }
     }
+    .sendMessageButton {
+        a {
+           padding: 10px 5px !important;
+        }
+    }
     
     
 }
+
 @media screen and (max-width: 470px) {
  .additionalTypeCenter {
      text-align: center;
