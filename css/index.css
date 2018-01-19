@@ -698,6 +698,25 @@ body {
   .contentImageName span {
     margin: 0px auto !important;
     display: block !important; } }
+@media screen and (max-width: 768px) and (min-width: 590px) {
+  .contentCategoriesResponsiveAll ul {
+    margin-right: 0px !important;
+    padding-left: 0px !important;
+    text-align: center !important; }
+    .contentCategoriesResponsiveAll ul li {
+      width: 41% !important;
+      margin-right: 30px !important;
+      display: inline-block; } }
+@media screen and (max-width: 767px) and (min-width: 590px) {
+  .imageContentBody .contentImage {
+    text-align: center !important; }
+    .imageContentBody .contentImage img {
+      width: 300px !important; } }
+@media screen and (max-width: 589px) {
+  .imageContentBody .contentImage {
+    text-align: center !important; }
+    .imageContentBody .contentImage img {
+      width: 250px !important; } }
 .additional {
   overflow-x: hidden;
   overflow-y: hidden;
@@ -1322,14 +1341,14 @@ body {
 
   .additionalContentType {
     margin: 0px !important; } }
-@media screen and (max-width: 1187px) and (min-width: 766px) {
+@media screen and (max-width: 1187px) and (min-width: 470px) {
   .tovhideCagirishMain .rubrikaContentCategories ul {
     padding-left: 0px !important; }
     .tovhideCagirishMain .rubrikaContentCategories ul li {
       width: 30% !important; }
       .tovhideCagirishMain .rubrikaContentCategories ul li .rubrikaCategoriesName {
         border-bottom: 1px solid #aae1fa; } }
-@media screen and (max-width: 766px) {
+@media screen and (max-width: 469px) {
   .tovhideCagirishMain .rubrikaContentCategories ul {
     padding-left: 0px !important; }
     .tovhideCagirishMain .rubrikaContentCategories ul li {
@@ -1833,6 +1852,22 @@ body {
         .photo .viewedContent ul li .viewedContentImage img {
           width: 100%; }
 
+@media screen and (max-width: 768px) and (min-width: 470px) {
+  .photoMain .additionalContentBody li {
+    width: 46% !important; }
+  .photoMain .additionalContentType a {
+    margin-left: 60px !important; } }
+@media screen and (max-width: 469px) {
+  .photoMain .additionalContentBody ul {
+    padding: 0px !important; }
+    .photoMain .additionalContentBody ul li {
+      margin-bottom: 10px;
+      display: block;
+      width: 100% !important; }
+  .photoMain .additionalContentType {
+    margin: 0px !important; }
+    .photoMain .additionalContentType a {
+      margin-left: 20px !important; } }
 @media screen and (max-width: 786px) {
   .photoMain {
     margin: 0px !important; }
@@ -1842,19 +1877,10 @@ body {
         padding: 35px 20px 0px 20px !important; }
       .photoMain .rubrikaContentCategories .additionalContent {
         margin-bottom: 10px !important; }
-      .photoMain .rubrikaContentCategories .additionalContentBody ul {
-        padding: 0px !important; }
-        .photoMain .rubrikaContentCategories .additionalContentBody ul li {
-          margin-bottom: 10px;
-          display: block;
-          width: 100% !important; }
       .photoMain .rubrikaContentCategories .additionalContentBody {
         padding: 0px !important; }
       .photoMain .rubrikaContentCategories .additionalContentType {
-        margin: 0px !important;
-        float: left !important; }
-        .photoMain .rubrikaContentCategories .additionalContentType a {
-          margin-left: 20px !important; } }
+        float: left !important; } }
 .photo2 {
   background-color: white; }
   .photo2 .photo2Main {
