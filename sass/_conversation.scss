@@ -16,7 +16,7 @@
         font-size: 80pt;
         i {
             img {
-                width: 100%
+                width: 80%
             }
         }
     }
@@ -215,4 +215,23 @@
 }
 }
 
+
+@media screen and (min-width:767px) and (max-width:1200px){
+    .conversationContentIcon {
+        i {
+             img {
+                 width: 100% !important;
+             }
+        }
+    }
+}
+@media screen and (min-width:400px) and (max-width:766px){
+    .conversationContentIcon {
+        i {
+             img {
+                 width: 50% !important;
+             }
+        }
+    }
+}
 

@@ -393,7 +393,10 @@ body {
     text-align: center; } }
 @media screen and (max-width: 1050px) {
   .sendQuestion li {
-    width: 27% !important; } }
+    width: 70% !important;
+    margin: 0px auto !important;
+    margin-bottom: 5px !important;
+    display: block !important; } }
 .header {
   background-color: #2d6c93; }
   .header .headerLogoText {
@@ -471,7 +474,7 @@ body {
       padding: 10px 0px; }
       .header div.headerText div.textContent {
         font-size: 11pt !important; } }
-@media screen and (max-width: 991px) {
+@media screen and (max-width: 1200px) {
   .header {
     text-align: center; }
     .header .headerLogoText {
@@ -525,8 +528,9 @@ body {
             text-decoration: none; }
     .menu .menuContent .menuInput {
       padding: 2px 0px;
-      margin-left: 30px;
+      margin-right: 30px;
       position: relative;
+      float: right;
       z-index: 2;
       display: inline-block; }
       .menu .menuContent .menuInput::after {
@@ -567,7 +571,7 @@ body {
 @media screen and (max-width: 1278px) {
   .menu {
     height: 110px; } }
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 1200px) {
   .menu {
     height: auto !important; }
 
@@ -591,7 +595,9 @@ body {
       .menuContent .menuitems ul {
         display: none; }
     .menuContent .menuInput {
-      display: none !important; } }
+      display: none !important;
+      float: none !important;
+      margin-right: 0px !important; } }
 .content {
   overflow-x: hidden;
   margin-bottom: 15px;
@@ -1952,6 +1958,23 @@ body {
         font-size: 16pt; }
     .video .additionalContent .additionalContentBody {
       padding: 20px 0px 20px 35px; }
+    .video .additionalContent .additionalContentForumIcon {
+      float: right;
+      display: inline-block;
+      margin-left: 10px;
+      width: 40px;
+      height: 40px;
+      background-image: url(../img/discussion.jpg);
+      background-size: cover; }
+    .video .additionalContent .additionalContentForum {
+      float: right;
+      display: inline-block; }
+      .video .additionalContent .additionalContentForum a {
+        text-decoration: none;
+        font-style: italic;
+        color: #2d6c93;
+        font-size: 12pt;
+        line-height: 40px; }
     .video .additionalContent .additionalContentType {
       margin-left: 35px; }
       .video .additionalContent .additionalContentType a {
@@ -2722,7 +2745,7 @@ body {
     text-align: center;
     font-size: 80pt; }
     .conversationContent .conversationContentIcon i img {
-      width: 100%; }
+      width: 80%; }
   .conversationContent .conversationContentIconName {
     text-align: center;
     margin-bottom: 10px; }
@@ -2870,17 +2893,71 @@ body {
     margin-top: 25px !important; }
   .conversationContent .rubrikaCategoriesName {
     margin: 30px 0px !important; } }
+@media screen and (min-width: 767px) and (max-width: 1200px) {
+  .conversationContentIcon i img {
+    width: 100% !important; } }
+@media screen and (min-width: 400px) and (max-width: 766px) {
+  .conversationContentIcon i img {
+    width: 50% !important; } }
 .search .viewedContent li {
   border-bottom: 0px !important; }
 .search .contentBody {
   padding: 50px 0px; }
 .search .searchContent {
   display: inline-block;
-  margin-left: 50px; }
+  margin-left: 50px;
+  padding: 2px 0px;
+  position: relative;
+  z-index: 2;
+  display: inline-block; }
   .search .searchContent p {
     font-size: 16pt;
     display: inline-block;
     color: black; }
+  .search .searchContent::after {
+    content: "";
+    position: absolute;
+    left: -9px;
+    top: 2px;
+    background-color: white;
+    width: 50%;
+    z-index: -5;
+    transform: skewx(-22deg);
+    height: 39px; }
+  .search .searchContent::before {
+    content: "";
+    position: absolute;
+    right: 0px;
+    top: 2px;
+    background-color: white;
+    width: 90%;
+    z-index: -5;
+    height: 39px; }
+  .search .searchContent i {
+    z-index: 5;
+    position: absolute;
+    top: 30%;
+    right: 3%;
+    height: 19px;
+    background-image: url(../img/searchicon.png);
+    background-size: cover;
+    width: 19px; }
+  .search .searchContent img {
+    height: 0px;
+    width: 0px; }
+  .search .searchContent input {
+    z-index: 6;
+    width: 200px;
+    height: 39px;
+    border: none;
+    padding-right: 30px; }
+    .search .searchContent input::placeholder {
+      color: black;
+      font-weight: bold;
+      padding-left: 10px;
+      text-transform: uppercase; }
+    .search .searchContent input:focus {
+      outline: none; }
 .search .contentHead p {
   width: 190px; }
 .search .viewedContent {
@@ -2983,8 +3060,13 @@ body {
     margin: 0px 10px !important; } }
 @media screen and (max-width: 1280px) {
   .search .sendQuestion li {
-    width: 42.8% !important; } }
+    width: 80% !important;
+    display: block;
+    margin-bottom: 5px !important; } }
 @media screen and (max-width: 759px) {
+  .search .searchContent {
+    margin: 10px 0px !important;
+    margin-left: 50px !important; }
   .search .sendQuestion li {
     width: 100% !important; } }
 @media screen and (max-width: 1280px) {

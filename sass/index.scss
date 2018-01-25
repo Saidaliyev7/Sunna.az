@@ -61,7 +61,7 @@ body {
         margin: 0px 20px !important;
     }
 }
-showAllMarginFixForum3 {
+.showAllMarginFixForum3 {
     
 }
 
@@ -551,7 +551,10 @@ background-color: $thirdcolor;
 @media screen and (max-width:1050px) {
     .sendQuestion {
             li {
-                width: 27% !important;
+                width: 70% !important;
+                margin: 0px auto !important;
+                margin-bottom: 5px !important;
+                display:  block !important;
             }
         }
         

@@ -23,15 +23,15 @@ if(count==1) {
     count=1;
 }
 })
-if($("body").width()<1025) {
-    console.log("salam")
-  $(".menuSlogan").parent().removeClass("col-lg-5") ;
-  $(".menuContent").parent().removeClass("col-lg-7") ;
-} else {
-    $(".menuSlogan").parent().addClass("col-lg-5")
-    $(".menuContent").parent().addClass("col-lg-7")
+// if($("body").width()<1025) {
+//     console.log("salam")
+//   $(".menuSlogan").parent().removeClass("col-lg-5") ;
+//   $(".menuContent").parent().removeClass("col-lg-7") ;
+// } else {
+//     $(".menuSlogan").parent().addClass("col-lg-5")
+//     $(".menuContent").parent().addClass("col-lg-7")
     
-}
+// }
 
 
 });
