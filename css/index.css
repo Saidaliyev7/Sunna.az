@@ -1803,6 +1803,23 @@ body {
       display: inline-block; }
       .photo .additionalContent .additionalContentHead p {
         font-size: 16pt; }
+    .photo .additionalContent .additionalContentForumIcon {
+      float: right;
+      display: inline-block;
+      margin-left: 10px;
+      width: 40px;
+      height: 40px;
+      background-image: url(../img/discussion.jpg);
+      background-size: cover; }
+    .photo .additionalContent .additionalContentForum {
+      float: right;
+      display: inline-block; }
+      .photo .additionalContent .additionalContentForum a {
+        text-decoration: none;
+        font-style: italic;
+        color: #2d6c93 !important;
+        font-size: 12pt;
+        line-height: 40px; }
     .photo .additionalContent .additionalContentBody ul {
       margin: 20px 0px;
       list-style: none; }
@@ -2104,6 +2121,23 @@ body {
       .audio .additionalContent .additionalContentIcon img {
         height: 27px;
         width: 27px; }
+    .audio .additionalContent .additionalContentForumIcon {
+      float: right;
+      display: inline-block;
+      margin-left: 10px;
+      width: 40px;
+      height: 40px;
+      background-image: url(../img/discussion.jpg);
+      background-size: cover; }
+    .audio .additionalContent .additionalContentForum {
+      float: right;
+      display: inline-block; }
+      .audio .additionalContent .additionalContentForum a {
+        text-decoration: none;
+        font-style: italic;
+        color: #2d6c93 !important;
+        font-size: 12pt;
+        line-height: 40px; }
     .audio .additionalContent .additionalContentForum {
       float: right;
       display: inline-block; }
