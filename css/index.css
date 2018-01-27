@@ -714,10 +714,14 @@ body {
       margin-right: 30px !important;
       display: inline-block; } }
 @media screen and (max-width: 767px) and (min-width: 590px) {
-  .imageContentBody .contentImage {
-    text-align: center !important; }
-    .imageContentBody .contentImage img {
-      width: 250px !important; } }
+  .imageContentBody {
+    padding: 15px 0px !important; }
+    .imageContentBody .contentMain {
+      padding: 15px 0px !important; }
+      .imageContentBody .contentMain .contentImage {
+        text-align: center !important; }
+        .imageContentBody .contentMain .contentImage img {
+          width: 280px !important; } }
 @media screen and (max-width: 590px) {
   .imageContentBody {
     padding: 20px 0px !important; }

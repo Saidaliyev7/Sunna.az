@@ -182,13 +182,19 @@
 
 @media screen and (max-width: 767px) and (min-width:590px) {
     .imageContentBody {
-        .contentImage {
-            text-align: center !important;
-            img {
-                width: 250px !important;
-            }
+        padding: 15px 0px !important;
+        .contentMain {
+            padding: 15px 0px !important;
+            .contentImage {
             
+                text-align: center !important;
+                img {
+                    width: 280px !important;
+                }
+                
+            }     
         }
+        
     }
 }
 @media screen and  (max-width:590px) {
