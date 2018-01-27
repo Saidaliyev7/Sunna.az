@@ -721,7 +721,7 @@ body {
       .imageContentBody .contentMain .contentImage {
         text-align: center !important; }
         .imageContentBody .contentMain .contentImage img {
-          width: 280px !important; } }
+          width: 90% !important; } }
 @media screen and (max-width: 590px) {
   .imageContentBody {
     padding: 20px 0px !important; }
