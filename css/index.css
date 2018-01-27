@@ -717,12 +717,14 @@ body {
   .imageContentBody .contentImage {
     text-align: center !important; }
     .imageContentBody .contentImage img {
-      width: 300px !important; } }
-@media screen and (max-width: 589px) {
-  .imageContentBody .contentImage {
-    text-align: center !important; }
-    .imageContentBody .contentImage img {
       width: 250px !important; } }
+@media screen and (max-width: 590px) {
+  .imageContentBody {
+    padding: 20px 0px !important; }
+    .imageContentBody .contentMain {
+      padding: 10px 0px !important; }
+      .imageContentBody .contentMain .contentImageName p {
+        font-size: 17pt !important; } }
 .additional {
   overflow-x: hidden;
   overflow-y: hidden;
