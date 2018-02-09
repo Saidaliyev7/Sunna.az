@@ -1,6 +1,12 @@
 $primarycolor:#2d6c93;
 $secondarycolor:#d9edf7;
 $thirdcolor:#aae1fa;
+
+@media screen and (max-width:767px) {
+    .colum-reverse-row {
+        flex-direction: column-reverse;
+    }
+}
 .mainHead {
     background-color: $thirdcolor;
 }
@@ -268,6 +274,11 @@ body {
     list-style: none;
     background-color: white;
     border: none;
+}
+@media screen and (max-width:767px) {
+    .breadcrumb {
+        padding-left: 30px !important; 
+    }
 }
 
 .breadcrumb-item+.breadcrumb-item {

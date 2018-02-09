@@ -35,6 +35,7 @@
             }
         }
         .additionalContentBody {
+            display: block;
             padding: 20px 0px 20px 35px;
         }
         .additionalContentForumIcon {
@@ -156,4 +157,31 @@
             
         }
     }
+}
+@media screen and (max-width:768px)  {
+
+    .video {
+        .additionalContent {
+            padding-top: 20px;
+        }
+        .additionalContentHead {
+            text-align: left !important;
+            margin-left: 35px !important;
+            display: block !important;
+        }
+        .additionalContentIcon {
+            display: inline-block;
+            position: absolute !important;
+            left: 15px !important;
+            padding-right: 5px;
+            img {
+                height: 27px;
+                width: 27px;
+            }
+            i {
+                font-size: 22px;
+            }
+        }
+    }
+   
 }

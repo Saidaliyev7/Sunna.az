@@ -1,43 +1,43 @@
 .header {
     .headerLogoText {
         text-align: right;
-        margin-right: 15px;
+       // margin-right: 15px;
     }
 background-color: $primarycolor;
 .headerLogo {
     display: inline-block;
     p {
-        font-family: 'Impact', regular;
+        font-family: 'Revue', regular;
         padding: 0px 10px;
         
-       font-size: 70pt;
+       font-size: 60pt;
        color: $secondarycolor;
        text-transform:uppercase;
        margin: 0px;
     }
 }
-.headerLogotxt {
-    display: inline-block;
-    padding: 15px 0px;
-    background-color: $secondarycolor;
-    p {
-        font-family: 'Impact', regular;
-        padding: 0px 10px;
+// .headerLogotxt {
+//     display: inline-block;
+//     padding: 15px 0px;
+//     background-color: $secondarycolor;
+//     p {
+//         font-family: 'Impact', regular;
+//         padding: 0px 10px;
         
-        font-size: 70pt;
-        color:  $primarycolor;
-        text-transform:uppercase;
-        margin: 0px;
-     }
-}
+//         font-size: 70pt;
+//         color:  $primarycolor;
+//         text-transform:uppercase;
+//         margin: 0px;
+//      }
+// }
 .headerText {
-    padding-top: 40px;
+    padding-top: 20px;
     .textContent {
      color: $secondarycolor;
-     font-size: 16pt; 
+     font-size: 14pt;
      margin: 0px;
-     font-style:italic;
-     font-weight: bold; 
+     font-style: italic;
+     font-weight: bold;
      
     }
 }
@@ -87,8 +87,15 @@ background-color: $primarycolor;
         } 
         .headerLogo  {
           p {
-              font-size: 55pt !important;
+            font-size: 39pt !important;
           }
+        }
+        .headerText {
+            .textContent {
+                
+                    font-size: 10pt !important;
+                
+            }
         }
     }
    
@@ -149,6 +156,19 @@ background-color: $primarycolor;
         div.headerText {
             text-align: center;
             padding: 10px 0px;
+
+           
+        }
+    }
+   
+}
+@media screen and (max-width: 1200px) and(min-width:1000px) {
+    .header {
+        
+        div.headerText {
+            text-align: center;
+            padding: 15px 0px;
+
 
            
         }

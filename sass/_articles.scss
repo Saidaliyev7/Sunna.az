@@ -58,6 +58,7 @@
             background-size: cover;
         }
         .additionalContentBody {
+            display: block;
             p {
                 padding: 20px 0px 20px 32px;
                 
@@ -208,6 +209,53 @@
         }
     }
 }
+@media screen and (max-width: 470px) {
+    .articles {
+        .additionalTypeCenter {
+            text-align: center;
+            .additionalContentType {
+                display: block !important;
+                float: none !important;
+                ul {
+                    padding: 0px !important;
+                }
+            }
+            .additionalContentAndSo {
+                display: block !important;
+                float: none !important;
+                margin-top: 10px !important;
+            }
+        }
+    }
+    
+}
+
+
+@media screen and (max-width:767px) {
+    .articles {
+        .additionalContentHead {
+            text-align: left !important;
+            margin-left: 30px !important;
+            display: block !important;
+        }
+        .additionalContentIcon {
+            display: inline-block;
+            position: absolute;
+            left: 10px !important;
+            padding-right: 5px;
+            img {
+                height: 27px;
+                width: 27px;
+            }
+            i {
+                font-size: 22px;
+            }
+        }
+        
+    }
+    
+}
+
 
 
    

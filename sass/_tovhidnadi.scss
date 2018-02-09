@@ -8,6 +8,9 @@
     .contentHead {
         margin: 2px;
         margin-bottom: -50px;
+        width: auto !important;
+        text-align: left !important;
+        
         p {
             margin-left: 32px;
             font-size: 20pt;
@@ -100,6 +103,13 @@
     .tovhidnadi {
         .viewedContent{
             text-align: left !important;
+        }
+    }
+}
+@media screen and (max-width:767px) {
+    .tovhidnadi {
+        .contentHead {
+            margin-left: 32px;
         }
     }
 }

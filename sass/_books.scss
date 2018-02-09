@@ -133,14 +133,18 @@
             margin: 0px !important;
         }
         .rubrikaContentBooks {
-            text-align: center !important;
+            
             .rubrikaContentBooksIcon {
-                display: block !important;
+                position: absolute;
+            left: 30px !important;
             }
             .rubrikaContentBooksHead{
-                display: block !important;
+               text-align: left;
+               display: block !important;
+               margin-left: 30px !important;
             }
             .rubrikaContentBooksPdf {
+                text-align: center !important;
                 float: none !important;
                 display: block !important;
             }

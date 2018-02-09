@@ -7,6 +7,8 @@
         border: 2px solid $thirdcolor;
     }
     .contentHead {
+        width: auto !important;
+        text-align: left !important;
         p {
             margin-top: 1px;
             padding-left: 50px;
@@ -54,6 +56,13 @@
                     width: 100% !important;
                 }
             
+        }
+    }
+}
+@media screen and (max-width:767px) {
+    .video2Main {
+        .contentHead {
+            margin-left: 32px;
         }
     }
 }

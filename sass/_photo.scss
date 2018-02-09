@@ -50,6 +50,7 @@
             }
         }
         .additionalContentBody {
+            display: block;
             ul {
                 margin: 20px 0px;
                 list-style: none;
@@ -196,5 +197,27 @@
 
    
 }
-
+@media screen and (max-width:767px)  {
+    .photo {
+        .additionalContentHead {
+            text-align: left !important;
+            margin-left: 35px !important;
+            display: block !important;
+        }
+        .additionalContentIcon {
+            display: inline-block;
+            position: absolute !important;
+            left: 15px !important;
+            padding-right: 5px;
+            img {
+                height: 27px;
+                width: 27px;
+            }
+            i {
+                font-size: 22px;
+            }
+        }
+    }
+   
+}
 

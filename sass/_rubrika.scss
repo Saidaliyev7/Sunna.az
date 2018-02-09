@@ -14,6 +14,7 @@
     .rubrikaContentMain {
         margin: 0px 50px;
     }
+    
     .contentHead {
         background-color: $thirdcolor;
         p {
@@ -273,5 +274,12 @@ font-style: italic;
                margin-top: 5px !important;
            }
        } 
+    }
+}
+@media screen and (max-width:766px) {
+    .rubrikaContentMainHead {
+        &::after {
+            height: 0% !important;
+        }
     }
 }
