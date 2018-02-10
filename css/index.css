@@ -793,7 +793,7 @@ body {
     font-size: 12pt !important; } }
 @media screen and (max-width: 768px) {
   .contentImageName .contentImageParagraph:after {
-    top: 6px !important; } }
+    top: 4px !important; } }
 @media screen and (max-width: 1025px) and (min-width: 991px) {
   .contentCategories ul li {
     margin-bottom: 8px !important; } }
@@ -887,7 +887,10 @@ body {
       .additional .additionalContent .additionalContentBody p {
         font-size: 13pt; }
       .additional .additionalContent .additionalContentBody .video {
+        display: block;
         width: 400px; }
+      .additional .additionalContent .additionalContentBody audio {
+        display: block; }
     .additional .additionalContent .additionalContentType {
       display: inline-block; }
       .additional .additionalContent .additionalContentType ul {
