@@ -33,20 +33,32 @@
                 }
             }
             .contentImageName {
-                text-align: center;
+                text-align: left;
                 padding: 15px 0px;
-                span {
+                padding-left: 30px;
+                
+                .contentImageParagraph{
                     display: inline-block;
-                    width: 15px;
-                    height: 15px;
-                    background-color: $primarycolor;
-                    border: 1px solid $primarycolor;
+                    position: relative;
+                    p {
+                        display: inline-block;
+                        font-weight: 600;
+                        font-size: 20pt;
+                       
+                    }
+                    &::after {
+                        content: "";
+                        position: absolute;
+                        width: 15px;
+                        height: 15px;
+                        top: 13px;
+                        left: -20px;
+                        background-color: $primarycolor;
+                        border: 1px solid $primarycolor;
+                    }
+                   
                 }
-                p {
-                    display: inline-block;
-                    font-weight: 600;
-                    font-size: 12pt;
-                }
+                
             }
         }
     }
@@ -141,12 +153,15 @@
 
 @media screen and (max-width: 768px) {
     .contentImageName {
-        p {
-            font-size: 20pt !important;
-            &::before {
-                top: 34% !important;
+        .contentImageParagraph {
+            p {
+                font-size: 13pt !important;
+                &::before {
+                    top: 34% !important;
+                }
             }
         }
+        
     }
 }
 
@@ -159,7 +174,7 @@
     }
 }
 
-@media screen and (max-width: 768px) and (min-width:590px) {
+@media screen and (max-width: 991px) and (min-width:590px) {
     .contentCategoriesResponsiveAll {
         ul {
             margin-right: 0px !important;
@@ -197,6 +212,18 @@
     .contentMainPadding {
         padding: 30px 0px 0px 0px !important;
     }
+    
+}
+@media screen and (max-width: 991px) and (min-width:500px) {
+    .contentCategoriesResponsiveAll {
+        ul {
+            li {
+                margin-bottom: 9px !important;
+            }
+        }
+    }
+}
+@media screen and (max-width: 500px) {
     .contentCategoriesResponsiveAll {
         ul {
             li {
@@ -211,10 +238,14 @@
         padding: 20px 0px !important;
         .contentMain {
             padding: 10px 0px !important;
+            padding-bottom: 0px !important;
             .contentImageName {
-                p {
-                    font-size: 17pt !important;
+                .contentImageParagraph {
+                    p {
+                        font-size: 12pt !important;
+                    }
                 }
+               
             }
         }
     }
@@ -222,7 +253,10 @@
 
 @media screen and (max-width: 767px) and (min-width:500px) {
     .contentCategoriesIcon {
-        top: -10% !important;
+        i {
+            top: -10% !important;
+        }
+        
     }
     .contentCategoriesNumber {
         margin-right: 10px !important;
@@ -256,5 +290,53 @@
     .viewed {
         text-align: center !important;
         padding-left: 0px !important;
+    }
+}
+
+
+@media screen and (max-width: 991px)  {
+.contentMainPadding {
+    padding-bottom: 0px !important;
+}
+.contentImageName {
+    padding-bottom: 0px !important;
+}
+}
+@media screen and (max-width:767px) {
+    .contentImageName {
+        .contentImageParagraph  {
+            p {
+                font-size: 12pt !important;
+            }
+        }
+       
+    }
+}
+@media screen and (max-width:768px) {
+    .contentImageName {
+        .contentImageParagraph  {
+           &:after {
+               top: 6px !important;
+           }
+        }
+       
+    }  
+}
+@media screen and (max-width:1025px) and (min-width:991px) {
+    .contentCategories {
+        ul {
+            li {
+                margin-bottom: 8px !important;
+            }
+        }
+    }
+}
+@media screen and (max-width:1380px) and (min-width:1026px) {
+    .contentCategories {
+        ul {
+            li {
+                margin-bottom: 15px !important;
+            }
+        }
     }
 }

@@ -397,7 +397,7 @@ body {
   .sendQuestion {
     padding-left: 0px !important;
     text-align: center; } }
-@media screen and (max-width: 1050px) {
+@media screen and (max-width: 1281px) {
   .sendQuestion li {
     width: 70% !important;
     margin: 0px auto !important;
@@ -412,6 +412,7 @@ body {
     .header .headerLogo p {
       font-family: 'Revue', regular;
       padding: 0px 10px;
+      width: 100%;
       font-size: 60pt;
       color: #d9edf7;
       text-transform: uppercase;
@@ -518,7 +519,8 @@ body {
       .menu .menuContent .menuitems ul {
         padding: 0px;
         list-style: none;
-        margin: 0px; }
+        margin: 0px;
+        padding-top: 4px; }
         .menu .menuContent .menuitems ul li {
           display: inline-block;
           padding: 0px 10px; }
@@ -624,18 +626,25 @@ body {
       .content .contentMain a .contentImage img {
         width: 100%; }
       .content .contentMain a .contentImageName {
-        text-align: center;
-        padding: 15px 0px; }
-        .content .contentMain a .contentImageName span {
+        text-align: left;
+        padding: 15px 0px;
+        padding-left: 30px; }
+        .content .contentMain a .contentImageName .contentImageParagraph {
           display: inline-block;
-          width: 15px;
-          height: 15px;
-          background-color: #2d6c93;
-          border: 1px solid #2d6c93; }
-        .content .contentMain a .contentImageName p {
-          display: inline-block;
-          font-weight: 600;
-          font-size: 12pt; }
+          position: relative; }
+          .content .contentMain a .contentImageName .contentImageParagraph p {
+            display: inline-block;
+            font-weight: 600;
+            font-size: 20pt; }
+          .content .contentMain a .contentImageName .contentImageParagraph::after {
+            content: "";
+            position: absolute;
+            width: 15px;
+            height: 15px;
+            top: 13px;
+            left: -20px;
+            background-color: #2d6c93;
+            border: 1px solid #2d6c93; }
   .content .contentCategories ul {
     width: 100%;
     margin-right: 35px;
@@ -696,15 +705,15 @@ body {
     border: none !important;
     width: 0% !important; } }
 @media screen and (max-width: 768px) {
-  .contentImageName p {
-    font-size: 20pt !important; }
-    .contentImageName p::before {
+  .contentImageName .contentImageParagraph p {
+    font-size: 13pt !important; }
+    .contentImageName .contentImageParagraph p::before {
       top: 34% !important; } }
 @media screen and (max-width: 1320px) {
   .contentImageName span {
     margin: 0px auto !important;
     display: block !important; } }
-@media screen and (max-width: 768px) and (min-width: 590px) {
+@media screen and (max-width: 991px) and (min-width: 590px) {
   .contentCategoriesResponsiveAll ul {
     margin-right: 0px !important;
     padding-left: 0px !important;
@@ -727,19 +736,23 @@ body {
     right: -11% !important; }
 
   .contentMainPadding {
-    padding: 30px 0px 0px 0px !important; }
-
+    padding: 30px 0px 0px 0px !important; } }
+@media screen and (max-width: 991px) and (min-width: 500px) {
+  .contentCategoriesResponsiveAll ul li {
+    margin-bottom: 9px !important; } }
+@media screen and (max-width: 500px) {
   .contentCategoriesResponsiveAll ul li {
     margin-bottom: 5px !important; } }
 @media screen and (max-width: 590px) {
   .imageContentBody {
     padding: 20px 0px !important; }
     .imageContentBody .contentMain {
-      padding: 10px 0px !important; }
-      .imageContentBody .contentMain .contentImageName p {
-        font-size: 17pt !important; } }
+      padding: 10px 0px !important;
+      padding-bottom: 0px !important; }
+      .imageContentBody .contentMain .contentImageName .contentImageParagraph p {
+        font-size: 12pt !important; } }
 @media screen and (max-width: 767px) and (min-width: 500px) {
-  .contentCategoriesIcon {
+  .contentCategoriesIcon i {
     top: -10% !important; }
 
   .contentCategoriesNumber {
@@ -769,6 +782,24 @@ body {
   .viewed {
     text-align: center !important;
     padding-left: 0px !important; } }
+@media screen and (max-width: 991px) {
+  .contentMainPadding {
+    padding-bottom: 0px !important; }
+
+  .contentImageName {
+    padding-bottom: 0px !important; } }
+@media screen and (max-width: 767px) {
+  .contentImageName .contentImageParagraph p {
+    font-size: 12pt !important; } }
+@media screen and (max-width: 768px) {
+  .contentImageName .contentImageParagraph:after {
+    top: 6px !important; } }
+@media screen and (max-width: 1025px) and (min-width: 991px) {
+  .contentCategories ul li {
+    margin-bottom: 8px !important; } }
+@media screen and (max-width: 1380px) and (min-width: 1026px) {
+  .contentCategories ul li {
+    margin-bottom: 15px !important; } }
 .additional {
   overflow-x: hidden;
   overflow-y: hidden;
@@ -3100,9 +3131,9 @@ body {
 @media screen and (min-width: 767px) and (max-width: 1200px) {
   .conversationContentIcon i img {
     width: 100% !important; } }
-@media screen and (min-width: 400px) and (max-width: 766px) {
+@media screen and (max-width: 766px) {
   .conversationContentIcon i img {
-    width: 50% !important; } }
+    width: 40% !important; } }
 .search .viewedContent li {
   border-bottom: 0px !important; }
 .search .contentBody {
