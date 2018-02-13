@@ -35,7 +35,7 @@
             .contentImageName {
                 text-align: left;
                 padding: 15px 0px;
-                padding-left: 30px;
+                padding-left: 25px;
                 
                 .contentImageParagraph{
                     display: inline-block;
@@ -43,7 +43,7 @@
                     p {
                         display: inline-block;
                         font-weight: 600;
-                        font-size: 20pt;
+                        font-size: 12pt;
                        
                     }
                     &::after {
@@ -51,7 +51,7 @@
                         position: absolute;
                         width: 15px;
                         height: 15px;
-                        top: 13px;
+                        top: 5px;
                         left: -20px;
                         background-color: $primarycolor;
                         border: 1px solid $primarycolor;
@@ -72,7 +72,7 @@
             li {
                 position: relative;
                 background-color: $thirdcolor;
-                margin-bottom: 20px;
+                margin-bottom: 5px;
                 .contentCategoriesAll {
                     position: relative;
                     &::after {
@@ -155,7 +155,7 @@
     .contentImageName {
         .contentImageParagraph {
             p {
-                font-size: 13pt !important;
+                font-size: 11pt !important;
                 &::before {
                     top: 34% !important;
                 }
@@ -242,7 +242,7 @@
             .contentImageName {
                 .contentImageParagraph {
                     p {
-                        font-size: 12pt !important;
+                        font-size: 10pt !important;
                     }
                 }
                
@@ -306,7 +306,13 @@
     .contentImageName {
         .contentImageParagraph  {
             p {
-                font-size: 12pt !important;
+                font-size: 10pt !important;
+            }
+            &:after {
+                width: 9px !important;
+    height: 9px !important;
+    left: -12px !important;
+    top: 8px !important;
             }
         }
        
@@ -314,9 +320,14 @@
 }
 @media screen and (max-width:768px) {
     .contentImageName {
+        padding-left: 20px !important;
         .contentImageParagraph  {
            &:after {
-               top: 4px !important;
+            width: 12px !important;
+            height: 12px  !important;
+           
+            left: -17px !important;
+               top: 6px !important;
            }
         }
        
@@ -331,12 +342,49 @@
         }
     }
 }
-@media screen and (max-width:1380px) and (min-width:1026px) {
-    .contentCategories {
+
+@media screen and (min-width:991px) and (max-width:1200px) {
+    .contentCategoriesResponsiveAll {
         ul {
             li {
-                margin-bottom: 15px !important;
+                margin-bottom: 5px !important;
             }
         }
     }
+    .contentImageName {
+        padding-left: 16px !important;
+        .contentImageParagraph {
+            p {
+                font-size: 9pt !important;
+            }
+            &:after {
+                width: 12px !important;
+                height: 12px !important;
+                top: 8px !important;
+                left: -15px !important; 
+            }
+        }
+    }
+    .contentCategoriesName {
+        padding: 16px 0px !important;
+    }
+    .contentCategoriesIcon {
+        i {
+            position: absolute;
+            right: -7% ;
+            top: -2%;
+            width: 58px !important;
+            height: 58px !important ;
+            line-height: 20px !important;
+            padding: 20px 0;
+            border: 1px solid #aae1fa;
+            text-align: center;
+            background: white;
+            border-radius: 50%;
+            color: #4da6ff;
+            font-size: 25px;
+        }
+    }
+           
+    
 }

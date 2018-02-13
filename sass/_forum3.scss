@@ -37,11 +37,11 @@
             list-style-type: disc;
             li {
                 margin: 10px 0px;
-                border-bottom: 2px solid black;
+                //border-bottom: 2px solid black;
                 .viewedContentAbout {
                     a {
                         font-size: 16pt;
-                        text-decoration: none;
+                        text-decoration: underline;
                     }
                 }
             }

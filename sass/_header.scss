@@ -1,6 +1,6 @@
 .header {
     .headerLogoText {
-        text-align: right;
+        //text-align: right;
        // margin-right: 15px;
     }
 background-color: $primarycolor;
@@ -10,7 +10,7 @@ background-color: $primarycolor;
         font-family: 'Revue', regular;
         padding: 0px 10px;
         width: 100%;
-       font-size: 60pt;
+       font-size: 80px;
        color: $secondarycolor;
        text-transform:uppercase;
        margin: 0px;
@@ -31,14 +31,14 @@ background-color: $primarycolor;
 //      }
 // }
 .headerText {
-    padding-top: 20px;
+    padding-top: 30px;
     .textContent {
      color: $secondarycolor;
-     font-size: 14pt;
+     font-size: 23px;
      margin: 0px;
      font-style: italic;
      font-weight: bold;
-     
+     line-height: 21px;
     }
 }
 }
