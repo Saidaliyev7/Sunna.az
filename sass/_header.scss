@@ -10,7 +10,7 @@ background-color: $primarycolor;
         font-family: 'Revue', regular;
         padding: 0px 10px;
         width: 100%;
-       font-size: 80px;
+       font-size: 85px;
        color: $secondarycolor;
        text-transform:uppercase;
        margin: 0px;
@@ -31,14 +31,14 @@ background-color: $primarycolor;
 //      }
 // }
 .headerText {
-    padding-top: 30px;
+    padding-top: 27px;
     .textContent {
      color: $secondarycolor;
-     font-size: 23px;
-     margin: 0px;
+     font-size: 19px;
+     margin: 0px 52px;
      font-style: italic;
      font-weight: bold;
-     line-height: 21px;
+     line-height: 24px;
     }
 }
 }
@@ -85,15 +85,20 @@ background-color: $primarycolor;
                 font-size: 57pt !important;
             }
         } 
-        .headerLogo  {
-          p {
-            font-size: 39pt !important;
-          }
-        }
+        // .headerLogo  {
+        //   p {
+        //     font-size: 44pt !important;
+        //   }
+        // }
         .headerText {
+         
             .textContent {
-                
-                    font-size: 10pt !important;
+                text-align: left;
+                font-size: 14px;
+                margin: 0px 0px !important;
+                font-style: italic;
+                font-weight: bold;
+                line-height: 17px;
                 
             }
         }
@@ -127,14 +132,16 @@ background-color: $primarycolor;
                
             }
         } 
-        div.headerText {
+        .headerText {
             text-align: center;
-            padding: 10px 0px;
-            div.textContent {
+            padding: 10px 0px !important;
+            .textContent {
+                text-align: center !important;
                 font-size: 11pt !important;
             }
            
         }
+        
     }
    
 }
@@ -162,20 +169,37 @@ background-color: $primarycolor;
     }
    
 }
-@media screen and (max-width: 1200px) and(min-width:1000px) {
-    .header {
-        
-        div.headerText {
-            text-align: center;
-            padding: 15px 0px;
 
 
-           
-        }
+
+@media screen and (max-width: 991px)
+{
+.headerLogo {
+    p {
+        font-size: 39pt !important;
     }
-   
 }
+.headerText {
+    padding-top: 13px !important;
+    
+}
+}
+@media screen and (min-width: 991px) and(max-width:1200px)
+{
+.headerLogo {
+    p {
+        font-size: 44pt !important;
+    }
+}
+.headerText {
 
+    padding:0px !important;
+    padding-top: 20px !important;
+    p {
+        font-size: 16px !important;
+    }
+}
+}
 
 
 

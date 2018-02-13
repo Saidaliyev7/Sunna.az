@@ -234,4 +234,13 @@
         }
     }
 }
+@media screen and (max-width:766px) and (min-width:500px){
+    .conversationContentIcon {
+        i {
+             img {
+                 width: 25% !important;
+             }
+        }
+    }
+}
 

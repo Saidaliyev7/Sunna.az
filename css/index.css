@@ -411,19 +411,19 @@ body {
       font-family: 'Revue', regular;
       padding: 0px 10px;
       width: 100%;
-      font-size: 80px;
+      font-size: 85px;
       color: #d9edf7;
       text-transform: uppercase;
       margin: 0px; }
   .header .headerText {
-    padding-top: 30px; }
+    padding-top: 27px; }
     .header .headerText .textContent {
       color: #d9edf7;
-      font-size: 23px;
-      margin: 0px;
+      font-size: 19px;
+      margin: 0px 52px;
       font-style: italic;
       font-weight: bold;
-      line-height: 21px; }
+      line-height: 24px; }
 
 @media screen and (max-width: 767px) {
   .header {
@@ -445,10 +445,13 @@ body {
     padding: 26px 0px !important; }
     .header div.headerLogotxt p {
       font-size: 57pt !important; }
-  .header .headerLogo p {
-    font-size: 39pt !important; }
   .header .headerText .textContent {
-    font-size: 10pt !important; } }
+    text-align: left;
+    font-size: 14px;
+    margin: 0px 0px !important;
+    font-style: italic;
+    font-weight: bold;
+    line-height: 17px; } }
 @media screen and (min-width: 1278px) {
   .menuAll {
     height: 51px !important; } }
@@ -465,10 +468,11 @@ body {
       padding: 13px 0px !important; }
       .header div.headerLogotxt p {
         font-size: 30pt !important; }
-    .header div.headerText {
+    .header .headerText {
       text-align: center;
-      padding: 10px 0px; }
-      .header div.headerText div.textContent {
+      padding: 10px 0px !important; }
+      .header .headerText .textContent {
+        text-align: center !important;
         font-size: 11pt !important; } }
 @media screen and (max-width: 1200px) {
   .header {
@@ -482,10 +486,21 @@ body {
     .header div.headerText {
       text-align: center;
       padding: 10px 0px; } }
-@media screen and (max-width: 1200px) and (min-width: 1000px) {
-  .header div.headerText {
-    text-align: center;
-    padding: 15px 0px; } }
+@media screen and (max-width: 991px) {
+  .headerLogo p {
+    font-size: 39pt !important; }
+
+  .headerText {
+    padding-top: 13px !important; } }
+@media screen and (min-width: 991px) and (max-width: 1200px) {
+  .headerLogo p {
+    font-size: 44pt !important; }
+
+  .headerText {
+    padding: 0px !important;
+    padding-top: 20px !important; }
+    .headerText p {
+      font-size: 16px !important; } }
 .menu {
   height: 77px;
   padding: 10px 0px 15px; }
@@ -621,7 +636,7 @@ body {
     padding: 30px 0px 0px 20px; }
     .content .contentMain a {
       text-decoration: none;
-      color: #2d6c93; }
+      color: black; }
       .content .contentMain a .contentImage img {
         width: 100%; }
       .content .contentMain a .contentImageName {
@@ -806,6 +821,9 @@ body {
 @media screen and (max-width: 1025px) and (min-width: 991px) {
   .contentCategories ul li {
     margin-bottom: 8px !important; } }
+@media screen and (min-width: 1200px) and (max-width: 1350px) {
+  .contentImageParagraph p {
+    font-size: 10pt !important; } }
 @media screen and (min-width: 991px) and (max-width: 1200px) {
   .contentCategoriesResponsiveAll ul li {
     margin-bottom: 5px !important; }
@@ -1199,7 +1217,7 @@ body {
     background-color: #2d6c93;
     text-transform: uppercase; }
   .rubrikaContent .rubrikaContentCategories .rubrikaEntrace {
-    margin-left: 50px;
+    text-align: center;
     padding-top: 40px; }
     .rubrikaContent .rubrikaContentCategories .rubrikaEntrace a {
       font-size: 13pt;
@@ -3185,6 +3203,9 @@ body {
 @media screen and (max-width: 766px) {
   .conversationContentIcon i img {
     width: 40% !important; } }
+@media screen and (max-width: 766px) and (min-width: 500px) {
+  .conversationContentIcon i img {
+    width: 25% !important; } }
 .search .viewedContent li {
   border-bottom: 0px !important; }
 .search .contentBody {
