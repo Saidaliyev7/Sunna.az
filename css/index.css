@@ -719,10 +719,8 @@ body {
     border: none !important;
     width: 0% !important; } }
 @media screen and (max-width: 768px) {
-  .contentImageName .contentImageParagraph p {
-    font-size: 11pt !important; }
-    .contentImageName .contentImageParagraph p::before {
-      top: 34% !important; } }
+  .contentImageName .contentImageParagraph p::before {
+    top: 34% !important; } }
 @media screen and (max-width: 1320px) {
   .contentImageName span {
     margin: 0px auto !important;
@@ -810,6 +808,12 @@ body {
     height: 9px !important;
     left: -12px !important;
     top: 8px !important; } }
+@media screen and (max-width: 991px) {
+  .contentImageName .contentImageParagraph p {
+    font-size: 10pt !important; } }
+@media screen and (max-width: 1230px) and (min-width: 1200px) {
+  .contentImageName .contentImageParagraph p {
+    font-size: 9pt !important; } }
 @media screen and (max-width: 768px) {
   .contentImageName {
     padding-left: 20px !important; }
@@ -1273,6 +1277,23 @@ body {
 @media screen and (max-width: 766px) {
   .rubrikaContentMainHead::after {
     height: 0% !important; } }
+@media screen and (max-width: 767px) {
+  .rubrikaContent .rubrikaContentCategories ul li {
+    padding: 15px 0px !important; }
+    .rubrikaContent .rubrikaContentCategories ul li .rubrikaCategoriesIcon i {
+      width: 60px !important;
+      height: 60px !important;
+      font-size: 30px !important;
+      line-height: 60px !important; } }
+@media screen and (max-width: 1200px) {
+  .rubrikaContent .rubrikaContentCategories ul li {
+    padding: 15px 0px !important; } }
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  .rubrikaContent .rubrikaContentCategories ul li .rubrikaCategoriesIcon i {
+    width: 80px !important;
+    height: 80px !important;
+    font-size: 40px !important;
+    line-height: 80px !important; } }
 .menuicondown .menuContent .menuInput i {
   position: absolute;
   right: 3%;
@@ -2924,6 +2945,23 @@ body {
     width: 100px !important;
     margin: 0px auto !important;
     margin-top: 5px !important; } }
+@media screen and (max-width: 767px) {
+  .forum .rubrikaContentCategories ul li {
+    padding: 15px 0px !important; }
+    .forum .rubrikaContentCategories ul li .rubrikaCategoriesIcon i {
+      width: 60px !important;
+      height: 60px !important;
+      font-size: 30px !important;
+      line-height: 60px !important; } }
+@media screen and (max-width: 1200px) {
+  .forum .rubrikaContentCategories ul li {
+    padding: 15px 0px !important; } }
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  .forum .rubrikaContentCategories ul li .rubrikaCategoriesIcon i {
+    width: 80px !important;
+    height: 80px !important;
+    font-size: 40px !important;
+    line-height: 80px !important; } }
 .forum2 .rubrikaContent {
   margin-bottom: 2px !important; }
 .forum2 .sendQuestion li {

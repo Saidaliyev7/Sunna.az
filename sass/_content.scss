@@ -155,7 +155,7 @@
     .contentImageName {
         .contentImageParagraph {
             p {
-                font-size: 11pt !important;
+               // font-size: 11pt !important;
                 &::before {
                     top: 34% !important;
                 }
@@ -316,6 +316,24 @@
             }
         }
        
+    }
+}
+@media screen and (max-width:991px) {
+    .contentImageName {
+        .contentImageParagraph  {
+            p {
+                font-size: 10pt !important;
+            }
+        }
+    }
+}
+@media screen and (max-width:1230px) and (min-width:1200px){
+    .contentImageName {
+        .contentImageParagraph  {
+            p {
+                font-size: 9pt !important;
+            }
+        }
     }
 }
 @media screen and (max-width:768px) {

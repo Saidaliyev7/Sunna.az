@@ -294,3 +294,54 @@ font-style: italic;
         }
     }
 }
+@media screen and (max-width:767px) {
+    .rubrikaContent {
+        .rubrikaContentCategories {
+            ul {
+            
+                li {
+                    padding: 15px 0px !important;
+                    .rubrikaCategoriesIcon {
+                        i {
+                            width: 60px !important;
+                            height: 60px !important;
+                            font-size: 30px !important;
+                            line-height: 60px !important;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+@media screen and (max-width:1200px) {
+    .rubrikaContent {
+        .rubrikaContentCategories {
+            ul {
+                li {
+                    padding: 15px 0px !important;
+                }
+            }
+        }
+    }
+}
+@media screen and (min-width:768px) and (max-width:991px) {
+    .rubrikaContent {
+        .rubrikaContentCategories {
+            ul {
+            
+                li {
+                   
+                    .rubrikaCategoriesIcon {
+                        i {
+                            width: 80px !important;
+                            height: 80px !important;
+                            font-size: 40px !important;
+                            line-height: 80px !important;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

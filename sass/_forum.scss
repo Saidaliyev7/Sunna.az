@@ -26,9 +26,8 @@
     }
     .rubrika {
         margin: 20px;
-        
         .rubrikaContent {
-            margin-bottom:15px; 
+            margin-bottom: 15px;
             width: 50%;
             position: relative;
             p {
@@ -36,7 +35,7 @@
                 display: inline-block;
                 margin-left: 75px;
                 width: 100%;
-                padding:10px 0px;
+                padding: 10px 0px;
                 background-color: $thirdcolor;
                 color: black;
                 position: relative;
@@ -65,10 +64,10 @@
         }
         .rubrikaText {
             margin-left: 40px;
-display: inline-block;
-p {
-    font-size: 16pt;
-}
+            display: inline-block;
+            p {
+                font-size: 16pt;
+            }
         }
         .rubrikaCategory {
             float: right;
@@ -137,34 +136,30 @@ p {
                 padding: 30px 0px;
                 display: inline-block;
                 .rubrikaCategoriesIcon {
-                   text-align: center;
-                   
-                   i {
-                    border: 2px solid;
-                    border-radius: 50%;
                     text-align: center;
-                    width: 100px;
+                    i {
+                        border: 2px solid;
+                        border-radius: 50%;
+                        text-align: center;
+                        width: 100px;
                         height: 100px;
                         font-size: 50px;
-                        line-height: 100px;
-                   // font-size: 30pt;
-                    color: #cad2db;
-                    background-color: white;
-                    border-color: #cad2db;
-                    transition: 0.4s ease;
-                    cursor: pointer;
-                    &:hover {
+                        line-height: 100px; // font-size: 30pt;
+                        color: #cad2db;
+                        background-color: white;
+                        border-color: #cad2db;
                         transition: 0.4s ease;
-                        border-color: #4da7ff;
-                        background-color: #4da7ff;
-                        color: white;
-                    }
-                }
-                    // i {
+                        cursor: pointer;
+                        &:hover {
+                            transition: 0.4s ease;
+                            border-color: #4da7ff;
+                            background-color: #4da7ff;
+                            color: white;
+                        }
+                    } // i {
                     //     border: 1.5px solid $primarycolor;
                     //     border-radius: 50%;
                     //     text-align: center;
-                        
                     //     color: $primarycolor;
                     // }
                 }
@@ -234,18 +229,15 @@ p {
         .rubrika {
             .rubrikaContent {
                 width: 80% !important;
-            p {
+                p {
                     padding-left: 5px;
-         }
-         
-         }
-    .rubrikaCategory{
-        margin: 0px 5px !important;
-    }
+                }
+            }
+            .rubrikaCategory {
+                margin: 0px 5px !important;
+            }
         }
-       
     }
-    
     .forumMain {
         margin: 0px !important;
         .rubrikaCategory {
@@ -261,19 +253,16 @@ p {
         }
         .rubrikaContent {
             margin-left: 20px;
-         
             p {
                 margin-left: 5px !important;
             }
-           
-      
-        &::after {
-            left: -5px !important;
+            &::after {
+                left: -5px !important;
+            }
+            &::before {
+                left: 20px !important;
+            }
         }
-        &::before {
-            left: 20px !important;
-        }
-    }
         .rubrikaText {
             margin-left: 15px !important;
         }
@@ -288,34 +277,29 @@ p {
 
 @media screen and (max-width:400px) {
     .forum {
-        .rubrikaContentCategories{
+        .rubrikaContentCategories {
             ul {
-                li{
+                li {
                     width: 45% !important;
                 }
             }
         }
     }
-
 }
 
 @media screen and (max-width: 850px) and (min-width: 768px) {
     .forum {
-   
         .rubrikaCategoriesIcon {
             i {
-                
                 width: 92px !important;
-               
             }
         }
-        
     }
 }
 
 @media screen and (max-width:1024px) and (min-width:766px) {
     .forum {
-        .viewedContent{
+        .viewedContent {
             text-align: left !important;
         }
     }
@@ -328,12 +312,64 @@ p {
                 width: 100% !important;
             }
         }
-       .rubrikaContentCategories {
-           .rubrikaCategoriesName {
-               width: 100px !important;
-               margin: 0px auto !important;
-               margin-top: 5px !important;
-           }
-       } 
+        .rubrikaContentCategories {
+            .rubrikaCategoriesName {
+                width: 100px !important;
+                margin: 0px auto !important;
+                margin-top: 5px !important;
+            }
+        }
+    }
+}
+
+@media screen and (max-width:767px) {
+    .forum {
+        .rubrikaContentCategories {
+            ul {
+            
+                li {
+                    padding: 15px 0px !important;
+                    .rubrikaCategoriesIcon {
+                        i {
+                            width: 60px !important;
+                            height: 60px !important;
+                            font-size: 30px !important;
+                            line-height: 60px !important;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+@media screen and (max-width:1200px) {
+    .forum {
+        .rubrikaContentCategories {
+            ul {
+                li {
+                    padding: 15px 0px !important;
+                }
+            }
+        }
+    }
+}
+@media screen and (min-width:768px) and (max-width:991px) {
+    .forum {
+        .rubrikaContentCategories {
+            ul {
+            
+                li {
+                   
+                    .rubrikaCategoriesIcon {
+                        i {
+                            width: 80px !important;
+                            height: 80px !important;
+                            font-size: 40px !important;
+                            line-height: 80px !important;
+                        }
+                    }
+                }
+            }
+        }
     }
 }
