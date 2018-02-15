@@ -648,7 +648,7 @@ body {
           position: relative; }
           .content .contentMain a .contentImageName .contentImageParagraph p {
             display: inline-block;
-            font-weight: 600;
+            font-weight: 500;
             font-size: 12pt; }
           .content .contentMain a .contentImageName .contentImageParagraph::after {
             content: "";
@@ -801,8 +801,6 @@ body {
   .contentImageName {
     padding-bottom: 0px !important; } }
 @media screen and (max-width: 767px) {
-  .contentImageName .contentImageParagraph p {
-    font-size: 10pt !important; }
   .contentImageName .contentImageParagraph:after {
     width: 9px !important;
     height: 9px !important;
@@ -810,7 +808,7 @@ body {
     top: 8px !important; } }
 @media screen and (max-width: 991px) {
   .contentImageName .contentImageParagraph p {
-    font-size: 10pt !important; } }
+    font-size: 9pt !important; } }
 @media screen and (max-width: 1230px) and (min-width: 1200px) {
   .contentImageName .contentImageParagraph p {
     font-size: 9pt !important; } }
@@ -821,7 +819,7 @@ body {
       width: 12px !important;
       height: 12px  !important;
       left: -17px !important;
-      top: 6px !important; } }
+      top: 7px !important; } }
 @media screen and (max-width: 1025px) and (min-width: 991px) {
   .contentCategories ul li {
     margin-bottom: 8px !important; } }
@@ -859,6 +857,9 @@ body {
     border-radius: 50%;
     color: #4da6ff;
     font-size: 25px; } }
+@media screen and (max-width: 790px) {
+  .contentImageParagraph p {
+    font-size: 9pt !important; } }
 .additional {
   overflow-x: hidden;
   overflow-y: hidden;
@@ -3240,10 +3241,10 @@ body {
     width: 100% !important; } }
 @media screen and (max-width: 766px) {
   .conversationContentIcon i img {
-    width: 40% !important; } }
+    width: 100px !important; } }
 @media screen and (max-width: 766px) and (min-width: 500px) {
   .conversationContentIcon i img {
-    width: 25% !important; } }
+    width: 100px !important; } }
 .search .viewedContent li {
   border-bottom: 0px !important; }
 .search .contentBody {

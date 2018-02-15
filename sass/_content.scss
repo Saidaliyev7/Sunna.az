@@ -42,7 +42,7 @@
                     position: relative;
                     p {
                         display: inline-block;
-                        font-weight: 600;
+                        font-weight: 500;
                         font-size: 12pt;
                        
                     }
@@ -305,9 +305,7 @@
 @media screen and (max-width:767px) {
     .contentImageName {
         .contentImageParagraph  {
-            p {
-                font-size: 10pt !important;
-            }
+           
             &:after {
                 width: 9px !important;
     height: 9px !important;
@@ -322,7 +320,7 @@
     .contentImageName {
         .contentImageParagraph  {
             p {
-                font-size: 10pt !important;
+                font-size: 9pt !important;
             }
         }
     }
@@ -345,7 +343,7 @@
             height: 12px  !important;
            
             left: -17px !important;
-               top: 6px !important;
+               top: 7px !important;
            }
         }
        
@@ -411,4 +409,12 @@
     }
            
     
+}
+
+@media screen and (max-width:790px) {
+    .contentImageParagraph {
+        p {
+            font-size: 9pt !important;
+        }
+    }
 }
