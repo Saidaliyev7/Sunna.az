@@ -41,7 +41,15 @@
                 .viewedContentAbout {
                     a {
                         font-size: 16pt;
-                        border-bottom: 1px solid black;
+                        border-bottom: 1.5px solid black;
+                        text-decoration: none;
+                    }
+                }
+                @media screen and (max-width:767px) {
+                    .viewedContentAbout {
+                        a {
+                            border-bottom: 1px solid black !important;
+                        }
                     }
                 }
             }

@@ -154,7 +154,17 @@
                     a {
                         font-size: 16pt;
                         color: black;
-                        border-bottom: 1px solid black;
+                        border-bottom: 1.5px solid black;
+                        text-decoration: none;
+                    }
+                }
+                @media screen and (max-width:767px) {
+                    .viewedContentAbout {
+                        display: inline-block;
+                        a {
+                             
+                            border-bottom: 1px solid black !important;
+                        }
                     }
                 }
             }
