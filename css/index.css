@@ -640,9 +640,8 @@ body {
       .content .contentMain a .contentImage img {
         width: 100%; }
       .content .contentMain a .contentImageName {
-        text-align: left;
-        padding: 15px 0px;
-        padding-left: 25px; }
+        text-align: center;
+        padding: 15px 0px; }
         .content .contentMain a .contentImageName .contentImageParagraph {
           display: inline-block;
           position: relative; }
@@ -1038,7 +1037,7 @@ body {
         .additional .viewedContent ul li .viewedContentAbout a {
           font-size: 16pt;
           color: black;
-          text-decoration: underline; }
+          border-bottom: 1px solid black; }
 
 @media screen and (max-width: 702px) {
   .additionalContentBody .video {
@@ -1193,14 +1192,17 @@ body {
       .rubrikaContent .rubrikaContentCategories ul li .rubrikaCategoriesCount {
         text-align: center; }
         .rubrikaContent .rubrikaContentCategories ul li .rubrikaCategoriesCount a {
-          text-decoration: underline;
+          border-bottom: 1px solid black;
           color: black; }
       .rubrikaContent .rubrikaContentCategories ul li .rubrikaCategoriesName {
         text-align: center;
         border: 1px solid #aae1fa;
         position: relative;
         border-radius: 3px;
-        margin-top: 5px; }
+        margin-top: 5px;
+        margin-left: auto;
+        margin-right: auto;
+        width: 90px; }
         .rubrikaContent .rubrikaContentCategories ul li .rubrikaCategoriesName::after {
           position: absolute;
           content: "";
@@ -1272,7 +1274,7 @@ body {
     margin-left: 10px !important; } }
 @media screen and (max-width: 766px) {
   .rubrikaContent .rubrikaContentCategories .rubrikaCategoriesName {
-    width: 100px !important;
+    width: 90px !important;
     margin: 0px auto !important;
     margin-top: 5px !important; } }
 @media screen and (max-width: 766px) {
@@ -1433,7 +1435,7 @@ body {
         .tovhideCagirish .viewedContent ul li .viewedContentAbout a {
           font-size: 16pt;
           color: black;
-          text-decoration: underline; }
+          border-bottom: 1px solid black; }
   .tovhideCagirish .rubrikaContentCategories {
     margin: 0px 50px;
     border-bottom: 2px solid #aae1fa; }
@@ -1471,7 +1473,7 @@ body {
         .tovhideCagirish .rubrikaContentCategories ul li .rubrikaCategoriesCount {
           text-align: center; }
           .tovhideCagirish .rubrikaContentCategories ul li .rubrikaCategoriesCount a {
-            text-decoration: underline;
+            border-bottom: 1px solid black;
             color: black; }
         .tovhideCagirish .rubrikaContentCategories ul li .rubrikaCategoriesName {
           margin-top: 5px;
@@ -1573,7 +1575,7 @@ body {
         .tovhidnadi .viewedContent ul li a {
           font-size: 16pt;
           color: black;
-          text-decoration: underline; }
+          border-bottom: 1px solid black; }
 
 @media screen and (max-width: 786px) {
   .tovhidnadiMain {
@@ -1724,7 +1726,7 @@ body {
         .articles .viewedContent ul li .viewedContentAbout a {
           font-size: 16pt;
           color: black;
-          text-decoration: underline; }
+          border-bottom: 1px solid black; }
 
 @media screen and (max-width: 786px) {
   .articlesMain {
@@ -1864,7 +1866,7 @@ body {
         .books .viewedContent ul li a {
           font-size: 16pt;
           color: black;
-          text-decoration: underline; }
+          border-bottom: 1px solid black; }
 
 @media screen and (max-width: 786px) {
   .booksMain {
@@ -1922,7 +1924,7 @@ body {
         .ideologiya .viewedContent ul li a {
           font-size: 16pt;
           color: black;
-          text-decoration: underline; }
+          border-bottom: 1px solid black; }
 
 @media screen and (max-width: 786px) {
   .ideologiyaMain {
@@ -1974,7 +1976,7 @@ body {
         .murcie .viewedContent ul li a {
           font-size: 16pt;
           color: black;
-          text-decoration: underline; }
+          border-bottom: 1px solid black; }
 
 @media screen and (max-width: 786px) {
   .murcieMain {
@@ -2460,7 +2462,7 @@ body {
         .audio .viewedContent ul li a {
           font-size: 16pt;
           color: black;
-          text-decoration: underline; }
+          border-bottom: 1px solid black; }
 
 @media screen and (max-width: 786px) {
   .audioMain {
@@ -2586,7 +2588,7 @@ body {
         .audio2 .viewedContent ul li a {
           font-size: 16pt;
           color: black;
-          text-decoration: underline; }
+          border-bottom: 1px solid black; }
 
 @media screen and (max-width: 786px) {
   .audio2Main {
@@ -2686,7 +2688,7 @@ body {
         .sualcavab .viewedContent ul li a {
           font-size: 16pt;
           color: black;
-          text-decoration: underline; }
+          border-bottom: 1px solid black; }
 
 @media screen and (max-width: 786px) {
   .sualcavabMain {
@@ -2855,14 +2857,17 @@ body {
       .forum .rubrikaContentCategories ul li .rubrikaCategoriesCount {
         text-align: center; }
         .forum .rubrikaContentCategories ul li .rubrikaCategoriesCount a {
-          text-decoration: underline;
+          border-bottom: 1px solid black;
           color: black; }
       .forum .rubrikaContentCategories ul li .rubrikaCategoriesName {
         text-align: center;
         border: 1px solid #aae1fa;
         position: relative;
         border-radius: 3px;
-        margin-top: 5px; }
+        margin-top: 5px;
+        margin-left: auto;
+        margin-right: auto;
+        width: 90px; }
         .forum .rubrikaContentCategories ul li .rubrikaCategoriesName::after {
           position: absolute;
           content: "";
@@ -2943,7 +2948,7 @@ body {
   .forum .sendQuestion li {
     width: 100% !important; }
   .forum .rubrikaContentCategories .rubrikaCategoriesName {
-    width: 100px !important;
+    width: 90px !important;
     margin: 0px auto !important;
     margin-top: 5px !important; } }
 @media screen and (max-width: 767px) {
@@ -3015,7 +3020,7 @@ body {
       .forum2 .viewedContent ul li a {
         font-size: 16pt;
         color: black;
-        text-decoration: underline; }
+        border-bottom: 1px solid black; }
 
 @media screen and (max-width: 786px) {
   .forum2 .rubrikaContent {
@@ -3053,7 +3058,7 @@ body {
     margin: 10px 0px; }
     .forum3 .viewedContent ul li .viewedContentAbout a {
       font-size: 16pt;
-      text-decoration: underline; }
+      border-bottom: 1px solid black; }
 
 @media screen and (max-width: 1024px) and (min-width: 766px) {
   .forum3 .viewedContent {
@@ -3362,7 +3367,7 @@ body {
       .search .rubrikaContentCategories ul li .rubrikaCategoriesCount {
         text-align: center; }
         .search .rubrikaContentCategories ul li .rubrikaCategoriesCount a {
-          text-decoration: underline;
+          border-bottom: 1px solid black;
           color: black; }
       .search .rubrikaContentCategories ul li .rubrikaCategoriesName {
         margin-top: 5px;
