@@ -30,6 +30,7 @@ body {
         padding: 4px 4px 4px 10px;
         margin: 0px 20px;
         color: black;
+        font-weight: bold;
         z-index: 52;
         text-decoration: none;
         background-color: $thirdcolor;
@@ -62,7 +63,7 @@ body {
 }
 
 .showAllMarginFix {
-    margin: 20px 35px 30px 35px;
+    margin: 20px 35px 30px 15px;
     a {
         margin: 0px 20px !important;
     }
@@ -261,7 +262,7 @@ body {
          padding: 0px;
          text-align: center !important;
          li {
-         width: 30%;
+         width: 15%;
          }
      }
     }
@@ -274,6 +275,19 @@ body {
     list-style: none;
     background-color: white;
     border: none;
+}
+@media screen and (max-width: 500px) {
+    .social {
+        .socialLinks {
+            
+            ul {
+               
+                li {
+                width: 30% !important;
+                }
+            }
+           }
+    }
 }
 @media screen and (max-width:767px) {
     .breadcrumb {
@@ -597,3 +611,4 @@ background-color: $thirdcolor;
 @import 'forum3';
 @import 'conversation';
 @import 'search';
+@import 'haqqimizda';

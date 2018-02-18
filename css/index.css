@@ -23,6 +23,7 @@ body {
     padding: 4px 4px 4px 10px;
     margin: 0px 20px;
     color: black;
+    font-weight: bold;
     z-index: 52;
     text-decoration: none;
     background-color: #aae1fa; }
@@ -51,7 +52,7 @@ body {
       border-radius: 50%; }
 
 .showAllMarginFix {
-  margin: 20px 35px 30px 35px; }
+  margin: 20px 35px 30px 15px; }
   .showAllMarginFix a {
     margin: 0px 20px !important; }
 
@@ -211,7 +212,7 @@ body {
         padding: 0px;
         text-align: center !important; }
         .social .socialLinks ul li {
-          width: 30%; } }
+          width: 15%; } }
 .breadcrumb {
   padding-top: 0px;
   padding-left: 65px;
@@ -220,6 +221,9 @@ body {
   background-color: white;
   border: none; }
 
+@media screen and (max-width: 500px) {
+  .social .socialLinks ul li {
+    width: 30% !important; } }
 @media screen and (max-width: 767px) {
   .breadcrumb {
     padding-left: 30px !important; } }
@@ -1004,7 +1008,8 @@ body {
         padding: 10px 20px;
         background-color: #aae1fa;
         text-decoration: none;
-        color: black; }
+        color: black;
+        margin-left: 15px; }
     .additional .sendMessage .sendMessageIcon {
       display: inline-block; }
       .additional .sendMessage .sendMessageIcon i img {
@@ -1181,10 +1186,10 @@ body {
           border: 2px solid;
           border-radius: 50%;
           text-align: center;
-          width: 100px;
-          height: 100px;
-          font-size: 50px;
-          line-height: 100px;
+          width: 80px;
+          height: 80px;
+          font-size: 30pt;
+          line-height: 80px;
           color: #cad2db;
           background-color: white;
           border-color: #cad2db;
@@ -1198,7 +1203,7 @@ body {
       .rubrikaContent .rubrikaContentCategories ul li .rubrikaCategoriesCount {
         text-align: center; }
         .rubrikaContent .rubrikaContentCategories ul li .rubrikaCategoriesCount a {
-          border-bottom: 1.5px solid black;
+          border-bottom: 1px solid black;
           color: black;
           text-decoration: none; }
       @media screen and (max-width: 767px) {
@@ -1309,6 +1314,9 @@ body {
     height: 80px !important;
     font-size: 40px !important;
     line-height: 80px !important; } }
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  .rubrikaContent .rubrikaForum {
+    margin-top: 140px !important; } }
 .menuicondown .menuContent .menuInput i {
   position: absolute;
   right: 3%;
@@ -1447,7 +1455,7 @@ body {
         .tovhideCagirish .viewedContent ul li .viewedContentAbout a {
           font-size: 16pt;
           color: black;
-          border-bottom: 1.5px solid black;
+          border-bottom: 1px solid black;
           text-decoration: none; }
   @media screen and (max-width: 767px) {
     .tovhideCagirish .viewedContent a {
@@ -1489,7 +1497,7 @@ body {
         .tovhideCagirish .rubrikaContentCategories ul li .rubrikaCategoriesCount {
           text-align: center; }
           .tovhideCagirish .rubrikaContentCategories ul li .rubrikaCategoriesCount a {
-            border-bottom: 1.5px solid black;
+            border-bottom: 1px solid black;
             color: black;
             text-decoration: none; }
         @media screen and (max-width: 767px) {
@@ -1627,7 +1635,10 @@ body {
       padding: 0px;
       text-align: center !important; }
       .tovhidnadi .social .socialLinks ul li {
-        width: 30% !important; } }
+        width: 15% !important; } }
+@media screen and (max-width: 1024px) {
+  .tovhidnadi .social .socialLinks ul li {
+    width: 30% !important; } }
 @media screen and (max-width: 1024px) and (min-width: 766px) {
   .tovhidnadi .viewedContent {
     text-align: left !important; } }
@@ -2726,6 +2737,7 @@ body {
         padding: 10px 20px;
         background-color: #aae1fa;
         text-decoration: none;
+        margin-left: 15px;
         color: black; }
     .sualcavab .sendMessage .sendMessageIcon {
       display: inline-block; }
@@ -2813,7 +2825,7 @@ body {
         background-color: #aae1fa;
         color: black;
         position: relative;
-        z-index: 4545; }
+        z-index: 5; }
       .forum .rubrika .rubrikaContent::after {
         top: 0px;
         right: -100px;
@@ -2898,10 +2910,10 @@ body {
           border: 2px solid;
           border-radius: 50%;
           text-align: center;
-          width: 100px;
-          height: 100px;
-          font-size: 50px;
-          line-height: 100px;
+          width: 80px;
+          height: 80px;
+          font-size: 30pt;
+          line-height: 80px;
           color: #cad2db;
           background-color: white;
           border-color: #cad2db;
@@ -2915,7 +2927,7 @@ body {
       .forum .rubrikaContentCategories ul li .rubrikaCategoriesCount {
         text-align: center; }
         .forum .rubrikaContentCategories ul li .rubrikaCategoriesCount a {
-          border-bottom: 1.5px solid black;
+          border-bottom: 1px solid black;
           color: black;
           text-decoration: none; }
       @media screen and (max-width: 767px) {
@@ -3071,7 +3083,7 @@ body {
     .forum2 .rubrikaParagraph .rubrikaCategory a {
       font-style: italic;
       position: relative;
-      padding: 4px;
+      padding: 5px;
       background-color: #aae1fa; }
 .forum2 .viewedContent {
   margin-bottom: 20px; }
@@ -3176,6 +3188,7 @@ body {
     width: 100%;
     position: relative; }
     .conversationContent .rubrikaContent p {
+      z-index: 4;
       font-size: 11pt;
       display: inline-block;
       width: 100%;
@@ -3322,10 +3335,17 @@ body {
 @media screen and (max-width: 766px) and (min-width: 500px) {
   .conversationContentIcon i img {
     width: 100px !important; } }
+@media screen and (max-width: 767px) {
+  .conversationContent .rubrikaContext {
+    margin-top: 10px !important; }
+  .conversationContent .rubrikaCategoriesName {
+    margin: 0px auto !important;
+    margin-top: 30px !important;
+    width: 150px; } }
 .search .viewedContent li {
   border-bottom: 0px !important; }
 .search .contentBody {
-  padding: 50px 0px; }
+  padding-top: 50px; }
 .search .searchContent {
   display: inline-block;
   margin-left: 50px;
@@ -3506,5 +3526,40 @@ body {
     text-align: center !important; }
   .search .viewedContentIcon {
     display: block !important; } }
+@media screen and (max-width: 1200px) {
+  .search .rubrikaContentCategories ul {
+    padding-top: 10px !important; } }
+.haqqimizda .viewedContent ul {
+  padding: 15px 0px 0px 20px;
+  list-style: none; }
+  .haqqimizda .viewedContent ul li {
+    margin: 10px 0px; }
+    .haqqimizda .viewedContent ul li .viewedContentIcon {
+      display: inline-block;
+      padding-right: 5px; }
+      .haqqimizda .viewedContent ul li .viewedContentIcon img {
+        height: 27px;
+        width: 27px; }
+      .haqqimizda .viewedContent ul li .viewedContentIcon i {
+        font-size: 22px; }
+    .haqqimizda .viewedContent ul li .viewedContentAbout {
+      display: inline-block; }
+      .haqqimizda .viewedContent ul li .viewedContentAbout a {
+        font-size: 16pt;
+        color: black;
+        border-bottom: 1.5px solid black;
+        text-decoration: none; }
+.haqqimizda .sendMessageButton a {
+  margin-left: 15px; }
+@media screen and (max-width: 767px) {
+  .haqqimizda .viewedContent a {
+    border-bottom: 1px solid black !important; } }
+
+@media screen and (max-width: 1024px) {
+  .haqqimizda .viewedContent {
+    text-align: center !important; } }
+@media screen and (max-width: 767px) {
+  .haqqimizda .viewedContent {
+    text-align: left !important; } }
 
 /*# sourceMappingURL=index.css.map */

@@ -1,0 +1,62 @@
+.haqqimizda {
+    .viewedContent {
+        ul {
+            padding: 15px 0px 0px 20px;
+            list-style: none;
+            li {
+                margin:10px 0px;
+                .viewedContentIcon {
+                    display: inline-block;
+                    padding-right: 5px;
+                    img {
+                        height: 27px;
+                        width: 27px;
+                    }
+                    i {
+                        font-size: 22px;
+                    }
+                }
+                .viewedContentAbout {
+                    display: inline-block;
+                    a {
+                        font-size: 16pt;
+                        color: black;
+                        border-bottom: 1.5px solid black;
+                        text-decoration: none;
+                    }
+                }
+            }
+        }
+    }
+    .sendMessageButton {
+        a {
+            margin-left: 15px ;
+        }
+    }
+    @media screen and (max-width:767px) {
+        .viewedContent {
+            a {
+                border-bottom: 1px solid black !important;
+            }
+        }
+    }
+}
+@media screen and (max-width: 1024px) {
+    .haqqimizda {
+        .viewedContent {
+            text-align: center !important;
+        }
+    }
+    
+}
+
+@media screen and (max-width: 767px) {
+    .haqqimizda {
+        .viewedContent {
+            text-align: left !important;
+        }
+    }
+   
+   
+}
+

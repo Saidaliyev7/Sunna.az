@@ -39,7 +39,7 @@
                 background-color: $thirdcolor;
                 color: black;
                 position: relative;
-                z-index: 4545;
+                z-index: 5;
             }
             &::after {
                 top: 0px;
@@ -141,10 +141,10 @@
                         border: 2px solid;
                         border-radius: 50%;
                         text-align: center;
-                        width: 100px;
-                        height: 100px;
-                        font-size: 50px;
-                        line-height: 100px; // font-size: 30pt;
+                        width: 80px;
+                        height: 80px;
+                        font-size: 30pt;
+                        line-height: 80px; // font-size: 30pt;
                         color: #cad2db;
                         background-color: white;
                         border-color: #cad2db;
@@ -166,7 +166,7 @@
                 .rubrikaCategoriesCount {
                     text-align: center;
                     a {
-                       border-bottom: 1.5px solid black;
+                       border-bottom: 1px solid black;
                         color: black;
                         text-decoration: none ;
                     }

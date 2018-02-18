@@ -98,15 +98,30 @@
                  padding: 0px;
                  text-align: center !important;
                  li {
-                 width: 30% !important;
+                 width: 15% !important;
                  }
              }
             }
         }
     }
    
+} 
+@media screen and (max-width:1024px) {
+    .tovhidnadi {
+        .social {
+            .socialLinks {
+                
+                ul {
+                    
+                    li {
+                    width: 30% !important;
+                    }
+                }
+               }
+            }
+        }
+            
 }
-
 @media screen and (max-width:1024px) and (min-width:766px) {
     .tovhidnadi {
         .viewedContent{

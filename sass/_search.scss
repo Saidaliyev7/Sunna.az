@@ -5,7 +5,7 @@
             }
         }
     .contentBody {
-        padding: 50px 0px;
+        padding-top: 50px ;
     }
     .searchContent {
         display: inline-block;
@@ -185,6 +185,7 @@
              }
          }
      }
+    
     .sendQuestion {
         margin: 0px 100px;
         padding: 2px;
@@ -259,5 +260,14 @@
         .viewedContentIcon{
            display: block !important;
         }
+    }
+}
+@media screen and (max-width:1200px) {
+    .search {
+     .rubrikaContentCategories {
+         ul {
+             padding-top: 10px !important;
+         }
+     }   
     }
 }
