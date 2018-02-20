@@ -25,13 +25,14 @@ body {
 }
 
 .showAll {
-    margin: 20px 0px;
+ 
+    margin: 20px 20px;
     margin-bottom: 30px;
     display: inline-block;
     position: relative;
     &::before {
         top: -2px;
-        right: 15px;
+        right: -8px;
         content: "";
         position: absolute;
         height: 112%;
@@ -42,11 +43,12 @@ body {
     }
     &::after {
         top: -2px;
-        left: 18px;
+        left: -13px;
         z-index: 5000;
         content: "+";
         width: 24px;
         font-size: 24px;
+       // cursor: pointer;
         height: 28px;
         line-height: 24px;
         position: absolute;
@@ -59,8 +61,8 @@ body {
     a {
         font-style: italic;
         position: relative;
-        padding: 4px 4px 4px 10px;
-        margin: 0px 20px;
+        padding: 4px 4px 4px 14px;
+      
         color: black;
         z-index: 52;
         text-decoration: none;
@@ -92,13 +94,16 @@ body {
 }
 
 .showAllMarginFix {
-    margin: 20px 35px 30px 15px;
-    a {
-        margin: 0px 20px !important;
-    }
+    margin: 20px 55px;
+    
 }
 
-.showAllMarginFixForum3 {}
+.showAllBeforeFix {
+    &::before {
+        top: -1.5px;
+    }
+        
+}
 
 .social {
     margin: 50px 40px 0px 40px;
