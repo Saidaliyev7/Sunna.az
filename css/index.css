@@ -16,40 +16,43 @@ body {
 
 .showAll {
   margin: 20px 0px;
-  margin-bottom: 30px; }
+  margin-bottom: 30px;
+  display: inline-block;
+  position: relative; }
+  .showAll::before {
+    top: -2px;
+    right: 15px;
+    content: "";
+    position: absolute;
+    height: 112%;
+    width: 74%;
+    z-index: 1;
+    transform: skew(-22deg);
+    background-color: #aae1fa; }
+  .showAll::after {
+    top: -2px;
+    left: 18px;
+    z-index: 5000;
+    content: "+";
+    width: 24px;
+    font-size: 24px;
+    height: 28px;
+    line-height: 24px;
+    position: absolute;
+    background-color: white;
+    border: 1px solid white;
+    border-radius: 50%;
+    text-align: center;
+    transform: skew(-15deg); }
   .showAll a {
     font-style: italic;
     position: relative;
     padding: 4px 4px 4px 10px;
     margin: 0px 20px;
     color: black;
-    font-weight: bold;
     z-index: 52;
     text-decoration: none;
     background-color: #aae1fa; }
-    .showAll a::before {
-      top: 0px;
-      right: -12px;
-      content: "";
-      position: absolute;
-      height: 99%;
-      width: 100%;
-      z-index: -1;
-      transform: skew(-22deg);
-      background-color: #aae1fa; }
-    .showAll a::after {
-      top: 0px;
-      left: -16px;
-      font-family: FontAwesome;
-      content: "\f067";
-      width: 23px;
-      height: 27px;
-      position: absolute;
-      line-height: 31px;
-      font-size: 15px;
-      background-color: white;
-      border: 1px solid white;
-      border-radius: 50%; }
 
 .showAllMarginFix {
   margin: 20px 35px 30px 15px; }
@@ -525,7 +528,7 @@ body {
       position: absolute;
       left: -22px;
       top: 0px;
-      width: 20%;
+      width: 100%;
       z-index: 1;
       height: 99%;
       background-color: #aae1fa;
@@ -1042,7 +1045,7 @@ body {
         .additional .viewedContent ul li .viewedContentAbout a {
           font-size: 16pt;
           color: black;
-          border-bottom: 1.5px solid black;
+          border-bottom: 1px solid black;
           text-decoration: none; }
       @media screen and (max-width: 767px) {
         .additional .viewedContent ul li .viewedContentAbout {
@@ -1173,7 +1176,6 @@ body {
             text-decoration: none;
             color: #2d6c93; }
   .rubrikaContent .rubrikaContentCategories ul {
-    margin-top: 15px;
     padding-left: 5px;
     list-style: none; }
     .rubrikaContent .rubrikaContentCategories ul li {
@@ -1242,7 +1244,7 @@ body {
     text-transform: uppercase; }
   .rubrikaContent .rubrikaContentCategories .rubrikaEntrace {
     text-align: center;
-    padding-top: 40px; }
+    padding-top: 50px; }
     .rubrikaContent .rubrikaContentCategories .rubrikaEntrace a {
       font-size: 13pt;
       padding: 10px 40px;
@@ -1572,6 +1574,9 @@ body {
       width: 27px; }
     .tovhideCagirish .additionalContentIcon i {
       font-size: 22px; } }
+@media screen and (max-width: 1200px) {
+  .tovhideCagirishMain .rubrikaContentCategories ul li {
+    padding-bottom: 15px; } }
 .tovhidnadi {
   background-color: white; }
   .tovhidnadi .tovhidnadiMain {
@@ -1605,7 +1610,7 @@ body {
         .tovhidnadi .viewedContent ul li a {
           font-size: 16pt;
           color: black;
-          border-bottom: 1.5px solid black;
+          border-bottom: 1px solid black;
           text-decoration: none; }
   @media screen and (max-width: 767px) {
     .tovhidnadi .viewedContent a {
@@ -1763,7 +1768,7 @@ body {
         .articles .viewedContent ul li .viewedContentAbout a {
           font-size: 16pt;
           color: black;
-          border-bottom: 1.5px solid black;
+          border-bottom: 1px solid black;
           text-decoration: none; }
       @media screen and (max-width: 767px) {
         .articles .viewedContent ul li .viewedContentAbout {
@@ -1909,7 +1914,7 @@ body {
         .books .viewedContent ul li a {
           font-size: 16pt;
           color: black;
-          border-bottom: 1.5px solid black;
+          border-bottom: 1px solid black;
           text-decoration: none; }
   @media screen and (max-width: 767px) {
     .books .viewedContent a {
@@ -1971,7 +1976,7 @@ body {
         .ideologiya .viewedContent ul li a {
           font-size: 16pt;
           color: black;
-          border-bottom: 1.5px solid black;
+          border-bottom: 1px solid black;
           text-decoration: none; }
   @media screen and (max-width: 767px) {
     .ideologiya .viewedContent a {
@@ -2027,7 +2032,7 @@ body {
         .murcie .viewedContent ul li a {
           font-size: 16pt;
           color: black;
-          border-bottom: 1.5px solid black;
+          border-bottom: 1px solid black;
           text-decoration: none; }
   @media screen and (max-width: 767px) {
     .murcie .viewedContent a {
@@ -2517,7 +2522,7 @@ body {
         .audio .viewedContent ul li a {
           font-size: 16pt;
           color: black;
-          border-bottom: 1.5px solid black;
+          border-bottom: 1px solid black;
           text-decoration: none; }
   @media screen and (max-width: 767px) {
     .audio .viewedContent {
@@ -2649,7 +2654,7 @@ body {
         .audio2 .viewedContent ul li a {
           font-size: 16pt;
           color: black;
-          border-bottom: 1.5px solid black;
+          border-bottom: 1px solid black;
           text-decoration: none; }
   @media screen and (max-width: 767px) {
     .audio2 .viewedContent a {
@@ -2754,7 +2759,7 @@ body {
         .sualcavab .viewedContent ul li a {
           font-size: 16pt;
           color: black;
-          border-bottom: 1.5px solid black;
+          border-bottom: 1px solid black;
           text-decoration: none; }
   @media screen and (max-width: 767px) {
     .sualcavab .viewedContent a {
@@ -3096,7 +3101,7 @@ body {
       .forum2 .viewedContent ul li a {
         font-size: 16pt;
         color: black;
-        border-bottom: 1.5px solid black;
+        border-bottom: 1px solid black;
         text-decoration: none; }
 @media screen and (max-width: 767px) {
   .forum2 .viewedContent a {
@@ -3138,7 +3143,7 @@ body {
     margin: 10px 0px; }
     .forum3 .viewedContent ul li .viewedContentAbout a {
       font-size: 16pt;
-      border-bottom: 1.5px solid black;
+      border-bottom: 1px solid black;
       text-decoration: none; }
     @media screen and (max-width: 767px) {
       .forum3 .viewedContent ul li .viewedContentAbout a {
@@ -3419,9 +3424,8 @@ body {
 .search .rubrikaParagraph {
   border-top: none; }
 .search .rubrikaContentCategories {
-  margin-bottom: 10px; }
-.search .rubrikaContentCategories {
   margin: 0px 50px;
+  margin-bottom: 10px;
   border-bottom: 2px solid #aae1fa; }
   .search .rubrikaContentCategories ul {
     padding: 0px;
@@ -3518,7 +3522,7 @@ body {
     margin-left: 50px !important; }
   .search .sendQuestion li {
     width: 100% !important; } }
-@media screen and (max-width: 1280px) {
+@media screen and (max-width: 1200px) {
   .search .rubrikaCategoriesName {
     border-bottom: 1px solid #aae1fa !important; } }
 @media screen and (max-width: 1024px) and (min-width: 766px) {
@@ -3547,7 +3551,7 @@ body {
       .haqqimizda .viewedContent ul li .viewedContentAbout a {
         font-size: 16pt;
         color: black;
-        border-bottom: 1.5px solid black;
+        border-bottom: 1px solid black;
         text-decoration: none; }
 .haqqimizda .sendMessageButton a {
   margin-left: 15px; }

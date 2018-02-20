@@ -1,64 +1,93 @@
 $primarycolor:#2d6c93;
 $secondarycolor:#d9edf7;
 $thirdcolor:#aae1fa;
-
 @media screen and (max-width:767px) {
     .colum-reverse-row {
         flex-direction: column-reverse;
     }
 }
+
 .mainHead {
     background-color: $thirdcolor;
 }
+
 html {
     overflow-x: hidden;
 }
+
 body {
     font-family: 'Calibri';
 }
+
 .mgTop {
     margin-top: 138px !important;
     text-align: right;
-    
 }
+
 .showAll {
     margin: 20px 0px;
     margin-bottom: 30px;
+    display: inline-block;
+    position: relative;
+    &::before {
+        top: -2px;
+        right: 15px;
+        content: "";
+        position: absolute;
+        height: 112%;
+        width: 74%;
+        z-index: 1;
+        transform: skew(-22deg);
+        background-color: $thirdcolor;
+    }
+    &::after {
+        top: -2px;
+        left: 18px;
+        z-index: 5000;
+        content: "+";
+        width: 24px;
+        font-size: 24px;
+        height: 28px;
+        line-height: 24px;
+        position: absolute;
+        background-color: white;
+        border: 1px solid white;
+        border-radius: 50%;
+        text-align: center;
+        transform: skew(-15deg);
+    }
     a {
         font-style: italic;
         position: relative;
         padding: 4px 4px 4px 10px;
         margin: 0px 20px;
         color: black;
-        font-weight: bold;
         z-index: 52;
         text-decoration: none;
-        background-color: $thirdcolor;
-        &::before {
-            top: 0px;
-            right: -12px;
-            content: "";
-            position: absolute;
-            height: 99%;
-            width: 100%;
-            z-index: -1;
-            transform: skew(-22deg);
-            background-color:  $thirdcolor;
-        }
-        &::after {
-            top: 0px;
-            left: -16px;
-            font-family: FontAwesome;
-            content: "\f067";
-            width: 23px;
-            height: 27px;
-            position: absolute;
-            line-height: 31px;
-            font-size: 15px;
-            background-color: white;
-            border: 1px solid white;
-            border-radius: 50%;
-        }
+        background-color: $thirdcolor; // &::before {
+        //     top: 0px;
+        //     right: -12px;
+        //     content: "";
+        //     position: absolute;
+        //     height: 3px;
+        //     width: 15px;
+        //     transform: skew(-22deg);
+        //     background-color:  bla;
+        // }
+        // &::after {
+        //     top: 0px;
+        //     left: -16px;
+        //     font-family: FontAwesome;
+        //     content: "\f067";
+        //     width: 23px;
+        //     height: 27px;
+        //     position: absolute;
+        //     line-height: 31px;
+        //     font-size: 15px;
+        //     background-color: white;
+        //     border: 1px solid white;
+        //     border-radius: 50%;
+        // }
     }
 }
 
@@ -68,15 +97,12 @@ body {
         margin: 0px 20px !important;
     }
 }
-.showAllMarginFixForum3 {
-    
-}
 
+.showAllMarginFixForum3 {}
 
 .social {
     margin: 50px 40px 0px 40px;
     .socialAbout {
-        
         display: inline-block;
         ul {
             padding: 0px;
@@ -90,7 +116,7 @@ body {
                     color: $primarycolor;
                     font-style: italic;
                     text-decoration: none;
-                     .socialForumIcon{
+                    .socialForumIcon {
                         margin: 0px auto;
                         width: 40px;
                         height: 40px;
@@ -103,7 +129,7 @@ body {
                             opacity: 1;
                         }
                     }
-                    .SocialQuestionIcon{
+                    .SocialQuestionIcon {
                         margin: 0px auto;
                         width: 40px;
                         height: 40px;
@@ -116,7 +142,7 @@ body {
                             opacity: 1;
                         }
                     }
-                    .socialInformationIcon{
+                    .socialInformationIcon {
                         margin: 0px auto;
                         width: 40px;
                         height: 40px;
@@ -152,7 +178,6 @@ body {
         display: inline-block;
         float: right;
         ul {
-            
             list-style: none;
             text-align: right;
             li {
@@ -187,7 +212,7 @@ body {
                             opacity: 1;
                         }
                     }
-                    .instagramIcon{
+                    .instagramIcon {
                         margin: 0px auto;
                         width: 40px;
                         height: 40px;
@@ -200,7 +225,7 @@ body {
                             opacity: 1;
                         }
                     }
-                    .twitterIcon{
+                    .twitterIcon {
                         margin: 0px auto;
                         width: 40px;
                         height: 40px;
@@ -213,7 +238,7 @@ body {
                             opacity: 1;
                         }
                     }
-                    .whatsappIcon{
+                    .whatsappIcon {
                         margin: 0px auto;
                         width: 40px;
                         height: 40px;
@@ -226,7 +251,7 @@ body {
                             opacity: 1;
                         }
                     }
-                    .telegramIcon{
+                    .telegramIcon {
                         margin: 0px auto;
                         width: 40px;
                         height: 40px;
@@ -244,30 +269,31 @@ body {
         }
     }
 }
+
 @media screen and (max-width: 1024px) {
-.social {
-    margin: 50px 0px 0px 0px !important;
-    text-align: center !important;
-    .socialAbout {
-        display: block !important;
-        ul {
-            text-align: center !important;
+    .social {
+        margin: 50px 0px 0px 0px !important;
+        text-align: center !important;
+        .socialAbout {
+            display: block !important;
+            ul {
+                text-align: center !important;
+            }
         }
-    
-    }
-    .socialLinks {
-     display: block !important;
-     float: none !important;
-     ul {
-         padding: 0px;
-         text-align: center !important;
-         li {
-         width: 15%;
-         }
-     }
+        .socialLinks {
+            display: block !important;
+            float: none !important;
+            ul {
+                padding: 0px;
+                text-align: center !important;
+                li {
+                    width: 15%;
+                }
+            }
+        }
     }
 }
-}
+
 .breadcrumb {
     padding-top: 0px;
     padding-left: 65px;
@@ -276,22 +302,22 @@ body {
     background-color: white;
     border: none;
 }
+
 @media screen and (max-width: 500px) {
     .social {
         .socialLinks {
-            
             ul {
-               
                 li {
-                width: 30% !important;
+                    width: 30% !important;
                 }
             }
-           }
+        }
     }
 }
+
 @media screen and (max-width:767px) {
     .breadcrumb {
-        padding-left: 30px !important; 
+        padding-left: 30px !important;
     }
 }
 
@@ -353,11 +379,10 @@ body {
             }
         }
     }
-  
 }
-.bgTriangle5 {
 
-}
+.bgTriangle5 {}
+
 .bgTriangle {
     position: relative;
     display: inline-block;
@@ -366,7 +391,7 @@ body {
         right: -12+px;
         content: "";
         position: absolute;
-        height:99%;
+        height: 99%;
         width: 100%;
         z-index: 0;
         transform: skew(-22deg);
@@ -375,9 +400,9 @@ body {
     p {
         position: relative;
         z-index: 555;
-
     }
 }
+
 .bgTriangleSecond {
     position: relative;
     &::before {
@@ -393,7 +418,7 @@ body {
     }
     &::after {
         top: 0px;
-       right: 0px;
+        right: 0px;
         z-index: 0;
         content: "";
         position: absolute;
@@ -404,53 +429,49 @@ body {
     p {
         position: relative;
         z-index: 555;
-        
     }
 }
+
 .bgTriangleThird {
     &::after {
         content: "";
-        height:100%;
+        height: 100%;
         right: 0px;
-
     }
     &::before {
         content: "";
-        height:100%;
+        height: 100%;
     }
 }
+
 .bgTriangleFifth {
     &::after {
         content: "";
-        height:100%;
+        height: 100%;
         right: -15px;
-
     }
 }
+
 .bgTriangle4 {
     &::after {
         content: "";
-background-color: $thirdcolor;
-
+        background-color: $thirdcolor;
     }
     &::before {
-        background-color:$thirdcolor;
+        background-color: $thirdcolor;
         content: "";
-
     }
 }
-@media screen and (max-width: 400px) {
 
+@media screen and (max-width: 400px) {
     .bgTriangleResponsive {
         &::after {
-                background-color: white;
-                width: 0px;
-                height: 0px;
-            }
+            background-color: white;
+            width: 0px;
+            height: 0px;
+        }
     }
-
 }
-
 
 @media screen and (max-width: 768px) {
     .bgTriangle {
@@ -460,14 +481,10 @@ background-color: $thirdcolor;
         //     height: 0px;
         // }
     }
-    
     .sendQuestion {
-        
-            li {
-                width: 45% !important;
-            }
-        
-        
+        li {
+            width: 45% !important;
+        }
     }
     .bgTriangleSecond {
         &::before {
@@ -481,8 +498,7 @@ background-color: $thirdcolor;
             height: 0px;
         }
     }
-    .bgTriangleThird
-    {
+    .bgTriangleThird {
         &::before {
             background-color: white;
             width: 0px;
@@ -504,7 +520,7 @@ background-color: $thirdcolor;
             background-color: white;
             width: 0px;
             height: 0px;
-        } 
+        }
     }
     .bgTriangleSix {
         &::before {
@@ -516,18 +532,19 @@ background-color: $thirdcolor;
         &::after {
             width: 100% !important;
             height: 100% !important;
-            background-color: $primarycolor !important; 
+            background-color: $primarycolor !important;
         }
     }
 }
+
 @media screen and (max-width:1280px) {
     .sendQuestion {
         li {
             width: 30% !important;
         }
     }
-
 }
+
 @media screen and (max-width:1200px) {
     .bgTriangle {
         &::after {
@@ -536,57 +553,52 @@ background-color: $thirdcolor;
     }
     .bgTriangleSecond {
         &::before {
-           height: 100%;
+            height: 100%;
         }
     }
 }
+
 @media screen and (max-width:1004px) {
     .bgTriangleSecond {
         &::before {
-            left:-46px; 
+            left: -46px;
         }
     }
-
 }
+
 @media screen and (max-width:1119px) {
     .bgTriangleLeft {
         &::before {
-            left:-20px; 
+            left: -20px;
         }
     }
-
 }
+
 @media screen and (max-width:500px) {
     .sendQuestion {
-            li {
-                width: 95% !important;
-            }
+        li {
+            width: 95% !important;
         }
-        
-
+    }
 }
+
 @media screen and (max-width:1024px) {
     .sendQuestion {
-           padding-left: 0px !important;
-           text-align: center;
-        }
-        
-
+        padding-left: 0px !important;
+        text-align: center;
+    }
 }
+
 @media screen and (max-width:1281px) {
     .sendQuestion {
-            li {
-                width: 70% !important;
-                margin: 0px auto !important;
-                margin-bottom: 5px !important;
-                display:  block !important;
-            }
+        li {
+            width: 70% !important;
+            margin: 0px auto !important;
+            margin-bottom: 5px !important;
+            display: block !important;
         }
-        
-
+    }
 }
-
-
 
 @import 'header';
 @import 'menu';
