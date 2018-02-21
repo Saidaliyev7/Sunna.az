@@ -299,6 +299,20 @@
         }
     }
 }
+@media screen and (max-width:400px) {
+    .forumLiWidth {
+        .rubrikaContentCategories {
+            ul {
+                li {
+                    width: 40% !important;
+                }
+            }
+                
+        }
+          
+                
+    }
+}
 
 @media screen and (max-width: 850px) and (min-width: 768px) {
     .forum {
