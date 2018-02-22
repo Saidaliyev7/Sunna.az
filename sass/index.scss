@@ -28,36 +28,9 @@ body {
  
     margin: 20px 20px;
     margin-bottom: 30px;
-    display: inline-block;
+    display: block;
     position: relative;
-    &::before {
-        top: -2px;
-        right: -8px;
-        content: "";
-        position: absolute;
-        height: 112%;
-        width: 74%;
-        z-index: 1;
-        transform: skew(-22deg);
-        background-color: $thirdcolor;
-    }
-    &::after {
-        top: -2px;
-        left: -13px;
-        z-index: 5000;
-        content: "+";
-        width: 24px;
-        font-size: 24px;
-       // cursor: pointer;
-        height: 28px;
-        line-height: 24px;
-        position: absolute;
-        background-color: white;
-        border: 1px solid white;
-        border-radius: 50%;
-        text-align: center;
-        transform: skew(-15deg);
-    }
+    
     a {
         font-style: italic;
         position: relative;
@@ -66,35 +39,37 @@ body {
         color: black;
         z-index: 52;
         text-decoration: none;
-        background-color: $thirdcolor; // &::before {
-        //     top: 0px;
-        //     right: -12px;
-        //     content: "";
-        //     position: absolute;
-        //     height: 3px;
-        //     width: 15px;
-        //     transform: skew(-22deg);
-        //     background-color:  bla;
-        // }
-        // &::after {
-        //     top: 0px;
-        //     left: -16px;
-        //     font-family: FontAwesome;
-        //     content: "\f067";
-        //     width: 23px;
-        //     height: 27px;
-        //     position: absolute;
-        //     line-height: 31px;
-        //     font-size: 15px;
-        //     background-color: white;
-        //     border: 1px solid white;
-        //     border-radius: 50%;
-        // }
+        background-color: $thirdcolor; 
+        &::before {
+            top: 0px;
+            right: -12px;
+            content: "";
+            position: absolute;
+            height: 100%;
+            width: 100%;
+            transform: skew(-22deg);
+            z-index: -5;
+            background-color: $thirdcolor; 
+        }
+        &::after {
+            top: 0px;
+            left: -16px;
+            //font-family: FontAwesome;
+            content: "+";
+            width: 23px;
+            height: 27px;
+            position: absolute;
+            line-height: 27px;
+            font-size: 23px;
+            background-color: white;
+            border: 1px solid white;
+            border-radius: 50%;
+        }
     }
 }
 
 .showAllMarginFix {
-    margin: 20px 55px;
+    margin: 20px 55px !important;
     
 }
 

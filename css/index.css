@@ -17,33 +17,8 @@ body {
 .showAll {
   margin: 20px 20px;
   margin-bottom: 30px;
-  display: inline-block;
+  display: block;
   position: relative; }
-  .showAll::before {
-    top: -2px;
-    right: -8px;
-    content: "";
-    position: absolute;
-    height: 112%;
-    width: 74%;
-    z-index: 1;
-    transform: skew(-22deg);
-    background-color: #aae1fa; }
-  .showAll::after {
-    top: -2px;
-    left: -13px;
-    z-index: 5000;
-    content: "+";
-    width: 24px;
-    font-size: 24px;
-    height: 28px;
-    line-height: 24px;
-    position: absolute;
-    background-color: white;
-    border: 1px solid white;
-    border-radius: 50%;
-    text-align: center;
-    transform: skew(-15deg); }
   .showAll a {
     font-style: italic;
     position: relative;
@@ -52,9 +27,31 @@ body {
     z-index: 52;
     text-decoration: none;
     background-color: #aae1fa; }
+    .showAll a::before {
+      top: 0px;
+      right: -12px;
+      content: "";
+      position: absolute;
+      height: 100%;
+      width: 100%;
+      transform: skew(-22deg);
+      z-index: -5;
+      background-color: #aae1fa; }
+    .showAll a::after {
+      top: 0px;
+      left: -16px;
+      content: "+";
+      width: 23px;
+      height: 27px;
+      position: absolute;
+      line-height: 27px;
+      font-size: 23px;
+      background-color: white;
+      border: 1px solid white;
+      border-radius: 50%; }
 
 .showAllMarginFix {
-  margin: 20px 55px; }
+  margin: 20px 55px !important; }
 
 .showAllBeforeFix::before {
   top: -1.5px; }
@@ -513,26 +510,19 @@ body {
   padding: 10px 0px 15px; }
   .menu .menuSlogan {
     height: 100%;
+    position: relative;
     background-color: #d9edf7; }
     .menu .menuSlogan p {
       padding: 10px;
-      font-size: 15pt; }
+      font-size: 15pt;
+      position: relative;
+      z-index: 20; }
   .menu .menuAll .menuInput img {
     height: 0px !important; }
   .menu .menuContent {
     height: 100%;
     padding: 6px;
     background-color: #aae1fa; }
-    .menu .menuContent::after {
-      content: "";
-      position: absolute;
-      left: -22px;
-      top: 0px;
-      width: 100%;
-      z-index: 1;
-      height: 99%;
-      background-color: #aae1fa;
-      transform: skew(-22deg); }
     .menu .menuContent .menuitems {
       display: inline-block;
       position: relative;
@@ -621,6 +611,28 @@ body {
       display: none !important;
       float: none !important;
       margin-right: 0px !important; } }
+@media screen and (min-width: 1200px) {
+  .menuSlogan::after {
+    content: "";
+    position: absolute;
+    left: -22px;
+    top: 0px;
+    width: 100%;
+    z-index: 1;
+    height: 100%;
+    background-color: #d9edf7;
+    transform: skew(-22deg); }
+
+  .menuContent::after {
+    content: "";
+    position: absolute;
+    left: -22px;
+    top: 0px;
+    width: 100%;
+    z-index: 1;
+    height: 100%;
+    background-color: #aae1fa;
+    transform: skew(-22deg); } }
 .content {
   overflow-x: hidden;
   margin-bottom: 15px;
@@ -1247,7 +1259,7 @@ body {
     padding-top: 50px; }
     .rubrikaContent .rubrikaContentCategories .rubrikaEntrace a {
       font-size: 13pt;
-      padding: 9px 40px;
+      padding: 8px 40px;
       background-color: #aae1fa;
       text-decoration: none;
       color: black; }
@@ -1577,6 +1589,12 @@ body {
 @media screen and (max-width: 1200px) {
   .tovhideCagirishMain .rubrikaContentCategories ul li {
     padding-bottom: 15px; } }
+@media screen and (max-width: 767px) {
+  .tovhideCagirishMain .rubrikaContentCategories ul li .rubrikaCategoriesIcon i {
+    width: 60px !important;
+    height: 60px !important;
+    font-size: 30px !important;
+    line-height: 60px !important; } }
 .tovhidnadi {
   background-color: white; }
   .tovhidnadi .tovhidnadiMain {
@@ -2716,7 +2734,7 @@ body {
     .sualcavab .rubrikaEntrace a {
       display: inline-block;
       font-size: 13pt;
-      padding: 9px 40px;
+      padding: 7px 40px;
       background-color: #aae1fa;
       text-decoration: none;
       color: black; }
@@ -3412,7 +3430,6 @@ body {
 .search .contentHead p {
   width: 190px; }
 .search .viewedContent {
-  margin-bottom: 0px;
   display: inline-block;
   padding-right: 5px; }
   .search .viewedContent img {

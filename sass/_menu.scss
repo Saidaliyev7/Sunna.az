@@ -3,12 +3,14 @@
     padding: 10px 0px 15px;
     .menuSlogan {
         height: 100%;
-       
-        background-color: $secondarycolor;
+       position: relative;
+        
+       background-color: $secondarycolor;
         p {
             padding: 10px;
             font-size: 15pt;
-            
+            position: relative;
+            z-index: 20;
         }
     }
     .menuAll {
@@ -23,17 +25,8 @@
         padding: 6px;
         
         background-color: $thirdcolor;
-        &::after {
-            content: "";
-            position: absolute;
-            left: -22px;
-            top: 0px;
-            width: 100%;
-            z-index: 1;
-            height: 99%;
-            background-color: $thirdcolor;
-            transform: skew(-22deg);
-        }
+        
+       
         .menuitems {
             display: inline-block;
             position: relative;
@@ -141,6 +134,35 @@ height: 110px;
             display: none !important;
             float: none !important;
             margin-right: 0px !important; 
+        }
+    }
+}
+
+@media screen and (min-width:1200px) {
+    .menuSlogan {
+        &::after {
+            content: "";
+            position: absolute;
+            left: -22px;
+            top: 0px;
+            width: 100%;
+            z-index: 1;
+            height: 100%;
+            background-color: $secondarycolor;
+            transform: skew(-22deg);
+        }
+    }
+    .menuContent {
+        &::after {
+            content: "";
+            position: absolute;
+            left: -22px;
+            top: 0px;
+            width: 100%;
+            z-index: 1;
+            height: 100%;
+            background-color: $thirdcolor;
+            transform: skew(-22deg);
         }
     }
 }
