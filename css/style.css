@@ -88,7 +88,9 @@ padding-left:40px;
 
 .showAllMargin {
 margin: 20px 35px;
+margin-right: 0px !important;
 }
+
 .mg-top-20 {
     margin-top: 40px;
 }
@@ -101,12 +103,24 @@ margin: 20px 35px;
 .bredcrumPadding {
     padding-left: 50px;
 }
+
+
 .additionalContentForumPhoneModeResponsive {
     display: none !important ;
 }
 @media screen and (max-width:767px) {
     .mg-top-25 {
         margin-top: 25px !important;
+    }
+}
+@media screen and (max-width:991px) {
+    .pg-top-25 {
+        padding-top: 25px !important;
+    }
+}
+@media screen and (min-width:991px) {
+    .mg-bottom-65 {
+        margin-bottom: 65px;
     }
 }
 @media screen and (max-width:991px) {
@@ -148,3 +162,8 @@ bottom: 10px;
     }
 }
 
+/* @media screen and(max-width:991px) and(min-width:765px) {
+    .showAllMarginIndex {
+        margin: 20px 25px !important;
+    }
+} */

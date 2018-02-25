@@ -1122,6 +1122,9 @@ body {
 @media screen and (min-width: 570px) {
   .additionalContentTextIcon {
     display: inline-block; } }
+@media screen and (max-width: 767px) {
+  .additional .sendMessage .sendMessageButton a {
+    padding: 8px 20px !important; } }
 .rubrikaContent {
   margin-bottom: 2px;
   background-color: white; }
@@ -1330,7 +1333,7 @@ body {
     line-height: 80px !important; } }
 @media screen and (min-width: 768px) and (max-width: 991px) {
   .rubrikaContent .rubrikaForum {
-    margin-top: 140px !important; } }
+    margin-top: 200px !important; } }
 .menuicondown .menuContent .menuInput i {
   position: absolute;
   right: 3%;
@@ -2770,6 +2773,7 @@ body {
   .sualcavab .viewedContent {
     margin-bottom: 20px; }
     .sualcavab .viewedContent ul {
+      padding-top: 15px;
       padding-left: 20px; }
       .sualcavab .viewedContent ul li {
         margin: 10px 0px;
@@ -2815,6 +2819,9 @@ body {
   .rubrikaEntrace {
     margin-left: 0px !important;
     text-align: center !important; } }
+@media screen and (max-width: 767px) {
+  .sualcavab .sendMessage .sendMessageButton a {
+    padding: 8px 20px !important; } }
 .forum {
   background-color: white; }
   .forum .sendQuestion li {

@@ -104,6 +104,7 @@
     .viewedContent {
         margin-bottom: 20px;
         ul {
+            padding-top: 15px;
             padding-left: 20px ;
             li {
                 //border-bottom: 2px solid black;
@@ -188,4 +189,16 @@
         text-align: center !important;
     }
    
+}
+
+@media screen and (max-width:767px) {
+    .sualcavab {
+        .sendMessage {
+            .sendMessageButton {
+                a {
+                    padding: 8px 20px !important;
+                }
+            }
+        }
+    }
 }
