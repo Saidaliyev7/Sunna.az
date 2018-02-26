@@ -1879,6 +1879,8 @@ body {
     .books .rubrikaContentCategories .rubrikaContentBooks .rubrikaContentBooksPdf {
       float: right;
       display: inline-block; }
+      .books .rubrikaContentCategories .rubrikaContentBooks .rubrikaContentBooksPdf img {
+        width: 35px; }
       .books .rubrikaContentCategories .rubrikaContentBooks .rubrikaContentBooksPdf i {
         font-size: 20pt; }
     .books .rubrikaContentCategories .rubrikaContentBooksCategory {
@@ -1983,6 +1985,8 @@ body {
         font-weight: bold; }
     .ideologiya .rubrikaContentCategories .rubrikaContentBooks .rubrikaContentBooksPdf {
       display: inline-block; }
+      .ideologiya .rubrikaContentCategories .rubrikaContentBooks .rubrikaContentBooksPdf img {
+        width: 35px; }
       .ideologiya .rubrikaContentCategories .rubrikaContentBooks .rubrikaContentBooksPdf i {
         padding-left: 10px;
         font-size: 20pt; }

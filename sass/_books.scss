@@ -40,6 +40,9 @@
             .rubrikaContentBooksPdf {
                 float: right;
                 display: inline-block;
+                img {
+                    width: 35px;
+                }
                 i {
                     font-size: 20pt;
                 }
@@ -155,6 +158,9 @@
                 text-align: center !important;
                 float: none !important;
                 display: block !important;
+                
+                    
+                
             }
         }
     }
