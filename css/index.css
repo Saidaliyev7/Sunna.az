@@ -221,6 +221,63 @@ body {
   background-color: white;
   border: none; }
 
+.rubrikaEntraceAdditional {
+  text-align: center;
+  padding: 26.5px 0px; }
+  .rubrikaEntraceAdditional a {
+    font-size: 13pt;
+    padding: 10px 40px;
+    background-color: #aae1fa;
+    text-decoration: none;
+    color: black; }
+
+.sendMessageIconAdditional {
+  display: inline-block; }
+  .sendMessageIconAdditional i img {
+    margin: 10px;
+    width: 55px; }
+
+.rubrikaViewedContent .viewedContent .video {
+  padding-top: 25px; }
+.rubrikaViewedContent .viewedContent ul {
+  padding: 25px 0px 0px 20px;
+  list-style: none; }
+  .rubrikaViewedContent .viewedContent ul li {
+    width: auto !important;
+    display: block !important;
+    padding: 0px !important;
+    margin-bottom: 10px; }
+    .rubrikaViewedContent .viewedContent ul li .viewedContentIcon {
+      display: inline-block;
+      padding-right: 5px; }
+      .rubrikaViewedContent .viewedContent ul li .viewedContentIcon img {
+        height: 27px;
+        width: 27px; }
+      .rubrikaViewedContent .viewedContent ul li .viewedContentIcon i {
+        font-size: 22px; }
+    .rubrikaViewedContent .viewedContent ul li .viewedContentAbout {
+      display: inline-block; }
+      .rubrikaViewedContent .viewedContent ul li .viewedContentAbout a {
+        font-size: 16pt;
+        color: black;
+        border-bottom: 1px solid black;
+        text-decoration: none; }
+    @media screen and (max-width: 767px) {
+      .rubrikaViewedContent .viewedContent ul li .viewedContentAbout {
+        display: inline-block; }
+        .rubrikaViewedContent .viewedContent ul li .viewedContentAbout a {
+          border-bottom: 1px solid black !important; } }
+
+@media screen and (max-width: 1024px) {
+  .rubrikaViewedContent .viewedContent {
+    text-align: center !important; }
+    .rubrikaViewedContent .viewedContent .viewedContentIcon {
+      display: block !important; } }
+@media screen and (max-width: 767px) {
+  .rubrikaViewedContent .viewedContent {
+    text-align: left !important; }
+    .rubrikaViewedContent .viewedContent .viewedContentIcon {
+      display: inline-block !important; } }
 @media screen and (max-width: 500px) {
   .social .socialLinks ul li {
     width: 30% !important; } }
@@ -1191,16 +1248,16 @@ body {
             font-style: italic;
             text-decoration: none;
             color: #2d6c93; }
-  .rubrikaContent .rubrikaContentCategories ul {
+  .rubrikaContent .rubrikaContentCategories .rubrikaContentCategoriesIcons {
     padding-left: 5px;
     list-style: none; }
-    .rubrikaContent .rubrikaContentCategories ul li {
+    .rubrikaContent .rubrikaContentCategories .rubrikaContentCategoriesIcons li {
       width: 30%;
       padding: 30px 0px;
       display: inline-block; }
-      .rubrikaContent .rubrikaContentCategories ul li .rubrikaCategoriesIcon {
+      .rubrikaContent .rubrikaContentCategories .rubrikaContentCategoriesIcons li .rubrikaCategoriesIcon {
         text-align: center; }
-        .rubrikaContent .rubrikaContentCategories ul li .rubrikaCategoriesIcon i {
+        .rubrikaContent .rubrikaContentCategories .rubrikaContentCategoriesIcons li .rubrikaCategoriesIcon i {
           border: 2px solid;
           border-radius: 50%;
           text-align: center;
@@ -1213,23 +1270,23 @@ body {
           border-color: #cad2db;
           transition: 0.4s ease;
           cursor: pointer; }
-          .rubrikaContent .rubrikaContentCategories ul li .rubrikaCategoriesIcon i:hover {
+          .rubrikaContent .rubrikaContentCategories .rubrikaContentCategoriesIcons li .rubrikaCategoriesIcon i:hover {
             transition: 0.4s ease;
             border-color: #4da7ff;
             background-color: #4da7ff;
             color: white; }
-      .rubrikaContent .rubrikaContentCategories ul li .rubrikaCategoriesCount {
+      .rubrikaContent .rubrikaContentCategories .rubrikaContentCategoriesIcons li .rubrikaCategoriesCount {
         text-align: center; }
-        .rubrikaContent .rubrikaContentCategories ul li .rubrikaCategoriesCount a {
+        .rubrikaContent .rubrikaContentCategories .rubrikaContentCategoriesIcons li .rubrikaCategoriesCount a {
           border-bottom: 1px solid black;
           color: black;
           text-decoration: none; }
       @media screen and (max-width: 767px) {
-        .rubrikaContent .rubrikaContentCategories ul li .rubrikaCategoriesCount {
+        .rubrikaContent .rubrikaContentCategories .rubrikaContentCategoriesIcons li .rubrikaCategoriesCount {
           text-align: center; }
-          .rubrikaContent .rubrikaContentCategories ul li .rubrikaCategoriesCount a {
+          .rubrikaContent .rubrikaContentCategories .rubrikaContentCategoriesIcons li .rubrikaCategoriesCount a {
             border-bottom: 1px solid black !important; } }
-      .rubrikaContent .rubrikaContentCategories ul li .rubrikaCategoriesName {
+      .rubrikaContent .rubrikaContentCategories .rubrikaContentCategoriesIcons li .rubrikaCategoriesName {
         text-align: center;
         border: 1px solid #aae1fa;
         position: relative;
@@ -1238,7 +1295,7 @@ body {
         margin-left: auto;
         margin-right: auto;
         width: 90px; }
-        .rubrikaContent .rubrikaContentCategories ul li .rubrikaCategoriesName::after {
+        .rubrikaContent .rubrikaContentCategories .rubrikaContentCategoriesIcons li .rubrikaCategoriesName::after {
           position: absolute;
           content: "";
           width: 95%;
@@ -1246,7 +1303,7 @@ body {
           background-color: #aae1fa;
           top: -4px;
           left: 2px; }
-        .rubrikaContent .rubrikaContentCategories ul li .rubrikaCategoriesName a {
+        .rubrikaContent .rubrikaContentCategories .rubrikaContentCategoriesIcons li .rubrikaCategoriesName a {
           font-style: italic;
           text-decoration: none;
           color: black; }
@@ -1258,9 +1315,11 @@ body {
     font-size: 16pt;
     background-color: #2d6c93;
     text-transform: uppercase; }
+  .rubrikaContent .rubrikaContentCategories .rubrikaViewedContent {
+    text-align: left !important; }
   .rubrikaContent .rubrikaContentCategories .rubrikaEntrace {
     text-align: center;
-    padding-top: 50px; }
+    padding-top: 27px; }
     .rubrikaContent .rubrikaContentCategories .rubrikaEntrace a {
       font-size: 13pt;
       padding: 10px 40px;
@@ -1272,7 +1331,7 @@ body {
   .rubrikaContent .rubrikaForum::after {
     border: none !important; } }
 @media screen and (max-width: 400px) {
-  .rubrikaContent .rubrikaContentCategories ul li {
+  .rubrikaContent .rubrikaContentCategories .rubrikaContentCategoriesIcons li {
     width: 40% !important; } }
 @media screen and (max-width: 1255px) {
   .rubrikaContent::after {
@@ -1295,12 +1354,12 @@ body {
   .additionalContentType {
     margin: 0px !important; } }
 @media screen and (max-width: 1187px) and (min-width: 768px) {
-  .rubrikaContentCategories ul li {
+  .rubrikaContentCategories .rubrikaContentCategoriesIcons li {
     width: 49% !important; } }
 @media screen and (max-width: 850px) and (min-width: 768px) {
   .rubrikaContent .contentCategoriesHead p {
     padding: 15px 0px 15px 7px; }
-  .rubrikaContent .rubrikaContentCategories ul li {
+  .rubrikaContent .rubrikaContentCategories .rubrikaContentCategoriesIcons li {
     width: 49% !important; }
   .rubrikaContent .rubrikaCategoriesIcon i {
     width: 92px !important; } }
@@ -1316,25 +1375,22 @@ body {
   .rubrikaContentMainHead::after {
     height: 0% !important; } }
 @media screen and (max-width: 767px) {
-  .rubrikaContent .rubrikaContentCategories ul li {
+  .rubrikaContent .rubrikaContentCategories .rubrikaContentCategoriesIcons li {
     padding: 15px 0px !important; }
-    .rubrikaContent .rubrikaContentCategories ul li .rubrikaCategoriesIcon i {
+    .rubrikaContent .rubrikaContentCategories .rubrikaContentCategoriesIcons li .rubrikaCategoriesIcon i {
       width: 60px !important;
       height: 60px !important;
       font-size: 30px !important;
       line-height: 60px !important; } }
 @media screen and (max-width: 1200px) {
-  .rubrikaContent .rubrikaContentCategories ul li {
+  .rubrikaContent .rubrikaContentCategories .rubrikaContentCategoriesIcons li {
     padding: 15px 0px !important; } }
 @media screen and (min-width: 768px) and (max-width: 991px) {
-  .rubrikaContent .rubrikaContentCategories ul li .rubrikaCategoriesIcon i {
+  .rubrikaContent .rubrikaContentCategories .rubrikaContentCategoriesIcons li .rubrikaCategoriesIcon i {
     width: 80px !important;
     height: 80px !important;
     font-size: 40px !important;
     line-height: 80px !important; } }
-@media screen and (min-width: 768px) and (max-width: 991px) {
-  .rubrikaContent .rubrikaForum {
-    margin-top: 200px !important; } }
 .menuicondown .menuContent .menuInput i {
   position: absolute;
   right: 3%;
@@ -2737,7 +2793,7 @@ body {
     background-color: #2d6c93;
     text-transform: uppercase; }
   .sualcavab .rubrikaEntrace {
-    padding: 30px 0px;
+    padding: 26.5px 0px;
     text-align: center; }
     .sualcavab .rubrikaEntrace a {
       display: inline-block;
@@ -3595,5 +3651,8 @@ body {
 @media screen and (max-width: 767px) {
   .haqqimizda .viewedContent {
     text-align: left !important; } }
+@media screen and (max-width: 1024px) and (min-width: 766px) {
+  .haqqimizda .viewedContentIcon {
+    display: block !important; } }
 
 /*# sourceMappingURL=index.css.map */

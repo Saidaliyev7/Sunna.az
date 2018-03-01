@@ -286,6 +286,97 @@ body {
     border: none;
 }
 
+.rubrikaEntraceAdditional {
+    text-align: center;
+    padding: 26.5px 0px;
+    a {
+        font-size: 13pt;
+        padding: 10px 40px;
+        background-color: #aae1fa;
+        text-decoration: none;
+        color: black;
+    }
+}
+.sendMessageIconAdditional {
+    display: inline-block;
+    i {
+       
+        img {
+            margin: 10px;
+            width: 55px;
+        }
+    }
+}
+.rubrikaViewedContent {
+    .viewedContent {
+        .video {
+            padding-top: 25px;
+        }
+        ul {
+            padding: 25px 0px 0px 20px;
+            list-style: none;
+            li {
+                width: auto !important;
+                display: block !important;
+                padding: 0px !important;
+                margin-bottom: 10px;
+                .viewedContentIcon {
+                    display: inline-block;
+                    padding-right: 5px;
+                    img {
+                        height: 27px;
+                        width: 27px;
+                    }
+                    i {
+                        font-size: 22px;
+                    }
+                }
+                .viewedContentAbout {
+                    display: inline-block;
+                    a {
+                        font-size: 16pt;
+                        color: black;
+                        border-bottom: 1px solid black;
+                        text-decoration: none;
+                    }
+                }
+                @media screen and (max-width:767px) {
+                    .viewedContentAbout {
+                        display: inline-block;
+                        a {
+                            border-bottom: 1px solid black !important;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .rubrikaViewedContent {
+        .viewedContent {
+            text-align: center !important;
+            .viewedContentIcon {
+                display: block !important;
+            }
+        }
+    }
+    
+}
+
+@media screen and (max-width: 767px) {
+    .rubrikaViewedContent {
+        .viewedContent {
+            text-align: left !important;
+            .viewedContentIcon {
+                display: inline-block !important;
+            }
+        }
+    }
+    
+}
+
 @media screen and (max-width: 500px) {
     .social {
         .socialLinks {

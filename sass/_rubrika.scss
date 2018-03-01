@@ -86,7 +86,7 @@ font-style: italic;
         }
     }
     .rubrikaContentCategories {
-        ul {
+        .rubrikaContentCategoriesIcons {
             //margin-top: 15px;
             padding-left: 5px;
             list-style: none;
@@ -164,19 +164,21 @@ font-style: italic;
         }
         .rubrikaForum {
             margin-top: 32px;
-            
+           
             position: relative;
             color: white;
             padding: 15px 0px 15px 30px;
             font-size: 16pt;
             background-color: $primarycolor;
             text-transform: uppercase;
-
+           
         } 
-       
+       .rubrikaViewedContent {
+           text-align: left !important;
+       }
         .rubrikaEntrace {
             text-align: center;
-            padding-top: 50px;
+            padding-top: 27px;
             a {
                 font-size: 13pt;
                 padding: 10px 40px;
@@ -201,7 +203,7 @@ font-style: italic;
 @media screen and (max-width: 400px) {
     .rubrikaContent {
         .rubrikaContentCategories {
-            ul {
+            .rubrikaContentCategoriesIcons {
                 li {
                     width: 40% !important;
                 } 
@@ -251,7 +253,7 @@ font-style: italic;
 
 @media screen and (max-width: 1187px) and (min-width: 768px) {
     .rubrikaContentCategories {
-        ul {
+        .rubrikaContentCategoriesIcons {
             li {
                 width: 49% !important;
             }
@@ -266,7 +268,7 @@ font-style: italic;
             }
         }
         .rubrikaContentCategories {
-            ul {
+            .rubrikaContentCategoriesIcons {
                 li {
                     width: 49% !important;
                 }
@@ -311,7 +313,7 @@ font-style: italic;
 @media screen and (max-width:767px) {
     .rubrikaContent {
         .rubrikaContentCategories {
-            ul {
+            .rubrikaContentCategoriesIcons {
             
                 li {
                     padding: 15px 0px !important;
@@ -331,7 +333,7 @@ font-style: italic;
 @media screen and (max-width:1200px) {
     .rubrikaContent {
         .rubrikaContentCategories {
-            ul {
+            .rubrikaContentCategoriesIcons {
                 li {
                     padding: 15px 0px !important;
                 }
@@ -342,7 +344,7 @@ font-style: italic;
 @media screen and (min-width:768px) and (max-width:991px) {
     .rubrikaContent {
         .rubrikaContentCategories {
-            ul {
+            .rubrikaContentCategoriesIcons {
             
                 li {
                    
@@ -360,11 +362,11 @@ font-style: italic;
     }
 }
 
-@media screen and (min-width:768px) and(max-width:991px) {
-    .rubrikaContent {
-        .rubrikaForum {
-            margin-top: 200px !important;
-        }
-    }
+// @media screen and (min-width:768px) and(max-width:991px) {
+//     .rubrikaContent {
+//         .rubrikaForum {
+//             margin-top: 200px !important;
+//         }
+//     }
    
-}
+// }
