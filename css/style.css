@@ -113,6 +113,11 @@ margin-right: 0px !important;
         margin-top: 25px !important;
     }
 }
+@media screen and (max-width:767px) {
+    .mg-top-5 {
+        margin-top: 5px !important;
+    }
+}
 @media screen and (max-width:991px) {
     .pg-top-25 {
         padding-top: 25px !important;
@@ -162,8 +167,8 @@ bottom: 10px;
     }
 }
 
-/* @media screen and(max-width:991px) and(min-width:765px) {
+@media screen  and(min-width:765px) and(max-width:991px) {
     .showAllMarginIndex {
-        margin: 20px 25px !important;
+        margin: 20px 20px !important;
     }
-} */
+}

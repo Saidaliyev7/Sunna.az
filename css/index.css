@@ -50,9 +50,9 @@ body {
       border: 1px solid white;
       border-radius: 50%; }
 
-.showAllMarginFix {
-  margin: 20px 55px !important; }
-
+@media screen and (min-width: 767px) {
+  .showAllMarginFix {
+    margin: 20px 55px !important; } }
 .showAllBeforeFix::before {
   top: -1.5px; }
 
@@ -407,6 +407,10 @@ body {
     margin: 0px auto !important;
     margin-bottom: 5px !important;
     display: block !important; } }
+@media screen and (min-width: 765px) and (max-width: 991px) {
+  .showAllMarginIndex {
+    margin: 20px 20px !important;
+    margin-top: 40px !important; } }
 .header {
   background-color: #2d6c93; }
   .header .headerLogo {
@@ -1122,9 +1126,6 @@ body {
 @media screen and (min-width: 570px) {
   .additionalContentTextIcon {
     display: inline-block; } }
-@media screen and (max-width: 767px) {
-  .additional .sendMessage .sendMessageButton a {
-    padding: 8px 20px !important; } }
 .rubrikaContent {
   margin-bottom: 2px;
   background-color: white; }
@@ -1262,7 +1263,7 @@ body {
     padding-top: 50px; }
     .rubrikaContent .rubrikaContentCategories .rubrikaEntrace a {
       font-size: 13pt;
-      padding: 8px 40px;
+      padding: 10px 40px;
       background-color: #aae1fa;
       text-decoration: none;
       color: black; }
@@ -1624,7 +1625,7 @@ body {
     margin-bottom: 20px; }
     .tovhidnadi .viewedContent ul {
       padding-top: 15px;
-      padding-left: 20px; }
+      padding-left: 35px; }
       .tovhidnadi .viewedContent ul li {
         margin: 10px 0px;
         width: 100%; }
@@ -1930,7 +1931,7 @@ body {
     margin-bottom: 20px; }
     .books .viewedContent ul {
       padding-top: 15px;
-      padding-left: 20px; }
+      padding-left: 35px; }
       .books .viewedContent ul li {
         margin: 10px 0px;
         width: 100%; }
@@ -1994,7 +1995,7 @@ body {
     margin-bottom: 20px; }
     .ideologiya .viewedContent ul {
       padding-top: 15px;
-      padding-left: 20px; }
+      padding-left: 35px; }
       .ideologiya .viewedContent ul li {
         margin: 10px 0px;
         width: 100%; }
@@ -2050,7 +2051,7 @@ body {
     margin-bottom: 20px; }
     .murcie .viewedContent ul {
       padding-top: 15px;
-      padding-left: 20px; }
+      padding-left: 35px; }
       .murcie .viewedContent ul li {
         margin: 10px 0px;
         width: 100%; }
@@ -2540,7 +2541,7 @@ body {
     margin-bottom: 20px; }
     .audio .viewedContent ul {
       padding-top: 15px;
-      padding-left: 20px; }
+      padding-left: 35px; }
       .audio .viewedContent ul li {
         margin: 10px 0px;
         width: 100%; }
@@ -2672,7 +2673,7 @@ body {
     margin-bottom: 20px; }
     .audio2 .viewedContent ul {
       padding-top: 15px;
-      padding-left: 20px; }
+      padding-left: 35px; }
       .audio2 .viewedContent ul li {
         margin: 10px 0px;
         width: 100%; }
@@ -2741,7 +2742,7 @@ body {
     .sualcavab .rubrikaEntrace a {
       display: inline-block;
       font-size: 13pt;
-      padding: 7px 40px;
+      padding: 8px 40px;
       background-color: #aae1fa;
       text-decoration: none;
       color: black; }
@@ -2778,7 +2779,7 @@ body {
     margin-bottom: 20px; }
     .sualcavab .viewedContent ul {
       padding-top: 15px;
-      padding-left: 20px; }
+      padding-left: 35px; }
       .sualcavab .viewedContent ul li {
         margin: 10px 0px;
         width: 100%; }
@@ -2823,9 +2824,6 @@ body {
   .rubrikaEntrace {
     margin-left: 0px !important;
     text-align: center !important; } }
-@media screen and (max-width: 767px) {
-  .sualcavab .sendMessage .sendMessageButton a {
-    padding: 8px 20px !important; } }
 .forum {
   background-color: white; }
   .forum .sendQuestion li {
@@ -3126,7 +3124,7 @@ body {
   margin-bottom: 20px; }
   .forum2 .viewedContent ul {
     padding-top: 15px;
-    padding-left: 20px; }
+    padding-left: 35px; }
     .forum2 .viewedContent ul li {
       margin: 10px 0px;
       width: 100%; }
@@ -3169,7 +3167,7 @@ body {
     font-size: 22px; }
 .forum3 .viewedContent ul {
   padding-top: 15px;
-  padding-left: 20px;
+  padding-left: 35px;
   list-style-type: disc; }
   .forum3 .viewedContent ul li {
     margin: 10px 0px; }
@@ -3449,7 +3447,8 @@ body {
   .search .viewedContent i {
     font-size: 22px; }
   .search .viewedContent ul {
-    margin-bottom: 0px; }
+    margin-bottom: 0px;
+    padding-left: 20px; }
     .search .viewedContent ul li:last-child {
       margin-bottom: 0px; }
 .search .rubrikaParagraph {

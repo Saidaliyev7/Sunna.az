@@ -68,10 +68,13 @@ body {
     }
 }
 
-.showAllMarginFix {
-    margin: 20px 55px !important;
-    
+@media screen and (min-width:767px) {
+    .showAllMarginFix {
+        margin: 20px 55px !important;
+        
+    }
 }
+
 
 .showAllBeforeFix {
     &::before {
@@ -579,7 +582,12 @@ body {
         }
     }
 }
-
+@media screen  and(min-width:765px) and(max-width:991px) {
+    .showAllMarginIndex {
+        margin: 20px 20px !important;
+        margin-top: 40px !important;
+    }
+}
 @import 'header';
 @import 'menu';
 @import 'content';
