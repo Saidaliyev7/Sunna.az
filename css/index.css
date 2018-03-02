@@ -958,12 +958,12 @@ body {
       position: relative;
       z-index: 10; }
     .additional .additionalHead::before {
-      width: 38%;
+      width: 33%;
       height: 10%;
       top: 46%;
       content: "";
       position: absolute;
-      left: 0%;
+      left: 5%;
       background-color: #2d6c93; }
     .additional .additionalHead::after {
       width: 34%;
