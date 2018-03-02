@@ -307,6 +307,11 @@
     .viewedContent {
         text-align: left !important;
     }
+    .additionalHead {
+    &::before {
+        left: 2% !important;
+    }
+    }
 }
 
 // @media screen and (max-width: 786px) {
