@@ -51,6 +51,7 @@
             display: inline-block;
             font-size: 13pt;
             padding: 8px 40px;
+           
             background-color: #aae1fa;
             text-decoration: none;
             color: black;
@@ -187,6 +188,14 @@
         margin-left: 0px !important;
             
         text-align: center !important;
+        
+    }
+    .sualcavab {
+        .rubrikaEntrace {
+            a {
+                padding-bottom: 7.5px !important;
+            }
+        }
     }
    
 }

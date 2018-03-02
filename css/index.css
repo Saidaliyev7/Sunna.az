@@ -2879,7 +2879,10 @@ body {
 
   .rubrikaEntrace {
     margin-left: 0px !important;
-    text-align: center !important; } }
+    text-align: center !important; }
+
+  .sualcavab .rubrikaEntrace a {
+    padding-bottom: 7.5px !important; } }
 .forum {
   background-color: white; }
   .forum .sendQuestion li {
