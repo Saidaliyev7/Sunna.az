@@ -2930,6 +2930,9 @@ body {
   .sualcavab .rubrikaEntrace a {
     padding-top: 9px !important;
     padding-bottom: 6.5px !important; } }
+@media screen and (min-width: 767px) and (max-width: 1200px) {
+  .sualcavab .rubrikaEntrace a {
+    padding: 6.68px 40px !important; } }
 .forum {
   background-color: white; }
   .forum .sendQuestion li {
