@@ -79,7 +79,7 @@
         }
     }
     .viewedContent {
-       // margin-bottom: 0px;
+        margin-bottom: 0px;
         display: inline-block;
         padding-right: 5px;
         img {
@@ -105,7 +105,7 @@
     }
     .rubrikaContentCategories {
         margin: 0px 50px;
-        margin-bottom: 10px;
+        margin-bottom: 10px !important;
          border-bottom: 2px solid $thirdcolor;
          ul {
              padding: 0px;

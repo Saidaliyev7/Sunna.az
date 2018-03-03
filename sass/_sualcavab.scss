@@ -178,6 +178,11 @@
             margin-left: 0px !important;
             
             text-align: center !important;
+            .sendMessageButton {
+                a {
+                    padding-top: 13px !important;
+                }
+            }
         }
     }
     .rubrikaForum {
@@ -193,7 +198,8 @@
     .sualcavab {
         .rubrikaEntrace {
             a {
-                padding-bottom: 7.5px !important;
+                padding-top: 10px !important;
+                padding-bottom: 6.5px !important;
             }
         }
     }
