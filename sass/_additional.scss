@@ -313,6 +313,17 @@
     }
     }
 }
+@media screen and (max-width: 1200px) and (min-width:991px) {
+    
+    .additionalHead {
+    &::before {
+        left: 7.5% !important;
+    }
+    &::after {
+        right: 7% !important;
+    }
+    }
+}
 
 // @media screen and (max-width: 786px) {
 //     .additionalCenter{

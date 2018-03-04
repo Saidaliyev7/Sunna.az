@@ -1171,6 +1171,11 @@ body {
 
   .additionalHead::before {
     left: 2% !important; } }
+@media screen and (max-width: 1200px) and (min-width: 991px) {
+  .additionalHead::before {
+    left: 7.5% !important; }
+  .additionalHead::after {
+    right: 7% !important; } }
 @media screen and (max-width: 470px) {
   .additionalTypeCenter {
     text-align: center; }
