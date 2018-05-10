@@ -1101,13 +1101,16 @@ body {
   .additional .viewedContent .video {
     padding-top: 25px; }
   .additional .viewedContent ul {
-    padding: 25px 0px 0px 20px;
+    padding: 25px 0px 0px 46px;
     list-style: none; }
     .additional .viewedContent ul li {
       margin-bottom: 10px; }
       .additional .viewedContent ul li .viewedContentIcon {
         display: inline-block;
-        padding-right: 5px; }
+        padding-right: 5px;
+        position: absolute;
+        left: 30px;
+        line-height: 35px; }
         .additional .viewedContent ul li .viewedContentIcon img {
           height: 27px;
           width: 27px; }
@@ -1192,6 +1195,7 @@ body {
   .additionalContentTextIcon {
     display: inline-block; } }
 .rubrikaContent {
+  position: relative;
   margin-bottom: 2px;
   background-color: white; }
   .rubrikaContent .sendMessageIcon {
@@ -1204,7 +1208,7 @@ body {
   .rubrikaContent .contentHead {
     background-color: #aae1fa; }
     .rubrikaContent .contentHead p {
-      width: 190px;
+      width: 260px;
       padding: 15px; }
   .rubrikaContent .rubrika {
     border-bottom: 2px solid #aae1fa;
@@ -1399,27 +1403,6 @@ body {
     height: 80px !important;
     font-size: 40px !important;
     line-height: 80px !important; } }
-@media screen and (min-width: 765px) and (max-width: 1190px) {
-  .rubrikaAdditional {
-    overflow-x: initial !important;
-    overflow-y: initial !important; }
-    .rubrikaAdditional .rubrikaAdditionalTransform {
-      transform: translateY(-50px); } }
-@media screen and (min-width: 783px) and (max-width: 800px) {
-  .rubrikaAdditional .rubrikaAdditionalTransform {
-    transform: translateY(-25px); } }
-@media screen and (min-width: 800px) and (max-width: 890px) {
-  .rubrikaAdditional .rubrikaAdditionalTransform {
-    transform: translateY(0px); } }
-@media screen and (min-width: 890px) and (max-width: 991px) {
-  .rubrikaAdditional .rubrikaAdditionalTransform {
-    transform: translateY(-75px); } }
-@media screen and (min-width: 991px) and (max-width: 1024px) {
-  .rubrikaAdditional .rubrikaAdditionalTransform {
-    transform: translateY(-125px); } }
-@media screen and (min-width: 1025px) and (max-width: 1190px) {
-  .rubrikaAdditional .rubrikaAdditionalTransform {
-    transform: translateY(-80px); } }
 @media screen and (min-width: 767px) and (max-width: 888px) {
   .rubrikaAdditional {
     padding-bottom: 25px !important;
