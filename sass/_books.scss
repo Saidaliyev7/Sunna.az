@@ -1,9 +1,14 @@
 .books {
     background-color: white;
+    .contentCategoriesHead  {
+        height: 62px;
+    }
     .booksMain {
         margin: 0px 50px;
         margin-bottom: 10px !important;
-       
+        .mainHead {
+            height: 62px;
+        }
     }
     .contentHead {
         background-color: $thirdcolor;

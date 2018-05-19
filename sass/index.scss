@@ -1,9 +1,13 @@
 $primarycolor:#2d6c93;
 $secondarycolor:#d9edf7;
 $thirdcolor:#aae1fa;
-@media screen and (max-width:767px) {
+@media screen and (max-width:991px) {
     .colum-reverse-row {
-        flex-direction: column-reverse;
+        flex-direction: column;
+        display: flex;
+      .last-col-9 {
+          order: 4;
+      }
     }
 }
 
@@ -462,7 +466,7 @@ body {
     display: inline-block;
     &::after {
         top: 0px;
-        right: -12+px;
+        right: -13px;
         content: "";
         position: absolute;
         height: 99%;
@@ -481,7 +485,7 @@ body {
     position: relative;
     &::before {
         top: 0px;
-        left: -12px;
+        left: -13px;
         z-index: 0;
         content: "";
         position: absolute;
@@ -491,14 +495,14 @@ body {
         background-color: $primarycolor;
     }
     &::after {
-        top: 0px;
-        right: 0px;
-        z-index: 0;
-        content: "";
-        position: absolute;
-        height: 100%;
-        width: 100%;
-        background-color: $primarycolor;
+        // top: 0px;
+        // right: 0px;
+        // z-index: 0;
+        // content: "";
+        // position: absolute;
+        // height: 100%;
+        // width: 100%;
+        // background-color: $primarycolor;
     }
     p {
         position: relative;
@@ -635,7 +639,7 @@ body {
 @media screen and (max-width:1004px) {
     .bgTriangleSecond {
         &::before {
-            left: -46px;
+            left: -13px;
         }
     }
 }

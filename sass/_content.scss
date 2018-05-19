@@ -6,9 +6,11 @@
         p {
             font-size: 16pt;
             display: inline-block;
-            padding: 15px 64px 15px 15px;
+            padding: 0px 62px 0px 15px;
             background-color: $primarycolor;
             position: relative;
+            height: 100%;
+            line-height: 62px;
             color: white;
         }
     }
@@ -16,8 +18,10 @@
         p {
             position: relative;
             color: white;
-            padding: 15px 0px 15px 30px;
+            padding: 0px 0px 0px 30px;
             font-size: 16pt;
+            height: 100%;
+            line-height: 62px;
             background-color: $primarycolor;
             text-transform: uppercase;
         }

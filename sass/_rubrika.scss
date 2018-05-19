@@ -1,4 +1,12 @@
 .rubrikaContent {
+    .rubrikaAdditional {
+        overflow-x: inherit !important;
+        overflow-y: inherit !important;
+        .message,.viewed {
+            margin-left: 12px;
+        }
+
+    }
     position: relative;
     .sendMessageIcon {
         display: inline-block;
@@ -20,7 +28,7 @@
         background-color: $thirdcolor;
         p {
             width:260px;
-            padding: 15px;
+            padding: 0px 15px;
         }
     }
     .rubrika {
@@ -36,8 +44,9 @@
             position: relative;
             p {  margin-left: 40px;
                 width: 100%;
-                padding: 10px 0px;
-                
+                padding: 0px 0px;
+                height: 100%;
+                line-height: 52px;
                 background-color: $thirdcolor;
                 position: relative;
                 color: black;
@@ -165,10 +174,11 @@ font-style: italic;
         }
         .rubrikaForum {
             margin-top: 32px;
-           
+            height: 100%;
+            line-height: 62px;
             position: relative;
             color: white;
-            padding: 15px 0px 15px 30px;
+            padding: 0px 0px 0px 30px;
             font-size: 16pt;
             background-color: $primarycolor;
             text-transform: uppercase;
