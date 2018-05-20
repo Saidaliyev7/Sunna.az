@@ -11,6 +11,8 @@ $(document).ready(function () {
 console.log($(window).width()<800);
 $(".fa-align-justify").click(function() {
 $(".menuitems ul").toggleClass("menuresponsiv");
+
+//$(".menuitems ul").slideToggle("slow");
 $(".menuitems ul li").toggleClass("menuResponsivLi");
 if(count==0) {
     $(".menuInput").attr("id", "menuInputresponsive");

@@ -147,6 +147,9 @@
                 .viewedContentIcon {
                     display: inline-block;
                     padding-right: 5px;
+                    position: absolute;
+                    left: 25px;
+                    line-height: 35px;
                     img {
                         height: 27px;
                         width: 27px;
@@ -157,6 +160,7 @@
                 }
                 .viewedContentAbout {
                     display: inline-block;
+                    padding-left: 35px;
                     a {
                         font-size: 16pt;
                         color: black;

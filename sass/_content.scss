@@ -269,6 +269,7 @@
         padding: 16px 0px !important;
     }
 }
+
 @media screen and (max-width: 767px) {
     .contentCategoriesHead {
         text-align: center !important;
@@ -287,6 +288,9 @@
             padding-right: 0px !important;
         }
     }
+
+}
+@media screen and (max-width: 991px)  {
     .message {
         text-align: center !important;
         padding-left: 0px !important;
@@ -420,5 +424,10 @@
         p {
             font-size: 9pt !important;
         }
+    }
+}
+@media screen and (max-width: 991px) {
+    .contentCategoriesHead {
+        text-align: center !important;
     }
 }

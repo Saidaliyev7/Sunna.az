@@ -1,5 +1,11 @@
 .sualcavab {
     background-color: white;
+    .contentCategoriesHead{
+        height: 62px;
+    }
+    .contentHead{
+        height: 62px;
+    }
     .sualcavabMain {
         margin: 0px 50px;
         border: 2px solid $thirdcolor;
@@ -215,5 +221,14 @@
         }
     }
 }
+@media screen and (min-width:767px) and (max-width:991px){
+    .sualcavab {
+        .rubrikaForum {
+           padding-left: 0px !important;
+           text-align: center !important;
+        }
+    }
+}
+
     
 

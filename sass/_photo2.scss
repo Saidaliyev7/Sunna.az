@@ -1,5 +1,11 @@
 .photo2 {
     background-color: white;
+    .contentCategoriesHead{
+        height: 62px;
+    }
+    .contentHead{
+        height: 62px;
+    }
     .photo2Main {
         margin: 0px 50px;
         border: 2px solid $thirdcolor;
@@ -70,3 +76,18 @@
 //     }
  
 //     }
+@media screen and (min-width:768px) and (max-width:991px){
+    .photo2 {
+        .viewedContent {
+            text-align: left !important;
+            
+            .viewedContentImage {
+                img {
+                   width: 600px !important;
+                   height: 400px !important;
+                   text-align: center !important;
+                }
+            }
+        }
+    }
+   }

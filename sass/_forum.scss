@@ -16,7 +16,7 @@
     .contentHead {
         background-color: $thirdcolor;
         p {
-            padding: 15px;
+            padding: 0px 15px;
             width: 190px;
         }
     }
@@ -35,7 +35,9 @@
                 display: inline-block;
                 margin-left: 75px;
                 width: 100%;
-                padding: 10px 0px;
+                padding: 0px 0px;
+                line-height: 52px;
+                height: 100%;
                 background-color: $thirdcolor;
                 color: black;
                 position: relative;
@@ -384,8 +386,10 @@
     .forum {
         .rubrikaContentCategories {
             ul {
+                text-align: center !important;
             
                 li {
+                    width: 30% !important;
                    
                     .rubrikaCategoriesIcon {
                         i {

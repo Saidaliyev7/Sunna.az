@@ -2,16 +2,15 @@
     .rubrikaAdditional {
         overflow-x: inherit !important;
         overflow-y: inherit !important;
-        .message,.viewed {
+        .message,
+        .viewed {
             margin-left: 12px;
         }
-
     }
     position: relative;
     .sendMessageIcon {
         display: inline-block;
         i {
-           
             img {
                 margin: 10px;
                 width: 55px;
@@ -23,11 +22,10 @@
     .rubrikaContentMain {
         margin: 0px 50px;
     }
-    
     .contentHead {
         background-color: $thirdcolor;
         p {
-            width:260px;
+            width: 260px;
             padding: 0px 15px;
         }
     }
@@ -37,12 +35,12 @@
         .rubrikaContent {
             display: inline-block;
             width: 50%;
-                z-index: 50;
-                font-size: 16pt;
-                display: inline-block;
-              
+            z-index: 50;
+            font-size: 16pt;
+            display: inline-block;
             position: relative;
-            p {  margin-left: 40px;
+            p {
+                margin-left: 40px;
                 width: 100%;
                 padding: 0px 0px;
                 height: 100%;
@@ -51,7 +49,6 @@
                 position: relative;
                 color: black;
                 z-index: 50;
-               
             }
             &::after {
                 top: 0px;
@@ -62,7 +59,6 @@
                 position: absolute;
                 transform: skew(-22deg);
                 background-color: #aae1fa;
-                
             }
             &::before {
                 top: 0px;
@@ -76,18 +72,17 @@
             }
         }
         .rubrikaCategory {
-           float: right;
-           margin-left: 10px;
+            float: right;
+            margin-left: 10px;
             display: inline-block;
             ul {
                 margin-bottom: 0px;
                 margin-top: 29px;
-            
                 list-style: none;
                 li {
                     display: inline-block;
                     a {
-font-style: italic;
+                        font-style: italic;
                         text-decoration: none;
                         color: $primarycolor;
                     }
@@ -105,46 +100,43 @@ font-style: italic;
                 padding: 30px 0px;
                 display: inline-block;
                 .rubrikaCategoriesIcon {
-                   text-align: center;
-                   
-                   i {
-                    border: 2px solid;
-                    border-radius: 50%;
                     text-align: center;
-                    width: 80px;
+                    i {
+                        border: 2px solid;
+                        border-radius: 50%;
+                        text-align: center;
+                        width: 80px;
                         height: 80px;
                         font-size: 30pt;
-                        line-height: 80px;
-                   // font-size: 30pt;
-                    color: #cad2db;
-                    background-color: white;
-                    border-color: #cad2db;
-                    transition: 0.4s ease;
-                    cursor: pointer;
-                    &:hover {
+                        line-height: 80px; // font-size: 30pt;
+                        color: #cad2db;
+                        background-color: white;
+                        border-color: #cad2db;
                         transition: 0.4s ease;
-                        border-color: #4da7ff;
-                        background-color: #4da7ff;
-                        color: white;
+                        cursor: pointer;
+                        &:hover {
+                            transition: 0.4s ease;
+                            border-color: #4da7ff;
+                            background-color: #4da7ff;
+                            color: white;
+                        }
                     }
-                }
                 }
                 .rubrikaCategoriesCount {
                     text-align: center;
                     a {
-                       border-bottom: 1px solid black;
+                        border-bottom: 1px solid black;
                         color: black;
-                        text-decoration: none ;
+                        text-decoration: none;
                     }
                 }
                 @media screen and (max-width:767px) {
-                  .rubrikaCategoriesCount {
-                       text-align: center;
-                       a {
-                          border-bottom: 1px solid black !important;
-                           
-                       }
-                   } 
+                    .rubrikaCategoriesCount {
+                        text-align: center;
+                        a {
+                            border-bottom: 1px solid black !important;
+                        }
+                    }
                 }
                 .rubrikaCategoriesName {
                     text-align: center;
@@ -182,11 +174,10 @@ font-style: italic;
             font-size: 16pt;
             background-color: $primarycolor;
             text-transform: uppercase;
-           
-        } 
-       .rubrikaViewedContent {
-           text-align: left !important;
-       }
+        }
+        .rubrikaViewedContent {
+            text-align: left !important;
+        }
         .rubrikaEntrace {
             text-align: center;
             padding-top: 27px;
@@ -201,7 +192,6 @@ font-style: italic;
     }
 }
 
-
 @media screen and (max-width: 768px) {
     .rubrikaContent {
         .rubrikaForum {
@@ -211,13 +201,14 @@ font-style: italic;
         }
     }
 }
+
 @media screen and (max-width: 400px) {
     .rubrikaContent {
         .rubrikaContentCategories {
             .rubrikaContentCategoriesIcons {
                 li {
                     width: 40% !important;
-                } 
+                }
             }
         }
     }
@@ -243,7 +234,6 @@ font-style: italic;
 }
 
 @media screen and (max-width:786px) {
-
     .rubrikaContentMain {
         margin: 0px !important;
         margin-bottom: 10px !important;
@@ -256,7 +246,6 @@ font-style: italic;
             }
         }
     }
-    
     .additionalContentType {
         margin: 0px !important;
     }
@@ -271,6 +260,7 @@ font-style: italic;
         }
     }
 }
+
 @media screen and (max-width: 850px) and (min-width: 768px) {
     .rubrikaContent {
         .contentCategoriesHead {
@@ -287,33 +277,30 @@ font-style: italic;
         }
         .rubrikaCategoriesIcon {
             i {
-                
                 width: 92px !important;
-               
             }
         }
-        
     }
 }
+
 @media screen and (max-width: 850px) and (min-width: 768px) {
-    .rubrikaEntrace  {
+    .rubrikaEntrace {
         margin-left: 10px !important;
     }
 }
 
-
 @media screen and (max-width:766px) {
     .rubrikaContent {
-        
-       .rubrikaContentCategories {
-           .rubrikaCategoriesName {
-               width: 90px !important;
-               margin: 0px auto !important;
-               margin-top: 5px !important;
-           }
-       } 
+        .rubrikaContentCategories {
+            .rubrikaCategoriesName {
+                width: 90px !important;
+                margin: 0px auto !important;
+                margin-top: 5px !important;
+            }
+        }
     }
 }
+
 @media screen and (max-width:766px) {
     .rubrikaContentMainHead {
         &::after {
@@ -321,11 +308,11 @@ font-style: italic;
         }
     }
 }
+
 @media screen and (max-width:767px) {
     .rubrikaContent {
         .rubrikaContentCategories {
             .rubrikaContentCategoriesIcons {
-            
                 li {
                     padding: 15px 0px !important;
                     .rubrikaCategoriesIcon {
@@ -341,6 +328,7 @@ font-style: italic;
         }
     }
 }
+
 @media screen and (max-width:1200px) {
     .rubrikaContent {
         .rubrikaContentCategories {
@@ -352,13 +340,12 @@ font-style: italic;
         }
     }
 }
+
 @media screen and (min-width:768px) and (max-width:991px) {
     .rubrikaContent {
         .rubrikaContentCategories {
             .rubrikaContentCategoriesIcons {
-            
                 li {
-                   
                     .rubrikaCategoriesIcon {
                         i {
                             width: 80px !important;
@@ -372,6 +359,7 @@ font-style: italic;
         }
     }
 }
+
 // @media screen  and(min-width:765px) and(max-width:1190px) {
 //     .rubrikaAdditional {
 //         overflow-x: initial !important;
@@ -388,7 +376,6 @@ font-style: italic;
 //         }
 //     }
 // }
-
 // @media screen  and(min-width:800px) and(max-width:890px) {
 //     .rubrikaAdditional {
 //         .rubrikaAdditionalTransform {
@@ -417,42 +404,42 @@ font-style: italic;
 //         }
 //     }
 // }
+@media screen and(min-width:767px) and(max-width:888px) {
+    .rubrikaAdditional {
+        padding-bottom: 25px !important;
+        margin-bottom: 0px !important;
+    }
+}
 
-@media screen  and(min-width:767px) and(max-width:888px) {
+@media screen and(min-width:888px) and(max-width:991px) {
     .rubrikaAdditional {
-       padding-bottom: 25px !important;
-       margin-bottom: 0px !important;
+        padding-bottom: 0px !important;
+        margin-bottom: 0px !important;
+        .scrollToTop {
+            bottom: 40px !important;
+        }
     }
 }
-@media screen  and(min-width:888px) and(max-width:991px) {
+
+@media screen and(min-width:991px) and(max-width:1200px) {
     .rubrikaAdditional {
-       padding-bottom: 0px !important;
-       margin-bottom: 0px !important;
-       .scrollToTop {
-           bottom:40px !important;
-       }
+        padding-bottom: 0px !important;
+        margin-bottom: 0px !important;
+        .scrollToTop {
+            bottom: 70px !important;
+        }
     }
 }
-@media screen  and(min-width:991px) and(max-width:1200px) {
+
+@media screen and(max-width:767px) {
     .rubrikaAdditional {
-       padding-bottom: 0px !important;
-       margin-bottom: 0px !important;
-       .scrollToTop {
-           bottom:70px !important;
-       }
+        .sendMessageButton {
+            a {
+                padding-top: 13px !important;
+            }
+        }
     }
-}
-@media screen  and(max-width:767px) {
-    .rubrikaAdditional {
-       
-       .sendMessageButton {
-           a {
-            padding-top: 13px !important;
-           }
-    
-       }
-    }
-    .rubrikaEntraceAdditional  {
+    .rubrikaEntraceAdditional {
         a {
             padding-top: 13px !important;
         }
@@ -465,5 +452,15 @@ font-style: italic;
 //             margin-top: 200px !important;
 //         }
 //     }
-   
-// }
+// }'
+@media screen and (min-width:768px) and (max-width:991px) {
+    .rubrikaContent {
+        .rubrikaContentCategoriesIcons {
+           text-align: center !important;
+                li {
+                    width: 30% !important;
+                }
+            
+        }
+    }
+}
