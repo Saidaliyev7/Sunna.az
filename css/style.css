@@ -10,8 +10,10 @@ p {
     display: inline-block;
 }
 .dropdown-content {
-    display: none;
+
     position: absolute;
+    opacity: 0;
+    transition: 0.3s cubic-bezier(0.25, 0.1, 0.95, 0.47);
     background-color: #aae1fa;
     min-width: 220px;
     z-index: 55555;
@@ -34,9 +36,11 @@ padding-left:40px;
 }
 
 @media screen and (min-width:1200px) {
+    
     .dropdown-content-hover {
-        display: block;
-        animation-delay: 0.2s ease;
+
+        opacity: 1;
+        transition: 0.3s cubic-bezier(0.25, 0.1, 0.95, 0.47);
     } 
 }
 
@@ -166,4 +170,20 @@ bottom: 10px;
         padding-right: 5px !important
     }
 }
+@media screen and (max-width:991px) {
+    .row-display-for-phone {
+     display: block;
+    } 
+    .row-display-for-comp {
+        display: none;
+    } 
+}
 
+@media screen and (min-width:991px) {
+    .row-display-for-phone {
+     display: none;
+    } 
+    .row-display-for-comp {
+        display: block;
+    } 
+}
