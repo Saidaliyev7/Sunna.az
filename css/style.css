@@ -12,8 +12,8 @@ p {
 .dropdown-content {
 
     position: absolute;
-    opacity: 0;
-    transition: 0.3s cubic-bezier(0.25, 0.1, 0.95, 0.47);
+    display: none;
+    
     background-color: #aae1fa;
     min-width: 220px;
     z-index: 55555;
@@ -39,8 +39,8 @@ padding-left:40px;
     
     .dropdown-content-hover {
 
-        opacity: 1;
-        transition: 0.3s cubic-bezier(0.25, 0.1, 0.95, 0.47);
+    display: block;
+   
     } 
 }
 

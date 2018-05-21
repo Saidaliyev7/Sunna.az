@@ -25,10 +25,10 @@ if(count==1) {
     count=1;
 }
 })
-// $('.dropdown a').hover(function(){
-//     $('.dropdown .dropdown-content').toggleClass("dropdown-content-hover");
+$('.dropdown a').hover(function(){
+    $('.dropdown .dropdown-content').toggleClass("dropdown-content-hover");
 
-// })
+})
 // if($("body").width()<1025) {
 //     console.log("salam")
 //   $(".menuSlogan").parent().removeClass("col-lg-5") ;
