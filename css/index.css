@@ -3447,7 +3447,11 @@ body {
   .conversationContent .rubrikaContent {
     display: inline-block;
     width: 100%;
-    position: relative; }
+    position: relative;
+    margin-top: 30px; }
+    .conversationContent .rubrikaContent span {
+      position: absolute;
+      top: -30px; }
     .conversationContent .rubrikaContent p {
       z-index: 4;
       font-size: 11pt;
@@ -3525,6 +3529,10 @@ body {
   .conversationContent .rubrikaContext {
     margin-top: 50px;
     font-size: 16pt; }
+    .conversationContent .rubrikaContext span {
+      position: absolute;
+      font-size: 16px;
+      top: 15px; }
   .conversationContent .conversationContentIcons {
     margin-top: 20px; }
     .conversationContent .conversationContentIcons ul {
@@ -3555,8 +3563,28 @@ body {
       font-style: italic;
       text-decoration: none;
       color: black; }
+  .conversationContent .shared .shared-data {
+    position: absolute;
+    padding: 15px;
+    text-transform: capitalize;
+    padding-left: 27px;
+    background-color: #2d6d93;
+    width: 90%;
+    color: white; }
+    .conversationContent .shared .shared-data .fa-reply {
+      float: right;
+      line-height: 28px; }
+    .conversationContent .shared .shared-data h5, .conversationContent .shared .shared-data h6 {
+      font-size: 15px;
+      display: inline-block; }
+    .conversationContent .shared .shared-data .fa-arrow-down {
+      position: absolute;
+      left: 5px;
+      top: 21px; }
   .conversationContent .shared p {
-    width: 90% !important; }
+    width: 90% !important;
+    padding-top: 80px !important;
+    padding-bottom: 25px; }
     .conversationContent .shared p::after {
       border: none;
       content: ""; }
@@ -3578,7 +3606,10 @@ body {
     margin-top: 0px !important; }
 
   .conversationContent .rubrikaContent {
-    margin: 0px !important; }
+    margin: 0px !important;
+    margin-top: 30px !important; }
+    .conversationContent .rubrikaContent span {
+      left: 5px; }
 
   .searchContent {
     display: none; } }
@@ -3598,11 +3629,17 @@ body {
     width: 100px !important; } }
 @media screen and (max-width: 767px) {
   .conversationContent .rubrikaContext {
-    margin-top: 10px !important; }
+    margin-top: 30px !important; }
+    .conversationContent .rubrikaContext span {
+      left: 15px;
+      top: 8px !important; }
   .conversationContent .rubrikaCategoriesName {
     margin: 0px auto !important;
     margin-top: 30px !important;
     width: 150px; } }
+@media screen and (max-width: 786px) {
+  .shared .shared-data {
+    left: 5px; } }
 .search .viewedContent li {
   border-bottom: 0px !important; }
 .search .contentBody {

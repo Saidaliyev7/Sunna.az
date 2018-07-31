@@ -31,6 +31,11 @@
         display: inline-block;
         width: 100%;
         position: relative;
+        margin-top: 30px;
+        span {
+            position: absolute;
+            top: -30px;
+        }
         p {
             z-index: 4;
             font-size: 11pt;
@@ -125,6 +130,11 @@
     .rubrikaContext {
         margin-top: 50px;
         font-size: 16pt;
+        span {
+            position: absolute;
+    font-size: 16px;
+    top: 15px;
+        }
     }
     .conversationContentIcons {
         margin-top: 20px;
@@ -164,8 +174,34 @@
         }
     }
     .shared {
+        .shared-data {
+            position: absolute;
+            padding: 15px;
+            text-transform: capitalize;
+            padding-left: 27px;
+            background-color: #2d6d93;
+            width: 90%;
+            color: white;
+            .fa-reply {
+                float: right;
+                line-height: 28px;
+            }
+            h5,h6 {
+                font-size: 15px;
+                display: inline-block;
+              
+            }
+            .fa-arrow-down{
+                position: absolute;
+                left: 5px;
+                top: 21px;
+            }
+    
+        }
         p {
             width: 90% !important;
+            padding-top: 80px !important;
+            padding-bottom: 25px;
             &::after {
                 border: none;
                 content: "";
@@ -196,7 +232,11 @@
     .conversationContent {
         .rubrikaContent {
             margin: 0px !important;
-        }
+            margin-top: 30px !important;
+            span {
+                left: 5px;
+            }
+        } 
     }
     .searchContent {
         display: none ;
@@ -247,7 +287,11 @@
 @media screen and (max-width:767px){
     .conversationContent {
         .rubrikaContext {
-            margin-top: 10px !important;
+            margin-top: 30px !important;
+            span {
+                left: 15px;
+                top: 8px !important;
+            }
         }
         .rubrikaCategoriesName {
            
@@ -257,5 +301,11 @@
         }
     }
 }
-
+@media screen and (max-width:786px){ 
+    .shared {
+        .shared-data {
+            left: 5px;
+        }
+    }
+}
 
