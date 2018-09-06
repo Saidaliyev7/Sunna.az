@@ -38,6 +38,19 @@ $('.dropdown a').hover(function(){
 //     $(".menuContent").parent().addClass("col-lg-7")
     
 // }
+$(".conversationContent .shared .shared-data .fa").click(function(){
+    //console.log( $(this).parents(".shared"))
+    $(this).parents(".shared").toggleClass("turn");
+    $(this).parents(".shared").find("p").toggleClass("dsp-none-p")
+    if($(this).parents(".shared").hasClass("turn")){
+        $(this).attr("class","fa fa-arrow-right")
+       
+    }else{
+        $(this).attr("class","fa fa-arrow-down")
+    }
+   
+   
+});
 
 
 });

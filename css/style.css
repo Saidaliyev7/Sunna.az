@@ -187,3 +187,10 @@ bottom: 10px;
         display: block;
     } 
 }
+
+.turn {
+    margin-bottom: 25px;
+}
+.dsp-none-p{
+    display: none !important;
+}
