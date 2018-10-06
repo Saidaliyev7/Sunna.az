@@ -194,3 +194,38 @@ bottom: 10px;
 .dsp-none-p{
     display: none !important;
 }
+
+.form-radio-buttons{
+    text-decoration: none;
+    display: flex;
+    justify-content: space-around;
+    padding:0px 30px; 
+}
+.form-radio-buttons li{
+    display: inline-block;
+}
+.form-radio-buttons li label{
+    font-size: 16pt;
+}
+.answerQuestion div{
+    position: relative;
+}
+.answerQuestion-input{
+    height: 35px;
+    width: 90%;
+}
+.answerQuestion-input::placeholder{
+    color: black;
+    padding-left: 40px;
+}
+.answerQuestion i {
+    
+    z-index: 5;
+    position: absolute;
+    top: 30%;
+    left: 8%;
+    height: 19px;
+    background-image: url(../img/searchicon.png);
+    background-size: cover;
+    width: 19px;
+}

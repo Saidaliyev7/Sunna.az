@@ -39,15 +39,19 @@ $('.dropdown a').hover(function(){
     
 // }
 $(".conversationContent .shared .shared-data .fa").click(function(){
-    //console.log( $(this).parents(".shared"))
-    $(this).parents(".shared").toggleClass("turn");
-    $(this).parents(".shared").find("p").toggleClass("dsp-none-p")
-    if($(this).parents(".shared").hasClass("turn")){
-        $(this).attr("class","fa fa-arrow-right")
+console.log("salam")
+    if($(this).hasClass("fa-reply") ==null) {
+        $(this).parents(".shared").toggleClass("turn");
+        $(this).parents(".shared").find("p").toggleClass("dsp-none-p")
+        if($(this).parents(".shared").hasClass("turn")){
+            $(this).attr("class","fa fa-arrow-right")
+           
+        }else{
+            $(this).attr("class","fa fa-arrow-down")
+        }
        
-    }else{
-        $(this).attr("class","fa fa-arrow-down")
     }
+    //console.log( $(this).parents(".shared"))
    
    
 });
